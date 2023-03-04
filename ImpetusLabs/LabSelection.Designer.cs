@@ -55,6 +55,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.BtnLab01Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab02Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab03Screen);
@@ -75,9 +76,11 @@
             this.flowLayoutPanel1.Controls.Add(this.BtnLab18Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab19Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab20Screen);
+            this.flowLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(87, 35);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(933, 539);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(937, 539);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // BtnLab01Screen
@@ -285,9 +288,10 @@
             // 
             // LabSelectPanel
             // 
-            this.LabSelectPanel.Location = new System.Drawing.Point(3, 3);
+            this.LabSelectPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabSelectPanel.Location = new System.Drawing.Point(0, 0);
             this.LabSelectPanel.Name = "LabSelectPanel";
-            this.LabSelectPanel.Size = new System.Drawing.Size(1111, 598);
+            this.LabSelectPanel.Size = new System.Drawing.Size(1114, 601);
             this.LabSelectPanel.TabIndex = 2;
             // 
             // LabSelection

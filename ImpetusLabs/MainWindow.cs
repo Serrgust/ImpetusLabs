@@ -13,10 +13,8 @@ namespace ImpetusLabs
 {
     public partial class MainWindow : Form
     {
-        LabSelection LabSel;
         public MainWindow()
         {
-            LabSel = new LabSelection();
             InitializeComponent();
         }
 
@@ -31,24 +29,41 @@ namespace ImpetusLabs
             f.Show();
         }
 
+        public void LoadForm(object Form)
+        {
+            Form f = Form as Form;
+            f.Show();
+        }
+
         private void BtnLabSelection_Click(object sender, EventArgs e)
         {
             LoadUserControl(new LabSelection());
         }
 
-        private void MainWindow_Load(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
+            TopDate.Text = DateTime.Now.ToLongTimeString();
+            TopTime.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void materialBtnLabSelection_Click(object sender, EventArgs e)
         {
-
+            LoadUserControl(new LabSelection());
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
+            LoadForm(new LoginForm());
+        }
 
+        private void materialBtnLabSelection_Click_1(object sender, EventArgs e)
+        {
+            LoadUserControl(new LabSelection());
+        }
+
+        private void materialBtnLogin_Click(object sender, EventArgs e)
+        {
+            LoadForm(new LoginForm());
         }
     }
 }

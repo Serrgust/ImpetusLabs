@@ -13,8 +13,8 @@ namespace ImpetusLabs
 {
     public partial class Lab01Screen : UserControl
     {
-        Node[] LabTests = new Node[5];
-        Label[] Lbl2Lab01 = new Label[5];
+        Node[] LabTests = new Node[6];
+        Label[] Lbl2Lab01 = new Label[6];
 
         public Lab01Screen()
         {
@@ -42,14 +42,14 @@ namespace ImpetusLabs
             var var5 = "ns=2;s=[GustavoDevice]LAB01.VAR[4]";
             var var6 = "ns=2;s=[GustavoDevice]LAB01.VAR[5]";
 
-            var client = new OpcClient(opcUrl);
+/*            var client = new OpcClient(opcUrl);
 
             LabTests[0] = client.ReadNode(var1);
             LabTests[1] = client.ReadNode(var2);
             LabTests[2] = client.ReadNode(var3);
             LabTests[3] = client.ReadNode(var4);
             LabTests[4] = client.ReadNode(var5);
-            LabTests[5] = client.ReadNode(var6);
+            LabTests[5] = client.ReadNode(var6);*/
 
             for (int i = 0; i < 5; i++)
             {
@@ -68,7 +68,7 @@ namespace ImpetusLabs
                     Lbl2Lab01[i].BackColor = Color.Red;
                     Lbl2Lab01[i].Text = "FAILED";
                 }
-            client.Disconnect();
+            //client.Disconnect();
             }
         }
     }
