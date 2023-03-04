@@ -251,5 +251,15 @@ namespace ImpetusLabs
         {
 
         }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Que buscas hueputa");
+        }
     }
 }

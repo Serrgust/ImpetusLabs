@@ -36,7 +36,7 @@ namespace ImpetusLabs
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -103,17 +103,18 @@ namespace ImpetusLabs
             this.button4.Text = "RSLOGIX 500";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnLogin
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button3.Location = new System.Drawing.Point(10, 204);
-            this.button3.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 52);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "LOGIN";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BtnLogin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.BtnLogin.Location = new System.Drawing.Point(10, 204);
+            this.BtnLogin.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(124, 52);
+            this.BtnLogin.TabIndex = 10;
+            this.BtnLogin.Text = "LOGIN";
+            this.BtnLogin.UseVisualStyleBackColor = true;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // button2
             // 
@@ -143,7 +144,7 @@ namespace ImpetusLabs
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Blue;
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Controls.Add(this.BtnLogin);
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.Controls.Add(this.button6);
@@ -157,7 +158,7 @@ namespace ImpetusLabs
             // 
             // userControl1
             // 
-            this.userControl1.Location = new System.Drawing.Point(237, 132);
+            this.userControl1.Location = new System.Drawing.Point(574, 284);
             this.userControl1.Name = "userControl1";
             this.userControl1.Size = new System.Drawing.Size(150, 150);
             this.userControl1.TabIndex = 14;
@@ -185,7 +186,7 @@ namespace ImpetusLabs
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnLogin;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
