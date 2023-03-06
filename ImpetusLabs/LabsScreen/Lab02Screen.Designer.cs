@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.LblLab02Test1 = new System.Windows.Forms.Label();
             this.LblLab02Test2 = new System.Windows.Forms.Label();
             this.Lbl2Lab02Test1 = new System.Windows.Forms.Label();
             this.Lbl2Lab02Test2 = new System.Windows.Forms.Label();
             this.BtnLab02Start = new System.Windows.Forms.Button();
             this.BtnLab02Stop = new System.Windows.Forms.Button();
+            this.TimerLab02 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // LblLab02Test1
@@ -44,7 +46,6 @@
             this.LblLab02Test1.Size = new System.Drawing.Size(67, 23);
             this.LblLab02Test1.TabIndex = 0;
             this.LblLab02Test1.Text = "Test 1";
-            this.LblLab02Test1.Click += new System.EventHandler(this.LblLab02Test1_Click);
             // 
             // LblLab02Test2
             // 
@@ -54,7 +55,6 @@
             this.LblLab02Test2.Size = new System.Drawing.Size(67, 23);
             this.LblLab02Test2.TabIndex = 1;
             this.LblLab02Test2.Text = "Test 2";
-            this.LblLab02Test2.Click += new System.EventHandler(this.LblLab02Test2_Click);
             // 
             // Lbl2Lab02Test1
             // 
@@ -88,6 +88,7 @@
             this.BtnLab02Start.TabIndex = 40;
             this.BtnLab02Start.Text = "START SIM";
             this.BtnLab02Start.UseVisualStyleBackColor = true;
+            this.BtnLab02Start.Click += new System.EventHandler(this.BtnLab02Start_Click);
             // 
             // BtnLab02Stop
             // 
@@ -98,6 +99,11 @@
             this.BtnLab02Stop.Text = "STOP SIM";
             this.BtnLab02Stop.UseVisualStyleBackColor = true;
             this.BtnLab02Stop.Click += new System.EventHandler(this.BtnLab02Stop_Click);
+            // 
+            // TimerLab02
+            // 
+            this.TimerLab02.Enabled = true;
+            this.TimerLab02.Interval = 500;
             // 
             // Lab02Screen
             // 
@@ -123,5 +129,6 @@
         private System.Windows.Forms.Label Lbl2Lab02Test2;
         private System.Windows.Forms.Button BtnLab02Start;
         private System.Windows.Forms.Button BtnLab02Stop;
+        private System.Windows.Forms.Timer TimerLab02;
     }
 }

@@ -55,12 +55,12 @@
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(75, 234);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(75, 18);
+            this.materialLabel2.Size = new System.Drawing.Size(75, 19);
             this.materialLabel2.TabIndex = 1;
             this.materialLabel2.Text = "Password";
             // 
@@ -104,11 +104,11 @@
             this.materialLoginEnter.Depth = 0;
             this.materialLoginEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialLoginEnter.Icon = null;
-            this.materialLoginEnter.Location = new System.Drawing.Point(158, 300);
+            this.materialLoginEnter.Location = new System.Drawing.Point(229, 300);
             this.materialLoginEnter.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLoginEnter.Name = "materialLoginEnter";
             this.materialLoginEnter.Primary = true;
-            this.materialLoginEnter.Size = new System.Drawing.Size(221, 36);
+            this.materialLoginEnter.Size = new System.Drawing.Size(64, 36);
             this.materialLoginEnter.TabIndex = 4;
             this.materialLoginEnter.Text = "LOG IN";
             this.materialLoginEnter.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ImpetusLabs.Properties.Resources.JCA_n_logo_new_ns_js_copy_3;
-            this.pictureBox1.Location = new System.Drawing.Point(158, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(151, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(221, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

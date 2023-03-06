@@ -42,8 +42,8 @@ namespace ImpetusLabs
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            TopDate.Text = DateTime.Now.ToLongTimeString();
-            TopTime.Text = DateTime.Now.ToLongDateString();
+            TopTime.Text = DateTime.Now.ToLongTimeString();
+            TopDate.Text = DateTime.Now.ToLongDateString();
         }
 
         private void materialBtnLabSelection_Click(object sender, EventArgs e)

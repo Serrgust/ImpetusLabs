@@ -50,7 +50,7 @@
             // 
             this.Lbl2Lab01Test3.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab01Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Lbl2Lab01Test3.Location = new System.Drawing.Point(491, 164);
             this.Lbl2Lab01Test3.Name = "Lbl2Lab01Test3";
             this.Lbl2Lab01Test3.Size = new System.Drawing.Size(146, 45);
@@ -62,7 +62,7 @@
             // 
             this.Lbl2Lab01Test2.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab01Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Lbl2Lab01Test2.Location = new System.Drawing.Point(491, 108);
             this.Lbl2Lab01Test2.Name = "Lbl2Lab01Test2";
             this.Lbl2Lab01Test2.Size = new System.Drawing.Size(146, 45);
@@ -74,7 +74,7 @@
             // 
             this.Lbl2Lab01Test1.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab01Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Lbl2Lab01Test1.Location = new System.Drawing.Point(491, 52);
             this.Lbl2Lab01Test1.Name = "Lbl2Lab01Test1";
             this.Lbl2Lab01Test1.Size = new System.Drawing.Size(146, 45);
@@ -86,7 +86,7 @@
             // 
             this.Lbl2Lab01Test6.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab01Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Lbl2Lab01Test6.Location = new System.Drawing.Point(491, 332);
             this.Lbl2Lab01Test6.Name = "Lbl2Lab01Test6";
             this.Lbl2Lab01Test6.Size = new System.Drawing.Size(146, 45);
@@ -96,12 +96,14 @@
             // 
             // BtnLab01Start
             // 
-            this.BtnLab01Start.Location = new System.Drawing.Point(491, 417);
+            this.BtnLab01Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab01Start.Location = new System.Drawing.Point(422, 417);
             this.BtnLab01Start.Name = "BtnLab01Start";
             this.BtnLab01Start.Size = new System.Drawing.Size(148, 79);
             this.BtnLab01Start.TabIndex = 26;
             this.BtnLab01Start.Text = "START SIM";
             this.BtnLab01Start.UseVisualStyleBackColor = true;
+            this.BtnLab01Start.Click += new System.EventHandler(this.BtnLab01Start_Click);
             // 
             // LblLab01Test1
             // 
@@ -137,7 +139,7 @@
             // 
             this.Lbl2Lab01Test5.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab01Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Lbl2Lab01Test5.Location = new System.Drawing.Point(491, 276);
             this.Lbl2Lab01Test5.Name = "Lbl2Lab01Test5";
             this.Lbl2Lab01Test5.Size = new System.Drawing.Size(146, 45);
@@ -169,7 +171,7 @@
             // 
             this.Lbl2Lab01Test4.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab01Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Lbl2Lab01Test4.Location = new System.Drawing.Point(491, 220);
             this.Lbl2Lab01Test4.Name = "Lbl2Lab01Test4";
             this.Lbl2Lab01Test4.Size = new System.Drawing.Size(146, 45);
@@ -189,15 +191,18 @@
             // 
             // BtnLab01Stop
             // 
-            this.BtnLab01Stop.Location = new System.Drawing.Point(489, 417);
+            this.BtnLab01Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab01Stop.Location = new System.Drawing.Point(422, 417);
             this.BtnLab01Stop.Name = "BtnLab01Stop";
             this.BtnLab01Stop.Size = new System.Drawing.Size(148, 79);
             this.BtnLab01Stop.TabIndex = 39;
             this.BtnLab01Stop.Text = "STOP SIM";
             this.BtnLab01Stop.UseVisualStyleBackColor = true;
+            this.BtnLab01Stop.Click += new System.EventHandler(this.BtnLab01Stop_Click);
             // 
             // TimerLab01
             // 
+            this.TimerLab01.Enabled = true;
             this.TimerLab01.Interval = 500;
             this.TimerLab01.Tick += new System.EventHandler(this.TimerLab01_Tick);
             // 
