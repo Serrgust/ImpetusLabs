@@ -27,11 +27,11 @@ namespace ImpetusLabs
         {
             MessageBox.Show("Fuck The Police");
 
-            var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
+            //var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
 
-            client.Connect();
+            //client.Connect();
 
-            string temperature;
+            //string temperature;
 
             //temperature = Convert.ToString(txtOpcDataWrite.Text);
 
@@ -44,10 +44,10 @@ namespace ImpetusLabs
         {
             MessageBox.Show("Fuck The Police");
             //string opcUrl = "opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1";
-            var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
+            //var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
             //var client = new OpcClient(opcUrl);
             client.Connect();
-            var temperature = client.ReadNode(tagName);
+            //var temperature = client.ReadNode(tagName);
 
             //txtOpcDataRead.Text = temperature.ToString();
         }

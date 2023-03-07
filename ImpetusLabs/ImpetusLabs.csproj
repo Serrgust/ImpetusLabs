@@ -118,6 +118,30 @@
     <Compile Include="LabsScreen\Lab02Screen.Designer.cs">
       <DependentUpon>Lab02Screen.cs</DependentUpon>
     </Compile>
+    <Compile Include="LabsScreen\Lab03Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab03Screen.Designer.cs">
+      <DependentUpon>Lab03Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab04Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab04Screen.Designer.cs">
+      <DependentUpon>Lab04Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab05Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab05Screen.Designer.cs">
+      <DependentUpon>Lab05Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab06Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab06Screen.Designer.cs">
+      <DependentUpon>Lab06Screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +170,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LabsScreen\Lab02Screen.resx">
       <DependentUpon>Lab02Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab03Screen.resx">
+      <DependentUpon>Lab03Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab04Screen.resx">
+      <DependentUpon>Lab04Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab05Screen.resx">
+      <DependentUpon>Lab05Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab06Screen.resx">
+      <DependentUpon>Lab06Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

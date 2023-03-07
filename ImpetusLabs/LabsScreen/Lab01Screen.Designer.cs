@@ -202,7 +202,6 @@
             // 
             // TimerLab01
             // 
-            this.TimerLab01.Enabled = true;
             this.TimerLab01.Interval = 500;
             this.TimerLab01.Tick += new System.EventHandler(this.TimerLab01_Tick);
             // 

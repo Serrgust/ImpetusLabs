@@ -13,11 +13,9 @@ namespace ImpetusLabs.LabsScreen
 {
     public partial class LabSelection : UserControl
     {
-        Lab01Screen Lab01Scre;
         public LabSelection()
         {
             InitializeComponent();
-            Lab01Scre = new Lab01Screen();
         }
 
         public void GoToLab(object UserControl)
@@ -31,7 +29,6 @@ namespace ImpetusLabs.LabsScreen
             this.LabSelectPanel.Controls.Add(f);
             this.LabSelectPanel.Tag = f;
             f.Show();
-
         }
         private void BtnLab01Screen_Click(object sender, EventArgs e)
         {
@@ -41,6 +38,27 @@ namespace ImpetusLabs.LabsScreen
         private void BtnLab02Screen_Click(object sender, EventArgs e)
         {
             GoToLab(new Lab02Screen());
+        }
+
+        private void BtnLab03Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab03Screen());
+        }
+
+        private void BtnLab04Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab04Screen());
+        }
+
+        private void BtnLab05Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab05Screen());
+        }
+
+        private void BtnLab06Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab06Screen());
+
         }
     }
 }
