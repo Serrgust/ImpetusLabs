@@ -27,8 +27,10 @@ namespace ImpetusLabs.LabsScreen
 
         private void RefreshLabs()
         {
-            Lab02Tests[0] = client.ReadNode("ns=2;s=[GustavoDevice]LAB02.VAR[0]");
-            Lab02Tests[1] = client.ReadNode("ns=2;s=[GustavoDevice]LAB02.VAR[1]");
+            for (int i = 0; i < Lab02Tests.Length; i++)
+            {
+                Lab02Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB02.VAR[" + i + "]");
+            }
 
             for (int i = 0; i < Lab02Tests.Length; i++)
             {

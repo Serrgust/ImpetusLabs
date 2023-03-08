@@ -37,12 +37,16 @@ namespace ImpetusLabs
 
         private void RefreshLabs()
         {
-            Lab01Tests[0] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[0]");
+            for (int i = 0; i < Lab01Tests.Length; i++)
+            {
+                Lab01Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[" + i + "]");
+            }
+/*            Lab01Tests[0] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[0]");
             Lab01Tests[1] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[1]");
             Lab01Tests[2] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[2]");
             Lab01Tests[3] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[3]");
             Lab01Tests[4] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[4]");
-            Lab01Tests[5] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[5]");
+            Lab01Tests[5] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[5]");*/
 
             for (int i = 0; i < Lab01Tests.Length; i++)
             {
@@ -68,7 +72,15 @@ namespace ImpetusLabs
         {
             var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
             client.Connect();
-            client.WriteNode(tagName, true);
+            try
+            {
+                client.Connect();
+                client.WriteNode(tagName, true);
+            }
+            catch (Opc.UaFx.OpcException)
+            {
+                MessageBox.Show("Connection to OPC UA Server failed");
+            }
             BtnLab01Start.Visible = false;
             BtnLab01Stop.Visible = true;
             TimerLab01.Enabled = true;

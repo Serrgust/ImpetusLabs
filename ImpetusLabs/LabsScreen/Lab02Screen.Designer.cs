@@ -78,7 +78,7 @@
             this.LblLab02Test2.Name = "LblLab02Test2";
             this.LblLab02Test2.Size = new System.Drawing.Size(67, 23);
             this.LblLab02Test2.TabIndex = 34;
-            this.LblLab02Test2.Text = "Test 1";
+            this.LblLab02Test2.Text = "Test 2";
             // 
             // BtnLab02Start
             // 

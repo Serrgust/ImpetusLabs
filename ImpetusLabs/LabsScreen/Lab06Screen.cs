@@ -9,18 +9,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ImpetusLabs.Forms.SelectServerForm;
 
 namespace ImpetusLabs.LabsScreen
 {
     public partial class Lab06Screen : UserControl
     {
-        private OpcValue[] Lab06Tests = new OpcValue[11];
-        private Label[] Lbl2Lab06 = new Label[12];
+        public OpcValue[] Lab06Tests = new OpcValue[10];
+        private Label[] Lbl2Lab06 = new Label[10];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
         private OpcValue OutTimerLab06;
         public Lab06Screen()
         {
             InitializeComponent();
+/*            for (int i = 0; i < Lab06Tests.Length; i++)
+            {
+                Lbl2Lab06[i-1] = Lbl2Lab06Test[i];
+            }*/
             Lbl2Lab06[0] = Lbl2Lab06Test1;
             Lbl2Lab06[1] = Lbl2Lab06Test2;
             Lbl2Lab06[2] = Lbl2Lab06Test3;
@@ -34,17 +39,10 @@ namespace ImpetusLabs.LabsScreen
         }
         private void RefreshLabs()
         {
-            Lab06Tests[0] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[0]");
-            Lab06Tests[1] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[1]");
-            Lab06Tests[2] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[2]");
-            Lab06Tests[3] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[3]");
-            Lab06Tests[4] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[4]");
-            Lab06Tests[5] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[5]");
-            Lab06Tests[6] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[6]");
-            Lab06Tests[7] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[7]");
-            Lab06Tests[8] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[8]");
-            Lab06Tests[9] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[9]");
-            Lab06Tests[10] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR[10]");
+            for (int i = 0; i < Lab06Tests.Length; i++)
+            {
+                Lab06Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.VAR["+i+"]");
+            }
             OutTimerLab06 = client.ReadNode("ns=2;s=[GustavoDevice]LAB06.TIMER1.ACC");
 
             for (int i = 0; i < Lab06Tests.Length; i++)

@@ -320,6 +320,7 @@ namespace ImpetusLabs.LabsScreen
             // TimerLab06
             // 
             this.TimerLab06.Interval = 500;
+            this.TimerLab06.Tick += new System.EventHandler(this.TimerLab06_Tick);
             // 
             // LblTimerAccLab06
             // 
@@ -327,9 +328,8 @@ namespace ImpetusLabs.LabsScreen
             this.LblTimerAccLab06.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTimerAccLab06.Location = new System.Drawing.Point(651, 361);
             this.LblTimerAccLab06.Name = "LblTimerAccLab06";
-            this.LblTimerAccLab06.Size = new System.Drawing.Size(82, 25);
+            this.LblTimerAccLab06.Size = new System.Drawing.Size(0, 25);
             this.LblTimerAccLab06.TabIndex = 24;
-            this.LblTimerAccLab06.Text = "label10";
             // 
             // Lab06Screen
             // 

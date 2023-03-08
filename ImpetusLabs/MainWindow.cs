@@ -1,4 +1,6 @@
-﻿using ImpetusLabs.LabsScreen;
+﻿using ImpetusLabs.Forms;
+using ImpetusLabs.LabsScreen;
+using Opc.UaFx.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,7 @@ namespace ImpetusLabs
 {
     public partial class MainWindow : Form
     {
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -64,6 +67,11 @@ namespace ImpetusLabs
         private void materialBtnLogin_Click(object sender, EventArgs e)
         {
             LoadForm(new LoginForm());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            LoadForm(new SelectServerForm());
         }
     }
 }

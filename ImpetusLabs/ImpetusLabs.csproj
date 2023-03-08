@@ -106,6 +106,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SelectServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectServerForm.Designer.cs">
+      <DependentUpon>SelectServerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LabSelection.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,11 +148,23 @@
     <Compile Include="LabsScreen\Lab06Screen.Designer.cs">
       <DependentUpon>Lab06Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab07Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab07Screen.Designer.cs">
+      <DependentUpon>Lab07Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab08Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab08Screen.Designer.cs">
+      <DependentUpon>Lab08Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
@@ -164,6 +182,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectServerForm.resx">
+      <DependentUpon>SelectServerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LabSelection.resx">
       <DependentUpon>LabSelection.cs</DependentUpon>
@@ -183,8 +204,14 @@
     <EmbeddedResource Include="LabsScreen\Lab06Screen.resx">
       <DependentUpon>Lab06Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab07Screen.resx">
+      <DependentUpon>Lab07Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab08Screen.resx">
+      <DependentUpon>Lab08Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

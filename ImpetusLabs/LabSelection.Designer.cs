@@ -159,6 +159,7 @@
             this.BtnLab07Screen.TabIndex = 6;
             this.BtnLab07Screen.Text = "Lab 07";
             this.BtnLab07Screen.UseVisualStyleBackColor = true;
+            this.BtnLab07Screen.Click += new System.EventHandler(this.BtnLab07Screen_Click);
             // 
             // BtnLab08Screen
             // 
@@ -169,6 +170,7 @@
             this.BtnLab08Screen.TabIndex = 7;
             this.BtnLab08Screen.Text = "Lab 08";
             this.BtnLab08Screen.UseVisualStyleBackColor = true;
+            this.BtnLab08Screen.Click += new System.EventHandler(this.BtnLab08Screen_Click);
             // 
             // BtnLab09Screen
             // 
