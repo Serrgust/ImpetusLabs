@@ -166,6 +166,24 @@
     <Compile Include="LabsScreen\Lab08Screen.Designer.cs">
       <DependentUpon>Lab08Screen.cs</DependentUpon>
     </Compile>
+    <Compile Include="LabsScreen\Lab09Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab09Screen.Designer.cs">
+      <DependentUpon>Lab09Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab10Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab10Screen.Designer.cs">
+      <DependentUpon>Lab10Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab11Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab11Screen.Designer.cs">
+      <DependentUpon>Lab11Screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +230,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LabsScreen\Lab08Screen.resx">
       <DependentUpon>Lab08Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab09Screen.resx">
+      <DependentUpon>Lab09Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab10Screen.resx">
+      <DependentUpon>Lab10Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab11Screen.resx">
+      <DependentUpon>Lab11Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

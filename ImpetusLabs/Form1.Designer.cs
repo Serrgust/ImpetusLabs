@@ -76,7 +76,7 @@ namespace ImpetusLabs
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(124, 52);
             this.button6.TabIndex = 13;
-            this.button6.Text = "TEST CODE";
+            this.button6.Text = "Server Connection";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5

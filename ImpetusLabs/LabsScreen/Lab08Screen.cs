@@ -9,9 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Xamarin.Forms.Internals;
 
 namespace ImpetusLabs.LabsScreen
-{//Jose was here 
+{//Jose was here :P
     public partial class Lab08Screen : UserControl
     {
         public OpcValue[] Lab08Tests = new OpcValue[4];
@@ -28,9 +29,17 @@ namespace ImpetusLabs.LabsScreen
             Lbl2Lab08[1] = Lbl2Lab08Test2;
             Lbl2Lab08[2] = Lbl2Lab08Test3;
             Lbl2Lab08[3] = Lbl2Lab08Test4;
+
+            //Lab Display Label
+            string currentlab = "Lab #8";
+
+            LblCurrentLab.Text = currentlab;
+            
+
         }
         private void RefreshLabs()
         {
+           //codigo para hacer updates de los test labels
             for (int i = 0; i < Lab08Tests.Length; i++)
             {
                 Lab08Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]Lab08.VAR[" + i + "]");
