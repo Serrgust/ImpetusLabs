@@ -102,7 +102,7 @@
             // BtnLab01Start
             // 
             this.BtnLab01Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab01Start.Location = new System.Drawing.Point(594, 513);
+            this.BtnLab01Start.Location = new System.Drawing.Point(563, 513);
             this.BtnLab01Start.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLab01Start.Name = "BtnLab01Start";
             this.BtnLab01Start.Size = new System.Drawing.Size(197, 97);

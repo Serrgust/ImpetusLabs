@@ -152,7 +152,8 @@
             // 
             // BtnLab11Start
             // 
-            this.BtnLab11Start.Location = new System.Drawing.Point(771, 534);
+            this.BtnLab11Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab11Start.Location = new System.Drawing.Point(748, 534);
             this.BtnLab11Start.Name = "BtnLab11Start";
             this.BtnLab11Start.Size = new System.Drawing.Size(197, 97);
             this.BtnLab11Start.TabIndex = 10;
@@ -162,6 +163,7 @@
             // 
             // BtnLab11Stop
             // 
+            this.BtnLab11Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLab11Stop.Location = new System.Drawing.Point(748, 534);
             this.BtnLab11Stop.Name = "BtnLab11Stop";
             this.BtnLab11Stop.Size = new System.Drawing.Size(197, 97);
