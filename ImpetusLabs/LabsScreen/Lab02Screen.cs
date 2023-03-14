@@ -22,6 +22,10 @@ namespace ImpetusLabs.LabsScreen
             InitializeComponent();
             Lbl2Lab02[0] = Lbl2Lab02Test1;
             Lbl2Lab02[1] = Lbl2Lab02Test2;
+
+            //Lab Display Label
+            string currentlab = "Lab #2";
+            LblCurrentLab.Text = currentlab;
         }
 
 

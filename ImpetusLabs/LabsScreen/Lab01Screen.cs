@@ -1,4 +1,5 @@
-﻿using Opc.Ua;
+﻿using ImpetusLabs.LabsScreen;
+using Opc.Ua;
 using Opc.UaFx;
 using Opc.UaFx.Client;
 using System;
@@ -28,6 +29,12 @@ namespace ImpetusLabs
             Lbl2Lab01[3] = Lbl2Lab01Test4;
             Lbl2Lab01[4] = Lbl2Lab01Test5;
             Lbl2Lab01[5] = Lbl2Lab01Test6;
+
+            //Lab Display Label
+            string currentlab = "Lab #1";
+
+            LblCurrentLab.Text = currentlab;
+
         }
 
         private void TimerLab01_Tick(object sender, EventArgs e)
@@ -96,6 +103,10 @@ namespace ImpetusLabs
             RefreshLabs();
             client.Disconnect();
         }
+
+       
+            
+        }
     }
-}
+
 
