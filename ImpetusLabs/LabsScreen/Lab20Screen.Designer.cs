@@ -537,6 +537,10 @@
             this.BtnLab20Stop.UseVisualStyleBackColor = true;
             this.BtnLab20Stop.Click += new System.EventHandler(this.BtnLab20Stop_Click);
             // 
+            // TimerLab20
+            // 
+            this.TimerLab20.Tick += new System.EventHandler(this.TimerLab20_Tick_1);
+            // 
             // LblCurrentLab
             // 
             this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

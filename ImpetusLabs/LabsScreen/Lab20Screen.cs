@@ -106,5 +106,10 @@ namespace ImpetusLabs.LabsScreen
             RefreshLabs();
             client.Disconnect();
         }
+
+        private void TimerLab20_Tick_1(object sender, EventArgs e)
+        {
+            RefreshLabs();
+        }
     }
 }
