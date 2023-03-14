@@ -72,6 +72,7 @@
             this.BtnLab20Start = new System.Windows.Forms.Button();
             this.BtnLab20Stop = new System.Windows.Forms.Button();
             this.TimerLab20 = new System.Windows.Forms.Timer(this.components);
+            this.LblCurrentLab = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LblLab20Test1
@@ -517,7 +518,7 @@
             // BtnLab20Start
             // 
             this.BtnLab20Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab20Start.Location = new System.Drawing.Point(678, 548);
+            this.BtnLab20Start.Location = new System.Drawing.Point(583, 548);
             this.BtnLab20Start.Name = "BtnLab20Start";
             this.BtnLab20Start.Size = new System.Drawing.Size(197, 97);
             this.BtnLab20Start.TabIndex = 40;
@@ -536,10 +537,20 @@
             this.BtnLab20Stop.UseVisualStyleBackColor = true;
             this.BtnLab20Stop.Click += new System.EventHandler(this.BtnLab20Stop_Click);
             // 
+            // LblCurrentLab
+            // 
+            this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCurrentLab.Location = new System.Drawing.Point(11, 0);
+            this.LblCurrentLab.Name = "LblCurrentLab";
+            this.LblCurrentLab.Size = new System.Drawing.Size(137, 55);
+            this.LblCurrentLab.TabIndex = 42;
+            this.LblCurrentLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Lab20Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.LblCurrentLab);
             this.Controls.Add(this.BtnLab20Start);
             this.Controls.Add(this.Lbl2Lab20Test17);
             this.Controls.Add(this.LblLab20Test17);
@@ -633,5 +644,6 @@
         private System.Windows.Forms.Button BtnLab20Start;
         private System.Windows.Forms.Button BtnLab20Stop;
         private System.Windows.Forms.Timer TimerLab20;
+        private System.Windows.Forms.Label LblCurrentLab;
     }
 }

@@ -45,8 +45,8 @@ namespace ImpetusLabs.LabsScreen
 
 
 
-            //  string currentlab = "Lab #19";
-            // LblCurrentLab.Text = currentlab;
+            string currentlab = "Lab #20";
+            LblCurrentLab.Text = currentlab;
 
         }
 

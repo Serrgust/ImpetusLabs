@@ -163,7 +163,7 @@
             this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCurrentLab.Location = new System.Drawing.Point(57, 30);
             this.LblCurrentLab.Name = "LblCurrentLab";
-            this.LblCurrentLab.Size = new System.Drawing.Size(90, 55);
+            this.LblCurrentLab.Size = new System.Drawing.Size(139, 55);
             this.LblCurrentLab.TabIndex = 10;
             this.LblCurrentLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

@@ -26,6 +26,8 @@ namespace ImpetusLabs.LabsScreen
             Lbl2Lab19[2] = Lbl2Lab19Test3;
             Lbl2Lab19[3] = Lbl2Lab19Test4;
 
+            string currentlab = "Lab #19";
+            LblCurrentLab.Text = currentlab;
         }
 
         private void RefreshLabs()
