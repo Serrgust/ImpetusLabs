@@ -43,7 +43,7 @@
             // 
             this.Lbl2Lab02Test1.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab02Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab02Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab02Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab02Test1.Location = new System.Drawing.Point(604, 183);
             this.Lbl2Lab02Test1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl2Lab02Test1.Name = "Lbl2Lab02Test1";
@@ -66,7 +66,7 @@
             // 
             this.Lbl2Lab02Test2.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab02Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab02Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl2Lab02Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab02Test2.Location = new System.Drawing.Point(604, 283);
             this.Lbl2Lab02Test2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl2Lab02Test2.Name = "Lbl2Lab02Test2";
@@ -87,8 +87,9 @@
             // 
             // BtnLab02Start
             // 
-            this.BtnLab02Start.Location = new System.Drawing.Point(603, 473);
-            this.BtnLab02Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnLab02Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab02Start.Location = new System.Drawing.Point(601, 473);
+            this.BtnLab02Start.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLab02Start.Name = "BtnLab02Start";
             this.BtnLab02Start.Size = new System.Drawing.Size(197, 97);
             this.BtnLab02Start.TabIndex = 42;
@@ -98,8 +99,9 @@
             // 
             // BtnLab02Stop
             // 
+            this.BtnLab02Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLab02Stop.Location = new System.Drawing.Point(601, 473);
-            this.BtnLab02Stop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnLab02Stop.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLab02Stop.Name = "BtnLab02Stop";
             this.BtnLab02Stop.Size = new System.Drawing.Size(197, 97);
             this.BtnLab02Stop.TabIndex = 43;
@@ -132,7 +134,7 @@
             this.Controls.Add(this.Lbl2Lab02Test2);
             this.Controls.Add(this.LblLab02Test1);
             this.Controls.Add(this.Lbl2Lab02Test1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Lab02Screen";
             this.Size = new System.Drawing.Size(1485, 740);
             this.ResumeLayout(false);

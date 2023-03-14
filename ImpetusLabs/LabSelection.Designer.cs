@@ -262,6 +262,7 @@
             this.BtnLab15Screen.TabIndex = 14;
             this.BtnLab15Screen.Text = "Lab 15";
             this.BtnLab15Screen.UseVisualStyleBackColor = true;
+            this.BtnLab15Screen.Click += new System.EventHandler(this.BtnLab15Screen_Click);
             // 
             // BtnLab16Screen
             // 
@@ -273,6 +274,7 @@
             this.BtnLab16Screen.TabIndex = 15;
             this.BtnLab16Screen.Text = "Lab 16";
             this.BtnLab16Screen.UseVisualStyleBackColor = true;
+            this.BtnLab16Screen.Click += new System.EventHandler(this.BtnLab16Screen_Click);
             // 
             // BtnLab17Screen
             // 
@@ -284,6 +286,7 @@
             this.BtnLab17Screen.TabIndex = 16;
             this.BtnLab17Screen.Text = "Lab 17";
             this.BtnLab17Screen.UseVisualStyleBackColor = true;
+            this.BtnLab17Screen.Click += new System.EventHandler(this.BtnLab17Screen_Click);
             // 
             // BtnLab18Screen
             // 
@@ -295,6 +298,7 @@
             this.BtnLab18Screen.TabIndex = 17;
             this.BtnLab18Screen.Text = "Lab 18";
             this.BtnLab18Screen.UseVisualStyleBackColor = true;
+            this.BtnLab18Screen.Click += new System.EventHandler(this.BtnLab18Screen_Click);
             // 
             // BtnLab19Screen
             // 
@@ -306,6 +310,7 @@
             this.BtnLab19Screen.TabIndex = 18;
             this.BtnLab19Screen.Text = "Lab 19";
             this.BtnLab19Screen.UseVisualStyleBackColor = true;
+            this.BtnLab19Screen.Click += new System.EventHandler(this.BtnLab19Screen_Click);
             // 
             // BtnLab20Screen
             // 
@@ -317,6 +322,7 @@
             this.BtnLab20Screen.TabIndex = 19;
             this.BtnLab20Screen.Text = "Lab 20";
             this.BtnLab20Screen.UseVisualStyleBackColor = true;
+            this.BtnLab20Screen.Click += new System.EventHandler(this.BtnLab20Screen_Click);
             // 
             // LabSelectPanel
             // 

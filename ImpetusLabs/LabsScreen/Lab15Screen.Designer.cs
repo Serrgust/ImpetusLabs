@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.Lbl2Lab15Test1 = new System.Windows.Forms.Label();
             this.Lbl2Lab15Test3 = new System.Windows.Forms.Label();
@@ -38,6 +39,9 @@
             this.LblLab15Test4 = new System.Windows.Forms.Label();
             this.BtnLab15Start = new System.Windows.Forms.Button();
             this.BtnLab15Stop = new System.Windows.Forms.Button();
+            this.LblCurrentLab = new System.Windows.Forms.Label();
+            this.TimerLab15 = new System.Windows.Forms.Timer(this.components);
+            this.LblCurrent = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -131,28 +135,54 @@
             // BtnLab15Start
             // 
             this.BtnLab15Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab15Start.Location = new System.Drawing.Point(557, 486);
+            this.BtnLab15Start.Location = new System.Drawing.Point(309, 468);
             this.BtnLab15Start.Name = "BtnLab15Start";
             this.BtnLab15Start.Size = new System.Drawing.Size(197, 97);
             this.BtnLab15Start.TabIndex = 8;
             this.BtnLab15Start.Text = "START SIM";
             this.BtnLab15Start.UseVisualStyleBackColor = true;
+            this.BtnLab15Start.Click += new System.EventHandler(this.BtnLab15Start_Click);
             // 
             // BtnLab15Stop
             // 
             this.BtnLab15Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab15Stop.Location = new System.Drawing.Point(933, 415);
+            this.BtnLab15Stop.Location = new System.Drawing.Point(309, 468);
             this.BtnLab15Stop.Name = "BtnLab15Stop";
             this.BtnLab15Stop.Size = new System.Drawing.Size(197, 97);
             this.BtnLab15Stop.TabIndex = 9;
             this.BtnLab15Stop.Text = "STOP SIM";
             this.BtnLab15Stop.UseVisualStyleBackColor = true;
+            this.BtnLab15Stop.Click += new System.EventHandler(this.BtnLab15Stop_Click);
+            // 
+            // LblCurrentLab
+            // 
+            this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCurrentLab.Location = new System.Drawing.Point(30, 33);
+            this.LblCurrentLab.Name = "LblCurrentLab";
+            this.LblCurrentLab.Size = new System.Drawing.Size(90, 29);
+            this.LblCurrentLab.TabIndex = 10;
+            this.LblCurrentLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TimerLab15
+            // 
+            this.TimerLab15.Interval = 500;
+            this.TimerLab15.Tick += new System.EventHandler(this.TimerLab15_Tick);
+            // 
+            // LblCurrent
+            // 
+            this.LblCurrent.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCurrent.Location = new System.Drawing.Point(30, 24);
+            this.LblCurrent.Name = "LblCurrent";
+            this.LblCurrent.Size = new System.Drawing.Size(105, 29);
+            this.LblCurrent.TabIndex = 11;
+            this.LblCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lab15Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.BtnLab15Stop);
+            this.Controls.Add(this.LblCurrent);
+            this.Controls.Add(this.LblCurrentLab);
             this.Controls.Add(this.BtnLab15Start);
             this.Controls.Add(this.Lbl2Lab15Test4);
             this.Controls.Add(this.LblLab15Test4);
@@ -162,6 +192,7 @@
             this.Controls.Add(this.LblLab15Test3);
             this.Controls.Add(this.Lbl2Lab15Test1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnLab15Stop);
             this.Name = "Lab15Screen";
             this.Size = new System.Drawing.Size(1492, 740);
             this.ResumeLayout(false);
@@ -180,5 +211,8 @@
         private System.Windows.Forms.Label LblLab15Test4;
         private System.Windows.Forms.Button BtnLab15Start;
         private System.Windows.Forms.Button BtnLab15Stop;
+        private System.Windows.Forms.Label LblCurrentLab;
+        private System.Windows.Forms.Timer TimerLab15;
+        private System.Windows.Forms.Label LblCurrent;
     }
 }

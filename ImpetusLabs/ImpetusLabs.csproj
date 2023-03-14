@@ -208,6 +208,36 @@
     <Compile Include="LabsScreen\Lab15Screen.Designer.cs">
       <DependentUpon>Lab15Screen.cs</DependentUpon>
     </Compile>
+    <Compile Include="LabsScreen\Lab16Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab16Screen.Designer.cs">
+      <DependentUpon>Lab16Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab17Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab17Screen.Designer.cs">
+      <DependentUpon>Lab17Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab18Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab18Screen.Designer.cs">
+      <DependentUpon>Lab18Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab19Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab19Screen.Designer.cs">
+      <DependentUpon>Lab19Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabsScreen\Lab20Screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabsScreen\Lab20Screen.Designer.cs">
+      <DependentUpon>Lab20Screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +305,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LabsScreen\Lab15Screen.resx">
       <DependentUpon>Lab15Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab16Screen.resx">
+      <DependentUpon>Lab16Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab17Screen.resx">
+      <DependentUpon>Lab17Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab18Screen.resx">
+      <DependentUpon>Lab18Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab19Screen.resx">
+      <DependentUpon>Lab19Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabsScreen\Lab20Screen.resx">
+      <DependentUpon>Lab20Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>

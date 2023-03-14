@@ -100,5 +100,35 @@ namespace ImpetusLabs.LabsScreen
         {
             GoToLab(new Lab14Screen());
         }
+
+        private void BtnLab15Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab15Screen());
+        }
+
+        private void BtnLab16Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab16Screen());
+        }
+
+        private void BtnLab17Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab17Screen());
+        }
+
+        private void BtnLab18Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab18Screen());
+        }
+
+        private void BtnLab19Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab19Screen());
+        }
+
+        private void BtnLab20Screen_Click(object sender, EventArgs e)
+        {
+            GoToLab(new Lab20Screen());
+        }
     }
 }

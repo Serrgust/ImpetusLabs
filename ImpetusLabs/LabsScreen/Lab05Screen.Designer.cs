@@ -149,7 +149,7 @@ namespace ImpetusLabs.LabsScreen
             // BtnLab05Start
             // 
             this.BtnLab05Start.Location = new System.Drawing.Point(244, 534);
-            this.BtnLab05Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnLab05Start.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLab05Start.Name = "BtnLab05Start";
             this.BtnLab05Start.Size = new System.Drawing.Size(197, 97);
             this.BtnLab05Start.TabIndex = 8;
@@ -160,7 +160,7 @@ namespace ImpetusLabs.LabsScreen
             // BtnLab05Stop
             // 
             this.BtnLab05Stop.Location = new System.Drawing.Point(244, 534);
-            this.BtnLab05Stop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnLab05Stop.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLab05Stop.Name = "BtnLab05Stop";
             this.BtnLab05Stop.Size = new System.Drawing.Size(197, 97);
             this.BtnLab05Stop.TabIndex = 9;
@@ -181,14 +181,12 @@ namespace ImpetusLabs.LabsScreen
             // 
             // OutCtrLab05
             // 
-            this.OutCtrLab05.AutoSize = true;
             this.OutCtrLab05.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OutCtrLab05.Location = new System.Drawing.Point(757, 347);
             this.OutCtrLab05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.OutCtrLab05.Name = "OutCtrLab05";
-            this.OutCtrLab05.Size = new System.Drawing.Size(86, 31);
+            this.OutCtrLab05.Size = new System.Drawing.Size(118, 31);
             this.OutCtrLab05.TabIndex = 11;
-            this.OutCtrLab05.Text = "label2";
             // 
             // TimerLab05
             // 
@@ -222,7 +220,7 @@ namespace ImpetusLabs.LabsScreen
             this.Controls.Add(this.LblLab05Test3);
             this.Controls.Add(this.LblLab05Test2);
             this.Controls.Add(this.LblLab05Test1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Lab05Screen";
             this.Size = new System.Drawing.Size(1485, 740);
             this.ResumeLayout(false);

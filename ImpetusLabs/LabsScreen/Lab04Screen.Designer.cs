@@ -121,8 +121,9 @@ namespace ImpetusLabs.LabsScreen
             // 
             // BtnLab04Start
             // 
-            this.BtnLab04Start.Location = new System.Drawing.Point(603, 550);
-            this.BtnLab04Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnLab04Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab04Start.Location = new System.Drawing.Point(663, 550);
+            this.BtnLab04Start.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLab04Start.Name = "BtnLab04Start";
             this.BtnLab04Start.Size = new System.Drawing.Size(197, 97);
             this.BtnLab04Start.TabIndex = 6;
@@ -132,8 +133,9 @@ namespace ImpetusLabs.LabsScreen
             // 
             // BtnLab04Stop
             // 
+            this.BtnLab04Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLab04Stop.Location = new System.Drawing.Point(601, 550);
-            this.BtnLab04Stop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnLab04Stop.Margin = new System.Windows.Forms.Padding(4);
             this.BtnLab04Stop.Name = "BtnLab04Stop";
             this.BtnLab04Stop.Size = new System.Drawing.Size(197, 97);
             this.BtnLab04Stop.TabIndex = 7;
@@ -268,7 +270,7 @@ namespace ImpetusLabs.LabsScreen
             this.Controls.Add(this.LblLab04Test2);
             this.Controls.Add(this.Lbl2Lab04Test1);
             this.Controls.Add(this.LblLab04Test1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Lab04Screen";
             this.Size = new System.Drawing.Size(1485, 740);
             this.ResumeLayout(false);
