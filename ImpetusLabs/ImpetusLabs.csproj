@@ -118,34 +118,40 @@
     <Compile Include="LabSelection.Designer.cs">
       <DependentUpon>LabSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab02Screen.cs">
+    <Compile Include="LabSelection1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabSelection1.Designer.cs">
+      <DependentUpon>LabSelection1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLC LabsScreen\Lab02Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab02Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab02Screen.Designer.cs">
       <DependentUpon>Lab02Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab03Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab03Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab03Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab03Screen.Designer.cs">
       <DependentUpon>Lab03Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab04Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab04Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab04Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab04Screen.Designer.cs">
       <DependentUpon>Lab04Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab05Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab05Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab05Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab05Screen.Designer.cs">
       <DependentUpon>Lab05Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab06Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab06Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab06Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab06Screen.Designer.cs">
       <DependentUpon>Lab06Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
@@ -154,88 +160,88 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab07Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab07Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab07Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab07Screen.Designer.cs">
       <DependentUpon>Lab07Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab08Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab08Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab08Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab08Screen.Designer.cs">
       <DependentUpon>Lab08Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab09Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab09Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab09Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab09Screen.Designer.cs">
       <DependentUpon>Lab09Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab10Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab10Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab10Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab10Screen.Designer.cs">
       <DependentUpon>Lab10Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab11Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab11Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab11Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab11Screen.Designer.cs">
       <DependentUpon>Lab11Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab12Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab12Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab12Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab12Screen.Designer.cs">
       <DependentUpon>Lab12Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab13Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab13Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab13Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab13Screen.Designer.cs">
       <DependentUpon>Lab13Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab14Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab14Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab14Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab14Screen.Designer.cs">
       <DependentUpon>Lab14Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab15Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab15Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab15Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab15Screen.Designer.cs">
       <DependentUpon>Lab15Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab16Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab16Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab16Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab16Screen.Designer.cs">
       <DependentUpon>Lab16Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab17Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab17Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab17Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab17Screen.Designer.cs">
       <DependentUpon>Lab17Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab18Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab18Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab18Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab18Screen.Designer.cs">
       <DependentUpon>Lab18Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab19Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab19Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab19Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab19Screen.Designer.cs">
       <DependentUpon>Lab19Screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabsScreen\Lab20Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab20Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab20Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab20Screen.Designer.cs">
       <DependentUpon>Lab20Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
@@ -246,10 +252,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LabsScreen\Lab01Screen.cs">
+    <Compile Include="PLC LabsScreen\Lab01Screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabsScreen\Lab01Screen.Designer.cs">
+    <Compile Include="PLC LabsScreen\Lab01Screen.Designer.cs">
       <DependentUpon>Lab01Screen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -261,64 +267,67 @@
     <EmbeddedResource Include="LabSelection.resx">
       <DependentUpon>LabSelection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab02Screen.resx">
+    <EmbeddedResource Include="LabSelection1.resx">
+      <DependentUpon>LabSelection1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLC LabsScreen\Lab02Screen.resx">
       <DependentUpon>Lab02Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab03Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab03Screen.resx">
       <DependentUpon>Lab03Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab04Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab04Screen.resx">
       <DependentUpon>Lab04Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab05Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab05Screen.resx">
       <DependentUpon>Lab05Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab06Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab06Screen.resx">
       <DependentUpon>Lab06Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab07Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab07Screen.resx">
       <DependentUpon>Lab07Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab08Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab08Screen.resx">
       <DependentUpon>Lab08Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab09Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab09Screen.resx">
       <DependentUpon>Lab09Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab10Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab10Screen.resx">
       <DependentUpon>Lab10Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab11Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab11Screen.resx">
       <DependentUpon>Lab11Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab12Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab12Screen.resx">
       <DependentUpon>Lab12Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab13Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab13Screen.resx">
       <DependentUpon>Lab13Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab14Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab14Screen.resx">
       <DependentUpon>Lab14Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab15Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab15Screen.resx">
       <DependentUpon>Lab15Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab16Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab16Screen.resx">
       <DependentUpon>Lab16Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab17Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab17Screen.resx">
       <DependentUpon>Lab17Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab18Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab18Screen.resx">
       <DependentUpon>Lab18Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab19Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab19Screen.resx">
       <DependentUpon>Lab19Screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab20Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab20Screen.resx">
       <DependentUpon>Lab20Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
@@ -329,7 +338,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabsScreen\Lab01Screen.resx">
+    <EmbeddedResource Include="PLC LabsScreen\Lab01Screen.resx">
       <DependentUpon>Lab01Screen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

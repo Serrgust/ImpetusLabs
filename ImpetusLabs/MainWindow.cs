@@ -40,7 +40,7 @@ namespace ImpetusLabs
 
         private void BtnLabSelection_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new LabSelection());
+            LoadForm(new LabSelection1());
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace ImpetusLabs
 
         private void materialBtnLabSelection_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new LabSelection());
+            LoadUserControl(new LabSelection1());
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)

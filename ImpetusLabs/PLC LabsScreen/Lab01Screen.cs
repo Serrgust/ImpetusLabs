@@ -34,7 +34,7 @@ namespace ImpetusLabs
             string currentlab = "Lab #1";
 
             LblCurrentLab.Text = currentlab;
-
+            //this.BackColor = Color.Gray;
         }
 
         private void TimerLab01_Tick(object sender, EventArgs e)
