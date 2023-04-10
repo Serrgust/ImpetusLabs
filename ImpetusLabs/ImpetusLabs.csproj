@@ -369,6 +369,13 @@
   <ItemGroup>
     <None Include="Resources\Motor.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\SymbolFactoryGreatValue\Motor.jpg" />
+    <Content Include="Forms\SymbolFactoryGreatValue\pushbutton %28Green Up off%29.jpg" />
+    <Content Include="Forms\SymbolFactoryGreatValue\pushbutton %28Green Up On%29.jpg" />
+    <Content Include="Forms\SymbolFactoryGreatValue\pushbutton %28Red Up Off%29.jpg" />
+    <Content Include="Forms\SymbolFactoryGreatValue\pushbutton %28Red Up On%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -48,12 +48,6 @@ namespace ImpetusLabs
             {
                 Lab01Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[" + i + "]");
             }
-/*            Lab01Tests[0] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[0]");
-            Lab01Tests[1] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[1]");
-            Lab01Tests[2] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[2]");
-            Lab01Tests[3] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[3]");
-            Lab01Tests[4] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[4]");
-            Lab01Tests[5] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[5]");*/
 
             for (int i = 0; i < Lab01Tests.Length; i++)
             {
@@ -71,6 +65,34 @@ namespace ImpetusLabs
                 {
                     Lbl2Lab01[i].BackColor = Color.Red;
                     Lbl2Lab01[i].Text = "FAILED";
+
+                    OpcValue nodeValueMotor = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.MOTOR1");
+                    OpcValue nodeValueStart = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.START1");
+
+                    bool isMotorValueTrue = (bool)nodeValueMotor.Value;
+                    bool isStartValueTrue = (bool)nodeValueStart.Value;
+
+                    //if (isMotorValueTrue)
+                    //{
+                    //    PicMotor1.Image = Image.FromFile(@"C:\Users\lopez\source\repos\Impetus lab images implementation\ImpetusLabs\Forms\SymbolFactoryGreatValue\Motor.jpg");
+                    //}
+                    //else
+                    //{
+                    //    PicMotor2.Image = Image.FromFile(@"C:\Users\lopez\source\repos\Impetus lab images implementation\ImpetusLabs\Forms\SymbolFactoryGreatValue\Motor.jpg");
+                    //}
+
+                    if (isStartValueTrue)
+                    { 
+                        PicStart1.Image = Image.FromFile(@"C:\Users\lopez\source\repos\Impetus lab images implementation\ImpetusLabs\Forms\SymbolFactoryGreatValue\pushbutton (Green Up off).jpg");
+                        //LblStart1.BackColor = Color.LightGreen;
+                    }
+                    else
+                    {
+                        PicStart1.Image = Image.FromFile(@"C:\Users\lopez\source\repos\Impetus lab images implementation\ImpetusLabs\Forms\SymbolFactoryGreatValue\pushbutton (Green Up On).jpg");
+                        //LblStart1.BackColor = Color.Red;
+                    }
+
+                
                 }
             }
         }
@@ -104,9 +126,11 @@ namespace ImpetusLabs
             client.Disconnect();
         }
 
-       
-            
+        private void panelInputOuput_Paint(object sender, PaintEventArgs e)
+        {
+
         }
+    }
     }
 
 
