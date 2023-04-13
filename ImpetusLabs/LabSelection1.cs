@@ -33,7 +33,7 @@ namespace ImpetusLabs
 
         private void BtnLab01Screen_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fuck Pierlusi");
+            
             GoToLab(new Lab01Screen());
         }
 

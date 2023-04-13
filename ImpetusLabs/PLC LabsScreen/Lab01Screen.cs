@@ -10,7 +10,9 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 namespace ImpetusLabs
@@ -44,11 +46,59 @@ namespace ImpetusLabs
         {
             RefreshLabs();
         }
+        private void UpdateLabStatus()
+        {
+            bool allPassed = true;
+            bool allFailed = true;
+
+            for (int i = 0; i < Lab01Tests.Length; i++)
+            {
+                if (Lab01Tests[i] != null)
+                {
+                    string testValue = Lab01Tests[i].ToString();
+
+                    if (testValue.Equals("1"))
+                    {
+                        allFailed = false;
+                    }
+                    else if (testValue.Equals("-1"))
+                    {
+                        allPassed = false;
+                    }
+                    else
+                    {
+                        allPassed = false;
+                        allFailed = false;
+                        break;
+                    }
+                }
+                else
+                {
+                    allPassed = false;
+                    allFailed = false;
+                    break;
+                }
+            }
+
+            if (allPassed)
+            {
+                lblLabStatus.Text = "Lab Passed";
+                lblLabStatus.BackColor = Color.Green;
+                lblLabStatus.ForeColor = Color.White;
+            }
+            else if (allFailed)
+            {
+                lblLabStatus.Text = "Lab Failed";
+                lblLabStatus.BackColor = Color.Red;
+                lblLabStatus.ForeColor = Color.White;
+
+            }
+        }
 
         private void RefreshLabs()
 
         {
-
+            UpdateLabStatus();
 
             {
                 for (int i = 0; i < Lab01Nodes.Length; i++)
@@ -56,74 +106,96 @@ namespace ImpetusLabs
                     Lab01Nodes[i] = client.ReadNode(Lab01NodeIds[i]);
                 }
 
-             ////   if ((bool)Lab01Nodes[0].Value) // Motor 1
-             //   {
-             //       PicStart1.Image = imageList1.Images[1];
-             //   }
-             //   else
-             //   {
-             //       PicStart1.Image = imageList1.Images[0];
-             //   }
+                if ((bool)Lab01Nodes[0].Value) // Motor 1
+                {
+                    PicMotor1.Image = imageList1.Images[0];
+                    lblMotor1.ForeColor = Color.White;
+                    lblMotor1.BackColor = Color.Green;
+                    lblMotor1.Text = "Motor1 ON";
 
-             //   if ((bool)Lab01Nodes[1].Value) // Motor 2
-             //   {
-             //       PicMotor2.Image = imageList1.Images[1];
-             //   }
-             //   else
-             //   {
-             //       PicMotor2.Image = imageList1.Images[0];
-             //   }
+                }
+
+                else
+                {
+                    PicStart1.Image = imageList1.Images[1];
+                    lblMotor1.ForeColor = Color.White;
+                    lblMotor1.BackColor = Color.Red;
+                    lblMotor1.Text = "Motor1 OFF";
+                }
+
+                if ((bool)Lab01Nodes[1].Value) // Motor 2
+                {
+                    PicMotor2.Image = imageList1.Images[1];
+                    lblMotor2.ForeColor = Color.White;
+                    lblMotor2.BackColor = Color.Green;
+                    lblMotor2.Text = "Motor2 ON";
+                }
+                else
+                {
+                    PicMotor2.Image = imageList1.Images[0];
+                    lblMotor2.ForeColor = Color.White;
+                    lblMotor2.BackColor = Color.Red;
+                    lblMotor2.Text = "Motor2 OFF";
+                }
 
                 if ((bool)Lab01Nodes[2].Value) // Start 1
                 {
-                    PicStart1.Image = imageList1.Images[1];
-                    lblStart1.ForeColor = Color.Green;
+                    PicStart1.Image = imageList1.Images[3];
+                    lblStart1.ForeColor = Color.White;
+                    lblStart1.BackColor = Color.Green;
                     lblStart1.Text = "Start1 ON";
                 }
                 else
                 {
-                    PicStart1.Image = imageList1.Images[0];
-                    lblStart1.ForeColor = Color.Red;
+                    PicStart1.Image = imageList1.Images[2];
+                    lblStart1.ForeColor = Color.White;
+                    lblStart1.BackColor = Color.Red;
                     lblStart1.Text = "Start1 OFF";
                 }
 
                 if ((bool)Lab01Nodes[3].Value) // Start 2
                 {
                     PicStart2.Image = imageList1.Images[5];
-                    lblStart2.ForeColor = Color.Green;
+                    lblStart2.ForeColor = Color.White;
+                    lblStart2.BackColor = Color.Green;
                     lblStart2.Text = "Start2 ON";
                 }
                 else
                 {
                     PicStart2.Image = imageList1.Images[4];
-                    lblStart2.ForeColor = Color.Red;
+                    lblStart2.ForeColor = Color.White;
+                    lblStart2.BackColor = Color.Red;
                     lblStart2.Text = "Start2 OFF";
                 }
 
                 if ((bool)Lab01Nodes[4].Value) // Stop 1
                 {
-                    PicStop1.Image = imageList1.Images[3];
-                    lblStop1.ForeColor = Color.Green;
+                    PicStop1.Image = imageList1.Images[6];
+                    lblStop1.ForeColor = Color.White;
+                    lblStop1.BackColor = Color.Green;
                     lblStop1.Text = "Stop1 ON";
                 }
                 else
                 {
-                    PicStop1.Image = imageList1.Images[2];
-                    lblStop1.ForeColor = Color.Red;
+                    PicStop1.Image = imageList1.Images[7];
+                    lblStop1.ForeColor = Color.White;
+                    lblStop1.BackColor = Color.Red;
                     lblStop1.Text = "Stop1 OFF";
                 }
 
                 if ((bool)Lab01Nodes[5].Value) // Stop 2
                 {
-                    PicStop2.Image = imageList1.Images[7];
-                    lblStop1.ForeColor = Color.Green;
-                    lblStop1.Text = "Stop2 ON";
+                    PicStop2.Image = imageList1.Images[8];
+                    lblStop2.ForeColor = Color.White;
+                    lblStop2.BackColor = Color.Green;
+                    lblStop2.Text = "Stop2 ON";
                 }
                 else
                 {
-                    PicStop2.Image = imageList1.Images[6];
-                    lblStop1.ForeColor = Color.Red;
-                    lblStop1.Text = "Stop2 OFF";
+                    PicStop2.Image = imageList1.Images[9];
+                    lblStop2.ForeColor = Color.White;
+                    lblStop2.BackColor = Color.Red;
+                    lblStop2.Text = "Stop2 OFF";
                 }
 
                 for (int i = 0; i < Lab01Tests.Length; i++)
@@ -142,18 +214,51 @@ namespace ImpetusLabs
                     {
                         Lbl2Lab01[i].BackColor = Color.LightGreen;
                         Lbl2Lab01[i].Text = "PASSED";
+
                     }
                     if (Lab01Tests[i].ToString().Equals("-1"))
                     {
                         Lbl2Lab01[i].BackColor = Color.Red;
                         Lbl2Lab01[i].Text = "FAILED";
+
+                
+
+                        //bool allTestsPassed = true;
+
+                        //for (int j = 0; j < Lab01Tests.Length; j++)
+                        //{
+                        //    if (!Lab01Tests[j].ToString().Equals("1"))
+                        //    {
+                        //        allTestsPassed = false;
+                        //        break;
+                        //    }
+                        //}
+
+                        //if (allTestsPassed)
+                        //{
+                        //    lblLabStatus.Text = "Lab Passed";
+                        //    lblLabStatus.BackColor = Color.Green;
+                        //    lblLabStatus.ForeColor = Color.White;
+                        //}
+                        //else
+                        //{
+                        //    lblLabStatus.Text = "Lab Failed";
+                        //    lblLabStatus.BackColor = Color.Red;
+                        //    lblLabStatus.ForeColor = Color.White;
+                        //    lblLabStatus.Refresh();
+                        }
+
                     }
                 }
             }
-        }
+        
+
+
+
+
 
         private void BtnLab01Start_Click(object sender, EventArgs e)
-            {
+        {
             var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
             client.Connect();
             try
@@ -163,7 +268,7 @@ namespace ImpetusLabs
             }
             catch (Opc.UaFx.OpcException)
             {
-                MessageBox.Show("Connection to OPC UA Server failed");
+                //MessageBox.Show("Connection to OPC UA Server failed");
             }
             BtnLab01Start.Visible = false;
             BtnLab01Stop.Visible = true;
@@ -179,13 +284,31 @@ namespace ImpetusLabs
             TimerLab01.Enabled = false;
             RefreshLabs();
             client.Disconnect();
+            lblLabStatus.Text = "";
+            lblLabStatus.BackColor = Color.Gray;
         }
 
         private void panelInputOuput_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LabSelection1 frm = new LabSelection1();
+            this.ParentForm.Close();
+            frm.Show();
+
+        }
+
+        private void BtnNextLab_Click(object sender, EventArgs e)
+        {
+
+            Lab02Screen lab02Screen = new Lab02Screen();
+            lab02Screen.Show();
+            this.Hide();
+        }
     }
-    }
+}
 
 
