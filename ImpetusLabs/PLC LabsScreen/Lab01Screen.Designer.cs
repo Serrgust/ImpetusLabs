@@ -31,18 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lab01Screen));
             this.Lbl2Lab01Test3 = new System.Windows.Forms.Label();
-            this.Lbl2Lab01Test2 = new System.Windows.Forms.Label();
             this.Lbl2Lab01Test1 = new System.Windows.Forms.Label();
-            this.Lbl2Lab01Test6 = new System.Windows.Forms.Label();
             this.BtnLab01Start = new System.Windows.Forms.Button();
             this.LblLab01Test1 = new System.Windows.Forms.Label();
-            this.LblLab01Test6 = new System.Windows.Forms.Label();
-            this.LblLab01Test2 = new System.Windows.Forms.Label();
             this.Lbl2Lab01Test5 = new System.Windows.Forms.Label();
             this.LblLab01Test3 = new System.Windows.Forms.Label();
             this.LblLab01Test5 = new System.Windows.Forms.Label();
-            this.Lbl2Lab01Test4 = new System.Windows.Forms.Label();
-            this.LblLab01Test4 = new System.Windows.Forms.Label();
             this.BtnLab01Stop = new System.Windows.Forms.Button();
             this.TimerLab01 = new System.Windows.Forms.Timer(this.components);
             this.LblCurrentLab = new System.Windows.Forms.Label();
@@ -66,6 +60,14 @@
             this.Button1 = new System.Windows.Forms.Button();
             this.lblLabStatus = new System.Windows.Forms.Label();
             this.BtnNextLab = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Lbl2Lab01Test4 = new System.Windows.Forms.Label();
+            this.LblLab01Test2 = new System.Windows.Forms.Label();
+            this.LblLab01Test4 = new System.Windows.Forms.Label();
+            this.Lbl2Lab01Test2 = new System.Windows.Forms.Label();
+            this.Lbl2Lab01Test6 = new System.Windows.Forms.Label();
+            this.LblLab01Test6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelInputOuput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).BeginInit();
@@ -74,6 +76,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Lbl2Lab01Test3
@@ -81,53 +84,29 @@
             this.Lbl2Lab01Test3.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab01Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Lbl2Lab01Test3.Location = new System.Drawing.Point(178, 134);
+            this.Lbl2Lab01Test3.Location = new System.Drawing.Point(146, 182);
             this.Lbl2Lab01Test3.Name = "Lbl2Lab01Test3";
             this.Lbl2Lab01Test3.Size = new System.Drawing.Size(146, 45);
             this.Lbl2Lab01Test3.TabIndex = 32;
             this.Lbl2Lab01Test3.Text = "NOT RUN";
             this.Lbl2Lab01Test3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Lbl2Lab01Test2
-            // 
-            this.Lbl2Lab01Test2.BackColor = System.Drawing.Color.Silver;
-            this.Lbl2Lab01Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Lbl2Lab01Test2.Location = new System.Drawing.Point(562, 53);
-            this.Lbl2Lab01Test2.Name = "Lbl2Lab01Test2";
-            this.Lbl2Lab01Test2.Size = new System.Drawing.Size(146, 45);
-            this.Lbl2Lab01Test2.TabIndex = 30;
-            this.Lbl2Lab01Test2.Text = "NOT RUN";
-            this.Lbl2Lab01Test2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Lbl2Lab01Test1
             // 
             this.Lbl2Lab01Test1.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab01Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Lbl2Lab01Test1.Location = new System.Drawing.Point(180, 55);
+            this.Lbl2Lab01Test1.Location = new System.Drawing.Point(146, 124);
             this.Lbl2Lab01Test1.Name = "Lbl2Lab01Test1";
             this.Lbl2Lab01Test1.Size = new System.Drawing.Size(146, 45);
             this.Lbl2Lab01Test1.TabIndex = 28;
             this.Lbl2Lab01Test1.Text = "NOT RUN";
             this.Lbl2Lab01Test1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Lbl2Lab01Test6
-            // 
-            this.Lbl2Lab01Test6.BackColor = System.Drawing.Color.Silver;
-            this.Lbl2Lab01Test6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Lbl2Lab01Test6.Location = new System.Drawing.Point(562, 197);
-            this.Lbl2Lab01Test6.Name = "Lbl2Lab01Test6";
-            this.Lbl2Lab01Test6.Size = new System.Drawing.Size(146, 45);
-            this.Lbl2Lab01Test6.TabIndex = 38;
-            this.Lbl2Lab01Test6.Text = "NOT RUN";
-            this.Lbl2Lab01Test6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // BtnLab01Start
             // 
             this.BtnLab01Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab01Start.Location = new System.Drawing.Point(380, 460);
+            this.BtnLab01Start.Location = new System.Drawing.Point(380, 514);
             this.BtnLab01Start.Name = "BtnLab01Start";
             this.BtnLab01Start.Size = new System.Drawing.Size(138, 62);
             this.BtnLab01Start.TabIndex = 26;
@@ -138,39 +117,19 @@
             // LblLab01Test1
             // 
             this.LblLab01Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab01Test1.Location = new System.Drawing.Point(28, 55);
+            this.LblLab01Test1.Location = new System.Drawing.Point(-2, 124);
             this.LblLab01Test1.Name = "LblLab01Test1";
             this.LblLab01Test1.Size = new System.Drawing.Size(146, 45);
             this.LblLab01Test1.TabIndex = 27;
             this.LblLab01Test1.Text = "Test 1";
             this.LblLab01Test1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LblLab01Test6
-            // 
-            this.LblLab01Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab01Test6.Location = new System.Drawing.Point(410, 208);
-            this.LblLab01Test6.Name = "LblLab01Test6";
-            this.LblLab01Test6.Size = new System.Drawing.Size(146, 45);
-            this.LblLab01Test6.TabIndex = 37;
-            this.LblLab01Test6.Text = "Test 6";
-            this.LblLab01Test6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LblLab01Test2
-            // 
-            this.LblLab01Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab01Test2.Location = new System.Drawing.Point(401, 55);
-            this.LblLab01Test2.Name = "LblLab01Test2";
-            this.LblLab01Test2.Size = new System.Drawing.Size(146, 45);
-            this.LblLab01Test2.TabIndex = 29;
-            this.LblLab01Test2.Text = "Test 2";
-            this.LblLab01Test2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Lbl2Lab01Test5
             // 
             this.Lbl2Lab01Test5.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab01Test5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab01Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Lbl2Lab01Test5.Location = new System.Drawing.Point(180, 210);
+            this.Lbl2Lab01Test5.Location = new System.Drawing.Point(146, 245);
             this.Lbl2Lab01Test5.Name = "Lbl2Lab01Test5";
             this.Lbl2Lab01Test5.Size = new System.Drawing.Size(146, 45);
             this.Lbl2Lab01Test5.TabIndex = 36;
@@ -180,7 +139,7 @@
             // LblLab01Test3
             // 
             this.LblLab01Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab01Test3.Location = new System.Drawing.Point(26, 134);
+            this.LblLab01Test3.Location = new System.Drawing.Point(-6, 182);
             this.LblLab01Test3.Name = "LblLab01Test3";
             this.LblLab01Test3.Size = new System.Drawing.Size(146, 45);
             this.LblLab01Test3.TabIndex = 31;
@@ -190,39 +149,17 @@
             // LblLab01Test5
             // 
             this.LblLab01Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab01Test5.Location = new System.Drawing.Point(28, 208);
+            this.LblLab01Test5.Location = new System.Drawing.Point(-6, 245);
             this.LblLab01Test5.Name = "LblLab01Test5";
             this.LblLab01Test5.Size = new System.Drawing.Size(146, 45);
             this.LblLab01Test5.TabIndex = 35;
             this.LblLab01Test5.Text = "Test 5";
             this.LblLab01Test5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Lbl2Lab01Test4
-            // 
-            this.Lbl2Lab01Test4.BackColor = System.Drawing.Color.Silver;
-            this.Lbl2Lab01Test4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Lbl2Lab01Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Lbl2Lab01Test4.Location = new System.Drawing.Point(562, 124);
-            this.Lbl2Lab01Test4.Name = "Lbl2Lab01Test4";
-            this.Lbl2Lab01Test4.Size = new System.Drawing.Size(146, 45);
-            this.Lbl2Lab01Test4.TabIndex = 34;
-            this.Lbl2Lab01Test4.Text = "NOT RUN";
-            this.Lbl2Lab01Test4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LblLab01Test4
-            // 
-            this.LblLab01Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab01Test4.Location = new System.Drawing.Point(401, 134);
-            this.LblLab01Test4.Name = "LblLab01Test4";
-            this.LblLab01Test4.Size = new System.Drawing.Size(146, 45);
-            this.LblLab01Test4.TabIndex = 33;
-            this.LblLab01Test4.Text = "Test 4";
-            this.LblLab01Test4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // BtnLab01Stop
             // 
             this.BtnLab01Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab01Stop.Location = new System.Drawing.Point(380, 460);
+            this.BtnLab01Stop.Location = new System.Drawing.Point(380, 514);
             this.BtnLab01Stop.Name = "BtnLab01Stop";
             this.BtnLab01Stop.Size = new System.Drawing.Size(138, 62);
             this.BtnLab01Stop.TabIndex = 39;
@@ -237,8 +174,8 @@
             // 
             // LblCurrentLab
             // 
-            this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCurrentLab.Location = new System.Drawing.Point(3, 0);
+            this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCurrentLab.Location = new System.Drawing.Point(376, 48);
             this.LblCurrentLab.Name = "LblCurrentLab";
             this.LblCurrentLab.Size = new System.Drawing.Size(146, 45);
             this.LblCurrentLab.TabIndex = 40;
@@ -429,7 +366,7 @@
             // Button1
             // 
             this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button1.Location = new System.Drawing.Point(139, 462);
+            this.Button1.Location = new System.Drawing.Point(31, 518);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(138, 62);
             this.Button1.TabIndex = 43;
@@ -440,7 +377,7 @@
             // lblLabStatus
             // 
             this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabStatus.Location = new System.Drawing.Point(3, 583);
+            this.lblLabStatus.Location = new System.Drawing.Point(-2, 615);
             this.lblLabStatus.Name = "lblLabStatus";
             this.lblLabStatus.Size = new System.Drawing.Size(1167, 55);
             this.lblLabStatus.TabIndex = 53;
@@ -449,7 +386,7 @@
             // BtnNextLab
             // 
             this.BtnNextLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNextLab.Location = new System.Drawing.Point(620, 462);
+            this.BtnNextLab.Location = new System.Drawing.Point(662, 514);
             this.BtnNextLab.Name = "BtnNextLab";
             this.BtnNextLab.Size = new System.Drawing.Size(138, 62);
             this.BtnNextLab.TabIndex = 54;
@@ -457,11 +394,109 @@
             this.BtnNextLab.UseVisualStyleBackColor = true;
             this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.Lbl2Lab01Test5);
+            this.panel2.Controls.Add(this.LblLab01Test5);
+            this.panel2.Controls.Add(this.LblLab01Test3);
+            this.panel2.Controls.Add(this.LblLab01Test1);
+            this.panel2.Controls.Add(this.Lbl2Lab01Test3);
+            this.panel2.Controls.Add(this.Lbl2Lab01Test1);
+            this.panel2.Controls.Add(this.LblLab01Test6);
+            this.panel2.Controls.Add(this.Lbl2Lab01Test6);
+            this.panel2.Controls.Add(this.Lbl2Lab01Test2);
+            this.panel2.Controls.Add(this.LblLab01Test4);
+            this.panel2.Controls.Add(this.LblLab01Test2);
+            this.panel2.Controls.Add(this.Lbl2Lab01Test4);
+            this.panel2.Location = new System.Drawing.Point(3, 139);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(797, 329);
+            this.panel2.TabIndex = 55;
+            // 
+            // Lbl2Lab01Test4
+            // 
+            this.Lbl2Lab01Test4.BackColor = System.Drawing.Color.Silver;
+            this.Lbl2Lab01Test4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Lbl2Lab01Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.Lbl2Lab01Test4.Location = new System.Drawing.Point(592, 184);
+            this.Lbl2Lab01Test4.Name = "Lbl2Lab01Test4";
+            this.Lbl2Lab01Test4.Size = new System.Drawing.Size(146, 45);
+            this.Lbl2Lab01Test4.TabIndex = 34;
+            this.Lbl2Lab01Test4.Text = "NOT RUN";
+            this.Lbl2Lab01Test4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblLab01Test2
+            // 
+            this.LblLab01Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLab01Test2.Location = new System.Drawing.Point(440, 124);
+            this.LblLab01Test2.Name = "LblLab01Test2";
+            this.LblLab01Test2.Size = new System.Drawing.Size(146, 45);
+            this.LblLab01Test2.TabIndex = 29;
+            this.LblLab01Test2.Text = "Test 2";
+            this.LblLab01Test2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblLab01Test4
+            // 
+            this.LblLab01Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLab01Test4.Location = new System.Drawing.Point(440, 184);
+            this.LblLab01Test4.Name = "LblLab01Test4";
+            this.LblLab01Test4.Size = new System.Drawing.Size(146, 45);
+            this.LblLab01Test4.TabIndex = 33;
+            this.LblLab01Test4.Text = "Test 4";
+            this.LblLab01Test4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Lbl2Lab01Test2
+            // 
+            this.Lbl2Lab01Test2.BackColor = System.Drawing.Color.Silver;
+            this.Lbl2Lab01Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Lbl2Lab01Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.Lbl2Lab01Test2.Location = new System.Drawing.Point(592, 124);
+            this.Lbl2Lab01Test2.Name = "Lbl2Lab01Test2";
+            this.Lbl2Lab01Test2.Size = new System.Drawing.Size(146, 45);
+            this.Lbl2Lab01Test2.TabIndex = 30;
+            this.Lbl2Lab01Test2.Text = "NOT RUN";
+            this.Lbl2Lab01Test2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Lbl2Lab01Test6
+            // 
+            this.Lbl2Lab01Test6.BackColor = System.Drawing.Color.Silver;
+            this.Lbl2Lab01Test6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Lbl2Lab01Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.Lbl2Lab01Test6.Location = new System.Drawing.Point(592, 247);
+            this.Lbl2Lab01Test6.Name = "Lbl2Lab01Test6";
+            this.Lbl2Lab01Test6.Size = new System.Drawing.Size(146, 45);
+            this.Lbl2Lab01Test6.TabIndex = 38;
+            this.Lbl2Lab01Test6.Text = "NOT RUN";
+            this.Lbl2Lab01Test6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblLab01Test6
+            // 
+            this.LblLab01Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLab01Test6.Location = new System.Drawing.Point(440, 245);
+            this.LblLab01Test6.Name = "LblLab01Test6";
+            this.LblLab01Test6.Size = new System.Drawing.Size(146, 45);
+            this.LblLab01Test6.TabIndex = 37;
+            this.LblLab01Test6.Text = "Test 6";
+            this.LblLab01Test6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(266, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(223, 45);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "SIMULATION";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Lab01Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.BtnNextLab);
             this.Controls.Add(this.lblLabStatus);
             this.Controls.Add(this.BtnLab01Start);
@@ -469,21 +504,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelInputOuput);
             this.Controls.Add(this.LblCurrentLab);
-            this.Controls.Add(this.Lbl2Lab01Test3);
-            this.Controls.Add(this.Lbl2Lab01Test2);
-            this.Controls.Add(this.Lbl2Lab01Test1);
-            this.Controls.Add(this.Lbl2Lab01Test6);
-            this.Controls.Add(this.LblLab01Test1);
-            this.Controls.Add(this.LblLab01Test6);
-            this.Controls.Add(this.LblLab01Test2);
-            this.Controls.Add(this.Lbl2Lab01Test5);
-            this.Controls.Add(this.LblLab01Test3);
-            this.Controls.Add(this.LblLab01Test5);
-            this.Controls.Add(this.Lbl2Lab01Test4);
-            this.Controls.Add(this.LblLab01Test4);
             this.Controls.Add(this.BtnLab01Stop);
             this.Name = "Lab01Screen";
-            this.Size = new System.Drawing.Size(1165, 638);
+            this.Size = new System.Drawing.Size(1171, 670);
+            this.Load += new System.EventHandler(this.Lab01Screen_Load);
             this.panelInputOuput.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicStart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).EndInit();
@@ -492,6 +516,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -499,18 +524,12 @@
         #endregion
 
         private System.Windows.Forms.Label Lbl2Lab01Test3;
-        private System.Windows.Forms.Label Lbl2Lab01Test2;
         private System.Windows.Forms.Label Lbl2Lab01Test1;
-        private System.Windows.Forms.Label Lbl2Lab01Test6;
         private System.Windows.Forms.Button BtnLab01Start;
         private System.Windows.Forms.Label LblLab01Test1;
-        private System.Windows.Forms.Label LblLab01Test6;
-        private System.Windows.Forms.Label LblLab01Test2;
         private System.Windows.Forms.Label Lbl2Lab01Test5;
         private System.Windows.Forms.Label LblLab01Test3;
         private System.Windows.Forms.Label LblLab01Test5;
-        private System.Windows.Forms.Label Lbl2Lab01Test4;
-        private System.Windows.Forms.Label LblLab01Test4;
         private System.Windows.Forms.Button BtnLab01Stop;
         private System.Windows.Forms.Timer TimerLab01;
         private System.Windows.Forms.Label LblCurrentLab;
@@ -534,5 +553,13 @@
         private System.Windows.Forms.Button Button1;
         private System.Windows.Forms.Label lblLabStatus;
         private System.Windows.Forms.Button BtnNextLab;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label LblLab01Test6;
+        private System.Windows.Forms.Label Lbl2Lab01Test6;
+        private System.Windows.Forms.Label Lbl2Lab01Test2;
+        private System.Windows.Forms.Label LblLab01Test4;
+        private System.Windows.Forms.Label LblLab01Test2;
+        private System.Windows.Forms.Label Lbl2Lab01Test4;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -50,6 +50,7 @@ namespace ImpetusLabs
         {
             bool allPassed = true;
             bool allFailed = true;
+            bool anyfailed = false;
 
             for (int i = 0; i < Lab01Tests.Length; i++)
             {
@@ -64,6 +65,7 @@ namespace ImpetusLabs
                     else if (testValue.Equals("-1"))
                     {
                         allPassed = false;
+                        anyfailed = true;
                     }
                     else
                     {
@@ -91,9 +93,16 @@ namespace ImpetusLabs
                 lblLabStatus.Text = "Lab Failed";
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
+            }
+            else if (anyfailed)
+            {
+                lblLabStatus.Text = "Lab Failed";
+                lblLabStatus.BackColor = Color.Red;
+                lblLabStatus.ForeColor = Color.White;
+            }
 
             }
-        }
+        
 
         private void RefreshLabs()
 
@@ -307,6 +316,11 @@ namespace ImpetusLabs
             Lab02Screen lab02Screen = new Lab02Screen();
             lab02Screen.Show();
             this.Hide();
+        }
+
+        private void Lab01Screen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
