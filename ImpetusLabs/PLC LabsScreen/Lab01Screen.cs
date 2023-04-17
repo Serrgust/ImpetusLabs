@@ -230,41 +230,53 @@ namespace ImpetusLabs
                         Lbl2Lab01[i].BackColor = Color.Red;
                         Lbl2Lab01[i].Text = "FAILED";
 
-                
+                        bool[] componentStates = new bool[6];
+                        componentStates[0] = (bool)Lab01Nodes[0].Value; // Motor 1
+                        componentStates[1] = (bool)Lab01Nodes[1].Value; // Motor 2
+                        componentStates[2] = (bool)Lab01Nodes[2].Value; // Start 1
+                        componentStates[3] = (bool)Lab01Nodes[3].Value; // Start 2
+                        componentStates[4] = (bool)Lab01Nodes[4].Value; // Stop 1
+                        componentStates[5] = (bool)Lab01Nodes[5].Value; // Stop 2
 
-                        //bool allTestsPassed = true;
+                        switch (string.Join("", componentStates.Select(x => x ? "1" : "0")))
+                        {
+                            case "000000":
+                                lblLabMessage.Text = "";
+                                break;
+                            case "100000":
+                                System.Windows.MessageBox.Show("Motor 1 is ON");
+                                lblLabMessage.ForeColor = Color.Black;
+                                break;
+                            case "010000":
+                                lblLabMessage.Text = "Motor 2 is ON";
+                                break;
+                            case "001000":
+                                lblLabMessage.Text = "Start 1 is ON";
+                                break;
+                            case "000100":
+                                lblLabMessage.Text = "Start 2 is ON";
+                                break;
+                            case "000010":
+                                lblLabMessage.Text = "Stop 1 is ON";
+                                break;
+                            case "000001":
+                                lblLabMessage.Text = "Stop 2 is ON";
+                                break;
+                            case "101000":
+                                lblLabMessage.Text = "Motor 1 is ON, Start 1 is ON";
+                                break;
+                                // add more cases for different combinations of component states
 
-                        //for (int j = 0; j < Lab01Tests.Length; j++)
-                        //{
-                        //    if (!Lab01Tests[j].ToString().Equals("1"))
-                        //    {
-                        //        allTestsPassed = false;
-                        //        break;
-                        //    }
-                        //}
 
-                        //if (allTestsPassed)
-                        //{
-                        //    lblLabStatus.Text = "Lab Passed";
-                        //    lblLabStatus.BackColor = Color.Green;
-                        //    lblLabStatus.ForeColor = Color.White;
-                        //}
-                        //else
-                        //{
-                        //    lblLabStatus.Text = "Lab Failed";
-                        //    lblLabStatus.BackColor = Color.Red;
-                        //    lblLabStatus.ForeColor = Color.White;
-                        //    lblLabStatus.Refresh();
                         }
-
                     }
+
+
+
+                 }
+                
                 }
             }
-        
-
-
-
-
 
         private void BtnLab01Start_Click(object sender, EventArgs e)
         {

@@ -40,7 +40,9 @@ namespace ImpetusLabs
 
         private void BtnLabSelection_Click(object sender, EventArgs e)
         {
-            LoadForm(new LabSelection1());
+            //LoadForm(new LabSelection1());
+            LoadUserControl(new LabSelection());
+            //flowLayoutPanel1.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

@@ -116,7 +116,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,7 +133,7 @@
             this.TopMainText.BackColor = System.Drawing.Color.Transparent;
             this.TopMainText.Cursor = System.Windows.Forms.Cursors.Default;
             this.TopMainText.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TopMainText.Location = new System.Drawing.Point(220, 9);
+            this.TopMainText.Location = new System.Drawing.Point(229, 9);
             this.TopMainText.Name = "TopMainText";
             this.TopMainText.Size = new System.Drawing.Size(729, 55);
             this.TopMainText.TabIndex = 0;
