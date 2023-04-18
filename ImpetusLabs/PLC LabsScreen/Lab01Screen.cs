@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,7 +25,8 @@ namespace ImpetusLabs
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
         private OpcValue[] Lab01Nodes = new OpcValue[6];
         private string[] Lab01NodeIds = new string[6] { "ns=2;s=[GustavoDevice]LAB01.MOTOR1", "ns=2;s=[GustavoDevice]LAB01.MOTOR2", "ns=2;s=[GustavoDevice]LAB01.START1", "ns=2;s=[GustavoDevice]LAB01.START2", "ns=2;s=[GustavoDevice]LAB01.STOP1", "ns=2;s=[GustavoDevice]LAB01.STOP2" };
-
+        private string[] Lab01SequenceMessage = new string[] { "ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE" };
+        private OpcValue[] Lab01Message = new OpcValue[7];
         public Lab01Screen()
         {
             InitializeComponent();
@@ -35,11 +37,7 @@ namespace ImpetusLabs
             Lbl2Lab01[4] = Lbl2Lab01Test5;
             Lbl2Lab01[5] = Lbl2Lab01Test6;
 
-            //Lab Display Label
-            string currentlab = "Lab #1";
-
-            LblCurrentLab.Text = currentlab;
-            //this.BackColor = Color.Gray;
+           
         }
 
         private void TimerLab01_Tick(object sender, EventArgs e)
@@ -84,7 +82,7 @@ namespace ImpetusLabs
 
             if (allPassed)
             {
-                lblLabStatus.Text = "Lab Passed";
+                lblLabStatus.Text = "Lab #1 Passed";
                 lblLabStatus.BackColor = Color.Green;
                 lblLabStatus.ForeColor = Color.White;
             }
@@ -102,7 +100,7 @@ namespace ImpetusLabs
             }
 
             }
-        
+
 
         private void RefreshLabs()
 
@@ -121,6 +119,8 @@ namespace ImpetusLabs
                     lblMotor1.ForeColor = Color.White;
                     lblMotor1.BackColor = Color.Green;
                     lblMotor1.Text = "Motor1 ON";
+
+
 
                 }
 
@@ -221,7 +221,7 @@ namespace ImpetusLabs
                     }
                     if (Lab01Tests[i].ToString().Equals("1"))
                     {
-                        Lbl2Lab01[i].BackColor = Color.LightGreen;
+                        Lbl2Lab01[i].BackColor = Color.DarkGreen;
                         Lbl2Lab01[i].Text = "PASSED";
 
                     }
@@ -230,55 +230,57 @@ namespace ImpetusLabs
                         Lbl2Lab01[i].BackColor = Color.Red;
                         Lbl2Lab01[i].Text = "FAILED";
 
-                        bool[] componentStates = new bool[6];
-                        componentStates[0] = (bool)Lab01Nodes[0].Value; // Motor 1
-                        componentStates[1] = (bool)Lab01Nodes[1].Value; // Motor 2
-                        componentStates[2] = (bool)Lab01Nodes[2].Value; // Start 1
-                        componentStates[3] = (bool)Lab01Nodes[3].Value; // Start 2
-                        componentStates[4] = (bool)Lab01Nodes[4].Value; // Stop 1
-                        componentStates[5] = (bool)Lab01Nodes[5].Value; // Stop 2
-
-                        switch (string.Join("", componentStates.Select(x => x ? "1" : "0")))
-                        {
-                            case "000000":
-                                lblLabMessage.Text = "";
-                                break;
-                            case "100000":
-                                System.Windows.MessageBox.Show("Motor 1 is ON");
-                                lblLabMessage.ForeColor = Color.Black;
-                                break;
-                            case "010000":
-                                lblLabMessage.Text = "Motor 2 is ON";
-                                break;
-                            case "001000":
-                                lblLabMessage.Text = "Start 1 is ON";
-                                break;
-                            case "000100":
-                                lblLabMessage.Text = "Start 2 is ON";
-                                break;
-                            case "000010":
-                                lblLabMessage.Text = "Stop 1 is ON";
-                                break;
-                            case "000001":
-                                lblLabMessage.Text = "Stop 2 is ON";
-                                break;
-                            case "101000":
-                                lblLabMessage.Text = "Motor 1 is ON, Start 1 is ON";
-                                break;
-                                // add more cases for different combinations of component states
-
-
-                        }
-                    }
-
-
-
-                 }
                 
-                }
-            }
+                        }
+                    string nodeValue = client.ReadNode("ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE").ToString();
 
-        private void BtnLab01Start_Click(object sender, EventArgs e)
+                    switch (nodeValue)
+                    {
+                        case "501":
+                            lblLabMessage.Text = "TOGGLING START1, MOTOR1 SHOULD REMAIN ON.";
+                            lblLabMessage.ForeColor = Color.White;
+                            lblLabMessage.BackColor = Color.Black;
+                            break;
+                        case "502":
+                            lblLabMessage.Text = "TOGGLING STOP1, MOTOR 1 SHOULD TURN OFF";
+                            lblLabMessage.ForeColor = Color.White;
+                            lblLabMessage.BackColor = Color.Black;
+                            break;
+                        case "503":
+                            lblLabMessage.Text = "START2 OFF AND STOP2 OFF, MOTOR SHOULD BE OFF";
+                            lblLabMessage.ForeColor = Color.White;
+                            lblLabMessage.BackColor = Color.Black;
+                            break;
+                        case "504":
+                            lblLabMessage.Text = "START2 OFF AND STOP2 ON, MOTOR2 SHOULD BE OFF";
+                            lblLabMessage.ForeColor = Color.White;
+                            lblLabMessage.BackColor = Color.Black;
+                            break;
+                        case "505":
+                            lblLabMessage.Text = "START2 ON AND STOP2 ON, MOTOR2 SHOULD BE OFF";
+                            lblLabMessage.ForeColor = Color.White;
+                            lblLabMessage.BackColor = Color.Black;
+                            break;
+                        case "506":
+                            lblLabMessage.Text = "START2 ON AND STOP2 OFF, MOTOR2 SHOULD BE ON";
+                            lblLabMessage.ForeColor = Color.White;
+                            lblLabMessage.BackColor = Color.Black;
+                            break;
+                        case "507":
+                            lblLabStatus.Text = "Lab #1 Passed";
+                            lblLabStatus.BackColor = Color.Green;
+                            lblLabStatus.ForeColor = Color.White;
+                            lblLabMessage.Text = "";
+                            lblLabMessage.BackColor = Color.Gray;
+                            break;
+                    }
+                }
+                
+            }
+        }
+
+     
+            private void BtnLab01Start_Click(object sender, EventArgs e)
         {
             var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
             client.Connect();
@@ -307,6 +309,8 @@ namespace ImpetusLabs
             client.Disconnect();
             lblLabStatus.Text = "";
             lblLabStatus.BackColor = Color.Gray;
+            lblLabMessage.Text = "";
+            lblLabMessage.BackColor = Color.Gray;
         }
 
         private void panelInputOuput_Paint(object sender, PaintEventArgs e)
@@ -331,6 +335,11 @@ namespace ImpetusLabs
         }
 
         private void Lab01Screen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblCurrentLab_Click(object sender, EventArgs e)
         {
 
         }
