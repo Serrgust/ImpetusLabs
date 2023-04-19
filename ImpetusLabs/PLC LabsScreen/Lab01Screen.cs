@@ -48,7 +48,7 @@ namespace ImpetusLabs
         {
             bool allPassed = true;
             bool allFailed = true;
-            bool anyfailed = false;
+            bool anyFailed = false;
 
             for (int i = 0; i < Lab01Tests.Length; i++)
             {
@@ -59,11 +59,12 @@ namespace ImpetusLabs
                     if (testValue.Equals("1"))
                     {
                         allFailed = false;
+                        allPassed = false;
                     }
                     else if (testValue.Equals("-1"))
                     {
                         allPassed = false;
-                        anyfailed = true;
+                        anyFailed = true;
                     }
                     else
                     {
@@ -92,14 +93,13 @@ namespace ImpetusLabs
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
             }
-            else if (anyfailed)
+            else if (anyFailed)
             {
                 lblLabStatus.Text = "Lab Failed";
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
             }
-
-            }
+        }
 
 
         private void RefreshLabs()
@@ -296,6 +296,8 @@ namespace ImpetusLabs
             BtnLab01Start.Visible = false;
             BtnLab01Stop.Visible = true;
             TimerLab01.Enabled = true;
+
+                   
         }
 
         private void BtnLab01Stop_Click(object sender, EventArgs e)
@@ -318,20 +320,17 @@ namespace ImpetusLabs
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnBack_Click(object sender, EventArgs e)
         {
-            LabSelection1 frm = new LabSelection1();
-            this.ParentForm.Close();
-            frm.Show();
-
+            //////
         }
 
         private void BtnNextLab_Click(object sender, EventArgs e)
         {
+            var secondUserControl = new Lab02Screen();
+            Parent.Controls.Add(secondUserControl);
+            Parent.Controls.Remove(this);
 
-            Lab02Screen lab02Screen = new Lab02Screen();
-            lab02Screen.Show();
-            this.Hide();
         }
 
         private void Lab01Screen_Load(object sender, EventArgs e)

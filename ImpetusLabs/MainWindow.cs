@@ -40,7 +40,10 @@ namespace ImpetusLabs
 
         private void BtnLabSelection_Click(object sender, EventArgs e)
         {
-            //LoadForm(new LabSelection1());
+            //LoadForm(new LabSelection1()); Lab selection nuevo pero viejo
+            flowLayoutPanel1.Visible = false;
+            flowLayoutPanel1.Enabled = false;
+
             LoadUserControl(new LabSelection());
             //flowLayoutPanel1.Visible = false;
         }
