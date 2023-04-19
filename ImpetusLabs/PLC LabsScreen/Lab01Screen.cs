@@ -322,7 +322,11 @@ namespace ImpetusLabs
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            //////
+            var BackTolabselection = new LabSelection();
+            Parent.Controls.Add(BackTolabselection);
+            BackTolabselection.Dock = DockStyle.Fill;
+            Parent.Controls.Remove(this);
+
         }
 
         private void BtnNextLab_Click(object sender, EventArgs e)
