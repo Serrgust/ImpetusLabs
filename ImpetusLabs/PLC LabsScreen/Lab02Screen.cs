@@ -17,6 +17,8 @@ namespace ImpetusLabs.LabsScreen
         private OpcValue[] Lab02Tests = new OpcValue[2];
         private Label[] Lbl2Lab02 = new Label[2];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
+        //private OpcValue[] Lab01Nodes = new OpcValue[6];
+      // private string[] Lab02NodeIds = new string[6] {"ns=2;s=[GustavoDevice]LAB02.START","ns=2;s=[GustavoDevice]LAB02.TIMER1.ACC","ns=2;s=[GustavoDevice]LAB02.TIMER1.DN", "ns=2;s=[GustavoDevice]LAB02.TIMER1.EN","ns=2;s=[GustavoDevice]LAB02.TIMER1.PRE","ns=2;s=[GustavoDevice]LAB02.TIMER1.TT" };
         public Lab02Screen()
         {
             InitializeComponent();
@@ -69,10 +71,19 @@ namespace ImpetusLabs.LabsScreen
         {
             var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT2";
             client.Connect();
-            client.WriteNode(tagName, true);
+            try
+            {
+                client.Connect();
+                client.WriteNode(tagName, true);
+            }
+            catch (Opc.UaFx.OpcException)
+            {
+                //MessageBox.Show("Connection to OPC UA Server failed");
+            }
             BtnLab02Start.Visible = false;
             BtnLab02Stop.Visible = true;
             TimerLab02.Enabled = true;
+
         }
 
         private void TimerLab02_Tick(object sender, EventArgs e)
@@ -83,6 +94,14 @@ namespace ImpetusLabs.LabsScreen
         private void Lab02Screen_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Lab01Screen targetform= new Lab01Screen();
+            this.Visible = false;
+            this.Parent.Controls.Add(targetform);
+            targetform.Visible= true;
         }
     }
 }

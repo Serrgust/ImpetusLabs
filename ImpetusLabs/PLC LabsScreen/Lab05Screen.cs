@@ -85,5 +85,10 @@ namespace ImpetusLabs.LabsScreen
             BtnLab05Stop.Visible = true;
             TimerLab05.Enabled = true;
         }
+
+        private void LblLab05Test4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
