@@ -19,13 +19,14 @@ namespace ImpetusLabs
         public Form1()
         {
             InitializeComponent();
-        //    BtnLab01Stop.Visible = false;
-        //    Lbl2Lab01Test1.BackColor = Color.Silver;
+            //    BtnLab01Stop.Visible = false;
+            //    Lbl2Lab01Test1.BackColor = Color.Silver;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnOpcWrite_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fuck The Police");
+           
 
             //var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
 
@@ -42,7 +43,7 @@ namespace ImpetusLabs
 
         private void btnOpcRead_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Fuck The Police");
+          
             //string opcUrl = "opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1";
             //var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
             //var client = new OpcClient(opcUrl);

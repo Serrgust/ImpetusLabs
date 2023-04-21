@@ -17,8 +17,9 @@ namespace ImpetusLabs.LabsScreen
         private OpcValue[] Lab03Tests = new OpcValue[3];
         private Label[] Lbl2Lab03 = new Label[3];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
-        private OpcValue Lab03Timer;
-        private OpcValue Lab03OutLight;
+        //private string[] Lab03NodeIds = new string[8] { "ns=2;s=[GustavoDevice]LAB03.SW1", "ns=2;s=[GustavoDevice]LAB03.ACK", "ns=2;s=[GustavoDevice]LAB03.LIGHT", "ns=2;s=[GustavoDevice]LAB03.TIMER1.ACC", "ns=2;s=[GustavoDevice]LAB02.TIMER1.EN", "ns=2;s=[GustavoDevice]LAB02.TIMER1.DN", "ns=2;s=[GustavoDevice]LAB02.TIMER1.PRE", "ns=2;s=[GustavoDevice]LAB02.TIMER.TT" };
+        private string[] Lab03NodeIds = new string[8] { "ns=2;s=[GustavoDevice]LAB03.SW1", "ns=2;s=[GustavoDevice]LAB03.ACK", "ns=2;s=[GustavoDevice]LAB03.LIGHT", "ns=2;s=[GustavoDevice]LAB03.TIMER1.ACC", "ns=2;s=[GustavoDevice]LAB03.TIMER1.EN", "ns=2;s=[GustavoDevice]LAB03.TIMER1.DN", "ns=2;s=[GustavoDevice]LAB03.TIMER1.PRE", "ns=2;s=[GustavoDevice]LAB03.TIMER.TT" };
+        private OpcValue[] Lab03Nodes = new OpcValue[8];
 
         public Lab03Screen()
         {
@@ -31,11 +32,10 @@ namespace ImpetusLabs.LabsScreen
 
         private void RefreshLabs()
         {
-            Lab03Tests[0] = client.ReadNode("ns=2;s=[GustavoDevice]LAB03.VAR[0]");
-            Lab03Tests[1] = client.ReadNode("ns=2;s=[GustavoDevice]LAB03.VAR[1]");
-            Lab03Tests[2] = client.ReadNode("ns=2;s=[GustavoDevice]LAB03.VAR[2]");
-            Lab03Timer = client.ReadNode("ns=2;s=[GustavoDevice]LAB03.TIMER1.ACC");
-            Lab03OutLight = client.ReadNode("ns=2;s=[GustavoDevice]LAB03.LIGHT");
+            for (int i = 0; i < Lab03Tests.Length; i++)
+            {
+                Lab03Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]Lab03.VAR[" + i + "]");
+            }
 
             for (int i = 0; i < Lab03Tests.Length; i++)
             {
@@ -55,8 +55,63 @@ namespace ImpetusLabs.LabsScreen
                     Lbl2Lab03[i].Text = "FAILED";
                 }
             }
-            //OutTimerTxtLab04.Text = Lab03Timer.ToString();
+            for (int b = 0; b < Lab03Nodes.Length; b++)
+            {
+                Lab03Nodes[b] = client.ReadNode(Lab03NodeIds[b]);
+            }
+
+            if ((bool)Lab03Nodes[0].Value) // SW1
+            {
+                PicSW1.Image = imageList1.Images[1]; // SW1 button ON
+                lblSW1.ForeColor = Color.White;
+                lblSW1.BackColor = Color.Green;
+                lblSW1.Text = "SW1 ON";
+            }
+            else
+            {
+                PicSW1.Image = imageList1.Images[0]; //SW1 button OFF
+                lblSW1.ForeColor = Color.White;
+                lblSW1.BackColor = Color.Red;
+                lblSW1.Text = "SW1 OFF";
+
+                if ((bool)Lab03Nodes[1].Value) // ACK
+                {
+                    PicACK.Image = imageList1.Images[3]; // Green button ON
+                    lblACK.ForeColor = Color.White;
+                    lblACK.BackColor = Color.Green;
+                    lblACK.Text = "ACK ON";
+                }
+                else
+                {
+                    PicACK.Image = imageList1.Images[2]; // Green button OFF
+                    lblACK.ForeColor = Color.White;
+                    lblACK.BackColor = Color.Red;
+                    lblACK.Text = "ACK OFF";
+
+                    if ((bool)Lab03Nodes[2].Value) // 
+                    {
+                        PicLight1.Image = imageList1.Images[4]; // light button ON
+                        lblLight.ForeColor = Color.White;
+                        lblLight.BackColor = Color.Green;
+                        lblLight.Text = "LIGHT ON";
+                    }
+                    else
+                    {
+                        PicLight1.Image = imageList1.Images[5]; //SW1 button OFF
+                        lblLight.ForeColor = Color.White;
+                        lblLight.BackColor = Color.Red;
+                        lblLight.Text = "LIGHT OFF";
+
+
+
+                    }
+
+                }
+            }
+            lblTimerOut.Text = Lab03Nodes[3].ToString(); // Display TIMER1 ACC value
         }
+
+        
 
         private void BtnLab03Start_Click(object sender, EventArgs e)
         {
@@ -66,6 +121,7 @@ namespace ImpetusLabs.LabsScreen
             BtnLab03Start.Visible = false;
             BtnLab03Stop.Visible = true;
             TimerLab03.Enabled = true;
+            
         }
 
         private void BtnLab03Stop_Click(object sender, EventArgs e)
