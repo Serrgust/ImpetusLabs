@@ -504,9 +504,9 @@
             // 
             this.lblLabMessage.BackColor = System.Drawing.Color.Transparent;
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabMessage.Location = new System.Drawing.Point(0, 105);
+            this.lblLabMessage.Location = new System.Drawing.Point(10, 0);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1347, 33);
+            this.lblLabMessage.Size = new System.Drawing.Size(1689, 33);
             this.lblLabMessage.TabIndex = 56;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -526,7 +526,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lblLabMessage);
             this.Controls.Add(this.panel2);

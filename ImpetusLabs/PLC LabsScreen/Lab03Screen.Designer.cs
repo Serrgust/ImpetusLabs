@@ -59,6 +59,8 @@ namespace ImpetusLabs.LabsScreen
             this.BtnNextLab = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.lblLabMessage = new System.Windows.Forms.Label();
+            this.lblLabStatus = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicACK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSW1)).BeginInit();
@@ -76,7 +78,7 @@ namespace ImpetusLabs.LabsScreen
             // LblLab03Test1
             // 
             this.LblLab03Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab03Test1.Location = new System.Drawing.Point(253, 108);
+            this.LblLab03Test1.Location = new System.Drawing.Point(358, 104);
             this.LblLab03Test1.Name = "LblLab03Test1";
             this.LblLab03Test1.Size = new System.Drawing.Size(67, 23);
             this.LblLab03Test1.TabIndex = 1;
@@ -87,7 +89,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab03Test1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Lbl2Lab03Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab03Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab03Test1.Location = new System.Drawing.Point(326, 100);
+            this.Lbl2Lab03Test1.Location = new System.Drawing.Point(431, 96);
             this.Lbl2Lab03Test1.Name = "Lbl2Lab03Test1";
             this.Lbl2Lab03Test1.Size = new System.Drawing.Size(146, 45);
             this.Lbl2Lab03Test1.TabIndex = 30;
@@ -99,7 +101,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab03Test2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Lbl2Lab03Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab03Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab03Test2.Location = new System.Drawing.Point(326, 174);
+            this.Lbl2Lab03Test2.Location = new System.Drawing.Point(431, 170);
             this.Lbl2Lab03Test2.Name = "Lbl2Lab03Test2";
             this.Lbl2Lab03Test2.Size = new System.Drawing.Size(146, 45);
             this.Lbl2Lab03Test2.TabIndex = 43;
@@ -111,7 +113,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab03Test3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Lbl2Lab03Test3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab03Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab03Test3.Location = new System.Drawing.Point(326, 249);
+            this.Lbl2Lab03Test3.Location = new System.Drawing.Point(431, 245);
             this.Lbl2Lab03Test3.Name = "Lbl2Lab03Test3";
             this.Lbl2Lab03Test3.Size = new System.Drawing.Size(146, 45);
             this.Lbl2Lab03Test3.TabIndex = 44;
@@ -121,7 +123,7 @@ namespace ImpetusLabs.LabsScreen
             // LblLab03Test2
             // 
             this.LblLab03Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab03Test2.Location = new System.Drawing.Point(253, 182);
+            this.LblLab03Test2.Location = new System.Drawing.Point(358, 178);
             this.LblLab03Test2.Name = "LblLab03Test2";
             this.LblLab03Test2.Size = new System.Drawing.Size(67, 23);
             this.LblLab03Test2.TabIndex = 45;
@@ -130,7 +132,7 @@ namespace ImpetusLabs.LabsScreen
             // LblLab03Test3
             // 
             this.LblLab03Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab03Test3.Location = new System.Drawing.Point(253, 257);
+            this.LblLab03Test3.Location = new System.Drawing.Point(358, 253);
             this.LblLab03Test3.Name = "LblLab03Test3";
             this.LblLab03Test3.Size = new System.Drawing.Size(67, 23);
             this.LblLab03Test3.TabIndex = 46;
@@ -138,7 +140,7 @@ namespace ImpetusLabs.LabsScreen
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.lblACK);
             this.panel2.Controls.Add(this.lblSW1);
@@ -156,7 +158,7 @@ namespace ImpetusLabs.LabsScreen
             // 
             this.lblACK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblACK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblACK.Location = new System.Drawing.Point(145, 148);
+            this.lblACK.Location = new System.Drawing.Point(169, 153);
             this.lblACK.Name = "lblACK";
             this.lblACK.Size = new System.Drawing.Size(81, 55);
             this.lblACK.TabIndex = 55;
@@ -167,7 +169,7 @@ namespace ImpetusLabs.LabsScreen
             // 
             this.lblSW1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSW1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSW1.Location = new System.Drawing.Point(29, 148);
+            this.lblSW1.Location = new System.Drawing.Point(53, 153);
             this.lblSW1.Name = "lblSW1";
             this.lblSW1.Size = new System.Drawing.Size(81, 55);
             this.lblSW1.TabIndex = 52;
@@ -176,7 +178,7 @@ namespace ImpetusLabs.LabsScreen
             // 
             // PicACK
             // 
-            this.PicACK.Location = new System.Drawing.Point(145, 80);
+            this.PicACK.Location = new System.Drawing.Point(169, 85);
             this.PicACK.Name = "PicACK";
             this.PicACK.Size = new System.Drawing.Size(81, 65);
             this.PicACK.TabIndex = 54;
@@ -184,7 +186,7 @@ namespace ImpetusLabs.LabsScreen
             // 
             // PicSW1
             // 
-            this.PicSW1.Location = new System.Drawing.Point(29, 80);
+            this.PicSW1.Location = new System.Drawing.Point(53, 85);
             this.PicSW1.Name = "PicSW1";
             this.PicSW1.Size = new System.Drawing.Size(81, 65);
             this.PicSW1.TabIndex = 53;
@@ -192,13 +194,13 @@ namespace ImpetusLabs.LabsScreen
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(98, 0);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(78, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 29);
+            this.label3.Size = new System.Drawing.Size(146, 45);
             this.label3.TabIndex = 51;
-            this.label3.Text = "Inputs";
+            this.label3.Text = "INPUTS";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -233,7 +235,7 @@ namespace ImpetusLabs.LabsScreen
             this.panel3.Controls.Add(this.lblLight);
             this.panel3.Controls.Add(this.PicLight1);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(1180, 547);
+            this.panel3.Location = new System.Drawing.Point(1180, 525);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(307, 226);
             this.panel3.TabIndex = 57;
@@ -289,7 +291,7 @@ namespace ImpetusLabs.LabsScreen
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(437, 129);
+            this.label5.Location = new System.Drawing.Point(456, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(260, 45);
             this.label5.TabIndex = 57;
@@ -325,7 +327,7 @@ namespace ImpetusLabs.LabsScreen
             this.panel4.Controls.Add(this.BtnNextLab);
             this.panel4.Controls.Add(this.BtnBack);
             this.panel4.Controls.Add(this.BtnLab03Stop);
-            this.panel4.Location = new System.Drawing.Point(357, 591);
+            this.panel4.Location = new System.Drawing.Point(304, 569);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(591, 95);
             this.panel4.TabIndex = 58;
@@ -339,6 +341,7 @@ namespace ImpetusLabs.LabsScreen
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -347,8 +350,9 @@ namespace ImpetusLabs.LabsScreen
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(138, 62);
             this.BtnBack.TabIndex = 43;
-            this.BtnBack.Text = "LAB SELECT";
+            this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // imageList1
             // 
@@ -361,11 +365,31 @@ namespace ImpetusLabs.LabsScreen
             this.imageList1.Images.SetKeyName(4, "Stop2.1.png");
             this.imageList1.Images.SetKeyName(5, "Stop2.png");
             // 
+            // lblLabMessage
+            // 
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(-35, 0);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1771, 41);
+            this.lblLabMessage.TabIndex = 64;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabStatus
+            // 
+            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabStatus.Location = new System.Drawing.Point(-74, 776);
+            this.lblLabStatus.Name = "lblLabStatus";
+            this.lblLabStatus.Size = new System.Drawing.Size(1771, 41);
+            this.lblLabStatus.TabIndex = 65;
+            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Lab03Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.lblLabStatus);
+            this.Controls.Add(this.lblLabMessage);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel3);
@@ -374,7 +398,6 @@ namespace ImpetusLabs.LabsScreen
             this.Name = "Lab03Screen";
             this.Size = new System.Drawing.Size(1700, 857);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicACK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSW1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -414,5 +437,7 @@ namespace ImpetusLabs.LabsScreen
         private System.Windows.Forms.Button BtnNextLab;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label lblLabMessage;
+        private System.Windows.Forms.Label lblLabStatus;
     }
 }

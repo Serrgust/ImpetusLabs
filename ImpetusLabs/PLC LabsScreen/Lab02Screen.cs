@@ -73,19 +73,19 @@ namespace ImpetusLabs.LabsScreen
 
             if (allPassed)
             {
-                lblLabStatus.Text = "Lab #2 Passed";
+                lblLabStatus.Text = "LAB #2 PASSED";
                 lblLabStatus.BackColor = Color.Green;
                 lblLabStatus.ForeColor = Color.White;
             }
             else if (allFailed)
             {
-                lblLabStatus.Text = "Lab Failed";
+                lblLabStatus.Text = "LAB FIALED";
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
             }
             else if (anyFailed)
             {
-                lblLabStatus.Text = "Lab Failed";
+                lblLabStatus.Text = "LAB FAILED";
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
             }
@@ -161,7 +161,7 @@ namespace ImpetusLabs.LabsScreen
                     lblLabMessage.BackColor = Color.Black;
                     break;
                 case "603":
-                    lblLabStatus.Text = "Lab #2 Passed";
+                    lblLabStatus.Text = "LAB #2 PASSED";
                     lblLabStatus.BackColor = Color.Green;
                     lblLabStatus.ForeColor = Color.White;
                     lblLabMessage.Text = "";
@@ -224,6 +224,18 @@ namespace ImpetusLabs.LabsScreen
             lblLabStatus.BackColor = Color.Gray;
             lblLabMessage.Text = "";
             lblLabMessage.BackColor = Color.Gray;
+        }
+
+        private void BtnNextLab_Click(object sender, EventArgs e)
+        {
+            var ThirdUserControl = new Lab03Screen();
+            Parent.Controls.Add(ThirdUserControl);
+            Parent.Controls.Remove(this);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
  }

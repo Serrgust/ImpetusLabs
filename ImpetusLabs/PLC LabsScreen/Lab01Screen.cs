@@ -83,19 +83,19 @@ namespace ImpetusLabs
 
             if (allPassed)
             {
-                lblLabStatus.Text = "Lab #1 Passed";
+                lblLabStatus.Text = "LAB #1 PASSED";
                 lblLabStatus.BackColor = Color.Green;
                 lblLabStatus.ForeColor = Color.White;
             }
             else if (allFailed)
             {
-                lblLabStatus.Text = "Lab Failed";
+                lblLabStatus.Text = "LAB FAILED";
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
             }
             else if (anyFailed)
             {
-                lblLabStatus.Text = "Lab Failed";
+                lblLabStatus.Text = "LAB FAILED";
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
             }
@@ -267,7 +267,7 @@ namespace ImpetusLabs
                             lblLabMessage.BackColor = Color.Black;
                             break;
                         case "507":
-                            lblLabStatus.Text = "Lab #1 Passed";
+                            lblLabStatus.Text = "Lab #1 PASSED";
                             lblLabStatus.BackColor = Color.Green;
                             lblLabStatus.ForeColor = Color.White;
                             lblLabMessage.Text = "";
