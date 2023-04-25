@@ -76,7 +76,6 @@ namespace ImpetusLabs.LabsScreen
             // 
             // LblLab05Test1
             // 
-            this.LblLab05Test1.AutoSize = true;
             this.LblLab05Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLab05Test1.Location = new System.Drawing.Point(187, 123);
             this.LblLab05Test1.Name = "LblLab05Test1";
@@ -86,7 +85,6 @@ namespace ImpetusLabs.LabsScreen
             // 
             // LblLab05Test2
             // 
-            this.LblLab05Test2.AutoSize = true;
             this.LblLab05Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLab05Test2.Location = new System.Drawing.Point(187, 187);
             this.LblLab05Test2.Name = "LblLab05Test2";
@@ -96,7 +94,6 @@ namespace ImpetusLabs.LabsScreen
             // 
             // LblLab05Test3
             // 
-            this.LblLab05Test3.AutoSize = true;
             this.LblLab05Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLab05Test3.Location = new System.Drawing.Point(187, 258);
             this.LblLab05Test3.Name = "LblLab05Test3";
@@ -106,7 +103,6 @@ namespace ImpetusLabs.LabsScreen
             // 
             // LblLab05Test4
             // 
-            this.LblLab05Test4.AutoSize = true;
             this.LblLab05Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLab05Test4.Location = new System.Drawing.Point(569, 123);
             this.LblLab05Test4.Name = "LblLab05Test4";
@@ -123,7 +119,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab05Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab05Test1.Location = new System.Drawing.Point(289, 109);
             this.Lbl2Lab05Test1.Name = "Lbl2Lab05Test1";
-            this.Lbl2Lab05Test1.Size = new System.Drawing.Size(146, 45);
+            this.Lbl2Lab05Test1.Size = new System.Drawing.Size(260, 45);
             this.Lbl2Lab05Test1.TabIndex = 4;
             this.Lbl2Lab05Test1.Text = "NOT RUN";
             this.Lbl2Lab05Test1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,7 +132,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab05Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab05Test2.Location = new System.Drawing.Point(289, 176);
             this.Lbl2Lab05Test2.Name = "Lbl2Lab05Test2";
-            this.Lbl2Lab05Test2.Size = new System.Drawing.Size(146, 45);
+            this.Lbl2Lab05Test2.Size = new System.Drawing.Size(260, 45);
             this.Lbl2Lab05Test2.TabIndex = 5;
             this.Lbl2Lab05Test2.Text = "NOT RUN";
             this.Lbl2Lab05Test2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,7 +145,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab05Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab05Test3.Location = new System.Drawing.Point(289, 245);
             this.Lbl2Lab05Test3.Name = "Lbl2Lab05Test3";
-            this.Lbl2Lab05Test3.Size = new System.Drawing.Size(146, 45);
+            this.Lbl2Lab05Test3.Size = new System.Drawing.Size(260, 45);
             this.Lbl2Lab05Test3.TabIndex = 6;
             this.Lbl2Lab05Test3.Text = "NOT RUN";
             this.Lbl2Lab05Test3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,7 +158,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab05Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab05Test4.Location = new System.Drawing.Point(636, 109);
             this.Lbl2Lab05Test4.Name = "Lbl2Lab05Test4";
-            this.Lbl2Lab05Test4.Size = new System.Drawing.Size(146, 45);
+            this.Lbl2Lab05Test4.Size = new System.Drawing.Size(260, 45);
             this.Lbl2Lab05Test4.TabIndex = 7;
             this.Lbl2Lab05Test4.Text = "NOT RUN";
             this.Lbl2Lab05Test4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,7 +166,7 @@ namespace ImpetusLabs.LabsScreen
             // BtnLab05Start
             // 
             this.BtnLab05Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab05Start.Location = new System.Drawing.Point(203, 14);
+            this.BtnLab05Start.Location = new System.Drawing.Point(203, 12);
             this.BtnLab05Start.Name = "BtnLab05Start";
             this.BtnLab05Start.Size = new System.Drawing.Size(138, 62);
             this.BtnLab05Start.TabIndex = 8;
@@ -453,7 +449,6 @@ namespace ImpetusLabs.LabsScreen
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicLight)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

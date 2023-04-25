@@ -17,7 +17,6 @@ namespace ImpetusLabs.LabsScreen
         private OpcValue[] Lab03Tests = new OpcValue[3];
         private Label[] Lbl2Lab03 = new Label[3];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
-        //private string[] Lab03NodeIds = new string[8] { "ns=2;s=[GustavoDevice]LAB03.SW1", "ns=2;s=[GustavoDevice]LAB03.ACK", "ns=2;s=[GustavoDevice]LAB03.LIGHT", "ns=2;s=[GustavoDevice]LAB03.TIMER1.ACC", "ns=2;s=[GustavoDevice]LAB02.TIMER1.EN", "ns=2;s=[GustavoDevice]LAB02.TIMER1.DN", "ns=2;s=[GustavoDevice]LAB02.TIMER1.PRE", "ns=2;s=[GustavoDevice]LAB02.TIMER.TT" };
         private string[] Lab03NodeIds = new string[8] { "ns=2;s=[GustavoDevice]LAB03.SW1", "ns=2;s=[GustavoDevice]LAB03.ACK", "ns=2;s=[GustavoDevice]LAB03.LIGHT", "ns=2;s=[GustavoDevice]LAB03.TIMER1.ACC", "ns=2;s=[GustavoDevice]LAB03.TIMER1.EN", "ns=2;s=[GustavoDevice]LAB03.TIMER1.DN", "ns=2;s=[GustavoDevice]LAB03.TIMER1.PRE", "ns=2;s=[GustavoDevice]LAB03.TIMER.TT" };
         private OpcValue[] Lab03Nodes = new OpcValue[8];
      
