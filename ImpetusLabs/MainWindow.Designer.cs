@@ -40,8 +40,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.BtnLogin = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.materialBtnLabSelection = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialBtnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.MainPanel = new System.Windows.Forms.Panel();
@@ -177,7 +177,7 @@
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(124, 52);
             this.BtnLogin.TabIndex = 10;
-            this.BtnLogin.Text = "x";
+            this.BtnLogin.Text = "LOG IN";
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
@@ -193,18 +193,6 @@
             this.button4.Text = "x";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button5.Location = new System.Drawing.Point(10, 480);
-            this.button5.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(124, 52);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "PROGRESS REPORT";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             this.button6.Cursor = System.Windows.Forms.Cursors.Default;
@@ -216,6 +204,18 @@
             this.button6.Text = "Testing Server";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button5.Location = new System.Drawing.Point(10, 480);
+            this.button5.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(124, 52);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "PROGRESS REPORT";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // materialBtnLabSelection
             // 

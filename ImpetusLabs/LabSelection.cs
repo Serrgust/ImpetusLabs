@@ -130,5 +130,10 @@ namespace ImpetusLabs.LabsScreen
         {
             GoToLab(new Lab20Screen());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

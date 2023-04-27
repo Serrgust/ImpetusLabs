@@ -67,41 +67,42 @@ namespace ImpetusLabs.LabsScreen
             this.LblLab07Test17 = new System.Windows.Forms.Label();
             this.TimerLab07 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.PicStart = new System.Windows.Forms.PictureBox();
-            this.PicStop = new System.Windows.Forms.PictureBox();
-            this.lblStart = new System.Windows.Forms.Label();
-            this.lblStop = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblCylinder = new System.Windows.Forms.Label();
-            this.lblMotor = new System.Windows.Forms.Label();
-            this.PicCylinder = new System.Windows.Forms.PictureBox();
-            this.PicMotor = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PicSensor = new System.Windows.Forms.PictureBox();
-            this.PicLight = new System.Windows.Forms.PictureBox();
-            this.lblLight = new System.Windows.Forms.Label();
-            this.lblSensor = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblLabStatus = new System.Windows.Forms.Label();
+            this.lblLabMessage = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnNextLab = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.BtnLab07Start = new System.Windows.Forms.Button();
             this.BtnLab07Stop = new System.Windows.Forms.Button();
-            this.lblLabMessage = new System.Windows.Forms.Label();
-            this.lblLabStatus = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblSensor = new System.Windows.Forms.Label();
+            this.lblLight = new System.Windows.Forms.Label();
+            this.PicLight = new System.Windows.Forms.PictureBox();
+            this.PicSensor = new System.Windows.Forms.PictureBox();
+            this.lblCylinder = new System.Windows.Forms.Label();
+            this.lblMotor = new System.Windows.Forms.Label();
+            this.PicCylinder = new System.Windows.Forms.PictureBox();
+            this.PicMotor = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblStop = new System.Windows.Forms.Label();
+            this.lblStart = new System.Windows.Forms.Label();
+            this.PicStop = new System.Windows.Forms.PictureBox();
+            this.PicStart = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStop)).BeginInit();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSensor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCylinder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSensor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicLight)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).BeginInit();
             this.SuspendLayout();
             // 
             // LblLab07Test1
@@ -461,7 +462,7 @@ namespace ImpetusLabs.LabsScreen
             this.Lbl2Lab07Test17.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab07Test17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab07Test17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab07Test17.Location = new System.Drawing.Point(1134, 467);
+            this.Lbl2Lab07Test17.Location = new System.Drawing.Point(1134, 474);
             this.Lbl2Lab07Test17.Name = "Lbl2Lab07Test17";
             this.Lbl2Lab07Test17.Size = new System.Drawing.Size(146, 45);
             this.Lbl2Lab07Test17.TabIndex = 33;
@@ -471,7 +472,7 @@ namespace ImpetusLabs.LabsScreen
             // LblLab07Test17
             // 
             this.LblLab07Test17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab07Test17.Location = new System.Drawing.Point(1053, 476);
+            this.LblLab07Test17.Location = new System.Drawing.Point(1053, 483);
             this.LblLab07Test17.Name = "LblLab07Test17";
             this.LblLab07Test17.Size = new System.Drawing.Size(75, 23);
             this.LblLab07Test17.TabIndex = 32;
@@ -485,8 +486,9 @@ namespace ImpetusLabs.LabsScreen
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblLabStatus);
             this.panel1.Controls.Add(this.lblLabMessage);
+            this.panel1.Controls.Add(this.lblLabStatus);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.panel3);
@@ -530,194 +532,33 @@ namespace ImpetusLabs.LabsScreen
             this.panel1.Size = new System.Drawing.Size(1839, 835);
             this.panel1.TabIndex = 37;
             // 
-            // label10
+            // label1
             // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(789, 43);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(260, 45);
-            this.label10.TabIndex = 57;
-            this.label10.Text = "SIMULATION";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(789, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(260, 45);
+            this.label1.TabIndex = 71;
+            this.label1.Text = "LAB #07";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // lblLabStatus
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.lblStop);
-            this.panel2.Controls.Add(this.lblStart);
-            this.panel2.Controls.Add(this.PicStop);
-            this.panel2.Controls.Add(this.PicStart);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Location = new System.Drawing.Point(1305, 31);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(295, 264);
-            this.panel2.TabIndex = 38;
+            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabStatus.Location = new System.Drawing.Point(68, 772);
+            this.lblLabStatus.Name = "lblLabStatus";
+            this.lblLabStatus.Size = new System.Drawing.Size(1771, 41);
+            this.lblLabStatus.TabIndex = 70;
+            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // lblLabMessage
             // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(61, 10);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 45);
-            this.label12.TabIndex = 62;
-            this.label12.Text = "INPUTS";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PicStart
-            // 
-            this.PicStart.Location = new System.Drawing.Point(33, 68);
-            this.PicStart.Name = "PicStart";
-            this.PicStart.Size = new System.Drawing.Size(81, 65);
-            this.PicStart.TabIndex = 63;
-            this.PicStart.TabStop = false;
-            // 
-            // PicStop
-            // 
-            this.PicStop.Location = new System.Drawing.Point(160, 68);
-            this.PicStop.Name = "PicStop";
-            this.PicStop.Size = new System.Drawing.Size(81, 65);
-            this.PicStop.TabIndex = 64;
-            this.PicStop.TabStop = false;
-            // 
-            // lblStart
-            // 
-            this.lblStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStart.Location = new System.Drawing.Point(33, 157);
-            this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(81, 65);
-            this.lblStart.TabIndex = 65;
-            this.lblStart.Text = "START OFF";
-            this.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblStop
-            // 
-            this.lblStop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStop.Location = new System.Drawing.Point(160, 157);
-            this.lblStop.Name = "lblStop";
-            this.lblStop.Size = new System.Drawing.Size(81, 65);
-            this.lblStop.TabIndex = 66;
-            this.lblStop.Text = "STOP OFF";
-            this.lblStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.lblSensor);
-            this.panel3.Controls.Add(this.lblLight);
-            this.panel3.Controls.Add(this.PicLight);
-            this.panel3.Controls.Add(this.PicSensor);
-            this.panel3.Controls.Add(this.lblCylinder);
-            this.panel3.Controls.Add(this.lblMotor);
-            this.panel3.Controls.Add(this.PicCylinder);
-            this.panel3.Controls.Add(this.PicMotor);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(1305, 313);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(295, 456);
-            this.panel3.TabIndex = 67;
-            // 
-            // lblCylinder
-            // 
-            this.lblCylinder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCylinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCylinder.Location = new System.Drawing.Point(160, 187);
-            this.lblCylinder.Name = "lblCylinder";
-            this.lblCylinder.Size = new System.Drawing.Size(81, 65);
-            this.lblCylinder.TabIndex = 66;
-            this.lblCylinder.Text = "CYLINDER OFF";
-            this.lblCylinder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblMotor
-            // 
-            this.lblMotor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMotor.Location = new System.Drawing.Point(27, 187);
-            this.lblMotor.Name = "lblMotor";
-            this.lblMotor.Size = new System.Drawing.Size(81, 65);
-            this.lblMotor.TabIndex = 65;
-            this.lblMotor.Text = "MOTOR OFF";
-            this.lblMotor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PicCylinder
-            // 
-            this.PicCylinder.Location = new System.Drawing.Point(160, 95);
-            this.PicCylinder.Name = "PicCylinder";
-            this.PicCylinder.Size = new System.Drawing.Size(81, 65);
-            this.PicCylinder.TabIndex = 64;
-            this.PicCylinder.TabStop = false;
-            // 
-            // PicMotor
-            // 
-            this.PicMotor.Location = new System.Drawing.Point(27, 95);
-            this.PicMotor.Name = "PicMotor";
-            this.PicMotor.Size = new System.Drawing.Size(81, 65);
-            this.PicMotor.TabIndex = 63;
-            this.PicMotor.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 45);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "OUTPUTS";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PicSensor
-            // 
-            this.PicSensor.Location = new System.Drawing.Point(160, 272);
-            this.PicSensor.Name = "PicSensor";
-            this.PicSensor.Size = new System.Drawing.Size(81, 65);
-            this.PicSensor.TabIndex = 67;
-            this.PicSensor.TabStop = false;
-            // 
-            // PicLight
-            // 
-            this.PicLight.Location = new System.Drawing.Point(33, 272);
-            this.PicLight.Name = "PicLight";
-            this.PicLight.Size = new System.Drawing.Size(81, 65);
-            this.PicLight.TabIndex = 68;
-            this.PicLight.TabStop = false;
-            // 
-            // lblLight
-            // 
-            this.lblLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLight.Location = new System.Drawing.Point(33, 371);
-            this.lblLight.Name = "lblLight";
-            this.lblLight.Size = new System.Drawing.Size(81, 65);
-            this.lblLight.TabIndex = 69;
-            this.lblLight.Text = "LIGHT OFF";
-            this.lblLight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSensor
-            // 
-            this.lblSensor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSensor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSensor.Location = new System.Drawing.Point(160, 371);
-            this.lblSensor.Name = "lblSensor";
-            this.lblSensor.Size = new System.Drawing.Size(81, 65);
-            this.lblSensor.TabIndex = 70;
-            this.lblSensor.Text = "SENSOR OFF";
-            this.lblSensor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "Start1.2.png");
-            this.imageList1.Images.SetKeyName(1, "Start1.png");
-            this.imageList1.Images.SetKeyName(2, "Start2.1.png");
-            this.imageList1.Images.SetKeyName(3, "Start2.png");
-            this.imageList1.Images.SetKeyName(4, "Motor1.png");
-            this.imageList1.Images.SetKeyName(5, "Motor2.png");
-            this.imageList1.Images.SetKeyName(6, "Stop1.2.png");
-            this.imageList1.Images.SetKeyName(7, "Stop1.png");
-            this.imageList1.Images.SetKeyName(8, "3-D_Cylinder_actuated_valve__double-acting__no_fill-removebg-preview.png");
-            this.imageList1.Images.SetKeyName(9, "Sensor-removebg-preview.png");
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(34, 2);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1771, 41);
+            this.lblLabMessage.TabIndex = 69;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -773,23 +614,194 @@ namespace ImpetusLabs.LabsScreen
             this.BtnLab07Stop.UseVisualStyleBackColor = true;
             this.BtnLab07Stop.Click += new System.EventHandler(this.BtnLab07Stop_Click_1);
             // 
-            // lblLabMessage
+            // label10
             // 
-            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabMessage.Location = new System.Drawing.Point(34, 2);
-            this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1771, 41);
-            this.lblLabMessage.TabIndex = 69;
-            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(789, 91);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(260, 45);
+            this.label10.TabIndex = 57;
+            this.label10.Text = "SIMULATION";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblLabStatus
+            // panel3
             // 
-            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabStatus.Location = new System.Drawing.Point(65, 772);
-            this.lblLabStatus.Name = "lblLabStatus";
-            this.lblLabStatus.Size = new System.Drawing.Size(1771, 41);
-            this.lblLabStatus.TabIndex = 70;
-            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.lblSensor);
+            this.panel3.Controls.Add(this.lblLight);
+            this.panel3.Controls.Add(this.PicLight);
+            this.panel3.Controls.Add(this.PicSensor);
+            this.panel3.Controls.Add(this.lblCylinder);
+            this.panel3.Controls.Add(this.lblMotor);
+            this.panel3.Controls.Add(this.PicCylinder);
+            this.panel3.Controls.Add(this.PicMotor);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(1305, 313);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(295, 456);
+            this.panel3.TabIndex = 67;
+            // 
+            // lblSensor
+            // 
+            this.lblSensor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSensor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSensor.Location = new System.Drawing.Point(160, 371);
+            this.lblSensor.Name = "lblSensor";
+            this.lblSensor.Size = new System.Drawing.Size(81, 65);
+            this.lblSensor.TabIndex = 70;
+            this.lblSensor.Text = "SENSOR OFF";
+            this.lblSensor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLight
+            // 
+            this.lblLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblLight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLight.Location = new System.Drawing.Point(33, 371);
+            this.lblLight.Name = "lblLight";
+            this.lblLight.Size = new System.Drawing.Size(81, 65);
+            this.lblLight.TabIndex = 69;
+            this.lblLight.Text = "LIGHT OFF";
+            this.lblLight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicLight
+            // 
+            this.PicLight.Location = new System.Drawing.Point(33, 272);
+            this.PicLight.Name = "PicLight";
+            this.PicLight.Size = new System.Drawing.Size(81, 65);
+            this.PicLight.TabIndex = 68;
+            this.PicLight.TabStop = false;
+            // 
+            // PicSensor
+            // 
+            this.PicSensor.Location = new System.Drawing.Point(160, 272);
+            this.PicSensor.Name = "PicSensor";
+            this.PicSensor.Size = new System.Drawing.Size(81, 65);
+            this.PicSensor.TabIndex = 67;
+            this.PicSensor.TabStop = false;
+            // 
+            // lblCylinder
+            // 
+            this.lblCylinder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCylinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCylinder.Location = new System.Drawing.Point(160, 187);
+            this.lblCylinder.Name = "lblCylinder";
+            this.lblCylinder.Size = new System.Drawing.Size(81, 65);
+            this.lblCylinder.TabIndex = 66;
+            this.lblCylinder.Text = "CYLINDER OFF";
+            this.lblCylinder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMotor
+            // 
+            this.lblMotor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotor.Location = new System.Drawing.Point(27, 187);
+            this.lblMotor.Name = "lblMotor";
+            this.lblMotor.Size = new System.Drawing.Size(81, 65);
+            this.lblMotor.TabIndex = 65;
+            this.lblMotor.Text = "MOTOR OFF";
+            this.lblMotor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicCylinder
+            // 
+            this.PicCylinder.Location = new System.Drawing.Point(160, 95);
+            this.PicCylinder.Name = "PicCylinder";
+            this.PicCylinder.Size = new System.Drawing.Size(81, 65);
+            this.PicCylinder.TabIndex = 64;
+            this.PicCylinder.TabStop = false;
+            // 
+            // PicMotor
+            // 
+            this.PicMotor.Location = new System.Drawing.Point(27, 95);
+            this.PicMotor.Name = "PicMotor";
+            this.PicMotor.Size = new System.Drawing.Size(81, 65);
+            this.PicMotor.TabIndex = 63;
+            this.PicMotor.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(61, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 45);
+            this.label4.TabIndex = 62;
+            this.label4.Text = "OUTPUTS";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.lblStop);
+            this.panel2.Controls.Add(this.lblStart);
+            this.panel2.Controls.Add(this.PicStop);
+            this.panel2.Controls.Add(this.PicStart);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Location = new System.Drawing.Point(1305, 46);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(295, 264);
+            this.panel2.TabIndex = 38;
+            // 
+            // lblStop
+            // 
+            this.lblStop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStop.Location = new System.Drawing.Point(160, 157);
+            this.lblStop.Name = "lblStop";
+            this.lblStop.Size = new System.Drawing.Size(81, 65);
+            this.lblStop.TabIndex = 66;
+            this.lblStop.Text = "STOP OFF";
+            this.lblStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblStart
+            // 
+            this.lblStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart.Location = new System.Drawing.Point(33, 157);
+            this.lblStart.Name = "lblStart";
+            this.lblStart.Size = new System.Drawing.Size(81, 65);
+            this.lblStart.TabIndex = 65;
+            this.lblStart.Text = "START OFF";
+            this.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicStop
+            // 
+            this.PicStop.Location = new System.Drawing.Point(160, 68);
+            this.PicStop.Name = "PicStop";
+            this.PicStop.Size = new System.Drawing.Size(81, 65);
+            this.PicStop.TabIndex = 64;
+            this.PicStop.TabStop = false;
+            // 
+            // PicStart
+            // 
+            this.PicStart.Location = new System.Drawing.Point(33, 68);
+            this.PicStart.Name = "PicStart";
+            this.PicStart.Size = new System.Drawing.Size(81, 65);
+            this.PicStart.TabIndex = 63;
+            this.PicStart.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(61, 10);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(146, 45);
+            this.label12.TabIndex = 62;
+            this.label12.Text = "INPUTS";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Start1.2.png");
+            this.imageList1.Images.SetKeyName(1, "Start1.png");
+            this.imageList1.Images.SetKeyName(2, "Start2.1.png");
+            this.imageList1.Images.SetKeyName(3, "Start2.png");
+            this.imageList1.Images.SetKeyName(4, "Motor1.png");
+            this.imageList1.Images.SetKeyName(5, "Motor2.png");
+            this.imageList1.Images.SetKeyName(6, "Stop1.2.png");
+            this.imageList1.Images.SetKeyName(7, "Stop1.png");
+            this.imageList1.Images.SetKeyName(8, "3-D_Cylinder_actuated_valve__double-acting__no_fill-removebg-preview.png");
+            this.imageList1.Images.SetKeyName(9, "Sensor-removebg-preview.png");
             // 
             // Lab07Screen
             // 
@@ -801,15 +813,15 @@ namespace ImpetusLabs.LabsScreen
             this.Size = new System.Drawing.Size(1750, 900);
             this.Load += new System.EventHandler(this.Lab07Screen_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStop)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicLight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSensor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCylinder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSensor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicLight)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicStop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -877,5 +889,6 @@ namespace ImpetusLabs.LabsScreen
         private System.Windows.Forms.Button BtnLab07Stop;
         private System.Windows.Forms.Label lblLabMessage;
         private System.Windows.Forms.Label lblLabStatus;
+        private System.Windows.Forms.Label label1;
     }
 }

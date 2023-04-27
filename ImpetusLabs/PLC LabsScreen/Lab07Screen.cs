@@ -104,14 +104,6 @@ namespace ImpetusLabs.LabsScreen
             }
         }
 
-
-
-
-
-
-
-
-
         private void RefreshLabs()
         {
             UpdateLabStatus();
@@ -141,6 +133,8 @@ namespace ImpetusLabs.LabsScreen
                     }
                 }
 
+
+                //Fotos
                 for (int b = 0; b < Lab07Nodes.Length; b++)
                 {
                     Lab07Nodes[b] = client.ReadNode(Lab07NodeIds[b]);
@@ -210,7 +204,7 @@ namespace ImpetusLabs.LabsScreen
                 //Light
                 if ((bool)Lab07Nodes[4].Value)
                 {
-                    PicLight.Image = imageList1.Images[7];
+                    PicLight.Image = imageList1.Images[6];
                     lblLight.ForeColor = Color.White;
                     lblLight.BackColor = Color.Green;
                     lblLight.Text = "LIGHT  ON";
@@ -239,7 +233,135 @@ namespace ImpetusLabs.LabsScreen
 
                 }
             }
+            string nodeValue = client.ReadNode("ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE").ToString();
 
+
+
+            switch (nodeValue)
+            {
+
+                case "301":
+                    lblLabMessage.Text = "PRESSING START BUTTON, LIGHT SHOULD TURN ON AND MOTOR SHOULD START";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "302":
+                    lblLabMessage.Text = "PRESSING STOP BUTTON, LIGHT SHOULD TURN OFF AND MOTOR SHOULD STOP";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "303":
+                    lblLabMessage.Text = "PRESSING START BUTTON, LIGHT SHOULD TURN ON AND MOTOR SHOULD START";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "304":
+                    lblLabMessage.Text = "OPTICAL SESNOR DETECTS PART, MOTOR SHOULD STAY ON FOR 10 SECONDS";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "305":
+                    lblLabMessage.Text = "VERIFYING THAT MOTOR IS OFF, LIGHT SHOULD BE ON";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "306":
+                    lblLabMessage.Text = "VERIFYING TIME MOTOR IS OFF ";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "307":
+                    lblLabMessage.Text = "VERIFYING MOTOR TURNS ON";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "308":
+                    lblLabMessage.Text = "OPTICAL SESNOR DETECTS PART, MOTOR SHOULD STAYON FOR 10 SECONDS ";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "309":
+                    lblLabMessage.Text = "VERIFYING THAT MOTOR IS OFF, LIGHT SHOULD BE ON";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "310":
+                    lblLabMessage.Text = "VERIFYING TIME MOTOR IS OFF";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "311":
+                    lblLabMessage.Text = "VERIFYING MOTOR TURNS ON ";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "312":
+                    lblLabMessage.Text = "PRESSING STOP BUTTON, LIGHT SHOULD TURN OFF AND MOTOR SHOULD STOP ";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+    
+                case "314":
+                    lblLabMessage.Text = "PRESSING START BUTTON, LIGHT SHOULD TURN ON AND MOTOR SHOULD START ";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+
+                case "315":
+                    lblLabMessage.Text = "PRESSING STOP BUTTON, LIGHT SHOULD TURN OFF AND MOTOR SHOULD STOP";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+                case "316":
+                    lblLabMessage.Text = "PRESSING START BUTTON, LIGHT SHOULD TURN ON AND MOTOR SHOULD START";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "317":
+                    lblLabMessage.Text = "OPTICAL SESNOR DETECTS PART, MOTOR SHOULD STAY ON, LIGHT SHOULD REMAIN ON,CYLINDER SHOULD ACTIVATE";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "318":
+                    lblLabMessage.Text = "AFTER 5 SECONDS, CYLINDER SHOULD DEACTIVATE, MOTOR SHOULD STAY ON, LIGHT SHOULD REMAIN ON";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "319":
+                    lblLabMessage.Text = "OPTICAL SENSOR DETECTS PART, MOTOR SHOULD STAY ON, LIGHT SHOULD REMAIN ON,CYLINDER SHOULD ACTIVATE";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+                case "320":
+                    lblLabMessage.Text = "AFTER 5 SECONDS, CYLINDER SHOULD DEACTIVATE, MOTOR SHOULD STAY ON, LIGHT SHOULD REMAIN ON";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+                case "321":
+                    lblLabMessage.Text = "PRESSING STOP BUTTON, LIGHT SHOULD TURN OFF AND MOTOR SHOULD STOP";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "322":
+                    lblLabStatus.Text = "LAB #7 PASSED";
+                    lblLabStatus.BackColor = Color.Green;
+                    lblLabStatus.ForeColor = Color.White;
+                    lblLabMessage.Text = "";
+                    lblLabMessage.BackColor = Color.Gray;
+                    break;
+
+            }
         }
 
 
@@ -295,6 +417,12 @@ namespace ImpetusLabs.LabsScreen
             TimerLab07.Enabled = false;
             RefreshLabs();
             client.Disconnect();
+            lblLabStatus.Text = "";
+            lblLabStatus.BackColor = Color.Gray;
+            lblLabMessage.Text = "";
+            lblLabMessage.BackColor = Color.Gray;
+
+
         }
     }
 }

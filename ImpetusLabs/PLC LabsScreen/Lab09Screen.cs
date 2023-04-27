@@ -12,7 +12,7 @@ using System.Windows.Forms;
 //Jose was here
 namespace ImpetusLabs.LabsScreen
 {
-    public partial class Lab09Screen : UserControl     
+    public partial class Lab09Screen : UserControl
     {
         public OpcValue[] Lab09Tests = new OpcValue[5];
         private Label[] Lbl2Lab09 = new Label[5];
@@ -33,13 +33,13 @@ namespace ImpetusLabs.LabsScreen
             string currentlab = "Lab #9";
 
             LblCurrentLab.Text = currentlab;
-          
+
         }
 
 
         private void RefreshLabs()
         {
-           
+
 
             //codigo para hacer updates de los test labels
             for (int i = 0; i < Lab09Tests.Length; i++)
@@ -96,30 +96,4 @@ namespace ImpetusLabs.LabsScreen
         {
 
         }
-
-        private void LblLab09Test2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblLab09Test1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblLab09Test3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblLab09Test4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblLab09Test5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-}
