@@ -202,17 +202,17 @@ namespace ImpetusLabs.LabsScreen
             //MOTOR
             if ((bool)Lab08Nodes[5].Value)
             {
-                PicMotor.Image = imageList1.Images[9];
-                lblMotor.ForeColor = Color.White;
-                lblMotor.BackColor = Color.Green;
-                lblMotor.Text = "MOTOR  ON";
+                PicHeater.Image = imageList1.Images[9];
+                lblHeater.ForeColor = Color.White;
+                lblHeater.BackColor = Color.Green;
+                lblHeater.Text = "MOTOR  ON";
             }
             else
             {
-                PicMotor.Image = imageList1.Images[9];
-                lblMotor.ForeColor = Color.White;
-                lblMotor.BackColor = Color.Red;
-                lblMotor.Text = "MOTOR OFF";
+                PicHeater.Image = imageList1.Images[9];
+                lblHeater.ForeColor = Color.White;
+                lblHeater.BackColor = Color.Red;
+                lblHeater.Text = "MOTOR OFF";
             }
 
             string nodeValue = client.ReadNode("ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE").ToString();

@@ -39,7 +39,6 @@
             this.BtnLab08Screen = new System.Windows.Forms.Button();
             this.BtnLab09Screen = new System.Windows.Forms.Button();
             this.BtnLab10Screen = new System.Windows.Forms.Button();
-            this.BtnLab11Screen = new System.Windows.Forms.Button();
             this.BtnLab12Screen = new System.Windows.Forms.Button();
             this.BtnLab13Screen = new System.Windows.Forms.Button();
             this.BtnLab14Screen = new System.Windows.Forms.Button();
@@ -49,6 +48,7 @@
             this.BtnLab18Screen = new System.Windows.Forms.Button();
             this.BtnLab19Screen = new System.Windows.Forms.Button();
             this.BtnLab20Screen = new System.Windows.Forms.Button();
+            this.BtnLab11Screen = new System.Windows.Forms.Button();
             this.LabSelectPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -71,6 +71,7 @@
             this.flowLayoutPanel1.Controls.Add(this.BtnLab08Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab09Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab10Screen);
+            this.flowLayoutPanel1.Controls.Add(this.BtnLab11Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab12Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab13Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab14Screen);
@@ -80,7 +81,6 @@
             this.flowLayoutPanel1.Controls.Add(this.BtnLab18Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab19Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab20Screen);
-            this.flowLayoutPanel1.Controls.Add(this.BtnLab11Screen);
             this.flowLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(87, 35);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
@@ -199,21 +199,10 @@
             this.BtnLab10Screen.UseVisualStyleBackColor = true;
             this.BtnLab10Screen.Click += new System.EventHandler(this.BtnLab10Screen_Click);
             // 
-            // BtnLab11Screen
-            // 
-            this.BtnLab11Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab11Screen.Location = new System.Drawing.Point(702, 431);
-            this.BtnLab11Screen.Name = "BtnLab11Screen";
-            this.BtnLab11Screen.Size = new System.Drawing.Size(227, 101);
-            this.BtnLab11Screen.TabIndex = 10;
-            this.BtnLab11Screen.Text = "Lab 11";
-            this.BtnLab11Screen.UseVisualStyleBackColor = true;
-            this.BtnLab11Screen.Click += new System.EventHandler(this.BtnLab11Screen_Click);
-            // 
             // BtnLab12Screen
             // 
             this.BtnLab12Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab12Screen.Location = new System.Drawing.Point(469, 217);
+            this.BtnLab12Screen.Location = new System.Drawing.Point(702, 217);
             this.BtnLab12Screen.Name = "BtnLab12Screen";
             this.BtnLab12Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab12Screen.TabIndex = 11;
@@ -224,7 +213,7 @@
             // BtnLab13Screen
             // 
             this.BtnLab13Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab13Screen.Location = new System.Drawing.Point(702, 217);
+            this.BtnLab13Screen.Location = new System.Drawing.Point(3, 324);
             this.BtnLab13Screen.Name = "BtnLab13Screen";
             this.BtnLab13Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab13Screen.TabIndex = 12;
@@ -235,7 +224,7 @@
             // BtnLab14Screen
             // 
             this.BtnLab14Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab14Screen.Location = new System.Drawing.Point(3, 324);
+            this.BtnLab14Screen.Location = new System.Drawing.Point(236, 324);
             this.BtnLab14Screen.Name = "BtnLab14Screen";
             this.BtnLab14Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab14Screen.TabIndex = 13;
@@ -246,7 +235,7 @@
             // BtnLab15Screen
             // 
             this.BtnLab15Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab15Screen.Location = new System.Drawing.Point(236, 324);
+            this.BtnLab15Screen.Location = new System.Drawing.Point(469, 324);
             this.BtnLab15Screen.Name = "BtnLab15Screen";
             this.BtnLab15Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab15Screen.TabIndex = 14;
@@ -257,7 +246,7 @@
             // BtnLab16Screen
             // 
             this.BtnLab16Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab16Screen.Location = new System.Drawing.Point(469, 324);
+            this.BtnLab16Screen.Location = new System.Drawing.Point(702, 324);
             this.BtnLab16Screen.Name = "BtnLab16Screen";
             this.BtnLab16Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab16Screen.TabIndex = 15;
@@ -268,7 +257,7 @@
             // BtnLab17Screen
             // 
             this.BtnLab17Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab17Screen.Location = new System.Drawing.Point(702, 324);
+            this.BtnLab17Screen.Location = new System.Drawing.Point(3, 431);
             this.BtnLab17Screen.Name = "BtnLab17Screen";
             this.BtnLab17Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab17Screen.TabIndex = 16;
@@ -279,7 +268,7 @@
             // BtnLab18Screen
             // 
             this.BtnLab18Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab18Screen.Location = new System.Drawing.Point(3, 431);
+            this.BtnLab18Screen.Location = new System.Drawing.Point(236, 431);
             this.BtnLab18Screen.Name = "BtnLab18Screen";
             this.BtnLab18Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab18Screen.TabIndex = 17;
@@ -290,7 +279,7 @@
             // BtnLab19Screen
             // 
             this.BtnLab19Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab19Screen.Location = new System.Drawing.Point(236, 431);
+            this.BtnLab19Screen.Location = new System.Drawing.Point(469, 431);
             this.BtnLab19Screen.Name = "BtnLab19Screen";
             this.BtnLab19Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab19Screen.TabIndex = 18;
@@ -301,13 +290,24 @@
             // BtnLab20Screen
             // 
             this.BtnLab20Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab20Screen.Location = new System.Drawing.Point(469, 431);
+            this.BtnLab20Screen.Location = new System.Drawing.Point(702, 431);
             this.BtnLab20Screen.Name = "BtnLab20Screen";
             this.BtnLab20Screen.Size = new System.Drawing.Size(227, 101);
             this.BtnLab20Screen.TabIndex = 19;
             this.BtnLab20Screen.Text = "Lab 20";
             this.BtnLab20Screen.UseVisualStyleBackColor = true;
             this.BtnLab20Screen.Click += new System.EventHandler(this.BtnLab20Screen_Click);
+            // 
+            // BtnLab11Screen
+            // 
+            this.BtnLab11Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab11Screen.Location = new System.Drawing.Point(469, 217);
+            this.BtnLab11Screen.Name = "BtnLab11Screen";
+            this.BtnLab11Screen.Size = new System.Drawing.Size(227, 101);
+            this.BtnLab11Screen.TabIndex = 10;
+            this.BtnLab11Screen.Text = "Lab 11";
+            this.BtnLab11Screen.UseVisualStyleBackColor = true;
+            this.BtnLab11Screen.Click += new System.EventHandler(this.BtnLab11Screen_Click);
             // 
             // LabSelectPanel
             // 
