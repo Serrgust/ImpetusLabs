@@ -43,6 +43,7 @@
             this.TimerLab09 = new System.Windows.Forms.Timer(this.components);
             this.LblCurrentLab = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnNextLab = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.BtnLab09Start = new System.Windows.Forms.Button();
             this.BtnLab09Stop = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label5 = new System.Windows.Forms.Label();
             this.lblLabMessage = new System.Windows.Forms.Label();
             this.lblLabStatus = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -231,6 +231,16 @@
             this.panel1.Size = new System.Drawing.Size(1112, 420);
             this.panel1.TabIndex = 13;
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(452, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(260, 45);
+            this.label5.TabIndex = 73;
+            this.label5.Text = "SIMULATION";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -306,23 +316,13 @@
             this.imageList1.Images.SetKeyName(4, "Motor1.png");
             this.imageList1.Images.SetKeyName(5, "Motor2.png");
             // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(452, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(260, 45);
-            this.label5.TabIndex = 73;
-            this.label5.Text = "SIMULATION";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblLabMessage
             // 
             this.lblLabMessage.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabMessage.Location = new System.Drawing.Point(0, 0);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1146, 41);
+            this.lblLabMessage.Size = new System.Drawing.Size(1420, 41);
             this.lblLabMessage.TabIndex = 79;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -401,8 +401,7 @@
             this.panel2.Controls.Add(this.PicOS2);
             this.panel2.Controls.Add(this.PicOS1);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1146, 0);
+            this.panel2.Location = new System.Drawing.Point(1115, 44);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(274, 900);
             this.panel2.TabIndex = 76;

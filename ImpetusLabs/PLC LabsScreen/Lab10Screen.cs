@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Documents;
 
 namespace ImpetusLabs.LabsScreen
 {
@@ -36,8 +37,69 @@ namespace ImpetusLabs.LabsScreen
         }
 
 
+
+        private void UpdateLabStatus()
+        {
+
+            bool allPassed = true;
+            bool allFailed = true;
+            bool anyFailed = false;
+
+            for (int i = 0; i < Lab10Tests.Length; i++)
+            {
+                if (Lab10Tests[i] != null)
+                {
+                    string testValue = Lab10Tests[i].ToString();
+
+                    if (testValue.Equals("1"))
+                    {
+                        allFailed = false;
+                        // allPassed = false;
+                    }
+                    else if (testValue.Equals("-1"))
+                    {
+                        allPassed = false;
+                        anyFailed = true;
+                    }
+                    else
+                    {
+                        allPassed = false;
+                        allFailed = false;
+                        break;
+                    }
+                }
+                else
+                {
+                    allPassed = false;
+                    allFailed = false;
+                    break;
+                }
+            }
+
+            if (allPassed)
+            {
+                lblLabStatus.Text = "LAB #10 PASSED";
+                lblLabStatus.BackColor = Color.Green;
+                lblLabStatus.ForeColor = Color.White;
+            }
+            else if (allFailed)
+            {
+                lblLabStatus.Text = "LAB FAILED";
+                lblLabStatus.BackColor = Color.Red;
+                lblLabStatus.ForeColor = Color.White;
+            }
+            else if (anyFailed)
+            {
+                lblLabStatus.Text = "LAB FAILED";
+                lblLabStatus.BackColor = Color.Red;
+                lblLabStatus.ForeColor = Color.White;
+            }
+        }
+
+
         private void RefreshLabs()
         {
+            UpdateLabStatus();
 
 
             //codigo para hacer updates de los test labels
@@ -134,12 +196,67 @@ namespace ImpetusLabs.LabsScreen
                 lblLight.BackColor = Color.Red;
                 lblLight.Text = "LIGHT  OFF";
             }
+
+
+
+            string nodeValue = client.ReadNode("ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE").ToString();
+
+            switch (nodeValue)
+            {
+                case "100":
+                    lblLabMessage.Text = "PRESSING GO BUTTON, MOTOR AND LIGHT SHOULD BE ON";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+                case "101":
+                    lblLabMessage.Text = "PRESSING STOP BUTTON, MOTOR AND LIGHT SHOULD BE OFF";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+                case "102":
+                    lblLabMessage.Text = "PRESSING GO BUTTON MOTOR AND LIGHT SHOULD BE OFF";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "103":
+                    lblLabMessage.Text = "PRESSING GO BUTTON, MOTOR AND LIGHT SHOULD BE ON";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "104":
+                    lblLabMessage.Text = "PRESSING STOP BUTTON, MOTOR AND LIGHT SHOULD BE OFF";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "105":
+                    lblLabMessage.Text = "PRESSING GO BUTTON, MOTOR AND LIGHT SHOULD BE OFF";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "106":
+                    lblLabMessage.Text = "PRESSING GO BUTTON, MOTOR AND LIGHT SHOULD BE ON";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "107":
+                    lblLabMessage.Text = "PRESSING STOP BUTTON, MOTOR AND LIGHT SHOULD BE OFF";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "108":
+                    lblLabStatus.Text = "LAB #10 PASSED";
+                    lblLabStatus.BackColor = Color.Green;
+                    lblLabStatus.ForeColor = Color.White;
+                    lblLabMessage.Text = "";
+                    lblLabMessage.BackColor = Color.Gray;
+                    break;
+            }
         }
 
 
 
 
-        
+
 
         private void BtnLab10Start_Click(object sender, EventArgs e)
         {
@@ -188,6 +305,10 @@ namespace ImpetusLabs.LabsScreen
             TimerLab10.Enabled = false;
             RefreshLabs();
             client.Disconnect();
+            lblLabStatus.Text = "";
+            lblLabStatus.BackColor = Color.Gray;
+            lblLabMessage.Text = "";
+            lblLabMessage.BackColor = Color.Gray;
         }
 
         private void Lab10Screen_Load(object sender, EventArgs e)
