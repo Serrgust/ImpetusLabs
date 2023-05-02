@@ -17,6 +17,8 @@ namespace ImpetusLabs.LabsScreen
         private OpcValue[] Lab12Tests = new OpcValue[3];
         private Label[] Lbl2Lab12 = new Label[3];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
+        private string[] Lab12NodeIds = new string[9] { "ns=2;s=[GustavoDevice]LAB12.FILL", "ns=2;s=[GustavoDevice]LAB12.DRAIN", "ns=2;s=[GustavoDevice]LAB11.L_LEVEL_T1", "ns=2;s=[GustavoDevice]LAB11.H_LEVEL_T1", "ns=2;s=[GustavoDevice]LAB11.L_LEVEL_T2", "ns=2;s=[GustavoDevice]LAB11.IN_VALVE", "ns=2;s=[GustavoDevice]LAB11.INT_VALVE", "ns=2;s=[GustavoDevice]Lab11.TANK_LEVEL", "ns=2;s=[GustavoDevice]Lab11.TANK_LEVEL2" };
+        private OpcValue[] Lab12Nodes = new OpcValue[9];
         public Lab12Screen()
         {
             InitializeComponent();
@@ -25,8 +27,7 @@ namespace ImpetusLabs.LabsScreen
             Lbl2Lab12[1] = Lbl2Lab12Test2;
             Lbl2Lab12[2] = Lbl2Lab12Test3;
 
-            string currentlab = "Lab #12";
-            LblCurrentLab.Text = currentlab;
+           
         }
 
         private void RefreshLabs()
@@ -57,6 +58,43 @@ namespace ImpetusLabs.LabsScreen
                     Lbl2Lab12[i].Text = "FAILED";
                 }
             }
+            // Fotos
+            for (int b = 0; b < Lab12Nodes.Length; b++)
+            {
+                Lab12Nodes[b] = client.ReadNode(Lab12NodeIds[b]);
+            }
+
+            // FILL
+            if ((bool)Lab12Nodes[0].Value)
+            {
+                PicFILL.Image = imageList1.Images[1];
+                lblFILL.ForeColor = Color.White;
+                lblFILL.BackColor = Color.Green;
+                lblFILL.Text = "FILL ON";
+            }
+            else
+            {
+                PicFILL.Image = imageList1.Images[0];
+                lblFILL.ForeColor = Color.White;
+                lblFILL.BackColor = Color.Red;
+                lblFILL.Text = "FILL OFF";
+            }
+
+            //DRAIN
+            if ((bool)Lab12Nodes[1].Value)
+            {
+                PicDrain.Image = imageList1.Images[3];
+                lblDRAIN.ForeColor = Color.White;
+                lblDRAIN.BackColor = Color.Green;
+                lblDRAIN.Text = "DRAIN  ON";
+            }
+            else
+            {
+                PicDrain.Image = imageList1.Images[2];
+                lblDRAIN.ForeColor = Color.White;
+                lblDRAIN.BackColor = Color.Red;
+                lblDRAIN.Text = "DRAIN OFF";
+            }
         }
 
         private void BtnLab12Start_Click(object sender, EventArgs e)
@@ -83,6 +121,11 @@ namespace ImpetusLabs.LabsScreen
         private void TimerLab12_Tick(object sender, EventArgs e)
         {
             RefreshLabs();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

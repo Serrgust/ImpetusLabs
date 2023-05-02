@@ -56,23 +56,27 @@
             this.PicFILL = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.PicTank = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.PicHSwitch = new System.Windows.Forms.PictureBox();
             this.PicLSwitch = new System.Windows.Forms.PictureBox();
+            this.PicHSwitch = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.PicTank = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.pnlTankLevel = new System.Windows.Forms.Panel();
             this.TimerFilling = new System.Windows.Forms.Timer(this.components);
+            this.lblTankFill = new System.Windows.Forms.Label();
+            this.lblLabMessage = new System.Windows.Forms.Label();
+            this.lblLabStatus = new System.Windows.Forms.Label();
+            this.verticalProgressBar1 = new VerticalProgressBar();
+            this.verticalProgressBar2 = new VerticalProgressBar();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFILL)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLSwitch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).BeginInit();
             this.SuspendLayout();
             // 
             // LblLab11Test1
@@ -227,7 +231,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(491, 12);
+            this.label1.Location = new System.Drawing.Point(505, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(260, 45);
             this.label1.TabIndex = 75;
@@ -296,16 +300,16 @@
             this.panel2.Controls.Add(this.PicDrain);
             this.panel2.Controls.Add(this.PicFILL);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Location = new System.Drawing.Point(892, 90);
+            this.panel2.Location = new System.Drawing.Point(886, 90);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(274, 236);
+            this.panel2.Size = new System.Drawing.Size(313, 236);
             this.panel2.TabIndex = 77;
             // 
             // lblDRAIN
             // 
             this.lblDRAIN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDRAIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDRAIN.Location = new System.Drawing.Point(160, 149);
+            this.lblDRAIN.Location = new System.Drawing.Point(206, 147);
             this.lblDRAIN.Name = "lblDRAIN";
             this.lblDRAIN.Size = new System.Drawing.Size(81, 65);
             this.lblDRAIN.TabIndex = 66;
@@ -325,7 +329,7 @@
             // 
             // PicDrain
             // 
-            this.PicDrain.Location = new System.Drawing.Point(160, 60);
+            this.PicDrain.Location = new System.Drawing.Point(206, 60);
             this.PicDrain.Name = "PicDrain";
             this.PicDrain.Size = new System.Drawing.Size(81, 65);
             this.PicDrain.TabIndex = 64;
@@ -342,7 +346,7 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(61, 2);
+            this.label12.Location = new System.Drawing.Point(78, 6);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(146, 45);
             this.label12.TabIndex = 62;
@@ -352,37 +356,54 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.verticalProgressBar2);
+            this.panel3.Controls.Add(this.lblTankFill);
             this.panel3.Controls.Add(this.PicLSwitch);
             this.panel3.Controls.Add(this.PicHSwitch);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pnlTankLevel);
             this.panel3.Controls.Add(this.PicTank);
-            this.panel3.Location = new System.Drawing.Point(892, 341);
+            this.panel3.Location = new System.Drawing.Point(886, 341);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(341, 265);
+            this.panel3.Size = new System.Drawing.Size(313, 265);
             this.panel3.TabIndex = 78;
+            // 
+            // PicLSwitch
+            // 
+            this.PicLSwitch.Location = new System.Drawing.Point(-2, 151);
+            this.PicLSwitch.Name = "PicLSwitch";
+            this.PicLSwitch.Size = new System.Drawing.Size(81, 36);
+            this.PicLSwitch.TabIndex = 69;
+            this.PicLSwitch.TabStop = false;
+            // 
+            // PicHSwitch
+            // 
+            this.PicHSwitch.Location = new System.Drawing.Point(-2, 48);
+            this.PicHSwitch.Name = "PicHSwitch";
+            this.PicHSwitch.Size = new System.Drawing.Size(81, 36);
+            this.PicHSwitch.TabIndex = 67;
+            this.PicHSwitch.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(78, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 45);
+            this.label2.TabIndex = 67;
+            this.label2.Text = "OUTPUTS";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PicTank
             // 
             this.PicTank.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PicTank.Image = ((System.Drawing.Image)(resources.GetObject("PicTank.Image")));
             this.PicTank.ImageLocation = "";
-            this.PicTank.Location = new System.Drawing.Point(99, 48);
+            this.PicTank.Location = new System.Drawing.Point(80, 45);
             this.PicTank.Name = "PicTank";
             this.PicTank.Size = new System.Drawing.Size(142, 210);
             this.PicTank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicTank.TabIndex = 68;
             this.PicTank.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 45);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "OUTPUTS";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // imageList1
             // 
@@ -395,22 +416,6 @@
             this.imageList1.Images.SetKeyName(4, "Level_switch_green-removebg-preview.png");
             this.imageList1.Images.SetKeyName(5, "Level_switch_red-removebg-preview.png");
             // 
-            // PicHSwitch
-            // 
-            this.PicHSwitch.Location = new System.Drawing.Point(17, 50);
-            this.PicHSwitch.Name = "PicHSwitch";
-            this.PicHSwitch.Size = new System.Drawing.Size(81, 36);
-            this.PicHSwitch.TabIndex = 67;
-            this.PicHSwitch.TabStop = false;
-            // 
-            // PicLSwitch
-            // 
-            this.PicLSwitch.Location = new System.Drawing.Point(17, 151);
-            this.PicLSwitch.Name = "PicLSwitch";
-            this.PicLSwitch.Size = new System.Drawing.Size(81, 36);
-            this.PicLSwitch.TabIndex = 69;
-            this.PicLSwitch.TabStop = false;
-            // 
             // imageList2
             // 
             this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
@@ -418,24 +423,61 @@
             this.imageList2.Images.SetKeyName(0, "Level_switch_green-removebg-preview.png");
             this.imageList2.Images.SetKeyName(1, "Level_switch_red-removebg-preview.png");
             // 
-            // pnlTankLevel
-            // 
-            this.pnlTankLevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
-            this.pnlTankLevel.Location = new System.Drawing.Point(99, 50);
-            this.pnlTankLevel.Name = "pnlTankLevel";
-            this.pnlTankLevel.Size = new System.Drawing.Size(142, 146);
-            this.pnlTankLevel.TabIndex = 70;
-            // 
             // TimerFilling
             // 
             this.TimerFilling.Interval = 50;
             this.TimerFilling.Tick += new System.EventHandler(this.TimerFilling_Tick);
+            // 
+            // lblTankFill
+            // 
+            this.lblTankFill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTankFill.Location = new System.Drawing.Point(231, 22);
+            this.lblTankFill.Name = "lblTankFill";
+            this.lblTankFill.Size = new System.Drawing.Size(44, 23);
+            this.lblTankFill.TabIndex = 80;
+            this.lblTankFill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabMessage
+            // 
+            this.lblLabMessage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(0, 0);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1265, 41);
+            this.lblLabMessage.TabIndex = 81;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabStatus
+            // 
+            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabStatus.Location = new System.Drawing.Point(-425, 712);
+            this.lblLabStatus.Name = "lblLabStatus";
+            this.lblLabStatus.Size = new System.Drawing.Size(2115, 41);
+            this.lblLabStatus.TabIndex = 82;
+            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // verticalProgressBar1
+            // 
+            this.verticalProgressBar1.Location = new System.Drawing.Point(-15, -15);
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.Size = new System.Drawing.Size(100, 23);
+            this.verticalProgressBar1.TabIndex = 79;
+            // 
+            // verticalProgressBar2
+            // 
+            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 50);
+            this.verticalProgressBar2.Name = "verticalProgressBar2";
+            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar2.TabIndex = 80;
             // 
             // Lab11Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.lblLabStatus);
+            this.Controls.Add(this.lblLabMessage);
+            this.Controls.Add(this.verticalProgressBar1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
@@ -444,15 +486,16 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab11Screen";
             this.Size = new System.Drawing.Size(1265, 753);
+            this.Load += new System.EventHandler(this.Lab11Screen_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicDrain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFILL)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLSwitch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -491,7 +534,11 @@
         private System.Windows.Forms.PictureBox PicLSwitch;
         private System.Windows.Forms.PictureBox PicHSwitch;
         private System.Windows.Forms.ImageList imageList2;
-        private System.Windows.Forms.Panel pnlTankLevel;
         private System.Windows.Forms.Timer TimerFilling;
+        private System.Windows.Forms.Label lblTankFill;
+        private VerticalProgressBar verticalProgressBar1;
+        private VerticalProgressBar verticalProgressBar2;
+        private System.Windows.Forms.Label lblLabMessage;
+        private System.Windows.Forms.Label lblLabStatus;
     }
 }

@@ -11,12 +11,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.NetworkInformation;
 using System.Drawing.Drawing2D;
+using System.ComponentModel.Design;
 
 namespace ImpetusLabs.LabsScreen
 {
 
+
+
     public partial class Lab11Screen : UserControl
     {
+
         public OpcValue[] Lab11Tests = new OpcValue[5];
         private Label[] Lbl2Lab11 = new Label[5];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
@@ -35,9 +39,70 @@ namespace ImpetusLabs.LabsScreen
 
 
         }
-        private void RefreshLabs()
+
+        private void UpdateLabStatus()
         {
 
+            bool allPassed = true;
+            bool allFailed = true;
+            bool anyFailed = false;
+
+            for (int i = 0; i < Lab11Tests.Length; i++)
+            {
+                if (Lab11Tests[i] != null)
+                {
+                    string testValue = Lab11Tests[i].ToString();
+
+                    if (testValue.Equals("1"))
+                    {
+                        allFailed = false;
+                        // allPassed = false;
+                    }
+                    else if (testValue.Equals("-1"))
+                    {
+                        allPassed = false;
+                        anyFailed = true;
+                    }
+                    else
+                    {
+                        allPassed = false;
+                        allFailed = false;
+                        break;
+                    }
+                }
+                else
+                {
+                    allPassed = false;
+                    allFailed = false;
+                    break;
+                }
+            }
+
+            if (allPassed)
+            {
+                lblLabStatus.Text = "LAB #11 PASSED";
+                lblLabStatus.BackColor = Color.Green;
+                lblLabStatus.ForeColor = Color.White;
+            }
+            else if (allFailed)
+            {
+                lblLabStatus.Text = "LAB FAILED";
+                lblLabStatus.BackColor = Color.Red;
+                lblLabStatus.ForeColor = Color.White;
+            }
+            else if (anyFailed)
+            {
+                lblLabStatus.Text = "LAB FAILED";
+                lblLabStatus.BackColor = Color.Red;
+                lblLabStatus.ForeColor = Color.White;
+            }
+        }
+
+
+
+        private void RefreshLabs()
+        {
+            UpdateLabStatus();
 
             //codigo para hacer updates de los test labels
             for (int i = 0; i < Lab11Tests.Length; i++)
@@ -104,16 +169,6 @@ namespace ImpetusLabs.LabsScreen
             }
 
 
-            // Nivel del Tanque
-            double tankLevel = Convert.ToDouble(Lab11Nodes[4].Value);
-            TankHeight = (int)((PicTank.Height - 4) * (tankLevel / 100.0));
-
-            // Limit the tank height to the tank's height
-            TankHeight = Math.Min(TankHeight, PicTank.Height - 4);
-
-            // Update the tank level panel
-            pnlTankLevel.Height = TankHeight;
-            pnlTankLevel.Top = PicTank.Height - TankHeight - 2;
 
 
             //HighSwitch
@@ -124,24 +179,48 @@ namespace ImpetusLabs.LabsScreen
             bool lSwitch = (bool)Lab11Nodes[2].Value;
             PicLSwitch.Image = lSwitch ? imageList1.Images[4] : imageList1.Images[5];
 
+            string nodeValue = client.ReadNode("ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE").ToString();
+
+            switch (nodeValue)
+            {
+                case "1106":
+                    lblLabMessage.Text = "TOGGLE START, INLET AND OUTLET VALVES SHOUD BE OFF";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+                case "1107":
+                    lblLabMessage.Text = "TOGGLE FILL BUTTON, INLET VALVE SHOULD TURN ON. OUTLET VALVE SHOULD BE OFF";
+                    lblLabMessage.ForeColor = Color.White;
+                    lblLabMessage.BackColor = Color.Black;
+                    break;
+                case "1108":
+                    lblLabMessage.Text = "WHEN UPPER LIMIT SWITCH IS ACTIVATED, INLET VALVE SHOULD TURN OFF";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "1109":
+                    lblLabMessage.Text = "TOGGLE DRAIN BUTTON, OUTLET VALVE SHOULD TURN ON. INLET VALVE SHOULD BE OFF";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "1110":
+                    lblLabMessage.Text = "WHEN LOWER LIMIT SWITCH IS ACTIVATED, OUTLET VALVE SHOULD TURN OFF";
+                    lblLabMessage.BackColor = Color.Black;
+                    lblLabMessage.ForeColor = Color.White;
+                    break;
+                case "1105":
+                    lblLabStatus.Text = "LAB #11 PASSED";
+                    lblLabStatus.BackColor = Color.Green;
+                    lblLabStatus.ForeColor = Color.White;
+                    lblLabMessage.Text = "";
+                    lblLabMessage.BackColor = Color.Gray;
+                    break;
+            
+              
+
+            }
 
         }
-
-        private void PicTank_Paint(object sender, PaintEventArgs e)
-        {
-            int tankTop = PicTank.Height - TankHeight - 2;
-            int tankLeft = 2;
-            int tankWidth = PicTank.Width - 4; //4
-
-            // Draw the water
-            e.Graphics.FillRectangle(Brushes.Blue, tankLeft, tankTop, tankWidth, TankHeight);
-
-            // Draw the border around the tank
-            e.Graphics.DrawRectangle(Pens.Black, tankLeft, 0, tankWidth, PicTank.Height - 2);
-        }
-
-
-
 
 
 
@@ -170,46 +249,40 @@ namespace ImpetusLabs.LabsScreen
             TimerLab11.Enabled = false;
             RefreshLabs();
             client.Disconnect();
+            lblLabStatus.Text = "";
+            lblLabStatus.BackColor = Color.Gray;
+            lblLabMessage.Text = "";
+            lblLabMessage.BackColor = Color.Gray;
         }
 
         private void TimerFilling_Tick(object sender, EventArgs e)
         {
 
-            if (Lab11Nodes != null && Lab11Nodes[4] != null && Lab11Nodes[4].Value != null && PicTank != null)
+            // Check if the Lab11Nodes array has been initialized and has a value at index 4
+            if (Lab11Nodes != null && Lab11Nodes.Length > 4 && Lab11Nodes[4] != null && Lab11Nodes[4].Value != null)
             {
-                //    double tankLevel = Convert.ToDouble(Lab11Nodes[4].Value);
-                //    TankHeight = (int)((PicTank.Height - 4) * (tankLevel / 100.0));
-                //    PicTank.Invalidate(); // Redraw the tank
-                double tankLevel = Convert.ToDouble(Lab11Nodes[4].Value);
-                TankHeight = (int)((PicTank.Height - 4) * (tankLevel / 100.0));
-                int fillingHeight = Math.Min(TankHeight, pnlTankLevel.Height); // limit the filling height to the tank height
-                int fillingTop = PicTank.Height - fillingHeight - 2; // position the filling panel at the bottom of the tank
-                pnlTankLevel.Height = fillingHeight;
-                pnlTankLevel.Top = fillingTop - 10;
-                PicTank.Invalidate(); // Redraw the tank
+                // Read the value of your node and set the ProgressBar value
+                double nodeValue = Convert.ToDouble(Lab11Nodes[4].Value);
+                verticalProgressBar2.Value = (int)nodeValue;
 
+                // Set the Text property of the label to the percentage value
+                lblTankFill.Text = verticalProgressBar2.Value.ToString() + "%";
 
             }
         }
 
-  
-            public static GraphicsPath Create(float x, float y, float width, float height, float radius)
-            {
-                GraphicsPath path = new GraphicsPath();
-                path.StartFigure();
-                path.AddArc(x + width - radius, y, radius, radius, 270, 90);
-                path.AddArc(x + width - radius, y + height - radius, radius, radius, 0, 90);
-                path.AddArc(x, y + height - radius, radius, radius, 90, 90);
-                path.AddArc(x, y, radius, radius, 180, 90);
-                path.CloseFigure();
-                return path;
 
+        private void Lab11Screen_Load(object sender, EventArgs e)
+        {
 
-            }
+        }
+
+        private void TankLevelBar_Click(object sender, EventArgs e)
+        {
+
         }
     }
-
-
+    }
 
 
 
