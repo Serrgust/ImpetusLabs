@@ -53,6 +53,10 @@ namespace ImpetusLabs.LabsScreen
             this.panel5 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblMotor = new System.Windows.Forms.Label();
+            this.lblClamp = new System.Windows.Forms.Label();
+            this.PicClamp = new System.Windows.Forms.PictureBox();
+            this.PicMotor = new System.Windows.Forms.PictureBox();
             this.lblSpray = new System.Windows.Forms.Label();
             this.lblHeater = new System.Windows.Forms.Label();
             this.PicSpray = new System.Windows.Forms.PictureBox();
@@ -65,21 +69,17 @@ namespace ImpetusLabs.LabsScreen
             this.PicStart = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.lblMotor = new System.Windows.Forms.Label();
-            this.lblClamp = new System.Windows.Forms.Label();
-            this.PicMotor = new System.Windows.Forms.PictureBox();
-            this.PicClamp = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicClamp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpray)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeater)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicSensor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicClamp)).BeginInit();
             this.SuspendLayout();
             // 
             // LblLab08Test1
@@ -250,6 +250,7 @@ namespace ImpetusLabs.LabsScreen
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab08Start
             // 
@@ -326,6 +327,44 @@ namespace ImpetusLabs.LabsScreen
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(274, 408);
             this.panel3.TabIndex = 68;
+            // 
+            // lblMotor
+            // 
+            this.lblMotor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotor.Location = new System.Drawing.Point(160, 330);
+            this.lblMotor.Name = "lblMotor";
+            this.lblMotor.Size = new System.Drawing.Size(81, 65);
+            this.lblMotor.TabIndex = 70;
+            this.lblMotor.Text = "MOTOR OFF";
+            this.lblMotor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblClamp
+            // 
+            this.lblClamp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblClamp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClamp.Location = new System.Drawing.Point(33, 326);
+            this.lblClamp.Name = "lblClamp";
+            this.lblClamp.Size = new System.Drawing.Size(81, 65);
+            this.lblClamp.TabIndex = 69;
+            this.lblClamp.Text = "CLAMP OFF";
+            this.lblClamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicClamp
+            // 
+            this.PicClamp.Location = new System.Drawing.Point(33, 251);
+            this.PicClamp.Name = "PicClamp";
+            this.PicClamp.Size = new System.Drawing.Size(81, 65);
+            this.PicClamp.TabIndex = 68;
+            this.PicClamp.TabStop = false;
+            // 
+            // PicMotor
+            // 
+            this.PicMotor.Location = new System.Drawing.Point(160, 251);
+            this.PicMotor.Name = "PicMotor";
+            this.PicMotor.Size = new System.Drawing.Size(81, 65);
+            this.PicMotor.TabIndex = 67;
+            this.PicMotor.TabStop = false;
             // 
             // lblSpray
             // 
@@ -451,44 +490,6 @@ namespace ImpetusLabs.LabsScreen
             this.imageList1.Images.SetKeyName(8, "clamp off.png");
             this.imageList1.Images.SetKeyName(9, "Motor1.png");
             // 
-            // lblMotor
-            // 
-            this.lblMotor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMotor.Location = new System.Drawing.Point(160, 330);
-            this.lblMotor.Name = "lblMotor";
-            this.lblMotor.Size = new System.Drawing.Size(81, 65);
-            this.lblMotor.TabIndex = 70;
-            this.lblMotor.Text = "MOTOR OFF";
-            this.lblMotor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblClamp
-            // 
-            this.lblClamp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblClamp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClamp.Location = new System.Drawing.Point(33, 326);
-            this.lblClamp.Name = "lblClamp";
-            this.lblClamp.Size = new System.Drawing.Size(81, 65);
-            this.lblClamp.TabIndex = 69;
-            this.lblClamp.Text = "CLAMP OFF";
-            this.lblClamp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PicMotor
-            // 
-            this.PicMotor.Location = new System.Drawing.Point(160, 251);
-            this.PicMotor.Name = "PicMotor";
-            this.PicMotor.Size = new System.Drawing.Size(81, 65);
-            this.PicMotor.TabIndex = 67;
-            this.PicMotor.TabStop = false;
-            // 
-            // PicClamp
-            // 
-            this.PicClamp.Location = new System.Drawing.Point(33, 251);
-            this.PicClamp.Name = "PicClamp";
-            this.PicClamp.Size = new System.Drawing.Size(81, 65);
-            this.PicClamp.TabIndex = 68;
-            this.PicClamp.TabStop = false;
-            // 
             // Lab08Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,13 +504,13 @@ namespace ImpetusLabs.LabsScreen
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicClamp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSpray)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeater)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicSensor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicClamp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

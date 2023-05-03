@@ -56,6 +56,8 @@
             this.PicFILL = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.verticalProgressBar2 = new VerticalProgressBar();
+            this.lblTankFill = new System.Windows.Forms.Label();
             this.PicLSwitch = new System.Windows.Forms.PictureBox();
             this.PicHSwitch = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,11 +65,9 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.TimerFilling = new System.Windows.Forms.Timer(this.components);
-            this.lblTankFill = new System.Windows.Forms.Label();
             this.lblLabMessage = new System.Windows.Forms.Label();
             this.lblLabStatus = new System.Windows.Forms.Label();
             this.verticalProgressBar1 = new VerticalProgressBar();
-            this.verticalProgressBar2 = new VerticalProgressBar();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -269,6 +269,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab11Start
             // 
@@ -367,6 +368,22 @@
             this.panel3.Size = new System.Drawing.Size(313, 265);
             this.panel3.TabIndex = 78;
             // 
+            // verticalProgressBar2
+            // 
+            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 50);
+            this.verticalProgressBar2.Name = "verticalProgressBar2";
+            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar2.TabIndex = 80;
+            // 
+            // lblTankFill
+            // 
+            this.lblTankFill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTankFill.Location = new System.Drawing.Point(231, 22);
+            this.lblTankFill.Name = "lblTankFill";
+            this.lblTankFill.Size = new System.Drawing.Size(44, 23);
+            this.lblTankFill.TabIndex = 80;
+            this.lblTankFill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // PicLSwitch
             // 
             this.PicLSwitch.Location = new System.Drawing.Point(-2, 151);
@@ -428,15 +445,6 @@
             this.TimerFilling.Interval = 50;
             this.TimerFilling.Tick += new System.EventHandler(this.TimerFilling_Tick);
             // 
-            // lblTankFill
-            // 
-            this.lblTankFill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTankFill.Location = new System.Drawing.Point(231, 22);
-            this.lblTankFill.Name = "lblTankFill";
-            this.lblTankFill.Size = new System.Drawing.Size(44, 23);
-            this.lblTankFill.TabIndex = 80;
-            this.lblTankFill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblLabMessage
             // 
             this.lblLabMessage.Dock = System.Windows.Forms.DockStyle.Top;
@@ -462,13 +470,6 @@
             this.verticalProgressBar1.Name = "verticalProgressBar1";
             this.verticalProgressBar1.Size = new System.Drawing.Size(100, 23);
             this.verticalProgressBar1.TabIndex = 79;
-            // 
-            // verticalProgressBar2
-            // 
-            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 50);
-            this.verticalProgressBar2.Name = "verticalProgressBar2";
-            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
-            this.verticalProgressBar2.TabIndex = 80;
             // 
             // Lab11Screen
             // 

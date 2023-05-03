@@ -424,5 +424,13 @@ namespace ImpetusLabs.LabsScreen
 
 
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            var BackToLab06 = new Lab06Screen();
+            Parent.Controls.Add(BackToLab06);
+            BackToLab06.Dock = DockStyle.Fill;
+            Parent.Controls.Remove(this);
+        }
     }
 }

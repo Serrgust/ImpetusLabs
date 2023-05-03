@@ -30,10 +30,7 @@ namespace ImpetusLabs.LabsScreen
             Lbl2Lab14[6] = Lbl2Lab14Test7;
             Lbl2Lab14[7] = Lbl2Lab14Test8;
 
-            //Label that displays current lab
-             string currentlab = "Lab #14";
-            LblCurrentLab.Text = currentlab;
-
+          
         }
 
         private void RefreshLabs()
@@ -89,6 +86,11 @@ namespace ImpetusLabs.LabsScreen
         private void TimerLab14_Tick(object sender, EventArgs e)
         {
             RefreshLabs();
+        }
+
+        private void Lab14Screen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

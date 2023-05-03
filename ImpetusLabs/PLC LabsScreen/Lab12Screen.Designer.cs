@@ -50,42 +50,52 @@
             this.BtnLab12Start = new System.Windows.Forms.Button();
             this.BtnLab12Stop = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.verticalProgressBar2 = new VerticalProgressBar();
+            this.lblOutvalve = new System.Windows.Forms.Label();
+            this.lblInvalve = new System.Windows.Forms.Label();
+            this.lblIntvalve = new System.Windows.Forms.Label();
+            this.PicInvalve = new System.Windows.Forms.PictureBox();
+            this.PicOutvalve = new System.Windows.Forms.PictureBox();
+            this.PicIntvalve = new System.Windows.Forms.PictureBox();
+            this.lblTankFill2 = new System.Windows.Forms.Label();
+            this.PicLLT2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTankFill = new System.Windows.Forms.Label();
             this.PicLSwitch = new System.Windows.Forms.PictureBox();
             this.PicHSwitch = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.PicTank = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.verticalProgressBar1 = new VerticalProgressBar();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PicINTValve = new System.Windows.Forms.PictureBox();
-            this.PicINValve = new System.Windows.Forms.PictureBox();
+            this.TimerFilling = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.verticalProgressBar2 = new VerticalProgressBar();
+            this.verticalProgressBar1 = new VerticalProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblLabMessage = new System.Windows.Forms.Label();
+            this.lblLabStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFILL)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicInvalve)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOutvalve)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicIntvalve)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLLT2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTank)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicINTValve)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicINValve)).BeginInit();
             this.SuspendLayout();
             // 
             // LblLab12Test1
             // 
             this.LblLab12Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab12Test1.Location = new System.Drawing.Point(55, 77);
+            this.LblLab12Test1.Location = new System.Drawing.Point(34, 269);
             this.LblLab12Test1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab12Test1.Name = "LblLab12Test1";
-            this.LblLab12Test1.Size = new System.Drawing.Size(68, 24);
+            this.LblLab12Test1.Size = new System.Drawing.Size(146, 45);
             this.LblLab12Test1.TabIndex = 0;
             this.LblLab12Test1.Text = "Test 1 ";
             this.LblLab12Test1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,7 +105,7 @@
             this.Lbl2Lab12Test1.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab12Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab12Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab12Test1.Location = new System.Drawing.Point(188, 56);
+            this.Lbl2Lab12Test1.Location = new System.Drawing.Point(184, 270);
             this.Lbl2Lab12Test1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab12Test1.Name = "Lbl2Lab12Test1";
             this.Lbl2Lab12Test1.Size = new System.Drawing.Size(146, 45);
@@ -108,7 +118,7 @@
             this.Lbl2Lab12Test2.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab12Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab12Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab12Test2.Location = new System.Drawing.Point(188, 125);
+            this.Lbl2Lab12Test2.Location = new System.Drawing.Point(184, 322);
             this.Lbl2Lab12Test2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab12Test2.Name = "Lbl2Lab12Test2";
             this.Lbl2Lab12Test2.Size = new System.Drawing.Size(146, 45);
@@ -119,10 +129,10 @@
             // LblLab12Test2
             // 
             this.LblLab12Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab12Test2.Location = new System.Drawing.Point(55, 146);
+            this.LblLab12Test2.Location = new System.Drawing.Point(34, 321);
             this.LblLab12Test2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab12Test2.Name = "LblLab12Test2";
-            this.LblLab12Test2.Size = new System.Drawing.Size(68, 24);
+            this.LblLab12Test2.Size = new System.Drawing.Size(146, 45);
             this.LblLab12Test2.TabIndex = 2;
             this.LblLab12Test2.Text = "Test 2";
             this.LblLab12Test2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,7 +142,7 @@
             this.Lbl2Lab12Test3.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab12Test3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab12Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab12Test3.Location = new System.Drawing.Point(188, 196);
+            this.Lbl2Lab12Test3.Location = new System.Drawing.Point(184, 379);
             this.Lbl2Lab12Test3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab12Test3.Name = "Lbl2Lab12Test3";
             this.Lbl2Lab12Test3.Size = new System.Drawing.Size(146, 45);
@@ -143,10 +153,10 @@
             // LblLab12Test3
             // 
             this.LblLab12Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab12Test3.Location = new System.Drawing.Point(55, 217);
+            this.LblLab12Test3.Location = new System.Drawing.Point(34, 379);
             this.LblLab12Test3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab12Test3.Name = "LblLab12Test3";
-            this.LblLab12Test3.Size = new System.Drawing.Size(68, 24);
+            this.LblLab12Test3.Size = new System.Drawing.Size(146, 45);
             this.LblLab12Test3.TabIndex = 4;
             this.LblLab12Test3.Text = "Test 3";
             this.LblLab12Test3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,15 +170,20 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.lblLabMessage);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Lbl2Lab12Test3);
             this.panel1.Controls.Add(this.LblLab12Test3);
             this.panel1.Controls.Add(this.Lbl2Lab12Test2);
             this.panel1.Controls.Add(this.LblLab12Test2);
             this.panel1.Controls.Add(this.Lbl2Lab12Test1);
             this.panel1.Controls.Add(this.LblLab12Test1);
-            this.panel1.Location = new System.Drawing.Point(106, 32);
+            this.panel1.Location = new System.Drawing.Point(20, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(380, 289);
+            this.panel1.Size = new System.Drawing.Size(1261, 935);
             this.panel1.TabIndex = 8;
             // 
             // panel2
@@ -179,16 +194,16 @@
             this.panel2.Controls.Add(this.PicDrain);
             this.panel2.Controls.Add(this.PicFILL);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Location = new System.Drawing.Point(537, 32);
+            this.panel2.Location = new System.Drawing.Point(490, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(313, 236);
+            this.panel2.Size = new System.Drawing.Size(599, 236);
             this.panel2.TabIndex = 78;
             // 
             // lblDRAIN
             // 
             this.lblDRAIN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDRAIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDRAIN.Location = new System.Drawing.Point(206, 147);
+            this.lblDRAIN.Location = new System.Drawing.Point(450, 147);
             this.lblDRAIN.Name = "lblDRAIN";
             this.lblDRAIN.Size = new System.Drawing.Size(81, 65);
             this.lblDRAIN.TabIndex = 66;
@@ -208,7 +223,8 @@
             // 
             // PicDrain
             // 
-            this.PicDrain.Location = new System.Drawing.Point(206, 60);
+            this.PicDrain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.PicDrain.Location = new System.Drawing.Point(450, 60);
             this.PicDrain.Name = "PicDrain";
             this.PicDrain.Size = new System.Drawing.Size(81, 65);
             this.PicDrain.TabIndex = 64;
@@ -225,7 +241,7 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(78, 6);
+            this.label12.Location = new System.Drawing.Point(212, 6);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(146, 45);
             this.label12.TabIndex = 62;
@@ -239,7 +255,7 @@
             this.panel4.Controls.Add(this.BtnBack);
             this.panel4.Controls.Add(this.BtnLab12Start);
             this.panel4.Controls.Add(this.BtnLab12Stop);
-            this.panel4.Location = new System.Drawing.Point(16, 743);
+            this.panel4.Location = new System.Drawing.Point(291, 784);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(591, 86);
             this.panel4.TabIndex = 79;
@@ -273,6 +289,7 @@
             this.BtnLab12Start.TabIndex = 8;
             this.BtnLab12Start.Text = "START SIM";
             this.BtnLab12Start.UseVisualStyleBackColor = true;
+            this.BtnLab12Start.Click += new System.EventHandler(this.BtnLab12Start_Click_1);
             // 
             // BtnLab12Stop
             // 
@@ -283,38 +300,123 @@
             this.BtnLab12Stop.TabIndex = 9;
             this.BtnLab12Stop.Text = "STOP SIM";
             this.BtnLab12Stop.UseVisualStyleBackColor = true;
+            this.BtnLab12Stop.Click += new System.EventHandler(this.BtnLab12Stop_Click_1);
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.PicINValve);
-            this.panel3.Controls.Add(this.PicINTValve);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.verticalProgressBar1);
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.lblOutvalve);
+            this.panel3.Controls.Add(this.lblInvalve);
+            this.panel3.Controls.Add(this.lblIntvalve);
+            this.panel3.Controls.Add(this.PicInvalve);
+            this.panel3.Controls.Add(this.PicOutvalve);
+            this.panel3.Controls.Add(this.PicIntvalve);
+            this.panel3.Controls.Add(this.lblTankFill2);
+            this.panel3.Controls.Add(this.PicLLT2);
             this.panel3.Controls.Add(this.verticalProgressBar2);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.verticalProgressBar1);
             this.panel3.Controls.Add(this.lblTankFill);
             this.panel3.Controls.Add(this.PicLSwitch);
             this.panel3.Controls.Add(this.PicHSwitch);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.PicTank);
-            this.panel3.Location = new System.Drawing.Point(512, 297);
+            this.panel3.Location = new System.Drawing.Point(512, 301);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(599, 440);
+            this.panel3.Size = new System.Drawing.Size(599, 482);
             this.panel3.TabIndex = 80;
             // 
-            // verticalProgressBar2
+            // lblOutvalve
             // 
-            this.verticalProgressBar2.Location = new System.Drawing.Point(273, 68);
-            this.verticalProgressBar2.Name = "verticalProgressBar2";
-            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
-            this.verticalProgressBar2.TabIndex = 80;
+            this.lblOutvalve.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOutvalve.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutvalve.Location = new System.Drawing.Point(475, 394);
+            this.lblOutvalve.Name = "lblOutvalve";
+            this.lblOutvalve.Size = new System.Drawing.Size(81, 65);
+            this.lblOutvalve.TabIndex = 87;
+            this.lblOutvalve.Text = "OUT VALVE OFF";
+            this.lblOutvalve.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblInvalve
+            // 
+            this.lblInvalve.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblInvalve.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInvalve.Location = new System.Drawing.Point(31, 394);
+            this.lblInvalve.Name = "lblInvalve";
+            this.lblInvalve.Size = new System.Drawing.Size(81, 65);
+            this.lblInvalve.TabIndex = 86;
+            this.lblInvalve.Text = "IN VALVE OFF";
+            this.lblInvalve.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblIntvalve
+            // 
+            this.lblIntvalve.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblIntvalve.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIntvalve.Location = new System.Drawing.Point(277, 394);
+            this.lblIntvalve.Name = "lblIntvalve";
+            this.lblIntvalve.Size = new System.Drawing.Size(81, 65);
+            this.lblIntvalve.TabIndex = 68;
+            this.lblIntvalve.Text = "INT VALVE OFF";
+            this.lblIntvalve.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicInvalve
+            // 
+            this.PicInvalve.Location = new System.Drawing.Point(33, 314);
+            this.PicInvalve.Name = "PicInvalve";
+            this.PicInvalve.Size = new System.Drawing.Size(81, 65);
+            this.PicInvalve.TabIndex = 85;
+            this.PicInvalve.TabStop = false;
+            // 
+            // PicOutvalve
+            // 
+            this.PicOutvalve.Location = new System.Drawing.Point(475, 314);
+            this.PicOutvalve.Name = "PicOutvalve";
+            this.PicOutvalve.Size = new System.Drawing.Size(81, 65);
+            this.PicOutvalve.TabIndex = 68;
+            this.PicOutvalve.TabStop = false;
+            // 
+            // PicIntvalve
+            // 
+            this.PicIntvalve.Location = new System.Drawing.Point(277, 314);
+            this.PicIntvalve.Name = "PicIntvalve";
+            this.PicIntvalve.Size = new System.Drawing.Size(81, 65);
+            this.PicIntvalve.TabIndex = 67;
+            this.PicIntvalve.TabStop = false;
+            // 
+            // lblTankFill2
+            // 
+            this.lblTankFill2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTankFill2.Location = new System.Drawing.Point(231, 51);
+            this.lblTankFill2.Name = "lblTankFill2";
+            this.lblTankFill2.Size = new System.Drawing.Size(44, 23);
+            this.lblTankFill2.TabIndex = 84;
+            this.lblTankFill2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTankFill2.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // PicLLT2
+            // 
+            this.PicLLT2.Location = new System.Drawing.Point(295, 180);
+            this.PicLLT2.Name = "PicLLT2";
+            this.PicLLT2.Size = new System.Drawing.Size(81, 36);
+            this.PicLLT2.TabIndex = 83;
+            this.PicLLT2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "";
+            this.pictureBox1.Location = new System.Drawing.Point(376, 68);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 210);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 81;
+            this.pictureBox1.TabStop = false;
             // 
             // lblTankFill
             // 
             this.lblTankFill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTankFill.Location = new System.Drawing.Point(260, 42);
+            this.lblTankFill.Location = new System.Drawing.Point(529, 62);
             this.lblTankFill.Name = "lblTankFill";
             this.lblTankFill.Size = new System.Drawing.Size(44, 23);
             this.lblTankFill.TabIndex = 80;
@@ -322,7 +424,7 @@
             // 
             // PicLSwitch
             // 
-            this.PicLSwitch.Location = new System.Drawing.Point(25, 154);
+            this.PicLSwitch.Location = new System.Drawing.Point(1, 171);
             this.PicLSwitch.Name = "PicLSwitch";
             this.PicLSwitch.Size = new System.Drawing.Size(81, 36);
             this.PicLSwitch.TabIndex = 69;
@@ -330,7 +432,7 @@
             // 
             // PicHSwitch
             // 
-            this.PicHSwitch.Location = new System.Drawing.Point(25, 51);
+            this.PicHSwitch.Location = new System.Drawing.Point(1, 68);
             this.PicHSwitch.Name = "PicHSwitch";
             this.PicHSwitch.Size = new System.Drawing.Size(81, 36);
             this.PicHSwitch.TabIndex = 67;
@@ -339,7 +441,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(212, 0);
+            this.label2.Location = new System.Drawing.Point(224, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 45);
             this.label2.TabIndex = 67;
@@ -351,76 +453,29 @@
             this.PicTank.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PicTank.Image = ((System.Drawing.Image)(resources.GetObject("PicTank.Image")));
             this.PicTank.ImageLocation = "";
-            this.PicTank.Location = new System.Drawing.Point(107, 48);
+            this.PicTank.Location = new System.Drawing.Point(83, 65);
             this.PicTank.Name = "PicTank";
             this.PicTank.Size = new System.Drawing.Size(142, 210);
             this.PicTank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicTank.TabIndex = 68;
             this.PicTank.TabStop = false;
             // 
-            // pictureBox1
+            // TimerFilling
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(390, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 210);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 81;
-            this.pictureBox1.TabStop = false;
-            // 
-            // verticalProgressBar1
-            // 
-            this.verticalProgressBar1.Location = new System.Drawing.Point(541, 65);
-            this.verticalProgressBar1.Name = "verticalProgressBar1";
-            this.verticalProgressBar1.Size = new System.Drawing.Size(29, 190);
-            this.verticalProgressBar1.TabIndex = 82;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(309, 160);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(81, 36);
-            this.pictureBox2.TabIndex = 83;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(538, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 23);
-            this.label1.TabIndex = 84;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // PicINTValve
-            // 
-            this.PicINTValve.Location = new System.Drawing.Point(83, 302);
-            this.PicINTValve.Name = "PicINTValve";
-            this.PicINTValve.Size = new System.Drawing.Size(81, 65);
-            this.PicINTValve.TabIndex = 67;
-            this.PicINTValve.TabStop = false;
-            // 
-            // PicINValve
-            // 
-            this.PicINValve.Location = new System.Drawing.Point(390, 302);
-            this.PicINValve.Name = "PicINValve";
-            this.PicINValve.Size = new System.Drawing.Size(81, 65);
-            this.PicINValve.TabIndex = 68;
-            this.PicINValve.TabStop = false;
+            this.TimerFilling.Interval = 50;
+            this.TimerFilling.Tick += new System.EventHandler(this.TimerFilling_Tick);
             // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "FILL OFF.png");
-            this.imageList1.Images.SetKeyName(1, "FILL ON.png");
-            this.imageList1.Images.SetKeyName(2, "DRAIN OFF.png");
-            this.imageList1.Images.SetKeyName(3, "DRAIN ON.png");
-            this.imageList1.Images.SetKeyName(4, "PVC two-way ball  valve on.png");
-            this.imageList1.Images.SetKeyName(5, "Solenoid valve.png");
+            this.imageList1.Images.SetKeyName(0, "Start1.2.png");
+            this.imageList1.Images.SetKeyName(1, "Start1.png");
+            this.imageList1.Images.SetKeyName(2, "Start2.1.png");
+            this.imageList1.Images.SetKeyName(3, "Start2.png");
+            this.imageList1.Images.SetKeyName(4, "Solenoid valve.png");
+            this.imageList1.Images.SetKeyName(5, "PVC two-way ball  valve on.png");
+            this.imageList1.Images.SetKeyName(6, "Drain_valve-removebg-preview.png");
             // 
             // imageList2
             // 
@@ -429,31 +484,84 @@
             this.imageList2.Images.SetKeyName(0, "Level_switch_green-removebg-preview.png");
             this.imageList2.Images.SetKeyName(1, "Level_switch_red-removebg-preview.png");
             // 
+            // verticalProgressBar2
+            // 
+            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 88);
+            this.verticalProgressBar2.Name = "verticalProgressBar2";
+            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar2.TabIndex = 82;
+            // 
+            // verticalProgressBar1
+            // 
+            this.verticalProgressBar1.Location = new System.Drawing.Point(542, 88);
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar1.TabIndex = 80;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(180, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 45);
+            this.label1.TabIndex = 67;
+            this.label1.Text = "SIMULATION";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(184, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 45);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "LAB #12";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabMessage
+            // 
+            this.lblLabMessage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(0, 0);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1257, 41);
+            this.lblLabMessage.TabIndex = 82;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabStatus
+            // 
+            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabStatus.Location = new System.Drawing.Point(-403, 866);
+            this.lblLabStatus.Name = "lblLabStatus";
+            this.lblLabStatus.Size = new System.Drawing.Size(2115, 41);
+            this.lblLabStatus.TabIndex = 83;
+            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Lab12Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.lblLabStatus);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab12Screen";
-            this.Size = new System.Drawing.Size(1265, 850);
+            this.Size = new System.Drawing.Size(1265, 945);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicDrain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFILL)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicInvalve)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOutvalve)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicIntvalve)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLLT2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLSwitch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTank)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicINTValve)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicINValve)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -480,19 +588,28 @@
         private System.Windows.Forms.Button BtnLab12Start;
         private System.Windows.Forms.Button BtnLab12Stop;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private VerticalProgressBar verticalProgressBar1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblTankFill2;
+        private System.Windows.Forms.PictureBox PicLLT2;
         private VerticalProgressBar verticalProgressBar2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private VerticalProgressBar verticalProgressBar1;
         private System.Windows.Forms.Label lblTankFill;
         private System.Windows.Forms.PictureBox PicLSwitch;
         private System.Windows.Forms.PictureBox PicHSwitch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox PicTank;
-        private System.Windows.Forms.PictureBox PicINValve;
-        private System.Windows.Forms.PictureBox PicINTValve;
+        private System.Windows.Forms.PictureBox PicOutvalve;
+        private System.Windows.Forms.PictureBox PicIntvalve;
+        private System.Windows.Forms.Label lblOutvalve;
+        private System.Windows.Forms.Label lblInvalve;
+        private System.Windows.Forms.Label lblIntvalve;
+        private System.Windows.Forms.PictureBox PicInvalve;
+        private System.Windows.Forms.Timer TimerFilling;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblLabMessage;
+        private System.Windows.Forms.Label lblLabStatus;
     }
 }

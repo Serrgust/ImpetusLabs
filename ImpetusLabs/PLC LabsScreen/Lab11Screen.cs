@@ -179,6 +179,12 @@ namespace ImpetusLabs.LabsScreen
             bool lSwitch = (bool)Lab11Nodes[2].Value;
             PicLSwitch.Image = lSwitch ? imageList1.Images[4] : imageList1.Images[5];
 
+
+
+
+
+
+
             string nodeValue = client.ReadNode("ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE").ToString();
 
             switch (nodeValue)
@@ -280,6 +286,14 @@ namespace ImpetusLabs.LabsScreen
         private void TankLevelBar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            var BackToLab10 = new Lab10Screen();
+            Parent.Controls.Add(BackToLab10);
+            BackToLab10.Dock = DockStyle.Fill;
+            Parent.Controls.Remove(this);
         }
     }
     }
