@@ -38,17 +38,20 @@
             this.LblLab12Test3 = new System.Windows.Forms.Label();
             this.TimerLab12 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.BtnNextLab = new System.Windows.Forms.Button();
+            this.BtnBack = new System.Windows.Forms.Button();
+            this.BtnLab12Start = new System.Windows.Forms.Button();
+            this.BtnLab12Stop = new System.Windows.Forms.Button();
+            this.lblLabMessage = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblDRAIN = new System.Windows.Forms.Label();
             this.lblFILL = new System.Windows.Forms.Label();
             this.PicDrain = new System.Windows.Forms.PictureBox();
             this.PicFILL = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.BtnNextLab = new System.Windows.Forms.Button();
-            this.BtnBack = new System.Windows.Forms.Button();
-            this.BtnLab12Start = new System.Windows.Forms.Button();
-            this.BtnLab12Stop = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblOutvalve = new System.Windows.Forms.Label();
             this.lblInvalve = new System.Windows.Forms.Label();
@@ -58,7 +61,9 @@
             this.PicIntvalve = new System.Windows.Forms.PictureBox();
             this.lblTankFill2 = new System.Windows.Forms.Label();
             this.PicLLT2 = new System.Windows.Forms.PictureBox();
+            this.verticalProgressBar2 = new VerticalProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.verticalProgressBar1 = new VerticalProgressBar();
             this.lblTankFill = new System.Windows.Forms.Label();
             this.PicLSwitch = new System.Windows.Forms.PictureBox();
             this.PicHSwitch = new System.Windows.Forms.PictureBox();
@@ -67,17 +72,12 @@
             this.TimerFilling = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.verticalProgressBar2 = new VerticalProgressBar();
-            this.verticalProgressBar1 = new VerticalProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblLabMessage = new System.Windows.Forms.Label();
             this.lblLabStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFILL)).BeginInit();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicInvalve)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicOutvalve)).BeginInit();
@@ -186,6 +186,80 @@
             this.panel1.Size = new System.Drawing.Size(1261, 935);
             this.panel1.TabIndex = 8;
             // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.BtnNextLab);
+            this.panel4.Controls.Add(this.BtnBack);
+            this.panel4.Controls.Add(this.BtnLab12Start);
+            this.panel4.Controls.Add(this.BtnLab12Stop);
+            this.panel4.Location = new System.Drawing.Point(291, 784);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(591, 86);
+            this.panel4.TabIndex = 79;
+            // 
+            // BtnNextLab
+            // 
+            this.BtnNextLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNextLab.Location = new System.Drawing.Point(446, 17);
+            this.BtnNextLab.Name = "BtnNextLab";
+            this.BtnNextLab.Size = new System.Drawing.Size(138, 62);
+            this.BtnNextLab.TabIndex = 54;
+            this.BtnNextLab.Text = "NEXT";
+            this.BtnNextLab.UseVisualStyleBackColor = true;
+            // 
+            // BtnBack
+            // 
+            this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBack.Location = new System.Drawing.Point(3, 14);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(138, 62);
+            this.BtnBack.TabIndex = 43;
+            this.BtnBack.Text = "BACK";
+            this.BtnBack.UseVisualStyleBackColor = true;
+            // 
+            // BtnLab12Start
+            // 
+            this.BtnLab12Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab12Start.Location = new System.Drawing.Point(224, 14);
+            this.BtnLab12Start.Name = "BtnLab12Start";
+            this.BtnLab12Start.Size = new System.Drawing.Size(138, 62);
+            this.BtnLab12Start.TabIndex = 8;
+            this.BtnLab12Start.Text = "START SIM";
+            this.BtnLab12Start.UseVisualStyleBackColor = true;
+            this.BtnLab12Start.Click += new System.EventHandler(this.BtnLab12Start_Click_1);
+            // 
+            // BtnLab12Stop
+            // 
+            this.BtnLab12Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab12Stop.Location = new System.Drawing.Point(224, 14);
+            this.BtnLab12Stop.Name = "BtnLab12Stop";
+            this.BtnLab12Stop.Size = new System.Drawing.Size(138, 62);
+            this.BtnLab12Stop.TabIndex = 9;
+            this.BtnLab12Stop.Text = "STOP SIM";
+            this.BtnLab12Stop.UseVisualStyleBackColor = true;
+            this.BtnLab12Stop.Click += new System.EventHandler(this.BtnLab12Stop_Click_1);
+            // 
+            // lblLabMessage
+            // 
+            this.lblLabMessage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(0, 0);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1257, 41);
+            this.lblLabMessage.TabIndex = 82;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(184, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 45);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "LAB #12";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -248,59 +322,15 @@
             this.label12.Text = "INPUTS";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel4
+            // label1
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.BtnNextLab);
-            this.panel4.Controls.Add(this.BtnBack);
-            this.panel4.Controls.Add(this.BtnLab12Start);
-            this.panel4.Controls.Add(this.BtnLab12Stop);
-            this.panel4.Location = new System.Drawing.Point(291, 784);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(591, 86);
-            this.panel4.TabIndex = 79;
-            // 
-            // BtnNextLab
-            // 
-            this.BtnNextLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNextLab.Location = new System.Drawing.Point(446, 17);
-            this.BtnNextLab.Name = "BtnNextLab";
-            this.BtnNextLab.Size = new System.Drawing.Size(138, 62);
-            this.BtnNextLab.TabIndex = 54;
-            this.BtnNextLab.Text = "NEXT";
-            this.BtnNextLab.UseVisualStyleBackColor = true;
-            // 
-            // BtnBack
-            // 
-            this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBack.Location = new System.Drawing.Point(3, 14);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(138, 62);
-            this.BtnBack.TabIndex = 43;
-            this.BtnBack.Text = "BACK";
-            this.BtnBack.UseVisualStyleBackColor = true;
-            // 
-            // BtnLab12Start
-            // 
-            this.BtnLab12Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab12Start.Location = new System.Drawing.Point(224, 14);
-            this.BtnLab12Start.Name = "BtnLab12Start";
-            this.BtnLab12Start.Size = new System.Drawing.Size(138, 62);
-            this.BtnLab12Start.TabIndex = 8;
-            this.BtnLab12Start.Text = "START SIM";
-            this.BtnLab12Start.UseVisualStyleBackColor = true;
-            this.BtnLab12Start.Click += new System.EventHandler(this.BtnLab12Start_Click_1);
-            // 
-            // BtnLab12Stop
-            // 
-            this.BtnLab12Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab12Stop.Location = new System.Drawing.Point(224, 14);
-            this.BtnLab12Stop.Name = "BtnLab12Stop";
-            this.BtnLab12Stop.Size = new System.Drawing.Size(138, 62);
-            this.BtnLab12Stop.TabIndex = 9;
-            this.BtnLab12Stop.Text = "STOP SIM";
-            this.BtnLab12Stop.UseVisualStyleBackColor = true;
-            this.BtnLab12Stop.Click += new System.EventHandler(this.BtnLab12Stop_Click_1);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(180, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 45);
+            this.label1.TabIndex = 67;
+            this.label1.Text = "SIMULATION";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -401,6 +431,13 @@
             this.PicLLT2.TabIndex = 83;
             this.PicLLT2.TabStop = false;
             // 
+            // verticalProgressBar2
+            // 
+            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 88);
+            this.verticalProgressBar2.Name = "verticalProgressBar2";
+            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar2.TabIndex = 82;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -412,6 +449,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
+            // 
+            // verticalProgressBar1
+            // 
+            this.verticalProgressBar1.Location = new System.Drawing.Point(542, 88);
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar1.TabIndex = 80;
             // 
             // lblTankFill
             // 
@@ -484,50 +528,6 @@
             this.imageList2.Images.SetKeyName(0, "Level_switch_green-removebg-preview.png");
             this.imageList2.Images.SetKeyName(1, "Level_switch_red-removebg-preview.png");
             // 
-            // verticalProgressBar2
-            // 
-            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 88);
-            this.verticalProgressBar2.Name = "verticalProgressBar2";
-            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
-            this.verticalProgressBar2.TabIndex = 82;
-            // 
-            // verticalProgressBar1
-            // 
-            this.verticalProgressBar1.Location = new System.Drawing.Point(542, 88);
-            this.verticalProgressBar1.Name = "verticalProgressBar1";
-            this.verticalProgressBar1.Size = new System.Drawing.Size(29, 190);
-            this.verticalProgressBar1.TabIndex = 80;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(180, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 45);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "SIMULATION";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(184, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 45);
-            this.label3.TabIndex = 67;
-            this.label3.Text = "LAB #12";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblLabMessage
-            // 
-            this.lblLabMessage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabMessage.Location = new System.Drawing.Point(0, 0);
-            this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1257, 41);
-            this.lblLabMessage.TabIndex = 82;
-            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblLabStatus
             // 
             this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -549,10 +549,10 @@
             this.Name = "Lab12Screen";
             this.Size = new System.Drawing.Size(1265, 945);
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicDrain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicFILL)).EndInit();
-            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicInvalve)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicOutvalve)).EndInit();

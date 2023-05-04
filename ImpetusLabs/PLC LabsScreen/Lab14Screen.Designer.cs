@@ -61,45 +61,62 @@
             this.PicStart = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PicTank = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblHeater = new System.Windows.Forms.Label();
+            this.lblOutvalve = new System.Windows.Forms.Label();
+            this.lblInCool = new System.Windows.Forms.Label();
+            this.lblCooler = new System.Windows.Forms.Label();
+            this.lblOutCool = new System.Windows.Forms.Label();
+            this.lblInHeat = new System.Windows.Forms.Label();
+            this.lblTankFill2 = new System.Windows.Forms.Label();
+            this.lblTankFill = new System.Windows.Forms.Label();
+            this.PicOutCool = new System.Windows.Forms.PictureBox();
+            this.PicCooler = new System.Windows.Forms.PictureBox();
+            this.PicInCool = new System.Windows.Forms.PictureBox();
+            this.PicHeater = new System.Windows.Forms.PictureBox();
+            this.PicOutvalve = new System.Windows.Forms.PictureBox();
+            this.PicInHeat = new System.Windows.Forms.PictureBox();
+            this.PicHighCool = new System.Windows.Forms.PictureBox();
+            this.PicLowCool = new System.Windows.Forms.PictureBox();
+            this.PicLowHeat = new System.Windows.Forms.PictureBox();
+            this.PicHighHeat = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.verticalProgressBar1 = new VerticalProgressBar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PicTank = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.lblLabMessage = new System.Windows.Forms.Label();
+            this.lblLabStatus = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.TimerFilling = new System.Windows.Forms.Timer(this.components);
             this.verticalProgressBar2 = new VerticalProgressBar();
-            this.PicHSwitch = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.verticalProgressBar1 = new VerticalProgressBar();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCool)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOutCool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicCooler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicInCool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHeater)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOutvalve)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicInHeat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHighCool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLowCool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLowHeat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHighHeat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblLab14Test1
             // 
             this.LblLab14Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test1.Location = new System.Drawing.Point(28, 97);
+            this.LblLab14Test1.Location = new System.Drawing.Point(14, 68);
             this.LblLab14Test1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test1.Name = "LblLab14Test1";
             this.LblLab14Test1.Size = new System.Drawing.Size(146, 45);
@@ -113,7 +130,7 @@
             this.Lbl2Lab14Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test1.Location = new System.Drawing.Point(179, 97);
+            this.Lbl2Lab14Test1.Location = new System.Drawing.Point(165, 68);
             this.Lbl2Lab14Test1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test1.Name = "Lbl2Lab14Test1";
             this.Lbl2Lab14Test1.Size = new System.Drawing.Size(146, 45);
@@ -124,7 +141,7 @@
             // LblLab14Test8
             // 
             this.LblLab14Test8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test8.Location = new System.Drawing.Point(401, 320);
+            this.LblLab14Test8.Location = new System.Drawing.Point(387, 291);
             this.LblLab14Test8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test8.Name = "LblLab14Test8";
             this.LblLab14Test8.Size = new System.Drawing.Size(146, 45);
@@ -135,7 +152,7 @@
             // LblLab14Test7
             // 
             this.LblLab14Test7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test7.Location = new System.Drawing.Point(401, 244);
+            this.LblLab14Test7.Location = new System.Drawing.Point(387, 215);
             this.LblLab14Test7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test7.Name = "LblLab14Test7";
             this.LblLab14Test7.Size = new System.Drawing.Size(146, 45);
@@ -146,7 +163,7 @@
             // LblLab14Test6
             // 
             this.LblLab14Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test6.Location = new System.Drawing.Point(401, 175);
+            this.LblLab14Test6.Location = new System.Drawing.Point(387, 146);
             this.LblLab14Test6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test6.Name = "LblLab14Test6";
             this.LblLab14Test6.Size = new System.Drawing.Size(146, 45);
@@ -157,7 +174,7 @@
             // LblLab14Test5
             // 
             this.LblLab14Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test5.Location = new System.Drawing.Point(401, 97);
+            this.LblLab14Test5.Location = new System.Drawing.Point(387, 68);
             this.LblLab14Test5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test5.Name = "LblLab14Test5";
             this.LblLab14Test5.Size = new System.Drawing.Size(146, 45);
@@ -168,7 +185,7 @@
             // LblLab14Test4
             // 
             this.LblLab14Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test4.Location = new System.Drawing.Point(28, 332);
+            this.LblLab14Test4.Location = new System.Drawing.Point(14, 303);
             this.LblLab14Test4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test4.Name = "LblLab14Test4";
             this.LblLab14Test4.Size = new System.Drawing.Size(146, 45);
@@ -179,7 +196,7 @@
             // LblLab14Test3
             // 
             this.LblLab14Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test3.Location = new System.Drawing.Point(28, 244);
+            this.LblLab14Test3.Location = new System.Drawing.Point(14, 215);
             this.LblLab14Test3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test3.Name = "LblLab14Test3";
             this.LblLab14Test3.Size = new System.Drawing.Size(146, 45);
@@ -190,7 +207,7 @@
             // LblLab14Test2
             // 
             this.LblLab14Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab14Test2.Location = new System.Drawing.Point(28, 172);
+            this.LblLab14Test2.Location = new System.Drawing.Point(14, 143);
             this.LblLab14Test2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab14Test2.Name = "LblLab14Test2";
             this.LblLab14Test2.Size = new System.Drawing.Size(146, 45);
@@ -204,7 +221,7 @@
             this.Lbl2Lab14Test6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test6.Location = new System.Drawing.Point(530, 175);
+            this.Lbl2Lab14Test6.Location = new System.Drawing.Point(516, 146);
             this.Lbl2Lab14Test6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test6.Name = "Lbl2Lab14Test6";
             this.Lbl2Lab14Test6.Size = new System.Drawing.Size(146, 45);
@@ -218,7 +235,7 @@
             this.Lbl2Lab14Test5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test5.Location = new System.Drawing.Point(530, 97);
+            this.Lbl2Lab14Test5.Location = new System.Drawing.Point(516, 68);
             this.Lbl2Lab14Test5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test5.Name = "Lbl2Lab14Test5";
             this.Lbl2Lab14Test5.Size = new System.Drawing.Size(146, 45);
@@ -232,7 +249,7 @@
             this.Lbl2Lab14Test4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test4.Location = new System.Drawing.Point(179, 328);
+            this.Lbl2Lab14Test4.Location = new System.Drawing.Point(165, 299);
             this.Lbl2Lab14Test4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test4.Name = "Lbl2Lab14Test4";
             this.Lbl2Lab14Test4.Size = new System.Drawing.Size(146, 45);
@@ -246,7 +263,7 @@
             this.Lbl2Lab14Test3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test3.Location = new System.Drawing.Point(179, 244);
+            this.Lbl2Lab14Test3.Location = new System.Drawing.Point(165, 215);
             this.Lbl2Lab14Test3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test3.Name = "Lbl2Lab14Test3";
             this.Lbl2Lab14Test3.Size = new System.Drawing.Size(146, 45);
@@ -260,7 +277,7 @@
             this.Lbl2Lab14Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test2.Location = new System.Drawing.Point(179, 175);
+            this.Lbl2Lab14Test2.Location = new System.Drawing.Point(165, 146);
             this.Lbl2Lab14Test2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test2.Name = "Lbl2Lab14Test2";
             this.Lbl2Lab14Test2.Size = new System.Drawing.Size(146, 45);
@@ -274,7 +291,7 @@
             this.Lbl2Lab14Test8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test8.Location = new System.Drawing.Point(530, 320);
+            this.Lbl2Lab14Test8.Location = new System.Drawing.Point(516, 291);
             this.Lbl2Lab14Test8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test8.Name = "Lbl2Lab14Test8";
             this.Lbl2Lab14Test8.Size = new System.Drawing.Size(146, 45);
@@ -288,7 +305,7 @@
             this.Lbl2Lab14Test7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab14Test7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2Lab14Test7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Lbl2Lab14Test7.Location = new System.Drawing.Point(530, 249);
+            this.Lbl2Lab14Test7.Location = new System.Drawing.Point(516, 220);
             this.Lbl2Lab14Test7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab14Test7.Name = "Lbl2Lab14Test7";
             this.Lbl2Lab14Test7.Size = new System.Drawing.Size(146, 45);
@@ -308,7 +325,7 @@
             this.panel4.Controls.Add(this.BtnBack);
             this.panel4.Controls.Add(this.BtnLab14Start);
             this.panel4.Controls.Add(this.BtnLab14Stop);
-            this.panel4.Location = new System.Drawing.Point(106, 635);
+            this.panel4.Location = new System.Drawing.Point(85, 702);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(591, 86);
             this.panel4.TabIndex = 81;
@@ -342,6 +359,7 @@
             this.BtnLab14Start.TabIndex = 8;
             this.BtnLab14Start.Text = "START SIM";
             this.BtnLab14Start.UseVisualStyleBackColor = true;
+            this.BtnLab14Start.Click += new System.EventHandler(this.BtnLab14Start_Click);
             // 
             // BtnLab14Stop
             // 
@@ -352,6 +370,7 @@
             this.BtnLab14Stop.TabIndex = 9;
             this.BtnLab14Stop.Text = "STOP SIM";
             this.BtnLab14Stop.UseVisualStyleBackColor = true;
+            this.BtnLab14Stop.Click += new System.EventHandler(this.BtnLab14Stop_Click_1);
             // 
             // panel2
             // 
@@ -365,14 +384,14 @@
             this.panel2.Controls.Add(this.label12);
             this.panel2.Location = new System.Drawing.Point(727, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(543, 241);
+            this.panel2.Size = new System.Drawing.Size(666, 241);
             this.panel2.TabIndex = 83;
             // 
             // lblHeat
             // 
             this.lblHeat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeat.Location = new System.Drawing.Point(229, 146);
+            this.lblHeat.Location = new System.Drawing.Point(291, 146);
             this.lblHeat.Name = "lblHeat";
             this.lblHeat.Size = new System.Drawing.Size(81, 65);
             this.lblHeat.TabIndex = 84;
@@ -381,7 +400,7 @@
             // 
             // PicHeat
             // 
-            this.PicHeat.Location = new System.Drawing.Point(229, 60);
+            this.PicHeat.Location = new System.Drawing.Point(291, 60);
             this.PicHeat.Name = "PicHeat";
             this.PicHeat.Size = new System.Drawing.Size(81, 65);
             this.PicHeat.TabIndex = 83;
@@ -391,7 +410,7 @@
             // 
             this.lblCool.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCool.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCool.Location = new System.Drawing.Point(434, 146);
+            this.lblCool.Location = new System.Drawing.Point(539, 146);
             this.lblCool.Name = "lblCool";
             this.lblCool.Size = new System.Drawing.Size(81, 65);
             this.lblCool.TabIndex = 66;
@@ -412,7 +431,7 @@
             // PicCool
             // 
             this.PicCool.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.PicCool.Location = new System.Drawing.Point(434, 60);
+            this.PicCool.Location = new System.Drawing.Point(539, 60);
             this.PicCool.Name = "PicCool";
             this.PicCool.Size = new System.Drawing.Size(81, 65);
             this.PicCool.TabIndex = 64;
@@ -429,7 +448,7 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(196, 0);
+            this.label12.Location = new System.Drawing.Point(258, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(146, 45);
             this.label12.TabIndex = 62;
@@ -438,16 +457,24 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.PicHSwitch);
+            this.panel1.Controls.Add(this.lblHeater);
+            this.panel1.Controls.Add(this.lblOutvalve);
+            this.panel1.Controls.Add(this.lblInCool);
+            this.panel1.Controls.Add(this.lblCooler);
+            this.panel1.Controls.Add(this.lblOutCool);
+            this.panel1.Controls.Add(this.lblInHeat);
+            this.panel1.Controls.Add(this.lblTankFill2);
+            this.panel1.Controls.Add(this.lblTankFill);
+            this.panel1.Controls.Add(this.PicOutCool);
+            this.panel1.Controls.Add(this.PicCooler);
+            this.panel1.Controls.Add(this.PicInCool);
+            this.panel1.Controls.Add(this.PicHeater);
+            this.panel1.Controls.Add(this.PicOutvalve);
+            this.panel1.Controls.Add(this.PicInHeat);
+            this.panel1.Controls.Add(this.PicHighCool);
+            this.panel1.Controls.Add(this.PicLowCool);
+            this.panel1.Controls.Add(this.PicLowHeat);
+            this.panel1.Controls.Add(this.PicHighHeat);
             this.panel1.Controls.Add(this.verticalProgressBar2);
             this.panel1.Controls.Add(this.verticalProgressBar1);
             this.panel1.Controls.Add(this.label1);
@@ -458,17 +485,178 @@
             this.panel1.Size = new System.Drawing.Size(666, 454);
             this.panel1.TabIndex = 84;
             // 
-            // PicTank
+            // lblHeater
             // 
-            this.PicTank.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PicTank.Image = ((System.Drawing.Image)(resources.GetObject("PicTank.Image")));
-            this.PicTank.ImageLocation = "";
-            this.PicTank.Location = new System.Drawing.Point(98, 86);
-            this.PicTank.Name = "PicTank";
-            this.PicTank.Size = new System.Drawing.Size(134, 147);
-            this.PicTank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicTank.TabIndex = 86;
-            this.PicTank.TabStop = false;
+            this.lblHeater.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblHeater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeater.Location = new System.Drawing.Point(131, 345);
+            this.lblHeater.Name = "lblHeater";
+            this.lblHeater.Size = new System.Drawing.Size(81, 65);
+            this.lblHeater.TabIndex = 106;
+            this.lblHeater.Text = "HEATER OFF";
+            this.lblHeater.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOutvalve
+            // 
+            this.lblOutvalve.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOutvalve.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutvalve.Location = new System.Drawing.Point(231, 345);
+            this.lblOutvalve.Name = "lblOutvalve";
+            this.lblOutvalve.Size = new System.Drawing.Size(81, 65);
+            this.lblOutvalve.TabIndex = 105;
+            this.lblOutvalve.Text = "OUT VALVE OFF";
+            this.lblOutvalve.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblInCool
+            // 
+            this.lblInCool.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblInCool.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInCool.Location = new System.Drawing.Point(364, 345);
+            this.lblInCool.Name = "lblInCool";
+            this.lblInCool.Size = new System.Drawing.Size(81, 65);
+            this.lblInCool.TabIndex = 104;
+            this.lblInCool.Text = "INLET VALVE OFF";
+            this.lblInCool.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCooler
+            // 
+            this.lblCooler.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCooler.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCooler.Location = new System.Drawing.Point(462, 345);
+            this.lblCooler.Name = "lblCooler";
+            this.lblCooler.Size = new System.Drawing.Size(81, 65);
+            this.lblCooler.TabIndex = 103;
+            this.lblCooler.Text = "COOLER OFF";
+            this.lblCooler.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOutCool
+            // 
+            this.lblOutCool.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOutCool.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutCool.Location = new System.Drawing.Point(567, 345);
+            this.lblOutCool.Name = "lblOutCool";
+            this.lblOutCool.Size = new System.Drawing.Size(81, 65);
+            this.lblOutCool.TabIndex = 102;
+            this.lblOutCool.Text = "OUT VALVE OFF";
+            this.lblOutCool.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblInHeat
+            // 
+            this.lblInHeat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblInHeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInHeat.Location = new System.Drawing.Point(17, 345);
+            this.lblInHeat.Name = "lblInHeat";
+            this.lblInHeat.Size = new System.Drawing.Size(81, 65);
+            this.lblInHeat.TabIndex = 85;
+            this.lblInHeat.Text = "INLET VALVE OFF";
+            this.lblInHeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTankFill2
+            // 
+            this.lblTankFill2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTankFill2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTankFill2.Location = new System.Drawing.Point(611, 57);
+            this.lblTankFill2.Name = "lblTankFill2";
+            this.lblTankFill2.Size = new System.Drawing.Size(52, 24);
+            this.lblTankFill2.TabIndex = 100;
+            // 
+            // lblTankFill
+            // 
+            this.lblTankFill.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTankFill.Location = new System.Drawing.Point(254, 57);
+            this.lblTankFill.Name = "lblTankFill";
+            this.lblTankFill.Size = new System.Drawing.Size(58, 24);
+            this.lblTankFill.TabIndex = 99;
+            // 
+            // PicOutCool
+            // 
+            this.PicOutCool.Location = new System.Drawing.Point(567, 258);
+            this.PicOutCool.Name = "PicOutCool";
+            this.PicOutCool.Size = new System.Drawing.Size(81, 65);
+            this.PicOutCool.TabIndex = 98;
+            this.PicOutCool.TabStop = false;
+            // 
+            // PicCooler
+            // 
+            this.PicCooler.Location = new System.Drawing.Point(462, 258);
+            this.PicCooler.Name = "PicCooler";
+            this.PicCooler.Size = new System.Drawing.Size(81, 65);
+            this.PicCooler.TabIndex = 97;
+            this.PicCooler.TabStop = false;
+            // 
+            // PicInCool
+            // 
+            this.PicInCool.Location = new System.Drawing.Point(364, 258);
+            this.PicInCool.Name = "PicInCool";
+            this.PicInCool.Size = new System.Drawing.Size(81, 65);
+            this.PicInCool.TabIndex = 96;
+            this.PicInCool.TabStop = false;
+            // 
+            // PicHeater
+            // 
+            this.PicHeater.Location = new System.Drawing.Point(131, 258);
+            this.PicHeater.Name = "PicHeater";
+            this.PicHeater.Size = new System.Drawing.Size(81, 65);
+            this.PicHeater.TabIndex = 95;
+            this.PicHeater.TabStop = false;
+            // 
+            // PicOutvalve
+            // 
+            this.PicOutvalve.Location = new System.Drawing.Point(231, 258);
+            this.PicOutvalve.Name = "PicOutvalve";
+            this.PicOutvalve.Size = new System.Drawing.Size(81, 65);
+            this.PicOutvalve.TabIndex = 94;
+            this.PicOutvalve.TabStop = false;
+            // 
+            // PicInHeat
+            // 
+            this.PicInHeat.Location = new System.Drawing.Point(17, 258);
+            this.PicInHeat.Name = "PicInHeat";
+            this.PicInHeat.Size = new System.Drawing.Size(81, 65);
+            this.PicInHeat.TabIndex = 85;
+            this.PicInHeat.TabStop = false;
+            // 
+            // PicHighCool
+            // 
+            this.PicHighCool.Location = new System.Drawing.Point(373, 86);
+            this.PicHighCool.Name = "PicHighCool";
+            this.PicHighCool.Size = new System.Drawing.Size(81, 36);
+            this.PicHighCool.TabIndex = 93;
+            this.PicHighCool.TabStop = false;
+            // 
+            // PicLowCool
+            // 
+            this.PicLowCool.Location = new System.Drawing.Point(374, 154);
+            this.PicLowCool.Name = "PicLowCool";
+            this.PicLowCool.Size = new System.Drawing.Size(81, 36);
+            this.PicLowCool.TabIndex = 92;
+            this.PicLowCool.TabStop = false;
+            // 
+            // PicLowHeat
+            // 
+            this.PicLowHeat.Location = new System.Drawing.Point(17, 154);
+            this.PicLowHeat.Name = "PicLowHeat";
+            this.PicLowHeat.Size = new System.Drawing.Size(81, 36);
+            this.PicLowHeat.TabIndex = 91;
+            this.PicLowHeat.TabStop = false;
+            // 
+            // PicHighHeat
+            // 
+            this.PicHighHeat.Location = new System.Drawing.Point(17, 91);
+            this.PicHighHeat.Name = "PicHighHeat";
+            this.PicHighHeat.Size = new System.Drawing.Size(81, 36);
+            this.PicHighHeat.TabIndex = 90;
+            this.PicHighHeat.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(260, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 45);
+            this.label1.TabIndex = 85;
+            this.label1.Text = "OUTPUTS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -482,22 +670,106 @@
             this.pictureBox1.TabIndex = 87;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // PicTank
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(236, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 45);
-            this.label1.TabIndex = 85;
-            this.label1.Text = "OUTPUTS";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PicTank.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PicTank.Image = ((System.Drawing.Image)(resources.GetObject("PicTank.Image")));
+            this.PicTank.ImageLocation = "";
+            this.PicTank.Location = new System.Drawing.Point(98, 86);
+            this.PicTank.Name = "PicTank";
+            this.PicTank.Size = new System.Drawing.Size(134, 147);
+            this.PicTank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTank.TabIndex = 86;
+            this.PicTank.TabStop = false;
             // 
-            // verticalProgressBar1
+            // imageList1
             // 
-            this.verticalProgressBar1.Location = new System.Drawing.Point(258, 91);
-            this.verticalProgressBar1.Name = "verticalProgressBar1";
-            this.verticalProgressBar1.Size = new System.Drawing.Size(20, 141);
-            this.verticalProgressBar1.TabIndex = 88;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Startpng");
+            this.imageList1.Images.SetKeyName(1, "Start2.png");
+            this.imageList1.Images.SetKeyName(2, "HEAT ON.png");
+            this.imageList1.Images.SetKeyName(3, "HEAT OFF.png");
+            this.imageList1.Images.SetKeyName(4, "COOL OFF.png");
+            this.imageList1.Images.SetKeyName(5, "COOL ON.png");
+            this.imageList1.Images.SetKeyName(6, "Solenoid valve.png");
+            this.imageList1.Images.SetKeyName(7, "HEAT.png");
+            this.imageList1.Images.SetKeyName(8, "out_valve-removebg-preview.png");
+            this.imageList1.Images.SetKeyName(9, "Cool fan.png");
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "Level_switch_green-removebg-preview.png");
+            this.imageList2.Images.SetKeyName(1, "Level_switch_red-removebg-preview.png");
+            // 
+            // lblLabMessage
+            // 
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(-250, 0);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1803, 41);
+            this.lblLabMessage.TabIndex = 67;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabStatus
+            // 
+            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabStatus.Location = new System.Drawing.Point(-114, 791);
+            this.lblLabStatus.Name = "lblLabStatus";
+            this.lblLabStatus.Size = new System.Drawing.Size(1771, 41);
+            this.lblLabStatus.TabIndex = 85;
+            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(310, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 45);
+            this.label3.TabIndex = 107;
+            this.label3.Text = "SIMULATION";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(331, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 45);
+            this.label4.TabIndex = 108;
+            this.label4.Text = "LAB #14";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.Lbl2Lab14Test7);
+            this.panel3.Controls.Add(this.Lbl2Lab14Test8);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.Lbl2Lab14Test2);
+            this.panel3.Controls.Add(this.Lbl2Lab14Test3);
+            this.panel3.Controls.Add(this.Lbl2Lab14Test4);
+            this.panel3.Controls.Add(this.Lbl2Lab14Test5);
+            this.panel3.Controls.Add(this.Lbl2Lab14Test6);
+            this.panel3.Controls.Add(this.LblLab14Test2);
+            this.panel3.Controls.Add(this.LblLab14Test3);
+            this.panel3.Controls.Add(this.LblLab14Test4);
+            this.panel3.Controls.Add(this.LblLab14Test5);
+            this.panel3.Controls.Add(this.LblLab14Test6);
+            this.panel3.Controls.Add(this.LblLab14Test7);
+            this.panel3.Controls.Add(this.LblLab14Test8);
+            this.panel3.Controls.Add(this.Lbl2Lab14Test1);
+            this.panel3.Controls.Add(this.LblLab14Test1);
+            this.panel3.Location = new System.Drawing.Point(31, 211);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(679, 378);
+            this.panel3.TabIndex = 109;
+            // 
+            // TimerFilling
+            // 
+            this.TimerFilling.Interval = 50;
+            this.TimerFilling.Tick += new System.EventHandler(this.TimerFilling_Tick);
             // 
             // verticalProgressBar2
             // 
@@ -506,111 +778,26 @@
             this.verticalProgressBar2.Size = new System.Drawing.Size(20, 141);
             this.verticalProgressBar2.TabIndex = 89;
             // 
-            // PicHSwitch
+            // verticalProgressBar1
             // 
-            this.PicHSwitch.Location = new System.Drawing.Point(17, 91);
-            this.PicHSwitch.Name = "PicHSwitch";
-            this.PicHSwitch.Size = new System.Drawing.Size(81, 36);
-            this.PicHSwitch.TabIndex = 90;
-            this.PicHSwitch.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(17, 154);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(81, 36);
-            this.pictureBox2.TabIndex = 91;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(374, 154);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(81, 36);
-            this.pictureBox3.TabIndex = 92;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(373, 86);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(81, 36);
-            this.pictureBox4.TabIndex = 93;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(17, 258);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(81, 65);
-            this.pictureBox5.TabIndex = 85;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(231, 258);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(81, 65);
-            this.pictureBox6.TabIndex = 94;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(131, 258);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(81, 65);
-            this.pictureBox7.TabIndex = 95;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(364, 258);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(81, 65);
-            this.pictureBox8.TabIndex = 96;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(462, 258);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(81, 65);
-            this.pictureBox9.TabIndex = 97;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(567, 258);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(81, 65);
-            this.pictureBox10.TabIndex = 98;
-            this.pictureBox10.TabStop = false;
+            this.verticalProgressBar1.Location = new System.Drawing.Point(258, 91);
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.Size = new System.Drawing.Size(20, 141);
+            this.verticalProgressBar1.TabIndex = 88;
             // 
             // Lab14Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblLabStatus);
+            this.Controls.Add(this.lblLabMessage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.Lbl2Lab14Test7);
-            this.Controls.Add(this.Lbl2Lab14Test8);
-            this.Controls.Add(this.Lbl2Lab14Test2);
-            this.Controls.Add(this.Lbl2Lab14Test3);
-            this.Controls.Add(this.Lbl2Lab14Test4);
-            this.Controls.Add(this.Lbl2Lab14Test5);
-            this.Controls.Add(this.Lbl2Lab14Test6);
-            this.Controls.Add(this.LblLab14Test2);
-            this.Controls.Add(this.LblLab14Test3);
-            this.Controls.Add(this.LblLab14Test4);
-            this.Controls.Add(this.LblLab14Test5);
-            this.Controls.Add(this.LblLab14Test6);
-            this.Controls.Add(this.LblLab14Test7);
-            this.Controls.Add(this.LblLab14Test8);
-            this.Controls.Add(this.Lbl2Lab14Test1);
-            this.Controls.Add(this.LblLab14Test1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab14Screen";
             this.Size = new System.Drawing.Size(1553, 890);
             this.Load += new System.EventHandler(this.Lab14Screen_Load);
@@ -620,18 +807,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicCool)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOutCool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicCooler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicInCool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHeater)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicOutvalve)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicInHeat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHighCool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLowCool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLowHeat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicHighHeat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicHSwitch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTank)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -674,15 +862,31 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox PicTank;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox PicHSwitch;
+        private System.Windows.Forms.PictureBox PicOutCool;
+        private System.Windows.Forms.PictureBox PicCooler;
+        private System.Windows.Forms.PictureBox PicInCool;
+        private System.Windows.Forms.PictureBox PicHeater;
+        private System.Windows.Forms.PictureBox PicOutvalve;
+        private System.Windows.Forms.PictureBox PicInHeat;
+        private System.Windows.Forms.PictureBox PicHighCool;
+        private System.Windows.Forms.PictureBox PicLowCool;
+        private System.Windows.Forms.PictureBox PicLowHeat;
+        private System.Windows.Forms.PictureBox PicHighHeat;
+        private System.Windows.Forms.Label lblTankFill2;
+        private System.Windows.Forms.Label lblTankFill;
+        private System.Windows.Forms.Label lblHeater;
+        private System.Windows.Forms.Label lblOutvalve;
+        private System.Windows.Forms.Label lblInCool;
+        private System.Windows.Forms.Label lblCooler;
+        private System.Windows.Forms.Label lblOutCool;
+        private System.Windows.Forms.Label lblInHeat;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Label lblLabMessage;
+        private System.Windows.Forms.Label lblLabStatus;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Timer TimerFilling;
     }
 }
