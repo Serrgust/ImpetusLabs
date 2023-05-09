@@ -356,5 +356,21 @@ namespace ImpetusLabs.LabsScreen
             lblLabMessage.Text = "";
             lblLabMessage.BackColor = Color.Gray;
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            var BackToLab12 = new Lab12Screen();
+            Parent.Controls.Add(BackToLab12);
+            BackToLab12.Dock = DockStyle.Fill;
+            Parent.Controls.Remove(this);
+        }
+
+        private void BtnNextLab_Click(object sender, EventArgs e)
+        {
+            var secondUserControl = new Lab14Screen();
+            Parent.Controls.Add(secondUserControl);
+            Parent.Controls.Remove(this);
+
+        }
     }
 }

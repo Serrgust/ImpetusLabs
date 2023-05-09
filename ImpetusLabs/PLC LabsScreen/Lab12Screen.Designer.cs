@@ -207,6 +207,7 @@
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -217,6 +218,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab12Start
             // 

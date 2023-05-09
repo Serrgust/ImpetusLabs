@@ -433,6 +433,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab15Start
             // 

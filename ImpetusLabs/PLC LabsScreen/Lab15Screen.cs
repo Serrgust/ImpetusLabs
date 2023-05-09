@@ -97,10 +97,6 @@ namespace ImpetusLabs.LabsScreen
             UpdateLabStatus();
             {
 
-
-
-
-
                 //codigo para hacer updates de los test labels
                 for (int i = 0; i < Lab15Tests.Length; i++)
                 {
@@ -286,6 +282,14 @@ namespace ImpetusLabs.LabsScreen
         private void Lab15Screen_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            var BackToLab14 = new Lab14Screen();
+            Parent.Controls.Add(BackToLab14);
+            BackToLab14.Dock = DockStyle.Fill;
+            Parent.Controls.Remove(this);
         }
     }
 }

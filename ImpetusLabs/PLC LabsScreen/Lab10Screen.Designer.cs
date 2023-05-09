@@ -335,6 +335,7 @@ namespace ImpetusLabs.LabsScreen
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 

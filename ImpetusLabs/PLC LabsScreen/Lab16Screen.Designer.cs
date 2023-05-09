@@ -44,6 +44,7 @@
             this.LblLab16Test6 = new System.Windows.Forms.Label();
             this.TimerLab16 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblClampSensor = new System.Windows.Forms.Label();
             this.PicClampSensor = new System.Windows.Forms.PictureBox();
@@ -73,7 +74,6 @@
             this.BtnLab16Stop = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblLabMessage = new System.Windows.Forms.Label();
             this.lblLabStatus = new System.Windows.Forms.Label();
@@ -255,6 +255,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(377, 521);
             this.panel1.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(127, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 45);
+            this.label3.TabIndex = 70;
+            this.label3.Text = "SIMULATION";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -505,6 +515,7 @@
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -515,6 +526,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab16Start
             // 
@@ -542,8 +554,8 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "Start1.png");
-            this.imageList1.Images.SetKeyName(1, "Start1.2.png");
+            this.imageList1.Images.SetKeyName(0, "Start1.2.png");
+            this.imageList1.Images.SetKeyName(1, "Start1.png");
             this.imageList1.Images.SetKeyName(2, "Sensor-removebg-preview.png");
             this.imageList1.Images.SetKeyName(3, "Motor1.png");
             this.imageList1.Images.SetKeyName(4, "clamp off.png");
@@ -555,16 +567,6 @@
             this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList2.Images.SetKeyName(0, "Sensor lab 16.png");
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(127, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 45);
-            this.label3.TabIndex = 70;
-            this.label3.Text = "SIMULATION";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 

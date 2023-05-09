@@ -222,14 +222,14 @@ namespace ImpetusLabs.LabsScreen
                     PicSensor.Image = imageList1.Images[9];
                     lblSensor.ForeColor = Color.White;
                     lblSensor.BackColor = Color.Green;
-                    lblSensor.Text = "CYLINDER  ON";
+                    lblSensor.Text = "SENSOR  ON";
                 }
                 else
                 {
                     PicSensor.Image = imageList1.Images[9];
                     lblSensor.ForeColor = Color.White;
                     lblSensor.BackColor = Color.Red;
-                    lblSensor.Text = "CYLINDER OFF";
+                    lblSensor.Text = "SENSOR OFF";
 
                 }
             }
@@ -430,6 +430,13 @@ namespace ImpetusLabs.LabsScreen
             var BackToLab06 = new Lab06Screen();
             Parent.Controls.Add(BackToLab06);
             BackToLab06.Dock = DockStyle.Fill;
+            Parent.Controls.Remove(this);
+        }
+
+        private void BtnNextLab_Click(object sender, EventArgs e)
+        {
+            var secondUserControl = new Lab08Screen();
+            Parent.Controls.Add(secondUserControl);
             Parent.Controls.Remove(this);
         }
     }

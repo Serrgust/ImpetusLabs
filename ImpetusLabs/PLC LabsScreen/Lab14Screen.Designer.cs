@@ -79,6 +79,8 @@
             this.PicLowCool = new System.Windows.Forms.PictureBox();
             this.PicLowHeat = new System.Windows.Forms.PictureBox();
             this.PicHighHeat = new System.Windows.Forms.PictureBox();
+            this.verticalProgressBar2 = new VerticalProgressBar();
+            this.verticalProgressBar1 = new VerticalProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PicTank = new System.Windows.Forms.PictureBox();
@@ -90,8 +92,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.TimerFilling = new System.Windows.Forms.Timer(this.components);
-            this.verticalProgressBar2 = new VerticalProgressBar();
-            this.verticalProgressBar1 = new VerticalProgressBar();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeat)).BeginInit();
@@ -339,6 +339,7 @@
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -349,6 +350,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab14Start
             // 
@@ -648,6 +650,20 @@
             this.PicHighHeat.TabIndex = 90;
             this.PicHighHeat.TabStop = false;
             // 
+            // verticalProgressBar2
+            // 
+            this.verticalProgressBar2.Location = new System.Drawing.Point(615, 92);
+            this.verticalProgressBar2.Name = "verticalProgressBar2";
+            this.verticalProgressBar2.Size = new System.Drawing.Size(20, 141);
+            this.verticalProgressBar2.TabIndex = 89;
+            // 
+            // verticalProgressBar1
+            // 
+            this.verticalProgressBar1.Location = new System.Drawing.Point(258, 91);
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.Size = new System.Drawing.Size(20, 141);
+            this.verticalProgressBar1.TabIndex = 88;
+            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -770,20 +786,6 @@
             // 
             this.TimerFilling.Interval = 50;
             this.TimerFilling.Tick += new System.EventHandler(this.TimerFilling_Tick);
-            // 
-            // verticalProgressBar2
-            // 
-            this.verticalProgressBar2.Location = new System.Drawing.Point(615, 92);
-            this.verticalProgressBar2.Name = "verticalProgressBar2";
-            this.verticalProgressBar2.Size = new System.Drawing.Size(20, 141);
-            this.verticalProgressBar2.TabIndex = 89;
-            // 
-            // verticalProgressBar1
-            // 
-            this.verticalProgressBar1.Location = new System.Drawing.Point(258, 91);
-            this.verticalProgressBar1.Name = "verticalProgressBar1";
-            this.verticalProgressBar1.Size = new System.Drawing.Size(20, 141);
-            this.verticalProgressBar1.TabIndex = 88;
             // 
             // Lab14Screen
             // 

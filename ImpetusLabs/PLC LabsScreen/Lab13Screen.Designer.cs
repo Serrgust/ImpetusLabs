@@ -53,14 +53,6 @@
             this.BtnLab13Stop = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblSensor1 = new System.Windows.Forms.Label();
-            this.PicSensor1 = new System.Windows.Forms.PictureBox();
-            this.lblSensor2 = new System.Windows.Forms.Label();
-            this.lblStart = new System.Windows.Forms.Label();
-            this.PicSensor2 = new System.Windows.Forms.PictureBox();
-            this.PicStart = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTimer = new System.Windows.Forms.Label();
             this.lblMotor = new System.Windows.Forms.Label();
@@ -75,22 +67,30 @@
             this.PicSoap = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblSensor1 = new System.Windows.Forms.Label();
+            this.PicSensor1 = new System.Windows.Forms.PictureBox();
+            this.lblSensor2 = new System.Windows.Forms.Label();
+            this.lblStart = new System.Windows.Forms.Label();
+            this.PicSensor2 = new System.Windows.Forms.PictureBox();
+            this.PicStart = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.lblLabMessage = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblLabStatus = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSensor1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSensor2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDryer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicRollers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicWater)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSoap)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSensor1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSensor2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).BeginInit();
             this.SuspendLayout();
             // 
             // LblTest13Lab1
@@ -297,6 +297,7 @@
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -307,6 +308,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab13Start
             // 
@@ -363,89 +365,6 @@
             this.label1.TabIndex = 85;
             this.label1.Text = "SIMULATION";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.lblSensor1);
-            this.panel2.Controls.Add(this.PicSensor1);
-            this.panel2.Controls.Add(this.lblSensor2);
-            this.panel2.Controls.Add(this.lblStart);
-            this.panel2.Controls.Add(this.PicSensor2);
-            this.panel2.Controls.Add(this.PicStart);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Location = new System.Drawing.Point(598, 28);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(407, 241);
-            this.panel2.TabIndex = 82;
-            // 
-            // lblSensor1
-            // 
-            this.lblSensor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSensor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSensor1.Location = new System.Drawing.Point(169, 146);
-            this.lblSensor1.Name = "lblSensor1";
-            this.lblSensor1.Size = new System.Drawing.Size(81, 65);
-            this.lblSensor1.TabIndex = 84;
-            this.lblSensor1.Text = "SENSOR OFF";
-            this.lblSensor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PicSensor1
-            // 
-            this.PicSensor1.Location = new System.Drawing.Point(169, 60);
-            this.PicSensor1.Name = "PicSensor1";
-            this.PicSensor1.Size = new System.Drawing.Size(81, 65);
-            this.PicSensor1.TabIndex = 83;
-            this.PicSensor1.TabStop = false;
-            // 
-            // lblSensor2
-            // 
-            this.lblSensor2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSensor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSensor2.Location = new System.Drawing.Point(307, 146);
-            this.lblSensor2.Name = "lblSensor2";
-            this.lblSensor2.Size = new System.Drawing.Size(81, 65);
-            this.lblSensor2.TabIndex = 66;
-            this.lblSensor2.Text = "SENSOR OFF";
-            this.lblSensor2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblStart
-            // 
-            this.lblStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStart.Location = new System.Drawing.Point(33, 146);
-            this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(81, 65);
-            this.lblStart.TabIndex = 65;
-            this.lblStart.Text = "START OFF";
-            this.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PicSensor2
-            // 
-            this.PicSensor2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.PicSensor2.Location = new System.Drawing.Point(307, 60);
-            this.PicSensor2.Name = "PicSensor2";
-            this.PicSensor2.Size = new System.Drawing.Size(81, 65);
-            this.PicSensor2.TabIndex = 64;
-            this.PicSensor2.TabStop = false;
-            // 
-            // PicStart
-            // 
-            this.PicStart.Location = new System.Drawing.Point(33, 60);
-            this.PicStart.Name = "PicStart";
-            this.PicStart.Size = new System.Drawing.Size(81, 65);
-            this.PicStart.TabIndex = 63;
-            this.PicStart.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(136, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 45);
-            this.label12.TabIndex = 62;
-            this.label12.Text = "INPUTS";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -596,6 +515,89 @@
             this.label2.Text = "TIMER:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.lblSensor1);
+            this.panel2.Controls.Add(this.PicSensor1);
+            this.panel2.Controls.Add(this.lblSensor2);
+            this.panel2.Controls.Add(this.lblStart);
+            this.panel2.Controls.Add(this.PicSensor2);
+            this.panel2.Controls.Add(this.PicStart);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Location = new System.Drawing.Point(598, 28);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(407, 241);
+            this.panel2.TabIndex = 82;
+            // 
+            // lblSensor1
+            // 
+            this.lblSensor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSensor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSensor1.Location = new System.Drawing.Point(169, 146);
+            this.lblSensor1.Name = "lblSensor1";
+            this.lblSensor1.Size = new System.Drawing.Size(81, 65);
+            this.lblSensor1.TabIndex = 84;
+            this.lblSensor1.Text = "SENSOR OFF";
+            this.lblSensor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicSensor1
+            // 
+            this.PicSensor1.Location = new System.Drawing.Point(169, 60);
+            this.PicSensor1.Name = "PicSensor1";
+            this.PicSensor1.Size = new System.Drawing.Size(81, 65);
+            this.PicSensor1.TabIndex = 83;
+            this.PicSensor1.TabStop = false;
+            // 
+            // lblSensor2
+            // 
+            this.lblSensor2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSensor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSensor2.Location = new System.Drawing.Point(307, 146);
+            this.lblSensor2.Name = "lblSensor2";
+            this.lblSensor2.Size = new System.Drawing.Size(81, 65);
+            this.lblSensor2.TabIndex = 66;
+            this.lblSensor2.Text = "SENSOR OFF";
+            this.lblSensor2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblStart
+            // 
+            this.lblStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart.Location = new System.Drawing.Point(33, 146);
+            this.lblStart.Name = "lblStart";
+            this.lblStart.Size = new System.Drawing.Size(81, 65);
+            this.lblStart.TabIndex = 65;
+            this.lblStart.Text = "START OFF";
+            this.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicSensor2
+            // 
+            this.PicSensor2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.PicSensor2.Location = new System.Drawing.Point(307, 60);
+            this.PicSensor2.Name = "PicSensor2";
+            this.PicSensor2.Size = new System.Drawing.Size(81, 65);
+            this.PicSensor2.TabIndex = 64;
+            this.PicSensor2.TabStop = false;
+            // 
+            // PicStart
+            // 
+            this.PicStart.Location = new System.Drawing.Point(33, 60);
+            this.PicStart.Name = "PicStart";
+            this.PicStart.Size = new System.Drawing.Size(81, 65);
+            this.PicStart.TabIndex = 63;
+            this.PicStart.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(136, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(146, 45);
+            this.label12.TabIndex = 62;
+            this.label12.Text = "INPUTS";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -655,16 +657,16 @@
             this.Size = new System.Drawing.Size(1553, 890);
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PicSensor1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSensor2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicDryer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicRollers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicWater)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSoap)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicSensor1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicSensor2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStart)).EndInit();
             this.ResumeLayout(false);
 
         }
