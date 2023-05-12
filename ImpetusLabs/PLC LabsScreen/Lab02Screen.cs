@@ -17,10 +17,8 @@ namespace ImpetusLabs.LabsScreen
         private OpcValue[] Lab02Tests = new OpcValue[2];
         private Label[] Lbl2Lab02 = new Label[2];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
-
         private OpcValue[] Lab02Nodes = new OpcValue[6];
         private string[] Lab02NodeIds = new string[6] { "ns=2;s=[GustavoDevice]LAB02.START", "ns=2;s=[GustavoDevice]LAB02.TIMER1.ACC", "ns=2;s=[GustavoDevice]LAB02.TIMER1.DN", "ns=2;s=[GustavoDevice]LAB02.TIMER1.EN", "ns=2;s=[GustavoDevice]LAB02.TIMER1.PRE", "ns=2;s=[GustavoDevice]LAB02.TIMER.TT" };
-
 
         public Lab02Screen()
         {
@@ -33,7 +31,7 @@ namespace ImpetusLabs.LabsScreen
         
         }
 
-        private void UpdateLabStatus()
+        private void UpdateLabStatus() //Method for updating the LabStatus label
         {
 
             bool allPassed = true;
@@ -44,7 +42,7 @@ namespace ImpetusLabs.LabsScreen
             {
                 if (Lab02Tests[i] != null)
                 {
-                    string testValue = Lab02Tests[i].ToString();
+                    string testValue = Lab02Tests[i].ToString(); //it checks the value of Lab02Test and assigns it to variable testValue
 
                     if (testValue.Equals("1"))
                     {
@@ -63,12 +61,12 @@ namespace ImpetusLabs.LabsScreen
                         break;
                     }
                 }
-                else
-                {
-                    allPassed = false;
-                    allFailed = false;
-                    break;
-                }
+                    else
+                    {
+                        allPassed = false;
+                        allFailed = false;
+                        break;
+                    }
             }
 
             if (allPassed)
@@ -79,7 +77,7 @@ namespace ImpetusLabs.LabsScreen
             }
             else if (allFailed)
             {
-                lblLabStatus.Text = "LAB FIALED";
+                lblLabStatus.Text = "LAB FALED";
                 lblLabStatus.BackColor = Color.Red;
                 lblLabStatus.ForeColor = Color.White;
             }
@@ -112,7 +110,7 @@ namespace ImpetusLabs.LabsScreen
                     }
                     if (Lab02Tests[i].ToString().Equals("1"))
                     {
-                        Lbl2Lab02[i].BackColor = Color.LightGreen;
+                        Lbl2Lab02[i].BackColor = Color.DarkGreen;
                         Lbl2Lab02[i].Text = "PASSED";
                     }
                     if (Lab02Tests[i].ToString().Equals("-1"))

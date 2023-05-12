@@ -25,8 +25,7 @@ namespace ImpetusLabs
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
         private OpcValue[] Lab01Nodes = new OpcValue[6];
         private string[] Lab01NodeIds = new string[6] { "ns=2;s=[GustavoDevice]LAB01.MOTOR1", "ns=2;s=[GustavoDevice]LAB01.MOTOR2", "ns=2;s=[GustavoDevice]LAB01.START1", "ns=2;s=[GustavoDevice]LAB01.START2", "ns=2;s=[GustavoDevice]LAB01.STOP1", "ns=2;s=[GustavoDevice]LAB01.STOP2" };
-        private string[] Lab01SequenceMessage = new string[] { "ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE" };
-        private OpcValue[] Lab01Message = new OpcValue[7];
+       
         public Lab01Screen()
         {
             InitializeComponent();
@@ -44,22 +43,23 @@ namespace ImpetusLabs
         {
             RefreshLabs();
         }
-        private void UpdateLabStatus()
+        private void UpdateLabStatus()  //Method for updating the LabStatus label
         {
             bool allPassed = true;
             bool allFailed = true;
             bool anyFailed = false;
 
-            for (int i = 0; i < Lab01Tests.Length; i++)
-            {
-                if (Lab01Tests[i] != null)
-                {
-                    string testValue = Lab01Tests[i].ToString();
+            for (int i = 0; i < Lab01Tests.Length; i++) //Array that verifies the test results of the lab
 
-                    if (testValue.Equals("1"))
+            {
+                if (Lab01Tests[i] != null) //Verifys the element if its not null for absence in data
+                {
+                    string testValue = Lab01Tests[i].ToString(); //Reads and assigns the value to the variable 'testValue'
+
+                    if (testValue.Equals("1")) 
                     {
                         allFailed = false;
-                        allPassed = false;
+                        
                     }
                     else if (testValue.Equals("-1"))
                     {
@@ -102,35 +102,34 @@ namespace ImpetusLabs
         }
 
 
-        private void RefreshLabs()
+        private void RefreshLabs() //Method for updating the lab status labels
 
         {
-            UpdateLabStatus();
+            UpdateLabStatus(); // inokes this method to update the lab status label
 
+            //Code for Input and Outputs Images
             {
-                for (int i = 0; i < Lab01Nodes.Length; i++)
+                for (int i = 0; i < Lab01Nodes.Length; i++) 
                 {
-                    Lab01Nodes[i] = client.ReadNode(Lab01NodeIds[i]);
+                    Lab01Nodes[i] = client.ReadNode(Lab01NodeIds[i]); //Reads nodes from the opc server and assigns them to the element of 'Lab01Nodes'
                 }
 
-                if ((bool)Lab01Nodes[0].Value) // Motor 1
+                if ((bool)Lab01Nodes[0].Value) // Motor 1 image, If boolean value of ns=2;s=[GustavoDevice]LAB01.MOTOR1 is true 
                 {
-                    PicMotor1.Image = imageList1.Images[0];
-                    lblMotor1.ForeColor = Color.White;
-                    lblMotor1.BackColor = Color.Green;
-                    lblMotor1.Text = "Motor1 ON";
-
-
-
+                    PicMotor1.Image = imageList1.Images[0]; //Assigns an image from the imagelist using index 0
+                    lblMotor1.ForeColor = Color.White; //label text color is white
+                    lblMotor1.BackColor = Color.Green; //label backcolor green 
+                    lblMotor1.Text = "Motor1 ON"; //label text is set to "Motor1 ON"
+                }
+                else //If the boolean value is not true
+                {
+                    PicStart1.Image = imageList1.Images[1]; // Assigns an image from the imagelist using index 1
+                    lblMotor1.ForeColor = Color.White; //label text color white
+                    lblMotor1.BackColor = Color.Red; //label back color red
+                    lblMotor1.Text = "Motor1 OFF"; //label text is set to Motor "off"
                 }
 
-                else
-                {
-                    PicStart1.Image = imageList1.Images[1];
-                    lblMotor1.ForeColor = Color.White;
-                    lblMotor1.BackColor = Color.Red;
-                    lblMotor1.Text = "Motor1 OFF";
-                }
+                
 
                 if ((bool)Lab01Nodes[1].Value) // Motor 2
                 {
@@ -147,6 +146,7 @@ namespace ImpetusLabs
                     lblMotor2.Text = "Motor2 OFF";
                 }
 
+
                 if ((bool)Lab01Nodes[2].Value) // Start 1
                 {
                     PicStart1.Image = imageList1.Images[3];
@@ -161,6 +161,7 @@ namespace ImpetusLabs
                     lblStart1.BackColor = Color.Red;
                     lblStart1.Text = "Start1 OFF";
                 }
+
 
                 if ((bool)Lab01Nodes[3].Value) // Start 2
                 {
@@ -177,6 +178,7 @@ namespace ImpetusLabs
                     lblStart2.Text = "Start2 OFF";
                 }
 
+
                 if ((bool)Lab01Nodes[4].Value) // Stop 1
                 {
                     PicStop1.Image = imageList1.Images[6];
@@ -191,6 +193,7 @@ namespace ImpetusLabs
                     lblStop1.BackColor = Color.Red;
                     lblStop1.Text = "Stop1 OFF";
                 }
+
 
                 if ((bool)Lab01Nodes[5].Value) // Stop 2
                 {
@@ -207,36 +210,45 @@ namespace ImpetusLabs
                     lblStop2.Text = "Stop2 OFF";
                 }
 
+                 
                 for (int i = 0; i < Lab01Tests.Length; i++)
                 {
-                    Lab01Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[" + i + "]");
-                }
+                    Lab01Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[" + i + "]"); //in this array it will read the value on the opc servers and assign the value to "Lab01Tests"
+                } 
 
-                for (int i = 0; i < Lab01Tests.Length; i++)
+                for (int i = 0; i < Lab01Tests.Length; i++) //In this array it will check all the elements to verify the value 
                 {
                     if (Lab01Tests[i].ToString().Equals("0"))
                     {
+                        // If the test result is 0, sets the background color to Silver and displays "NOT RUN"
+
                         Lbl2Lab01[i].BackColor = Color.Silver;
                         Lbl2Lab01[i].Text = "NOT RUN";
                     }
+
+                    //If the test result is 1, sets the background color to DarkGreen and displays "PASSED"
                     if (Lab01Tests[i].ToString().Equals("1"))
                     {
                         Lbl2Lab01[i].BackColor = Color.DarkGreen;
                         Lbl2Lab01[i].Text = "PASSED";
 
                     }
+
+                    // // If the test result is -1, sets the background color to Red and displays "FAILED"
                     if (Lab01Tests[i].ToString().Equals("-1"))
                     {
                         Lbl2Lab01[i].BackColor = Color.Red;
                         Lbl2Lab01[i].Text = "FAILED";
 
-                
-                        }
+
+                    }
+
+                    //declaring nodeValue as a string variable that holds the simulation message from the OPC Server
                     string nodeValue = client.ReadNode("ns=2;s=::[GustavoDevice]Program:SIMULATION.MESSAGE").ToString();
 
-                    switch (nodeValue)
+                    switch (nodeValue) //switch case reads the number from the OPC server that is on the variable
                     {
-                        case "501":
+                        case "501": 
                             lblLabMessage.Text = "TOGGLING START1, MOTOR1 SHOULD REMAIN ON.";
                             lblLabMessage.ForeColor = Color.White;
                             lblLabMessage.BackColor = Color.Black;
@@ -280,27 +292,21 @@ namespace ImpetusLabs
         }
 
      
-            private void BtnLab01Start_Click(object sender, EventArgs e)
+            private void BtnLab01Start_Click(object sender, EventArgs e) //When button is clicked it executes the following instructions:
         {
-            var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
-            client.Connect();
-            try
-            {
-                client.Connect();
-                client.WriteNode(tagName, true);
-            }
-            catch (Opc.UaFx.OpcException)
-            {
-                //MessageBox.Show("Connection to OPC UA Server failed");
-            }
-            BtnLab01Start.Visible = false;
-            BtnLab01Stop.Visible = true;
-            TimerLab01.Enabled = true;
 
-                   
+            
+            var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";   //Declare my variable for the OPC node that is going to write
+            client.Connect(); //Connects to the OPC server
+            client.WriteNode(tagName, true); //writes a true value to the specific OPC node
+            BtnLab01Start.Visible = false; //Makes the button invisble when its pressed
+            BtnLab01Stop.Visible = true; //Makes the stop button visible 
+            TimerLab01.Enabled = true; //Timer goes on to perodically refresh and update the UI
+
+
         }
 
-        private void BtnLab01Stop_Click(object sender, EventArgs e)
+        private void BtnLab01Stop_Click(object sender, EventArgs e) 
         {
             var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT";
             client.WriteNode(tagName, false);
