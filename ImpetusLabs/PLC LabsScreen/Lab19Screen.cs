@@ -17,6 +17,8 @@ namespace ImpetusLabs.LabsScreen
         private OpcValue[] Lab19Tests = new OpcValue[4];
         private Label[] Lbl2Lab19 = new Label[4];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
+        private string[] Lab17NodeIds = new string[7] { "ns=2;s=[GustavoDevice]LAB19.START", "ns=2;s=[GustavoDevice]LAB19.STOP", "ns=2;s=[GustavoDevice]LAB19.OBJECT_SENSOR", "ns=2;s=[GustavoDevice]LAB19.BOX_SENSOR", "ns=2;s=[GustavoDevice]LAB19.M1", "ns=2;s=[GustavoDevice]LAB19.M2", "ns=2;s=[GustavoDevice]LAB19.ACC" };
+        private OpcValue[] Lab17Nodes = new OpcValue[7];
         public Lab19Screen()
         {
             InitializeComponent();
@@ -26,8 +28,7 @@ namespace ImpetusLabs.LabsScreen
             Lbl2Lab19[2] = Lbl2Lab19Test3;
             Lbl2Lab19[3] = Lbl2Lab19Test4;
 
-            string currentlab = "Lab #19";
-            LblCurrentLab.Text = currentlab;
+         
         }
 
         private void RefreshLabs()

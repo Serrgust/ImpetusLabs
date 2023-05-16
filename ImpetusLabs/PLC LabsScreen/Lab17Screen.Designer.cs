@@ -59,6 +59,12 @@
             this.PicStart = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblLeaveTime = new System.Windows.Forms.Label();
+            this.lblWaterTime = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl102 = new System.Windows.Forms.Label();
+            this.lblCylinder = new System.Windows.Forms.Label();
+            this.PicCylinder = new System.Windows.Forms.PictureBox();
             this.lblWater = new System.Windows.Forms.Label();
             this.PicWater = new System.Windows.Forms.PictureBox();
             this.lblClipRelease = new System.Windows.Forms.Label();
@@ -72,12 +78,6 @@
             this.PicClipHold = new System.Windows.Forms.PictureBox();
             this.PicConveyor = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.PicCylinder = new System.Windows.Forms.PictureBox();
-            this.lblCylinder = new System.Windows.Forms.Label();
-            this.lbl102 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblWaterTime = new System.Windows.Forms.Label();
-            this.lblLeaveTime = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -86,13 +86,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicInSensor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicCylinder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicWater)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicClipRelease)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotorBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotorFWD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicClipHold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicConveyor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicCylinder)).BeginInit();
             this.SuspendLayout();
             // 
             // LblLab17Test1
@@ -269,7 +269,7 @@
             this.panel1.Controls.Add(this.LblLab17Test3);
             this.panel1.Controls.Add(this.Lbl2Lab17Test1);
             this.panel1.Controls.Add(this.LblLab17Test1);
-            this.panel1.Location = new System.Drawing.Point(256, 16);
+            this.panel1.Location = new System.Drawing.Point(251, 191);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(393, 432);
             this.panel1.TabIndex = 15;
@@ -281,7 +281,7 @@
             this.panel4.Controls.Add(this.BtnBack);
             this.panel4.Controls.Add(this.BtnLab17Start);
             this.panel4.Controls.Add(this.BtnLab17Stop);
-            this.panel4.Location = new System.Drawing.Point(58, 474);
+            this.panel4.Location = new System.Drawing.Point(58, 717);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(591, 86);
             this.panel4.TabIndex = 81;
@@ -315,6 +315,7 @@
             this.BtnLab17Start.TabIndex = 8;
             this.BtnLab17Start.Text = "START SIM";
             this.BtnLab17Start.UseVisualStyleBackColor = true;
+            this.BtnLab17Start.Click += new System.EventHandler(this.BtnLab17Start_Click);
             // 
             // BtnLab17Stop
             // 
@@ -323,8 +324,9 @@
             this.BtnLab17Stop.Name = "BtnLab17Stop";
             this.BtnLab17Stop.Size = new System.Drawing.Size(138, 62);
             this.BtnLab17Stop.TabIndex = 9;
-            this.BtnLab17Stop.Text = "STOP SIM";
+            this.BtnLab17Stop.Text = "c";
             this.BtnLab17Stop.UseVisualStyleBackColor = true;
+            this.BtnLab17Stop.Click += new System.EventHandler(this.BtnLab17Stop_Click_1);
             // 
             // panel2
             // 
@@ -336,9 +338,9 @@
             this.panel2.Controls.Add(this.PicInSensor);
             this.panel2.Controls.Add(this.PicStart);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Location = new System.Drawing.Point(679, 16);
+            this.panel2.Location = new System.Drawing.Point(679, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(452, 219);
+            this.panel2.Size = new System.Drawing.Size(452, 222);
             this.panel2.TabIndex = 82;
             // 
             // lblOutSensor
@@ -430,11 +432,71 @@
             this.panel3.Controls.Add(this.PicClipHold);
             this.panel3.Controls.Add(this.PicConveyor);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(679, 260);
+            this.panel3.Location = new System.Drawing.Point(679, 283);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(452, 545);
             this.panel3.TabIndex = 83;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // lblLeaveTime
+            // 
+            this.lblLeaveTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLeaveTime.Location = new System.Drawing.Point(304, 459);
+            this.lblLeaveTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLeaveTime.Name = "lblLeaveTime";
+            this.lblLeaveTime.Size = new System.Drawing.Size(85, 33);
+            this.lblLeaveTime.TabIndex = 83;
+            this.lblLeaveTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblWaterTime
+            // 
+            this.lblWaterTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWaterTime.Location = new System.Drawing.Point(304, 402);
+            this.lblWaterTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWaterTime.Name = "lblWaterTime";
+            this.lblWaterTime.Size = new System.Drawing.Size(85, 33);
+            this.lblWaterTime.TabIndex = 82;
+            this.lblWaterTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(151, 453);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 45);
+            this.label2.TabIndex = 81;
+            this.label2.Text = "LEAVE TIME:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl102
+            // 
+            this.lbl102.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl102.Location = new System.Drawing.Point(151, 396);
+            this.lbl102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl102.Name = "lbl102";
+            this.lbl102.Size = new System.Drawing.Size(177, 45);
+            this.lbl102.TabIndex = 12;
+            this.lbl102.Text = "WATER TIME:";
+            this.lbl102.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCylinder
+            // 
+            this.lblCylinder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCylinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCylinder.Location = new System.Drawing.Point(26, 453);
+            this.lblCylinder.Name = "lblCylinder";
+            this.lblCylinder.Size = new System.Drawing.Size(81, 65);
+            this.lblCylinder.TabIndex = 80;
+            this.lblCylinder.Text = "MOTOR FORWARD OFF";
+            this.lblCylinder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicCylinder
+            // 
+            this.PicCylinder.Location = new System.Drawing.Point(26, 376);
+            this.PicCylinder.Name = "PicCylinder";
+            this.PicCylinder.Size = new System.Drawing.Size(81, 65);
+            this.PicCylinder.TabIndex = 79;
+            this.PicCylinder.TabStop = false;
             // 
             // lblWater
             // 
@@ -561,67 +623,6 @@
             this.label1.Text = "OUTPUTS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PicCylinder
-            // 
-            this.PicCylinder.Location = new System.Drawing.Point(26, 376);
-            this.PicCylinder.Name = "PicCylinder";
-            this.PicCylinder.Size = new System.Drawing.Size(81, 65);
-            this.PicCylinder.TabIndex = 79;
-            this.PicCylinder.TabStop = false;
-            // 
-            // lblCylinder
-            // 
-            this.lblCylinder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCylinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCylinder.Location = new System.Drawing.Point(26, 453);
-            this.lblCylinder.Name = "lblCylinder";
-            this.lblCylinder.Size = new System.Drawing.Size(81, 65);
-            this.lblCylinder.TabIndex = 80;
-            this.lblCylinder.Text = "MOTOR FORWARD OFF";
-            this.lblCylinder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl102
-            // 
-            this.lbl102.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl102.Location = new System.Drawing.Point(151, 396);
-            this.lbl102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl102.Name = "lbl102";
-            this.lbl102.Size = new System.Drawing.Size(177, 45);
-            this.lbl102.TabIndex = 12;
-            this.lbl102.Text = "WATER TIME:";
-            this.lbl102.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(151, 453);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 45);
-            this.label2.TabIndex = 81;
-            this.label2.Text = "LEAVE TIME:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWaterTime
-            // 
-            this.lblWaterTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWaterTime.Location = new System.Drawing.Point(304, 408);
-            this.lblWaterTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblWaterTime.Name = "lblWaterTime";
-            this.lblWaterTime.Size = new System.Drawing.Size(85, 33);
-            this.lblWaterTime.TabIndex = 82;
-            this.lblWaterTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblLeaveTime
-            // 
-            this.lblLeaveTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLeaveTime.Location = new System.Drawing.Point(304, 459);
-            this.lblLeaveTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLeaveTime.Name = "lblLeaveTime";
-            this.lblLeaveTime.Size = new System.Drawing.Size(85, 33);
-            this.lblLeaveTime.TabIndex = 83;
-            this.lblLeaveTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -645,7 +646,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblCurrentLab);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab17Screen";
             this.Size = new System.Drawing.Size(1335, 828);
             this.panel1.ResumeLayout(false);
@@ -655,13 +656,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicInSensor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicCylinder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicWater)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicClipRelease)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotorBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotorFWD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicClipHold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicConveyor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicCylinder)).EndInit();
             this.ResumeLayout(false);
 
         }

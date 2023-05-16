@@ -187,7 +187,7 @@
             this.LblCurrentLab.TabIndex = 40;
             this.LblCurrentLab.Text = "LAB #1";
             this.LblCurrentLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LblCurrentLab.Click += new System.EventHandler(this.LblCurrentLab_Click);
+          
             // 
             // panelInputOuput
             // 
@@ -205,7 +205,7 @@
             this.panelInputOuput.Name = "panelInputOuput";
             this.panelInputOuput.Size = new System.Drawing.Size(307, 339);
             this.panelInputOuput.TabIndex = 41;
-            this.panelInputOuput.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInputOuput_Paint);
+           
             // 
             // lblStop2
             // 
@@ -536,7 +536,6 @@
             this.Controls.Add(this.LblCurrentLab);
             this.Name = "Lab01Screen";
             this.Size = new System.Drawing.Size(1700, 857);
-            this.Load += new System.EventHandler(this.Lab01Screen_Load);
             this.panelInputOuput.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicStart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).EndInit();
