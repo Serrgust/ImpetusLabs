@@ -39,6 +39,7 @@
             this.BtnLab08Screen = new System.Windows.Forms.Button();
             this.BtnLab09Screen = new System.Windows.Forms.Button();
             this.BtnLab10Screen = new System.Windows.Forms.Button();
+            this.BtnLab11Screen = new System.Windows.Forms.Button();
             this.BtnLab12Screen = new System.Windows.Forms.Button();
             this.BtnLab13Screen = new System.Windows.Forms.Button();
             this.BtnLab14Screen = new System.Windows.Forms.Button();
@@ -48,11 +49,10 @@
             this.BtnLab18Screen = new System.Windows.Forms.Button();
             this.BtnLab19Screen = new System.Windows.Forms.Button();
             this.BtnLab20Screen = new System.Windows.Forms.Button();
-            this.BtnLab11Screen = new System.Windows.Forms.Button();
             this.LabSelectPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.LabSelectPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,6 +65,7 @@
             this.flowLayoutPanel1.Controls.Add(this.BtnLab02Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab03Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab04Screen);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab05Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab06Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab07Screen);
@@ -82,10 +83,10 @@
             this.flowLayoutPanel1.Controls.Add(this.BtnLab19Screen);
             this.flowLayoutPanel1.Controls.Add(this.BtnLab20Screen);
             this.flowLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(87, 35);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(87, 25);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(935, 539);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1013, 549);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // BtnLab01Screen
@@ -199,6 +200,17 @@
             this.BtnLab10Screen.UseVisualStyleBackColor = true;
             this.BtnLab10Screen.Click += new System.EventHandler(this.BtnLab10Screen_Click);
             // 
+            // BtnLab11Screen
+            // 
+            this.BtnLab11Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab11Screen.Location = new System.Drawing.Point(469, 217);
+            this.BtnLab11Screen.Name = "BtnLab11Screen";
+            this.BtnLab11Screen.Size = new System.Drawing.Size(227, 101);
+            this.BtnLab11Screen.TabIndex = 10;
+            this.BtnLab11Screen.Text = "Lab 11";
+            this.BtnLab11Screen.UseVisualStyleBackColor = true;
+            this.BtnLab11Screen.Click += new System.EventHandler(this.BtnLab11Screen_Click);
+            // 
             // BtnLab12Screen
             // 
             this.BtnLab12Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -298,19 +310,9 @@
             this.BtnLab20Screen.UseVisualStyleBackColor = true;
             this.BtnLab20Screen.Click += new System.EventHandler(this.BtnLab20Screen_Click);
             // 
-            // BtnLab11Screen
-            // 
-            this.BtnLab11Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab11Screen.Location = new System.Drawing.Point(469, 217);
-            this.BtnLab11Screen.Name = "BtnLab11Screen";
-            this.BtnLab11Screen.Size = new System.Drawing.Size(227, 101);
-            this.BtnLab11Screen.TabIndex = 10;
-            this.BtnLab11Screen.Text = "Lab 11";
-            this.BtnLab11Screen.UseVisualStyleBackColor = true;
-            this.BtnLab11Screen.Click += new System.EventHandler(this.BtnLab11Screen_Click);
-            // 
             // LabSelectPanel
             // 
+            this.LabSelectPanel.BackColor = System.Drawing.Color.Gray;
             this.LabSelectPanel.Controls.Add(this.panel1);
             this.LabSelectPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabSelectPanel.Location = new System.Drawing.Point(0, 0);
@@ -318,16 +320,16 @@
             this.LabSelectPanel.Size = new System.Drawing.Size(1114, 601);
             this.LabSelectPanel.TabIndex = 4;
             // 
-            // panel1
+            // button2
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(73, 7);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1035, 582);
-            this.panel1.TabIndex = 0;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(935, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(73, 65);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "MENU";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -338,16 +340,15 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // panel1
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(955, 29);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(73, 65);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "MENU";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(87, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(935, 539);
+            this.panel1.TabIndex = 0;
             // 
             // LabSelection
             // 

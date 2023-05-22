@@ -252,17 +252,17 @@
             this.panel1.Controls.Add(this.LblLab16Test2);
             this.panel1.Controls.Add(this.Lbl2Lab16Test1);
             this.panel1.Controls.Add(this.LblLab16Test1);
-            this.panel1.Location = new System.Drawing.Point(112, 84);
+            this.panel1.Location = new System.Drawing.Point(107, 107);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(649, 521);
             this.panel1.TabIndex = 15;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(264, 4);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 45);
+            this.label3.Size = new System.Drawing.Size(260, 45);
             this.label3.TabIndex = 70;
             this.label3.Text = "SIMULATION";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -367,7 +367,7 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(767, 273);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(452, 428);
+            this.panel3.Size = new System.Drawing.Size(452, 401);
             this.panel3.TabIndex = 79;
             // 
             // lblLowSensor
@@ -498,19 +498,19 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.BtnLab16Start);
             this.panel4.Controls.Add(this.BtnNextLab);
             this.panel4.Controls.Add(this.BtnBack);
-            this.panel4.Controls.Add(this.BtnLab16Start);
             this.panel4.Controls.Add(this.BtnLab16Stop);
-            this.panel4.Location = new System.Drawing.Point(170, 615);
+            this.panel4.Location = new System.Drawing.Point(165, 634);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(591, 86);
+            this.panel4.Size = new System.Drawing.Size(591, 76);
             this.panel4.TabIndex = 80;
             // 
             // BtnNextLab
             // 
             this.BtnNextLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNextLab.Location = new System.Drawing.Point(446, 17);
+            this.BtnNextLab.Location = new System.Drawing.Point(446, 3);
             this.BtnNextLab.Name = "BtnNextLab";
             this.BtnNextLab.Size = new System.Drawing.Size(138, 62);
             this.BtnNextLab.TabIndex = 54;
@@ -521,7 +521,7 @@
             // BtnBack
             // 
             this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBack.Location = new System.Drawing.Point(3, 14);
+            this.BtnBack.Location = new System.Drawing.Point(3, 4);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(138, 62);
             this.BtnBack.TabIndex = 43;
@@ -532,7 +532,7 @@
             // BtnLab16Start
             // 
             this.BtnLab16Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab16Start.Location = new System.Drawing.Point(224, 13);
+            this.BtnLab16Start.Location = new System.Drawing.Point(224, 3);
             this.BtnLab16Start.Name = "BtnLab16Start";
             this.BtnLab16Start.Size = new System.Drawing.Size(138, 62);
             this.BtnLab16Start.TabIndex = 8;
@@ -543,7 +543,7 @@
             // BtnLab16Stop
             // 
             this.BtnLab16Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab16Stop.Location = new System.Drawing.Point(224, 14);
+            this.BtnLab16Stop.Location = new System.Drawing.Point(224, 4);
             this.BtnLab16Stop.Name = "BtnLab16Stop";
             this.BtnLab16Stop.Size = new System.Drawing.Size(138, 62);
             this.BtnLab16Stop.TabIndex = 9;
@@ -601,9 +601,9 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(561, 36);
+            this.label4.Location = new System.Drawing.Point(561, 45);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 45);
+            this.label4.Size = new System.Drawing.Size(146, 36);
             this.label4.TabIndex = 71;
             this.label4.Text = "LAB #16";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

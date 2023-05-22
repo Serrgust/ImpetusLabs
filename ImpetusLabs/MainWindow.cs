@@ -79,7 +79,10 @@ namespace ImpetusLabs
             LoadForm(new SelectServerForm());
         }
 
-       
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
         }
+    }
     }
 

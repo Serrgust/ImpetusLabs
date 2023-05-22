@@ -325,20 +325,21 @@ namespace ImpetusLabs
 
       
 
-        private void BtnBack_Click(object sender, EventArgs e)
+        private void BtnBack_Click(object sender, EventArgs e) //Back button Event handler
         {
-            var BackTolabselection = new LabSelection();
-            Parent.Controls.Add(BackTolabselection);
-            BackTolabselection.Dock = DockStyle.Fill;
-            Parent.Controls.Remove(this);
+            var BackTolabselection = new LabSelection(); //Declaring variable for LabSelection screen
+            Parent.Controls.Add(BackTolabselection); //Adds the variable to parent container
+            BackTolabselection.Dock = DockStyle.Fill; // Sets the dock style to fill
+            Parent.Controls.Remove(this); //Removes current form when executed
 
         }
 
-        private void BtnNextLab_Click(object sender, EventArgs e)
+        private void BtnNextLab_Click(object sender, EventArgs e) //Next button Event handler
         {
-            var secondUserControl = new Lab02Screen();
-            Parent.Controls.Add(secondUserControl);
-            Parent.Controls.Remove(this);
+            var secondUserControl = new Lab02Screen(); //Declaring variable for Lab02 screen
+            Parent.Controls.Add(secondUserControl); //Adds the variable to parent container
+            Parent.Controls.Remove(this); //Removes current form when executed
+            secondUserControl.Dock = DockStyle.Fill; //Sets de dock style to fill
 
         }
 

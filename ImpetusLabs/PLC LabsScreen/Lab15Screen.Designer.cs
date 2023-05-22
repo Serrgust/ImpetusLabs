@@ -41,6 +41,7 @@
             this.LblCurrentLab = new System.Windows.Forms.Label();
             this.TimerLab15 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblStop = new System.Windows.Forms.Label();
             this.lblStart = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.PicStart = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.lblMotor2 = new System.Windows.Forms.Label();
             this.lblFeeder = new System.Windows.Forms.Label();
             this.lblMotor = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@
             this.BtnLab15Stop = new System.Windows.Forms.Button();
             this.lblLabMessage = new System.Windows.Forms.Label();
             this.lblLabStatus = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -208,6 +208,16 @@
             this.panel1.Size = new System.Drawing.Size(442, 440);
             this.panel1.TabIndex = 12;
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(149, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(173, 30);
+            this.label6.TabIndex = 75;
+            this.label6.Text = "SIMULATION";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -288,6 +298,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(347, 358);
             this.panel3.TabIndex = 80;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(130, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 30);
+            this.label5.TabIndex = 68;
+            this.label5.Text = "OUTPUTS";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMotor2
             // 
@@ -423,6 +443,7 @@
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -475,26 +496,6 @@
             this.lblLabStatus.Size = new System.Drawing.Size(2115, 41);
             this.lblLabStatus.TabIndex = 83;
             this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(130, 8);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 30);
-            this.label5.TabIndex = 68;
-            this.label5.Text = "OUTPUTS";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(149, 24);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 30);
-            this.label6.TabIndex = 75;
-            this.label6.Text = "SIMULATION";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 

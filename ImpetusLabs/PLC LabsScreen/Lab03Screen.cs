@@ -247,6 +247,7 @@ namespace ImpetusLabs.LabsScreen
             var FourthUserControl = new Lab04Screen();
             Parent.Controls.Add(FourthUserControl);
             Parent.Controls.Remove(this);
+            FourthUserControl.Dock = DockStyle.Fill;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)

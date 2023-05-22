@@ -290,6 +290,15 @@ namespace ImpetusLabs.LabsScreen
             Parent.Controls.Add(BackToLab14);
             BackToLab14.Dock = DockStyle.Fill;
             Parent.Controls.Remove(this);
+            
+        }
+
+        private void BtnNextLab_Click(object sender, EventArgs e)
+        {
+            var secondUserControl = new Lab16Screen();
+            Parent.Controls.Add(secondUserControl);
+            Parent.Controls.Remove(this);
+            secondUserControl.Dock = DockStyle.Fill;
         }
     }
 }

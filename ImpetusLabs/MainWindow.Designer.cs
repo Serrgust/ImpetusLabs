@@ -285,6 +285,7 @@
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Window";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);

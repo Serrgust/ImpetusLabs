@@ -312,6 +312,7 @@ namespace ImpetusLabs.LabsScreen
             var secondUserControl = new Lab07Screen();
             Parent.Controls.Add(secondUserControl);
             Parent.Controls.Remove(this);
+            secondUserControl.Dock = DockStyle.Fill;
 
         }
     }

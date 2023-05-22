@@ -280,6 +280,7 @@ namespace ImpetusLabs.LabsScreen
             var FifthUserControl = new Lab05Screen();
             Parent.Controls.Add(FifthUserControl);
             Parent.Controls.Remove(this);
+            FifthUserControl.Dock = DockStyle.Fill;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)

@@ -229,6 +229,7 @@ namespace ImpetusLabs.LabsScreen
             var ThirdUserControl = new Lab03Screen();
             Parent.Controls.Add(ThirdUserControl);
             Parent.Controls.Remove(this);
+            ThirdUserControl.Dock = DockStyle.Fill;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

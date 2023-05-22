@@ -133,8 +133,10 @@ namespace ImpetusLabs.LabsScreen
 
         private void button2_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Visible = Enabled;
-            flowLayoutPanel1.Enabled = Enabled;
+            MainWindow mainWindow= new MainWindow();
+            mainWindow.Show();
+            this.FindForm().Hide();
+           
         }
     }
 }
