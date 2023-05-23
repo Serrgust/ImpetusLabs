@@ -187,7 +187,6 @@
             this.LblCurrentLab.TabIndex = 40;
             this.LblCurrentLab.Text = "LAB #1";
             this.LblCurrentLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-          
             // 
             // panelInputOuput
             // 
@@ -205,7 +204,6 @@
             this.panelInputOuput.Name = "panelInputOuput";
             this.panelInputOuput.Size = new System.Drawing.Size(307, 339);
             this.panelInputOuput.TabIndex = 41;
-           
             // 
             // lblStop2
             // 

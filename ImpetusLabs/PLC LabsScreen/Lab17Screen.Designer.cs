@@ -44,6 +44,7 @@
             this.LblLab17Test6 = new System.Windows.Forms.Label();
             this.TimerLab17 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnNextLab = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
@@ -78,8 +79,9 @@
             this.PicConveyor = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.LblCurrentLab = new System.Windows.Forms.Label();
+            this.lblLabMessage = new System.Windows.Forms.Label();
+            this.lblLabStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -266,6 +268,16 @@
             this.panel1.Size = new System.Drawing.Size(655, 313);
             this.panel1.TabIndex = 15;
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(195, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(260, 45);
+            this.label3.TabIndex = 84;
+            this.label3.Text = "SIMULATION";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -287,6 +299,7 @@
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -297,6 +310,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab17Start
             // 
@@ -307,6 +321,7 @@
             this.BtnLab17Start.TabIndex = 8;
             this.BtnLab17Start.Text = "START SIM";
             this.BtnLab17Start.UseVisualStyleBackColor = true;
+            this.BtnLab17Start.Click += new System.EventHandler(this.BtnLab17Start_Click);
             // 
             // BtnLab17Stop
             // 
@@ -317,6 +332,7 @@
             this.BtnLab17Stop.TabIndex = 9;
             this.BtnLab17Stop.Text = "STOP SIM";
             this.BtnLab17Stop.UseVisualStyleBackColor = true;
+            this.BtnLab17Stop.Click += new System.EventHandler(this.BtnLab17Stop_Click_1);
             // 
             // panel2
             // 
@@ -478,7 +494,7 @@
             this.lblCylinder.Name = "lblCylinder";
             this.lblCylinder.Size = new System.Drawing.Size(81, 65);
             this.lblCylinder.TabIndex = 80;
-            this.lblCylinder.Text = "MOTOR FORWARD OFF";
+            this.lblCylinder.Text = "CYLINDER";
             this.lblCylinder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PicCylinder
@@ -627,31 +643,43 @@
             this.imageList1.Images.SetKeyName(6, "Spray nozzle off.png");
             this.imageList1.Images.SetKeyName(7, "Spray nozzle on.png");
             // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(195, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 45);
-            this.label3.TabIndex = 84;
-            this.label3.Text = "SIMULATION";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // LblCurrentLab
             // 
             this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCurrentLab.Location = new System.Drawing.Point(611, 22);
+            this.LblCurrentLab.Location = new System.Drawing.Point(518, 96);
             this.LblCurrentLab.Name = "LblCurrentLab";
             this.LblCurrentLab.Size = new System.Drawing.Size(179, 45);
             this.LblCurrentLab.TabIndex = 84;
             this.LblCurrentLab.Text = "LAB #17";
             this.LblCurrentLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblLabMessage
+            // 
+            this.lblLabMessage.BackColor = System.Drawing.Color.Transparent;
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(-221, 0);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1719, 33);
+            this.lblLabMessage.TabIndex = 85;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabStatus
+            // 
+            this.lblLabStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabStatus.Location = new System.Drawing.Point(-133, 891);
+            this.lblLabStatus.Name = "lblLabStatus";
+            this.lblLabStatus.Size = new System.Drawing.Size(1692, 41);
+            this.lblLabStatus.TabIndex = 86;
+            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Lab17Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.lblLabStatus);
+            this.Controls.Add(this.lblLabMessage);
             this.Controls.Add(this.LblCurrentLab);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -730,5 +758,7 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LblCurrentLab;
+        private System.Windows.Forms.Label lblLabMessage;
+        private System.Windows.Forms.Label lblLabStatus;
     }
 }

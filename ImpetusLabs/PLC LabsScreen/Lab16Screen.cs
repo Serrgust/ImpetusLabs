@@ -352,6 +352,10 @@ namespace ImpetusLabs.LabsScreen
             TimerLab16.Enabled = false;
             RefreshLabs();
             client.Disconnect();
+            lblLabStatus.Text = "";
+            lblLabStatus.BackColor = Color.Gray;
+            lblLabMessage.Text = "";
+            lblLabMessage.BackColor = Color.Gray;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)

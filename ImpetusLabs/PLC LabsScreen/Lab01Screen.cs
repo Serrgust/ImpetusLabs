@@ -50,14 +50,14 @@ namespace ImpetusLabs
             bool allFailed = true;
             bool anyFailed = false;
 
-            for (int i = 0; i < Lab01Tests.Length; i++) //Array that verifies the test results of the lab
+            for (int i = 0; i < Lab01Tests.Length; i++) //Loop that verifies the test results of the lab
 
             {
                 if (Lab01Tests[i] != null) //Verifys the element if its not null for absence in data
                 {
-                    string testValue = Lab01Tests[i].ToString(); //Reads and assigns the value to the variable 'testValue'
+                    string testValue = Lab01Tests[i].ToString(); //Reads and converts the value to string 
 
-                    if (testValue.Equals("1"))
+                    if (testValue.Equals("1")) 
                     {
                         allFailed = false;
 
@@ -108,14 +108,17 @@ namespace ImpetusLabs
         {
             UpdateLabStatus(); // invokes this method to update the lab status label
 
+          
+            
             //Code for Input and Outputs Images
             {
                 for (int i = 0; i < Lab01Nodes.Length; i++)
                 {
-                    Lab01Nodes[i] = client.ReadNode(Lab01NodeIds[i]); //Reads nodes from the opc server and assigns them to the element of 'Lab01Nodes'
+                    Lab01Nodes[i] = client.ReadNode(Lab01NodeIds[i]); //Loop that Reads nodes from the opc server and assigns them to the element of 'Lab01Nodes'
                 }
 
-                if ((bool)Lab01Nodes[0].Value) // Motor 1 image, If boolean value of ns=2;s=[GustavoDevice]LAB01.MOTOR1 is true 
+                // Motor 1 image,
+                if ((bool)Lab01Nodes[0].Value) // If boolean value of ns=2;s=[GustavoDevice]LAB01.MOTOR1 is true 
                 {
                     PicMotor1.Image = imageList1.Images[0]; //Assigns an image from the imagelist using index 0
                     lblMotor1.ForeColor = Color.White; //label text color is white
@@ -212,35 +215,36 @@ namespace ImpetusLabs
                     lblStop2.Text = "Stop2 OFF";
                 }
 
-                //Label Status change Code
-                for (int i = 0; i < Lab01Tests.Length; i++)
+                //Label Status change Code 
+                for (int i = 0; i < Lab01Tests.Length; i++) //in this array it will read the value on the opc servers and assign the value to "Lab01Tests"
                 {
-                    Lab01Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[" + i + "]"); //in this array it will read the value on the opc servers and assign the value to "Lab01Tests"
+                    Lab01Tests[i] = client.ReadNode("ns=2;s=[GustavoDevice]LAB01.VAR[" + i + "]"); 
                 }
 
-                for (int i = 0; i < Lab01Tests.Length; i++) //In this array it will check all the elements to verify the value 
+                for (int i = 0; i < Lab01Tests.Length; i++) //In this loop it will check all the elements to verify the value of the node that is reading 
                 {
+                    // If the test result is 0
                     if (Lab01Tests[i].ToString().Equals("0"))
                     {
-                        // If the test result is 0, sets the background color to Silver and displays "NOT RUN"
+                        
 
-                        Lbl2Lab01[i].BackColor = Color.Silver;
-                        Lbl2Lab01[i].Text = "NOT RUN";
+                        Lbl2Lab01[i].BackColor = Color.Silver; //Sets label color to silver
+                        Lbl2Lab01[i].Text = "NOT RUN"; //Sets label text to NOT RUN
                     }
 
-                    //If the test result is 1, sets the background color to DarkGreen and displays "PASSED"
+                    //If the test result is 1
                     if (Lab01Tests[i].ToString().Equals("1"))
                     {
-                        Lbl2Lab01[i].BackColor = Color.DarkGreen;
-                        Lbl2Lab01[i].Text = "PASSED";
+                        Lbl2Lab01[i].BackColor = Color.DarkGreen; //Sets the label color to dark green
+                        Lbl2Lab01[i].Text = "PASSED"; //Sets label text to PASSED
 
                     }
 
-                    // // If the test result is -1, sets the background color to Red and displays "FAILED"
+                    // If the test result is -1
                     if (Lab01Tests[i].ToString().Equals("-1"))
                     {
-                        Lbl2Lab01[i].BackColor = Color.Red;
-                        Lbl2Lab01[i].Text = "FAILED";
+                        Lbl2Lab01[i].BackColor = Color.Red; //Sets the label color to red
+                        Lbl2Lab01[i].Text = "FAILED"; //Sets label text to FAILED
 
 
                     }

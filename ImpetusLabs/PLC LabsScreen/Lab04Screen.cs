@@ -179,7 +179,7 @@ namespace ImpetusLabs.LabsScreen
             if (Convert.ToInt32(Lab04Nodes[4].ToString()) >= 50)
             {
                 PicDaysDone.Image = imageList1.Images[5]; //on 
-                MessageBox.Show("FUCK PIERLUISI AND JENNIFER GONZALE");
+                
             }
             else
             {

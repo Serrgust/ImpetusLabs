@@ -47,7 +47,7 @@ namespace ImpetusLabs.LabsScreen
                     if (testValue.Equals("1"))
                     {
                         allFailed = false;
-                       // allPassed = false;
+                      
                     }
                     else if (testValue.Equals("-1"))
                     {

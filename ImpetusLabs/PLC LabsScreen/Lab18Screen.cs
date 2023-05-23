@@ -17,6 +17,8 @@ namespace ImpetusLabs.LabsScreen
         private OpcValue[] Lab18Tests = new OpcValue[7];
         private Label[] Lbl2Lab18 = new Label[7];
         private OpcClient client = new OpcClient("opc.tcp://192.168.4.44:4990/FactoryTalkLinxGateway1");
+        private string[] Lab18NodeIds = new string[10] { "ns=2;s=[GustavoDevice]LAB18.START", "ns=2;s=[GustavoDevice]LAB18.STOP", "ns=2;s=[GustavoDevice]LAB18.", "ns=2;s=[GustavoDevice]LAB17.CONVEYOR", "ns=2;s=[GustavoDevice]LAB17.CLIP_HOLD", "ns=2;s=[GustavoDevice]LAB17.CLIP_RELEASE", "ns=2;s=[GustavoDevice]LAB17.MOTOR_FORWARD", "ns=2;s=[GustavoDevice]LAB17.MOTOR_REVERSE", "ns=2;s=[GustavoDevice]LAB17.WATER", "ns=2;s=[GustavoDevice]LAB17.CYLINDER" };
+        private OpcValue[] Lab18Nodes = new OpcValue[10];
         public Lab18Screen()
         {
             InitializeComponent();
