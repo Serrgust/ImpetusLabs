@@ -57,15 +57,15 @@ namespace ImpetusLabs
                 {
                     string testValue = Lab01Tests[i].ToString(); //Reads and converts the value to string 
 
-                    if (testValue.Equals("1")) 
+                    if (testValue.Equals("1")) // If the is 1, it indicates a pass, sets all fail to false indicating not all test have failed
                     {
-                        allFailed = false;
+                        allFailed = false; 
 
                     }
-                    else if (testValue.Equals("-1"))
+                    else if (testValue.Equals("-1")) //If the test result is -1, indicates a failure 
                     {
-                        allPassed = false;
-                        anyFailed = true;
+                        allPassed = false; // Sets any passed to false, indicating that not all test cases passed
+                        anyFailed = true; //Sets any failed to true. indicating that any test case failed.
                     }
                     else
                     {

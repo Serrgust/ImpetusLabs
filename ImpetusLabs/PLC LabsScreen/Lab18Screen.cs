@@ -62,6 +62,11 @@ namespace ImpetusLabs.LabsScreen
                     Lbl2Lab18[i].BackColor = Color.Red;
                     Lbl2Lab18[i].Text = "FAILED";
                 }
+
+                //Inputs and Outputs
+
+
+
             }
         }
         private void BtnLab18Start_Click(object sender, EventArgs e)
