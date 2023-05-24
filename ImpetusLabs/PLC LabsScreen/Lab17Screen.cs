@@ -110,7 +110,7 @@ namespace ImpetusLabs.LabsScreen
                 }
                 if (Lab17Tests[i].ToString().Equals("1"))
                 {
-                    Lbl2Lab17[i].BackColor = Color.LightGreen;
+                    Lbl2Lab17[i].BackColor = Color.DarkGreen;
                     Lbl2Lab17[i].Text = "PASSED";
                 }
                 if (Lab17Tests[i].ToString().Equals("-1"))

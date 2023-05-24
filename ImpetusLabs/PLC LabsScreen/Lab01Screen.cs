@@ -46,6 +46,8 @@ namespace ImpetusLabs
         }
         private void UpdateLabStatus()  //Method for updating the LabStatus label
         {
+
+            //Boolean variables that stores lab status 
             bool allPassed = true;
             bool allFailed = true;
             bool anyFailed = false;
@@ -64,21 +66,21 @@ namespace ImpetusLabs
                     }
                     else if (testValue.Equals("-1")) //If the test result is -1, indicates a failure 
                     {
-                        allPassed = false; // Sets any passed to false, indicating that not all test cases passed
+                        allPassed = false; // Sets all passed to false, indicating that not all test cases passed
                         anyFailed = true; //Sets any failed to true. indicating that any test case failed.
                     }
                     else
                     {
-                        allPassed = false;
-                        allFailed = false;
+                        allPassed = false; // if test value equals something else than -1, it will set  all passed false 
+                        allFailed = false; // it will set all failed to false 
                         break;
                     }
                 }
                 else
                 {
-                    allPassed = false;
-                    allFailed = false;
-                    break;
+                    allPassed = false; //sets 
+              allFailed = false;
+                   break;
                 }
             }
 
@@ -214,6 +216,8 @@ namespace ImpetusLabs
                     lblStop2.BackColor = Color.Red;
                     lblStop2.Text = "Stop2 OFF";
                 }
+                //INPUT AND OUTPUT IMAGES END 
+
 
                 //Label Status change Code 
                 for (int i = 0; i < Lab01Tests.Length; i++) //in this array it will read the value on the opc servers and assign the value to "Lab01Tests"
@@ -259,6 +263,7 @@ namespace ImpetusLabs
                             lblLabMessage.ForeColor = Color.White; //Sets the label text color to White.
                             lblLabMessage.BackColor = Color.Black; //Sets the label color to Black.
                             break; //Exit block after it gets executed
+
                         case "502":
                             lblLabMessage.Text = "TOGGLING STOP1, MOTOR 1 SHOULD TURN OFF";
                             lblLabMessage.ForeColor = Color.White;
@@ -285,7 +290,7 @@ namespace ImpetusLabs
                             lblLabMessage.BackColor = Color.Black;
                             break;
                         case "507":
-                            lblLabStatus.Text = "Lab #1 PASSED";
+                            lblLabStatus.Text = "LAB #1 PASSED";
                             lblLabStatus.BackColor = Color.Green;
                             lblLabStatus.ForeColor = Color.White;
                             lblLabMessage.Text = "";

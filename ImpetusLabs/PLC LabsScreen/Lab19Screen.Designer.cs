@@ -39,10 +39,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.TimerLab19 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblCounter = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.lblMotor2 = new System.Windows.Forms.Label();
-            this.lblMotor1 = new System.Windows.Forms.Label();
             this.PicMotor1 = new System.Windows.Forms.PictureBox();
             this.PicMotor2 = new System.Windows.Forms.PictureBox();
+            this.lblMotor1 = new System.Windows.Forms.Label();
             this.lblBoxSensorOff = new System.Windows.Forms.Label();
             this.lblObjectSensor = new System.Windows.Forms.Label();
             this.PicBoxSensor = new System.Windows.Forms.PictureBox();
@@ -57,8 +59,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblCounter = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnNextLab = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
@@ -196,6 +196,25 @@
             this.panel3.Size = new System.Drawing.Size(295, 395);
             this.panel3.TabIndex = 68;
             // 
+            // lblCounter
+            // 
+            this.lblCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCounter.Location = new System.Drawing.Point(142, 352);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(134, 32);
+            this.lblCounter.TabIndex = 72;
+            this.lblCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(14, 352);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(146, 45);
+            this.label8.TabIndex = 71;
+            this.label8.Text = "Counter:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblMotor2
             // 
             this.lblMotor2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -206,17 +225,6 @@
             this.lblMotor2.TabIndex = 70;
             this.lblMotor2.Text = "M2 OFF";
             this.lblMotor2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblMotor1
-            // 
-            this.lblMotor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblMotor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMotor1.Location = new System.Drawing.Point(34, 276);
-            this.lblMotor1.Name = "lblMotor1";
-            this.lblMotor1.Size = new System.Drawing.Size(81, 65);
-            this.lblMotor1.TabIndex = 69;
-            this.lblMotor1.Text = "M1 OFF";
-            this.lblMotor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PicMotor1
             // 
@@ -233,6 +241,17 @@
             this.PicMotor2.Size = new System.Drawing.Size(81, 65);
             this.PicMotor2.TabIndex = 67;
             this.PicMotor2.TabStop = false;
+            // 
+            // lblMotor1
+            // 
+            this.lblMotor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMotor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotor1.Location = new System.Drawing.Point(34, 276);
+            this.lblMotor1.Name = "lblMotor1";
+            this.lblMotor1.Size = new System.Drawing.Size(81, 65);
+            this.lblMotor1.TabIndex = 69;
+            this.lblMotor1.Text = "M1 OFF";
+            this.lblMotor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblBoxSensorOff
             // 
@@ -380,25 +399,6 @@
             this.label6.Text = "LAB #19";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(14, 352);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 45);
-            this.label8.TabIndex = 71;
-            this.label8.Text = "Counter:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCounter
-            // 
-            this.lblCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCounter.Location = new System.Drawing.Point(142, 352);
-            this.lblCounter.Name = "lblCounter";
-            this.lblCounter.Size = new System.Drawing.Size(146, 45);
-            this.lblCounter.TabIndex = 72;
-            this.lblCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -461,7 +461,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelInputOuput);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab19Screen";
             this.Size = new System.Drawing.Size(1700, 857);
             this.panel3.ResumeLayout(false);

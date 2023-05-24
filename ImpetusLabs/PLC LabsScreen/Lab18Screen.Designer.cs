@@ -50,7 +50,22 @@
             this.BtnBack = new System.Windows.Forms.Button();
             this.BtnLab18Start = new System.Windows.Forms.Button();
             this.BtnLab18Stop = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.panelInputOuput = new System.Windows.Forms.Panel();
+            this.lblStop1 = new System.Windows.Forms.Label();
+            this.lblStart1 = new System.Windows.Forms.Label();
+            this.PicStart1 = new System.Windows.Forms.PictureBox();
+            this.PicStop1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
+            this.panelInputOuput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStop1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblLab18Test1
@@ -243,7 +258,7 @@
             this.panel4.Controls.Add(this.BtnBack);
             this.panel4.Controls.Add(this.BtnLab18Start);
             this.panel4.Controls.Add(this.BtnLab18Stop);
-            this.panel4.Location = new System.Drawing.Point(254, 394);
+            this.panel4.Location = new System.Drawing.Point(158, 443);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(591, 86);
             this.panel4.TabIndex = 82;
@@ -288,11 +303,121 @@
             this.BtnLab18Stop.Text = "STOP SIM";
             this.BtnLab18Stop.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // panelInputOuput
+            // 
+            this.panelInputOuput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelInputOuput.Controls.Add(this.lblStop1);
+            this.panelInputOuput.Controls.Add(this.lblStart1);
+            this.panelInputOuput.Controls.Add(this.PicStart1);
+            this.panelInputOuput.Controls.Add(this.PicStop1);
+            this.panelInputOuput.Controls.Add(this.label1);
+            this.panelInputOuput.Location = new System.Drawing.Point(810, 44);
+            this.panelInputOuput.Name = "panelInputOuput";
+            this.panelInputOuput.Size = new System.Drawing.Size(297, 194);
+            this.panelInputOuput.TabIndex = 83;
+            // 
+            // lblStop1
+            // 
+            this.lblStop1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblStop1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStop1.Location = new System.Drawing.Point(178, 116);
+            this.lblStop1.Name = "lblStop1";
+            this.lblStop1.Size = new System.Drawing.Size(81, 55);
+            this.lblStop1.TabIndex = 51;
+            this.lblStop1.Text = "Stop1 OFF";
+            this.lblStop1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblStart1
+            // 
+            this.lblStart1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblStart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart1.Location = new System.Drawing.Point(32, 109);
+            this.lblStart1.Name = "lblStart1";
+            this.lblStart1.Size = new System.Drawing.Size(81, 55);
+            this.lblStart1.TabIndex = 43;
+            this.lblStart1.Text = "Start1 OFF";
+            this.lblStart1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PicStart1
+            // 
+            this.PicStart1.Location = new System.Drawing.Point(32, 41);
+            this.PicStart1.Name = "PicStart1";
+            this.PicStart1.Size = new System.Drawing.Size(81, 65);
+            this.PicStart1.TabIndex = 48;
+            this.PicStart1.TabStop = false;
+            // 
+            // PicStop1
+            // 
+            this.PicStop1.Location = new System.Drawing.Point(178, 41);
+            this.PicStop1.Name = "PicStop1";
+            this.PicStop1.Size = new System.Drawing.Size(81, 65);
+            this.PicStop1.TabIndex = 46;
+            this.PicStop1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(72, -5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 45);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "INPUTS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(810, 267);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(297, 261);
+            this.panel1.TabIndex = 84;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(72, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 45);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "OUTPUTS";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 45);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "EAST WEST";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(142, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(117, 45);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "NORTH SOUTH";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Lab18Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelInputOuput);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.LblCurrentLab);
             this.Controls.Add(this.Lbl2Lab18Test5);
@@ -313,6 +438,10 @@
             this.Name = "Lab18Screen";
             this.Size = new System.Drawing.Size(1119, 601);
             this.panel4.ResumeLayout(false);
+            this.panelInputOuput.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicStop1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -340,5 +469,16 @@
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Button BtnLab18Start;
         private System.Windows.Forms.Button BtnLab18Stop;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Panel panelInputOuput;
+        private System.Windows.Forms.Label lblStop1;
+        private System.Windows.Forms.Label lblStart1;
+        private System.Windows.Forms.PictureBox PicStart1;
+        private System.Windows.Forms.PictureBox PicStop1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
