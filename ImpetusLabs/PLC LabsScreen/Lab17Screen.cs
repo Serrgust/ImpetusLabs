@@ -330,7 +330,7 @@ namespace ImpetusLabs.LabsScreen
             }
         }
 
-            private void button1_Click(object sender, EventArgs e)
+            private void Button1_Click(object sender, EventArgs e)
         {
             var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT16";
             client.Connect();
@@ -356,7 +356,7 @@ namespace ImpetusLabs.LabsScreen
             RefreshLabs();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void Panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -48,7 +48,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TopPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopPanel
@@ -127,8 +126,6 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Blue;
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.BtnLabSelection);
@@ -139,8 +136,9 @@
             this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.Controls.Add(this.materialBtnLabSelection);
             this.flowLayoutPanel1.Controls.Add(this.materialBtnLogin);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 80);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(155, 638);
             this.flowLayoutPanel1.TabIndex = 9;
@@ -262,10 +260,9 @@
             this.MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MainPanel.Controls.Add(this.flowLayoutPanel1);
-            this.MainPanel.Location = new System.Drawing.Point(0, 80);
+            this.MainPanel.Location = new System.Drawing.Point(155, 80);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1261, 638);
+            this.MainPanel.Size = new System.Drawing.Size(1106, 638);
             this.MainPanel.TabIndex = 15;
             // 
             // timer1
@@ -279,6 +276,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(1264, 718);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.TopPanel);
             this.IsMdiContainer = true;
@@ -290,7 +288,6 @@
             this.TopPanel.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.MainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

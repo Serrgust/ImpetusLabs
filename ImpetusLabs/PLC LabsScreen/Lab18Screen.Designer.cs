@@ -58,9 +58,9 @@
             this.PicStop1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panelInputOuput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).BeginInit();
@@ -272,6 +272,7 @@
             this.BtnNextLab.TabIndex = 54;
             this.BtnNextLab.Text = "NEXT";
             this.BtnNextLab.UseVisualStyleBackColor = true;
+            this.BtnNextLab.Click += new System.EventHandler(this.BtnNextLab_Click);
             // 
             // BtnBack
             // 
@@ -282,6 +283,7 @@
             this.BtnBack.TabIndex = 43;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnLab18Start
             // 
@@ -381,15 +383,15 @@
             this.panel1.Size = new System.Drawing.Size(297, 261);
             this.panel1.TabIndex = 84;
             // 
-            // label2
+            // label4
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(72, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 45);
-            this.label2.TabIndex = 52;
-            this.label2.Text = "OUTPUTS";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(142, 55);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(117, 45);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "NORTH SOUTH";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -401,15 +403,15 @@
             this.label3.Text = "EAST WEST";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // label2
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(142, 55);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 45);
-            this.label4.TabIndex = 54;
-            this.label4.Text = "NORTH SOUTH";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(72, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 45);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "OUTPUTS";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lab18Screen
             // 
@@ -434,7 +436,7 @@
             this.Controls.Add(this.LblLab18Test4);
             this.Controls.Add(this.Lbl2Lab18Test1);
             this.Controls.Add(this.LblLab18Test1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab18Screen";
             this.Size = new System.Drawing.Size(1119, 601);
             this.panel4.ResumeLayout(false);

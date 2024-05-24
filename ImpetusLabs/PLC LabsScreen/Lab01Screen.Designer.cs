@@ -181,7 +181,7 @@
             // LblCurrentLab
             // 
             this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCurrentLab.Location = new System.Drawing.Point(759, 59);
+            this.LblCurrentLab.Location = new System.Drawing.Point(446, 75);
             this.LblCurrentLab.Name = "LblCurrentLab";
             this.LblCurrentLab.Size = new System.Drawing.Size(179, 45);
             this.LblCurrentLab.TabIndex = 40;
@@ -200,7 +200,7 @@
             this.panelInputOuput.Controls.Add(this.PicStop2);
             this.panelInputOuput.Controls.Add(this.PicStop1);
             this.panelInputOuput.Controls.Add(this.label1);
-            this.panelInputOuput.Location = new System.Drawing.Point(1347, 66);
+            this.panelInputOuput.Location = new System.Drawing.Point(1034, 82);
             this.panelInputOuput.Name = "panelInputOuput";
             this.panelInputOuput.Size = new System.Drawing.Size(307, 339);
             this.panelInputOuput.TabIndex = 41;
@@ -299,7 +299,7 @@
             this.panel1.Controls.Add(this.PicMotor2);
             this.panel1.Controls.Add(this.PicMotor1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(1347, 411);
+            this.panel1.Location = new System.Drawing.Point(1034, 427);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(307, 226);
             this.panel1.TabIndex = 42;
@@ -384,9 +384,9 @@
             // 
             this.lblLabStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabStatus.Location = new System.Drawing.Point(5, 640);
+            this.lblLabStatus.Location = new System.Drawing.Point(3, 656);
             this.lblLabStatus.Name = "lblLabStatus";
-            this.lblLabStatus.Size = new System.Drawing.Size(1692, 41);
+            this.lblLabStatus.Size = new System.Drawing.Size(1397, 41);
             this.lblLabStatus.TabIndex = 53;
             this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -417,7 +417,7 @@
             this.panel2.Controls.Add(this.LblLab01Test4);
             this.panel2.Controls.Add(this.LblLab01Test2);
             this.panel2.Controls.Add(this.Lbl2Lab01Test4);
-            this.panel2.Location = new System.Drawing.Point(381, 141);
+            this.panel2.Location = new System.Drawing.Point(68, 157);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(939, 329);
             this.panel2.TabIndex = 55;
@@ -502,9 +502,9 @@
             // 
             this.lblLabMessage.BackColor = System.Drawing.Color.Transparent;
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabMessage.Location = new System.Drawing.Point(-110, 0);
+            this.lblLabMessage.Location = new System.Drawing.Point(3, 0);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1921, 33);
+            this.lblLabMessage.Size = new System.Drawing.Size(1397, 33);
             this.lblLabMessage.TabIndex = 56;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -515,7 +515,7 @@
             this.panel3.Controls.Add(this.BtnLab01Stop);
             this.panel3.Controls.Add(this.BtnNextLab);
             this.panel3.Controls.Add(this.BtnBack);
-            this.panel3.Location = new System.Drawing.Point(601, 516);
+            this.panel3.Location = new System.Drawing.Point(288, 532);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(591, 95);
             this.panel3.TabIndex = 57;
@@ -533,7 +533,7 @@
             this.Controls.Add(this.panelInputOuput);
             this.Controls.Add(this.LblCurrentLab);
             this.Name = "Lab01Screen";
-            this.Size = new System.Drawing.Size(1700, 857);
+            this.Size = new System.Drawing.Size(1400, 750);
             this.panelInputOuput.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicStart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).EndInit();

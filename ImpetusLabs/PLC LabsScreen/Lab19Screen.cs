@@ -86,5 +86,21 @@ namespace ImpetusLabs.LabsScreen
         {
             RefreshLabs();
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            var BackTolab18 = new Lab18Screen();
+            Parent.Controls.Add(BackTolab18);
+            BackTolab18.Dock = DockStyle.Fill;
+            Parent.Controls.Remove(this);
+        }
+
+        private void BtnNextLab_Click(object sender, EventArgs e)
+        {
+            var secondUserControl = new Lab20Screen();
+            Parent.Controls.Add(secondUserControl);
+            Parent.Controls.Remove(this);
+            secondUserControl.Dock = DockStyle.Fill;
+        }
     }
 }

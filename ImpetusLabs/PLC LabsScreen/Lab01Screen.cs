@@ -110,8 +110,6 @@ namespace ImpetusLabs
         {
             UpdateLabStatus(); // invokes this method to update the lab status label
 
-          
-            
             //Code for Input and Outputs Images
             {
                 for (int i = 0; i < Lab01Nodes.Length; i++)
