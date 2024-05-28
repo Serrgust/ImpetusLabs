@@ -657,9 +657,9 @@
             // 
             this.lblLabMessage.BackColor = System.Drawing.Color.Transparent;
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabMessage.Location = new System.Drawing.Point(-221, 0);
+            this.lblLabMessage.Location = new System.Drawing.Point(3, 0);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1719, 33);
+            this.lblLabMessage.Size = new System.Drawing.Size(1398, 33);
             this.lblLabMessage.TabIndex = 85;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -667,9 +667,9 @@
             // 
             this.lblLabStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabStatus.Location = new System.Drawing.Point(-133, 891);
+            this.lblLabStatus.Location = new System.Drawing.Point(0, 923);
             this.lblLabStatus.Name = "lblLabStatus";
-            this.lblLabStatus.Size = new System.Drawing.Size(1692, 41);
+            this.lblLabStatus.Size = new System.Drawing.Size(1398, 41);
             this.lblLabStatus.TabIndex = 86;
             this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

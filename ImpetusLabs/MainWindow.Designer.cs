@@ -1,4 +1,7 @@
-﻿namespace ImpetusLabs
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+
+namespace ImpetusLabs
 {
     partial class MainWindow
     {
@@ -13,9 +16,14 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing)
             {
-                components.Dispose();
+                if (components != null)
+                {
+                    components.Dispose();
+                }
+                // Dispose OPC connection manager here
+                opcConnectionManager?.Disconnect();
             }
             base.Dispose(disposing);
         }
@@ -29,50 +37,69 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.TopPanel = new System.Windows.Forms.Panel();
-            this.TopTime = new System.Windows.Forms.Label();
-            this.TopDate = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TopMainText = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.BtnLabSelection = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.BtnLogin = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.materialBtnLabSelection = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialBtnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.MainPanel = new System.Windows.Forms.Panel();
+            this.TopPanel = new MaterialSkin.Controls.MaterialCard();
+            this.TopMainText = new MaterialSkin.Controls.MaterialLabel();
+            this.TopTime = new MaterialSkin.Controls.MaterialLabel();
+            this.TopDate = new MaterialSkin.Controls.MaterialLabel();
+            this.label2 = new MaterialSkin.Controls.MaterialLabel();
+            this.label1 = new MaterialSkin.Controls.MaterialLabel();
+            this.LeftLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnHome = new MaterialSkin.Controls.MaterialButton();
+            this.BtnLabSelection = new MaterialSkin.Controls.MaterialButton();
+            this.BtnLoginScreen = new MaterialSkin.Controls.MaterialButton();
+            this.BtnX = new MaterialSkin.Controls.MaterialButton();
+            this.BtnSelectServer = new MaterialSkin.Controls.MaterialButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.TopPanel.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.LeftLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopPanel
             // 
-            this.TopPanel.BackColor = System.Drawing.Color.Yellow;
+            this.TopPanel.BackColor = System.Drawing.Color.Yellow; // Set background to yellow
+            this.TopPanel.Controls.Add(this.TopMainText);
             this.TopPanel.Controls.Add(this.TopTime);
             this.TopPanel.Controls.Add(this.TopDate);
             this.TopPanel.Controls.Add(this.label2);
             this.TopPanel.Controls.Add(this.label1);
-            this.TopPanel.Controls.Add(this.TopMainText);
+            this.TopPanel.Depth = 0;
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.TopPanel.Location = new System.Drawing.Point(3, 64);
+            this.TopPanel.Margin = new System.Windows.Forms.Padding(14);
+            this.TopPanel.MouseState = MaterialSkin.MouseState.HOVER;
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(1264, 80);
+            this.TopPanel.Padding = new System.Windows.Forms.Padding(14);
+            this.TopPanel.Size = new System.Drawing.Size(1258, 80);
             this.TopPanel.TabIndex = 7;
+            // 
+            // TopMainText
+            // 
+            this.TopMainText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TopMainText.AutoSize = true;
+            this.TopMainText.BackColor = System.Drawing.Color.Transparent;
+            this.TopMainText.Depth = 0;
+            this.TopMainText.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.TopMainText.FontType = MaterialSkin.MaterialSkinManager.fontType.H3;
+            this.TopMainText.Location = new System.Drawing.Point(262, 9);
+            this.TopMainText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TopMainText.Name = "TopMainText";
+            this.TopMainText.Size = new System.Drawing.Size(661, 58);
+            this.TopMainText.TabIndex = 0;
+            this.TopMainText.Text = "JC AUTOMATION Training Hub";
             // 
             // TopTime
             // 
             this.TopTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TopTime.AutoSize = true;
             this.TopTime.BackColor = System.Drawing.Color.Transparent;
-            this.TopTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopTime.Depth = 0;
+            this.TopTime.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.TopTime.Location = new System.Drawing.Point(56, 44);
+            this.TopTime.MouseState = MaterialSkin.MouseState.HOVER;
             this.TopTime.Name = "TopTime";
-            this.TopTime.Size = new System.Drawing.Size(47, 20);
+            this.TopTime.Size = new System.Drawing.Size(41, 19);
             this.TopTime.TabIndex = 4;
             this.TopTime.Text = "Time:";
             // 
@@ -81,10 +108,12 @@
             this.TopDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TopDate.AutoSize = true;
             this.TopDate.BackColor = System.Drawing.Color.Transparent;
-            this.TopDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopDate.Depth = 0;
+            this.TopDate.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.TopDate.Location = new System.Drawing.Point(56, 9);
+            this.TopDate.MouseState = MaterialSkin.MouseState.HOVER;
             this.TopDate.Name = "TopDate";
-            this.TopDate.Size = new System.Drawing.Size(48, 20);
+            this.TopDate.Size = new System.Drawing.Size(38, 19);
             this.TopDate.TabIndex = 3;
             this.TopDate.Text = "Date:";
             // 
@@ -93,10 +122,12 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Depth = 0;
+            this.label2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label2.Location = new System.Drawing.Point(13, 44);
+            this.label2.MouseState = MaterialSkin.MouseState.HOVER;
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 20);
+            this.label2.Size = new System.Drawing.Size(41, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Time:";
             // 
@@ -104,212 +135,203 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Depth = 0;
+            this.label1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.MouseState = MaterialSkin.MouseState.HOVER;
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.Size = new System.Drawing.Size(38, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Date:";
             // 
-            // TopMainText
+            // LeftLayoutPanel
             // 
-            this.TopMainText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TopMainText.AutoSize = true;
-            this.TopMainText.BackColor = System.Drawing.Color.Transparent;
-            this.TopMainText.Cursor = System.Windows.Forms.Cursors.Default;
-            this.TopMainText.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TopMainText.Location = new System.Drawing.Point(268, 9);
-            this.TopMainText.Name = "TopMainText";
-            this.TopMainText.Size = new System.Drawing.Size(729, 55);
-            this.TopMainText.TabIndex = 0;
-            this.TopMainText.Text = "JC AUTOMATION Training Hub";
+            this.LeftLayoutPanel.BackColor = System.Drawing.Color.Blue; // Set background to blue
+            this.LeftLayoutPanel.ColumnCount = 1;
+            this.LeftLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.LeftLayoutPanel.Controls.Add(this.BtnHome, 0, 0);
+            this.LeftLayoutPanel.Controls.Add(this.BtnLabSelection, 0, 1);
+            this.LeftLayoutPanel.Controls.Add(this.BtnLoginScreen, 0, 2);
+            this.LeftLayoutPanel.Controls.Add(this.BtnX, 0, 3);
+            this.LeftLayoutPanel.Controls.Add(this.BtnSelectServer, 0, 4);
+            this.LeftLayoutPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftLayoutPanel.Location = new System.Drawing.Point(3, 144);
+            this.LeftLayoutPanel.Name = "LeftLayoutPanel";
+            this.LeftLayoutPanel.RowCount = 5;
+            this.LeftLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.LeftLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.LeftLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.LeftLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.LeftLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.LeftLayoutPanel.Size = new System.Drawing.Size(200, 571);
+            this.LeftLayoutPanel.TabIndex = 9;
             // 
-            // flowLayoutPanel1
+            // BtnHome
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Blue;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Controls.Add(this.BtnLabSelection);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.BtnLogin);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button6);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Controls.Add(this.materialBtnLabSelection);
-            this.flowLayoutPanel1.Controls.Add(this.materialBtnLogin);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 80);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(155, 638);
-            this.flowLayoutPanel1.TabIndex = 9;
+            this.BtnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnHome.AutoSize = false;
+            this.BtnHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnHome.BackColor = System.Drawing.Color.Transparent;
+            this.BtnHome.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnHome.Depth = 0;
+            this.BtnHome.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnHome.HighEmphasis = true;
+            this.BtnHome.Icon = null;
+            this.BtnHome.Location = new System.Drawing.Point(27, 32);
+            this.BtnHome.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnHome.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnHome.Name = "BtnHome";
+            this.BtnHome.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnHome.Size = new System.Drawing.Size(145, 50);
+            this.BtnHome.TabIndex = 0;
+            this.BtnHome.Text = "HOME";
+            this.BtnHome.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnHome.UseAccentColor = false;
+            this.BtnHome.UseVisualStyleBackColor = true;
+            this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
             // 
             // BtnLabSelection
             // 
-            this.BtnLabSelection.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BtnLabSelection.Location = new System.Drawing.Point(10, 20);
-            this.BtnLabSelection.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.BtnLabSelection.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnLabSelection.AutoSize = false;
+            this.BtnLabSelection.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnLabSelection.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLabSelection.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnLabSelection.Depth = 0;
+            this.BtnLabSelection.HighEmphasis = true;
+            this.BtnLabSelection.Icon = null;
+            this.BtnLabSelection.Location = new System.Drawing.Point(27, 146);
+            this.BtnLabSelection.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnLabSelection.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnLabSelection.Name = "BtnLabSelection";
-            this.BtnLabSelection.Size = new System.Drawing.Size(124, 52);
-            this.BtnLabSelection.TabIndex = 8;
+            this.BtnLabSelection.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnLabSelection.Size = new System.Drawing.Size(145, 50);
+            this.BtnLabSelection.TabIndex = 1;
             this.BtnLabSelection.Text = "PLC LABS";
-            this.BtnLabSelection.UseVisualStyleBackColor = true;
+            this.BtnLabSelection.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnLabSelection.UseAccentColor = false;
+            this.BtnLabSelection.UseVisualStyleBackColor = false;
             this.BtnLabSelection.Click += new System.EventHandler(this.BtnLabSelection_Click);
             // 
-            // button2
+            // BtnLoginScreen
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button2.Location = new System.Drawing.Point(10, 112);
-            this.button2.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 52);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "x";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnLoginScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnLoginScreen.AutoSize = false;
+            this.BtnLoginScreen.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnLoginScreen.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoginScreen.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnLoginScreen.Depth = 0;
+            this.BtnLoginScreen.HighEmphasis = true;
+            this.BtnLoginScreen.Icon = null;
+            this.BtnLoginScreen.Location = new System.Drawing.Point(27, 260);
+            this.BtnLoginScreen.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnLoginScreen.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnLoginScreen.Name = "BtnLoginScreen";
+            this.BtnLoginScreen.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnLoginScreen.Size = new System.Drawing.Size(145, 50);
+            this.BtnLoginScreen.TabIndex = 2;
+            this.BtnLoginScreen.Text = "LOG IN";
+            this.BtnLoginScreen.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnLoginScreen.UseAccentColor = false;
+            this.BtnLoginScreen.UseVisualStyleBackColor = false;
+            this.BtnLoginScreen.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
-            // BtnLogin
+            // BtnX
             // 
-            this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BtnLogin.Dock = System.Windows.Forms.DockStyle.Left;
-            this.BtnLogin.Location = new System.Drawing.Point(10, 204);
-            this.BtnLogin.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(124, 52);
-            this.BtnLogin.TabIndex = 10;
-            this.BtnLogin.Text = "LOG IN";
-            this.BtnLogin.UseVisualStyleBackColor = true;
-            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            this.BtnX.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnX.AutoSize = false;
+            this.BtnX.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnX.BackColor = System.Drawing.Color.Transparent;
+            this.BtnX.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnX.Depth = 0;
+            this.BtnX.HighEmphasis = true;
+            this.BtnX.Icon = null;
+            this.BtnX.Location = new System.Drawing.Point(27, 374);
+            this.BtnX.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnX.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnX.Name = "BtnX";
+            this.BtnX.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnX.Size = new System.Drawing.Size(145, 50);
+            this.BtnX.TabIndex = 3;
+            this.BtnX.Text = "BUTTON X";
+            this.BtnX.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnX.UseAccentColor = false;
+            this.BtnX.UseVisualStyleBackColor = false;
+            this.BtnX.Click += new System.EventHandler(this.BtnX_Click);
             // 
-            // button4
+            // BtnSelectServer
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button4.Location = new System.Drawing.Point(10, 296);
-            this.button4.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 52);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "x";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button6.Location = new System.Drawing.Point(10, 388);
-            this.button6.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(124, 52);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Testing Server";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button5.Location = new System.Drawing.Point(10, 480);
-            this.button5.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(124, 52);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "PROGRESS REPORT";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // materialBtnLabSelection
-            // 
-            this.materialBtnLabSelection.AutoSize = true;
-            this.materialBtnLabSelection.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialBtnLabSelection.BackColor = System.Drawing.Color.Blue;
-            this.materialBtnLabSelection.Cursor = System.Windows.Forms.Cursors.Default;
-            this.materialBtnLabSelection.Depth = 0;
-            this.materialBtnLabSelection.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialBtnLabSelection.Icon = null;
-            this.materialBtnLabSelection.Location = new System.Drawing.Point(10, 572);
-            this.materialBtnLabSelection.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.materialBtnLabSelection.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialBtnLabSelection.Name = "materialBtnLabSelection";
-            this.materialBtnLabSelection.Primary = true;
-            this.materialBtnLabSelection.Size = new System.Drawing.Size(121, 36);
-            this.materialBtnLabSelection.TabIndex = 14;
-            this.materialBtnLabSelection.Text = "LAB SELECTION";
-            this.materialBtnLabSelection.UseVisualStyleBackColor = false;
-            this.materialBtnLabSelection.Click += new System.EventHandler(this.materialBtnLabSelection_Click_1);
-            // 
-            // materialBtnLogin
-            // 
-            this.materialBtnLogin.AutoSize = true;
-            this.materialBtnLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialBtnLogin.BackColor = System.Drawing.Color.Blue;
-            this.materialBtnLogin.Cursor = System.Windows.Forms.Cursors.Default;
-            this.materialBtnLogin.Depth = 0;
-            this.materialBtnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialBtnLogin.Icon = null;
-            this.materialBtnLogin.Location = new System.Drawing.Point(154, 20);
-            this.materialBtnLogin.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.materialBtnLogin.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialBtnLogin.Name = "materialBtnLogin";
-            this.materialBtnLogin.Primary = true;
-            this.materialBtnLogin.Size = new System.Drawing.Size(61, 36);
-            this.materialBtnLogin.TabIndex = 15;
-            this.materialBtnLogin.Text = "LOGIN";
-            this.materialBtnLogin.UseVisualStyleBackColor = false;
-            this.materialBtnLogin.Click += new System.EventHandler(this.materialBtnLogin_Click);
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MainPanel.Location = new System.Drawing.Point(155, 80);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1106, 638);
-            this.MainPanel.TabIndex = 15;
+            this.BtnSelectServer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnSelectServer.AutoSize = false;
+            this.BtnSelectServer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnSelectServer.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSelectServer.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnSelectServer.Depth = 0;
+            this.BtnSelectServer.HighEmphasis = true;
+            this.BtnSelectServer.Icon = null;
+            this.BtnSelectServer.Location = new System.Drawing.Point(27, 488);
+            this.BtnSelectServer.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnSelectServer.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnSelectServer.Name = "BtnSelectServer";
+            this.BtnSelectServer.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnSelectServer.Size = new System.Drawing.Size(145, 50);
+            this.BtnSelectServer.TabIndex = 4;
+            this.BtnSelectServer.Text = "CONNECT";
+            this.BtnSelectServer.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnSelectServer.UseAccentColor = false;
+            this.BtnSelectServer.UseVisualStyleBackColor = false;
+            this.BtnSelectServer.Click += new System.EventHandler(this.BtnSelectServer_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // MainPanel
+            // 
+            this.MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MainPanel.Location = new System.Drawing.Point(209, 144);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1055, 574);
+            this.MainPanel.TabIndex = 15;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 718);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.LeftLayoutPanel);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.TopPanel);
-            this.IsMdiContainer = true;
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Window";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.LeftLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel TopPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button BtnLabSelection;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button BtnLogin;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label TopTime;
-        private System.Windows.Forms.Label TopDate;
+        private MaterialSkin.Controls.MaterialCard TopPanel;
+        private System.Windows.Forms.TableLayoutPanel LeftLayoutPanel;
+        private MaterialSkin.Controls.MaterialLabel label2;
+        private MaterialSkin.Controls.MaterialLabel label1;
+        private MaterialSkin.Controls.MaterialLabel TopTime;
+        private MaterialSkin.Controls.MaterialLabel TopDate;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label TopMainText;
-        private MaterialSkin.Controls.MaterialRaisedButton materialBtnLabSelection;
-        private MaterialSkin.Controls.MaterialRaisedButton materialBtnLogin;
+        private MaterialSkin.Controls.MaterialLabel TopMainText;
+        private System.Windows.Forms.Panel MainPanel;
+        private MaterialSkin.Controls.MaterialButton BtnHome;
+        private MaterialSkin.Controls.MaterialButton BtnLabSelection;
+        private MaterialSkin.Controls.MaterialButton BtnLoginScreen;
+        private MaterialSkin.Controls.MaterialButton BtnX;
+        private MaterialSkin.Controls.MaterialButton BtnSelectServer;
     }
 }

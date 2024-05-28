@@ -1,4 +1,5 @@
-﻿
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
 namespace ImpetusLabs.Forms
 {
     partial class SelectServerForm
@@ -30,47 +31,79 @@ namespace ImpetusLabs.Forms
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ServerTxtBox = new System.Windows.Forms.TextBox();
-            this.ServerBtn = new System.Windows.Forms.Button();
+            this.ServerTxtBox = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.ServerBtn = new MaterialSkin.Controls.MaterialButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ImpetusLabs.Properties.Resources.JCA_n_logo_new_ns_js_copy_3;
-            this.pictureBox1.Location = new System.Drawing.Point(156, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(167, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(221, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 223);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Server:";
-            // 
             // ServerTxtBox
             // 
-            this.ServerTxtBox.Location = new System.Drawing.Point(169, 222);
+            this.ServerTxtBox.AnimateReadOnly = false;
+            this.ServerTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ServerTxtBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.ServerTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ServerTxtBox.Depth = 0;
+            this.ServerTxtBox.HideSelection = true;
+            this.ServerTxtBox.Location = new System.Drawing.Point(156, 213);
+            this.ServerTxtBox.MaxLength = 32767;
+            this.ServerTxtBox.MouseState = MaterialSkin.MouseState.OUT;
             this.ServerTxtBox.Name = "ServerTxtBox";
-            this.ServerTxtBox.Size = new System.Drawing.Size(226, 20);
-            this.ServerTxtBox.TabIndex = 8;
-            this.ServerTxtBox.TextChanged += new System.EventHandler(this.ServerTxtBox_TextChanged);
+            this.ServerTxtBox.PasswordChar = '\0';
+            this.ServerTxtBox.ReadOnly = false;
+            this.ServerTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.ServerTxtBox.SelectedText = "";
+            this.ServerTxtBox.SelectionLength = 0;
+            this.ServerTxtBox.SelectionStart = 0;
+            this.ServerTxtBox.ShortcutsEnabled = true;
+            this.ServerTxtBox.Size = new System.Drawing.Size(277, 35);
+            this.ServerTxtBox.TabIndex = 10;
+            this.ServerTxtBox.TabStop = false;
+            this.ServerTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ServerTxtBox.UseSystemPasswordChar = false;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(96, 221);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(45, 19);
+            this.materialLabel1.TabIndex = 11;
+            this.materialLabel1.Text = "Server";
             // 
             // ServerBtn
             // 
-            this.ServerBtn.Location = new System.Drawing.Point(186, 289);
+            this.ServerBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ServerBtn.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ServerBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ServerBtn.Depth = 0;
+            this.ServerBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ServerBtn.HighEmphasis = true;
+            this.ServerBtn.Icon = null;
+            this.ServerBtn.Location = new System.Drawing.Point(222, 305);
+            this.ServerBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ServerBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ServerBtn.Name = "ServerBtn";
-            this.ServerBtn.Size = new System.Drawing.Size(164, 35);
-            this.ServerBtn.TabIndex = 9;
+            this.ServerBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ServerBtn.Size = new System.Drawing.Size(89, 36);
+            this.ServerBtn.TabIndex = 12;
             this.ServerBtn.Text = "Connect";
-            this.ServerBtn.UseVisualStyleBackColor = true;
+            this.ServerBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ServerBtn.UseAccentColor = false;
+            this.ServerBtn.UseVisualStyleBackColor = false;
             this.ServerBtn.Click += new System.EventHandler(this.ServerBtn_Click);
             // 
             // SelectServerForm
@@ -79,12 +112,12 @@ namespace ImpetusLabs.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 411);
             this.Controls.Add(this.ServerBtn);
+            this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.ServerTxtBox);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "SelectServerForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SelectServerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Load += new System.EventHandler(this.SelectServerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -94,8 +127,8 @@ namespace ImpetusLabs.Forms
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox ServerTxtBox;
-        private System.Windows.Forms.Button ServerBtn;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 ServerTxtBox;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialButton ServerBtn;
     }
 }

@@ -112,7 +112,7 @@
             this.BtnLab01Start.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
             this.BtnLab01Start.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.BtnLab01Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab01Start.Location = new System.Drawing.Point(199, 14);
+            this.BtnLab01Start.Location = new System.Drawing.Point(218, 14);
             this.BtnLab01Start.Name = "BtnLab01Start";
             this.BtnLab01Start.Size = new System.Drawing.Size(138, 62);
             this.BtnLab01Start.TabIndex = 26;
@@ -165,7 +165,7 @@
             // BtnLab01Stop
             // 
             this.BtnLab01Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab01Stop.Location = new System.Drawing.Point(199, 14);
+            this.BtnLab01Stop.Location = new System.Drawing.Point(218, 14);
             this.BtnLab01Stop.Name = "BtnLab01Stop";
             this.BtnLab01Stop.Size = new System.Drawing.Size(138, 62);
             this.BtnLab01Stop.TabIndex = 39;
@@ -200,7 +200,7 @@
             this.panelInputOuput.Controls.Add(this.PicStop2);
             this.panelInputOuput.Controls.Add(this.PicStop1);
             this.panelInputOuput.Controls.Add(this.label1);
-            this.panelInputOuput.Location = new System.Drawing.Point(1034, 82);
+            this.panelInputOuput.Location = new System.Drawing.Point(1003, 75);
             this.panelInputOuput.Name = "panelInputOuput";
             this.panelInputOuput.Size = new System.Drawing.Size(307, 339);
             this.panelInputOuput.TabIndex = 41;
@@ -299,7 +299,7 @@
             this.panel1.Controls.Add(this.PicMotor2);
             this.panel1.Controls.Add(this.PicMotor1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(1034, 427);
+            this.panel1.Location = new System.Drawing.Point(1003, 420);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(307, 226);
             this.panel1.TabIndex = 42;
@@ -372,7 +372,7 @@
             // BtnBack
             // 
             this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBack.Location = new System.Drawing.Point(3, 14);
+            this.BtnBack.Location = new System.Drawing.Point(21, 14);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(138, 62);
             this.BtnBack.TabIndex = 43;
@@ -417,9 +417,9 @@
             this.panel2.Controls.Add(this.LblLab01Test4);
             this.panel2.Controls.Add(this.LblLab01Test2);
             this.panel2.Controls.Add(this.Lbl2Lab01Test4);
-            this.panel2.Location = new System.Drawing.Point(68, 157);
+            this.panel2.Location = new System.Drawing.Point(88, 155);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(939, 329);
+            this.panel2.Size = new System.Drawing.Size(870, 329);
             this.panel2.TabIndex = 55;
             // 
             // label3
@@ -515,7 +515,7 @@
             this.panel3.Controls.Add(this.BtnLab01Stop);
             this.panel3.Controls.Add(this.BtnNextLab);
             this.panel3.Controls.Add(this.BtnBack);
-            this.panel3.Location = new System.Drawing.Point(288, 532);
+            this.panel3.Location = new System.Drawing.Point(260, 529);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(591, 95);
             this.panel3.TabIndex = 57;

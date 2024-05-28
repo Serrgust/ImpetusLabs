@@ -28,92 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.UsernameField = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.PasswordField = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLoginEnter = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.UsernameText = new MaterialSkin.Controls.MaterialLabel();
+            this.PasswordText = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
+            this.UsernameField = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.PasswordField = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // materialLabel1
+            // UsernameText
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(75, 179);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(77, 19);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "Username";
+            this.UsernameText.AutoSize = true;
+            this.UsernameText.Depth = 0;
+            this.UsernameText.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UsernameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UsernameText.Location = new System.Drawing.Point(75, 179);
+            this.UsernameText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UsernameText.Name = "UsernameText";
+            this.UsernameText.Size = new System.Drawing.Size(72, 19);
+            this.UsernameText.TabIndex = 0;
+            this.UsernameText.Text = "Username";
             // 
-            // materialLabel2
+            // PasswordText
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(75, 234);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(75, 19);
-            this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "Password";
-            // 
-            // UsernameField
-            // 
-            this.UsernameField.Depth = 0;
-            this.UsernameField.Hint = "";
-            this.UsernameField.Location = new System.Drawing.Point(158, 179);
-            this.UsernameField.MaxLength = 32767;
-            this.UsernameField.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UsernameField.Name = "UsernameField";
-            this.UsernameField.PasswordChar = '\0';
-            this.UsernameField.SelectedText = "";
-            this.UsernameField.SelectionLength = 0;
-            this.UsernameField.SelectionStart = 0;
-            this.UsernameField.Size = new System.Drawing.Size(221, 23);
-            this.UsernameField.TabIndex = 2;
-            this.UsernameField.TabStop = false;
-            this.UsernameField.UseSystemPasswordChar = false;
-            // 
-            // PasswordField
-            // 
-            this.PasswordField.Depth = 0;
-            this.PasswordField.Hint = "";
-            this.PasswordField.Location = new System.Drawing.Point(158, 234);
-            this.PasswordField.MaxLength = 32767;
-            this.PasswordField.MouseState = MaterialSkin.MouseState.HOVER;
-            this.PasswordField.Name = "PasswordField";
-            this.PasswordField.PasswordChar = '\0';
-            this.PasswordField.SelectedText = "";
-            this.PasswordField.SelectionLength = 0;
-            this.PasswordField.SelectionStart = 0;
-            this.PasswordField.Size = new System.Drawing.Size(221, 23);
-            this.PasswordField.TabIndex = 3;
-            this.PasswordField.TabStop = false;
-            this.PasswordField.UseSystemPasswordChar = false;
-            // 
-            // materialLoginEnter
-            // 
-            this.materialLoginEnter.AutoSize = true;
-            this.materialLoginEnter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialLoginEnter.Depth = 0;
-            this.materialLoginEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialLoginEnter.Icon = null;
-            this.materialLoginEnter.Location = new System.Drawing.Point(229, 300);
-            this.materialLoginEnter.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLoginEnter.Name = "materialLoginEnter";
-            this.materialLoginEnter.Primary = true;
-            this.materialLoginEnter.Size = new System.Drawing.Size(64, 36);
-            this.materialLoginEnter.TabIndex = 4;
-            this.materialLoginEnter.Text = "LOG IN";
-            this.materialLoginEnter.UseVisualStyleBackColor = true;
-            this.materialLoginEnter.Click += new System.EventHandler(this.materialLoginEnter_Click);
+            this.PasswordText.AutoSize = true;
+            this.PasswordText.Depth = 0;
+            this.PasswordText.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.PasswordText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.PasswordText.Location = new System.Drawing.Point(75, 234);
+            this.PasswordText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.PasswordText.Name = "PasswordText";
+            this.PasswordText.Size = new System.Drawing.Size(71, 19);
+            this.PasswordText.TabIndex = 1;
+            this.PasswordText.Text = "Password";
             // 
             // pictureBox1
             // 
@@ -125,35 +73,86 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // BtnLogin
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.FlatAppearance.BorderSize = 10;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(179, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 35);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "LOG IN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnLogin.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BtnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BtnLogin.FlatAppearance.BorderSize = 10;
+            this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnLogin.Location = new System.Drawing.Point(179, 323);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(164, 35);
+            this.BtnLogin.TabIndex = 6;
+            this.BtnLogin.Text = "LOG IN";
+            this.BtnLogin.UseVisualStyleBackColor = false;
+            // 
+            // UsernameField
+            // 
+            this.UsernameField.AnimateReadOnly = false;
+            this.UsernameField.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.UsernameField.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.UsernameField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UsernameField.Depth = 0;
+            this.UsernameField.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameField.HideSelection = true;
+            this.UsernameField.Location = new System.Drawing.Point(164, 171);
+            this.UsernameField.MaxLength = 32767;
+            this.UsernameField.MouseState = MaterialSkin.MouseState.OUT;
+            this.UsernameField.Name = "UsernameField";
+            this.UsernameField.PasswordChar = '\0';
+            this.UsernameField.ReadOnly = false;
+            this.UsernameField.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.UsernameField.SelectedText = "";
+            this.UsernameField.SelectionLength = 0;
+            this.UsernameField.SelectionStart = 0;
+            this.UsernameField.ShortcutsEnabled = true;
+            this.UsernameField.Size = new System.Drawing.Size(250, 35);
+            this.UsernameField.TabIndex = 8;
+            this.UsernameField.TabStop = false;
+            this.UsernameField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.UsernameField.UseSystemPasswordChar = false;
+            this.UsernameField.Click += new System.EventHandler(this.materialMultiLineTextBox21_Click);
+            // 
+            // PasswordField
+            // 
+            this.PasswordField.AnimateReadOnly = false;
+            this.PasswordField.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.PasswordField.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.PasswordField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordField.Depth = 0;
+            this.PasswordField.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordField.HideSelection = true;
+            this.PasswordField.Location = new System.Drawing.Point(164, 226);
+            this.PasswordField.MaxLength = 32767;
+            this.PasswordField.MouseState = MaterialSkin.MouseState.OUT;
+            this.PasswordField.Name = "PasswordField";
+            this.PasswordField.PasswordChar = '\0';
+            this.PasswordField.ReadOnly = false;
+            this.PasswordField.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.PasswordField.SelectedText = "";
+            this.PasswordField.SelectionLength = 0;
+            this.PasswordField.SelectionStart = 0;
+            this.PasswordField.ShortcutsEnabled = true;
+            this.PasswordField.Size = new System.Drawing.Size(250, 35);
+            this.PasswordField.TabIndex = 9;
+            this.PasswordField.TabStop = false;
+            this.PasswordField.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PasswordField.UseSystemPasswordChar = false;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 411);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.materialLoginEnter);
             this.Controls.Add(this.PasswordField);
             this.Controls.Add(this.UsernameField);
-            this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.BtnLogin);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PasswordText);
+            this.Controls.Add(this.UsernameText);
             this.Name = "LoginForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LoginForm";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginForm_Load);
@@ -165,12 +164,14 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField UsernameField;
-        private MaterialSkin.Controls.MaterialSingleLineTextField PasswordField;
-        private MaterialSkin.Controls.MaterialRaisedButton materialLoginEnter;
+        private MaterialSkin.Controls.MaterialLabel UsernameText;
+        private MaterialSkin.Controls.MaterialLabel PasswordText;
+   //     private MaterialSkin.Controls.MaterialSingleLineTextField UsernameField;
+   //     private MaterialSkin.Controls.MaterialSingleLineTextField PasswordField;
+  //      private MaterialSkin.Controls.MaterialRaisedButton materialLoginEnter;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 UsernameField;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 PasswordField;
+        private System.Windows.Forms.Button BtnLogin;
     }
 }

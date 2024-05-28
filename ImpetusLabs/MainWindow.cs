@@ -1,51 +1,37 @@
 ﻿using ImpetusLabs.Forms;
 using ImpetusLabs.LabsScreen;
-using Opc.UaFx.Client;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace ImpetusLabs
 {
-    public partial class MainWindow : Form
+    public partial class MainWindow : MaterialForm
     {
-        
+        private OpcConnectionManager opcConnectionManager;
+
         public MainWindow()
         {
             InitializeComponent();
+            opcConnectionManager = new OpcConnectionManager();
+            // Initialize MaterialSkinManager
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+                Primary.Blue600, Primary.Blue700,
+                Primary.Blue200, Accent.LightBlue200,
+                TextShade.WHITE
+            );
         }
 
-        public void LoadUserControl(object UserControl)
+        private void MainWindow_Load(object sender, EventArgs e)
         {
-            if (this.MainPanel.Controls.Count > 0)
-                this.MainPanel.Controls.RemoveAt(0);
-            UserControl f = UserControl as UserControl;
-            f.Dock = DockStyle.Fill;
-            this.MainPanel.Controls.Add(f);
-            this.MainPanel.Tag = f;
-            f.Show();
-        }
-
-        public void LoadForm(object Form)
-        {
-            Form f = Form as Form;
-            f.Show();
-        }
-
-        private void BtnLabSelection_Click(object sender, EventArgs e)
-        {
-            //LoadForm(new LabSelection1()); Lab selection nuevo pero viejo
-            flowLayoutPanel1.Visible = true;
-            flowLayoutPanel1.Enabled = true;
-
-            LoadUserControl(new LabSelection());
-            //flowLayoutPanel1.Visible = false;
+            // Initialize the timer to update time and date
+            timer1.Interval = 1000; // Set the interval to 1 second
+            timer1.Start(); // Start the timer
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -54,35 +40,56 @@ namespace ImpetusLabs
             TopDate.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void materialBtnLabSelection_Click(object sender, EventArgs e)
+        private void BtnHome_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new LabSelection1());
+            ClearMainPanel();
         }
 
-        private void BtnLogin_Click(object sender, EventArgs e)
-        {
-            LoadForm(new LoginForm());
-        }
-
-        private void materialBtnLabSelection_Click_1(object sender, EventArgs e)
+        private void BtnLabSelection_Click(object sender, EventArgs e)
         {
             LoadUserControl(new LabSelection());
         }
 
-        private void materialBtnLogin_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
-            LoadForm(new LoginForm());
+            using (LoginForm LoginForm = new LoginForm())
+            {
+                LoginForm.ShowDialog();
+            }
+        }
+        private void BtnX_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void BtnSelectServer_Click(object sender, EventArgs e)
         {
-            LoadForm(new SelectServerForm());
+            using (SelectServerForm selectServerForm = new SelectServerForm(opcConnectionManager))
+            {
+                selectServerForm.ShowDialog();
+            }
         }
 
-        private void MainWindow_Load(object sender, EventArgs e)
+        public void LoadUserControl(UserControl userControl)
         {
+            ClearMainPanel();
+            userControl.Dock = DockStyle.Fill;
+            this.MainPanel.Controls.Add(userControl);
+            this.MainPanel.Tag = userControl;
+            userControl.Show();
+        }
 
+        public void LoadForm(Form form)
+        {
+            form.Show();
+        }
+
+        private void ClearMainPanel()
+        {
+            if (this.MainPanel.Controls.Count > 0)
+            {
+                this.MainPanel.Controls.Clear();
+            }
         }
     }
-    }
-
+}

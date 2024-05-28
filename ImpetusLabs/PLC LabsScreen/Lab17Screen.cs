@@ -330,27 +330,6 @@ namespace ImpetusLabs.LabsScreen
             }
         }
 
-            private void Button1_Click(object sender, EventArgs e)
-        {
-            var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT16";
-            client.Connect();
-            client.WriteNode(tagName, true);
-            BtnLab17Start.Visible = false;
-            BtnLab17Stop.Visible = true;
-            TimerLab17.Enabled = true;
-        }
-
-        private void BtnLab17Stop_Click(object sender, EventArgs e)
-        {
-            var tagName = "ns=2;s=::[GustavoDevice]Program:SIMULATION.BIT16";
-            client.WriteNode(tagName, false);
-            BtnLab17Start.Visible = true;
-            BtnLab17Stop.Visible = false;
-            TimerLab17.Enabled = false;
-            RefreshLabs();
-            client.Disconnect();
-        }
-
         private void TimerLab17_Tick(object sender, EventArgs e)
         {
             RefreshLabs();

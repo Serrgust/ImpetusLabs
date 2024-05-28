@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Documents;
 
 namespace ImpetusLabs.LabsScreen
 {
@@ -33,6 +34,64 @@ namespace ImpetusLabs.LabsScreen
 
             string currenlab = "Lab #18";
             LblCurrentLab.Text = currenlab;
+        }
+
+        private void UpdateLabStatus()  //Method for updating the LabStatus label
+        {
+            bool allPassed = true;
+            bool allFailed = true;
+            bool anyFailed = false;
+
+            for (int i = 0; i < Lab18Tests.Length; i++) //Loop that verifies the test results of the lab
+
+            {
+                if (Lab18Tests[i] != null) //Verifys the element if its not null for absence in data
+                {
+                    string testValue = Lab18Tests[i].ToString(); //Reads and converts the value to string 
+
+                    if (testValue.Equals("1"))
+                    {
+                        allFailed = false;
+
+                    }
+                    else if (testValue.Equals("-1"))
+                    {
+                        allPassed = false;
+                        anyFailed = true;
+                    }
+                    else
+                    {
+                        allPassed = false;
+                        allFailed = false;
+                        break;
+                    }
+                }
+                else
+                {
+                    allPassed = false;
+                    allFailed = false;
+                    break;
+                }
+            }
+
+            if (allPassed) //If all test value equals "1", it will display the following:
+            {
+                lblLabStatus.Text = "LAB #18 PASSED"; //Set the label text to passed 
+                lblLabStatus.BackColor = Color.Green; //Set label color Green.
+                lblLabStatus.ForeColor = Color.White;  //Set label text color to White. 
+            }
+            else if (allFailed) //If all test vaule equals "0", it  will display the following:
+            {
+                lblLabStatus.Text = "LAB FAILED"; //Set the label text to failed.
+                lblLabStatus.BackColor = Color.Red; //Set the label color to Red.
+                lblLabStatus.ForeColor = Color.White; //Set the label color to White.
+            }
+            else if (anyFailed) //If any test value equals "-1", it will fail the lab 
+            {
+                lblLabStatus.Text = "LAB FAILED"; //Set the label text to Failed
+                lblLabStatus.BackColor = Color.Red;  //Set the label color to Red.
+                lblLabStatus.ForeColor = Color.White; //Set the label color to White.
+            }
         }
 
         private void RefreshLabs()

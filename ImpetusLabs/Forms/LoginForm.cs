@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImpetusLabs.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ImpetusLabs.Forms.SelectServerForm;
 
 namespace ImpetusLabs
 {
@@ -19,7 +21,7 @@ namespace ImpetusLabs
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void materialLoginEnter_Click(object sender, EventArgs e)
@@ -34,16 +36,22 @@ namespace ImpetusLabs
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void materialMultiLineTextBox21_Click(object sender, EventArgs e)
         {
-            if (UsernameField.Text == "" && PasswordField.Text == "")
-            {
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("The username or password entered is incorrect, please try again.");
-            }
+
         }
+
+        /*        private void button1_Click(object sender, EventArgs e)
+                {
+                    if (UsernameField.Text == "" && PasswordField.Text == "")
+                    {
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("The username or password entered is incorrect, please try again.");
+                    }
+                }*/
+
     }
 }

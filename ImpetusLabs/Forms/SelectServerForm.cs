@@ -1,28 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Opc.UaFx;
 using Opc.UaFx.Client;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace ImpetusLabs.Forms
 {
-    public partial class SelectServerForm : Form
+    public partial class SelectServerForm : MaterialForm
     {
+        private OpcConnectionManager opcConnectionManager;
 
-        public SelectServerForm()
+        public SelectServerForm(OpcConnectionManager opcConnectionManager)
         {
             InitializeComponent();
+            this.opcConnectionManager = opcConnectionManager;
+            // Initialize MaterialSkinManager
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+                Primary.Blue600, Primary.Blue700,
+                Primary.Blue200, Accent.LightBlue200,
+                TextShade.WHITE
+            );
         }
 
         public static class SelectServer
         {
-            public static String SERVERID;
+            public static string SERVERID = "";
         }
 
         private void ServerTxtBox_TextChanged(object sender, EventArgs e)
@@ -34,23 +40,30 @@ namespace ImpetusLabs.Forms
         {
             try
             {
-                if (ServerTxtBox.Text.ToString().Length == 0 | !Uri.IsWellFormedUriString(ServerTxtBox.Text.ToString(), UriKind.Absolute))
+                if (ServerTxtBox.Text.ToString().Length == 0 || !Uri.IsWellFormedUriString(ServerTxtBox.Text.ToString(), UriKind.Absolute))
                 {
-                    MessageBox.Show("Enter URI", "ERROR");
+                    MessageBox.Show("Enter a valid URI", "ERROR");
                 }
                 else
                 {
-                    OpcClient client = new OpcClient(SelectServer.SERVERID);
-                    client.Connect();
-                    MessageBox.Show("Successful Connection", "Success");
-                    ServerTxtBox.Text = "";
-                    this.Close();
+                    opcConnectionManager.Connect(SelectServer.SERVERID);
+                    if (opcConnectionManager.IsConnected())
+                    {
+                        MessageBox.Show("Successful Connection", "Success");
+                        ServerTxtBox.Text = "";
+                        this.Close();
+                    }
                 }
             }
-            catch (Opc.UaFx.OpcException)
+            catch (OpcException)
             {
                 MessageBox.Show("Connection to OPC UA Server failed", "Connection ERROR");
             }
+        }
+
+        private void SelectServerForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

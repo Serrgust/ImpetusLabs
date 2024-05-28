@@ -64,6 +64,8 @@
             this.BtnBack = new System.Windows.Forms.Button();
             this.BtnLab19Start = new System.Windows.Forms.Button();
             this.BtnLab19Stop = new System.Windows.Forms.Button();
+            this.lblLabStatus = new System.Windows.Forms.Label();
+            this.lblLabMessage = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor2)).BeginInit();
@@ -453,11 +455,33 @@
             this.BtnLab19Stop.Text = "STOP SIM";
             this.BtnLab19Stop.UseVisualStyleBackColor = true;
             // 
+            // lblLabStatus
+            // 
+            this.lblLabStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabStatus.Location = new System.Drawing.Point(3, 807);
+            this.lblLabStatus.Name = "lblLabStatus";
+            this.lblLabStatus.Size = new System.Drawing.Size(1694, 41);
+            this.lblLabStatus.TabIndex = 87;
+            this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLabMessage
+            // 
+            this.lblLabMessage.BackColor = System.Drawing.Color.Transparent;
+            this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLabMessage.Location = new System.Drawing.Point(3, 0);
+            this.lblLabMessage.Name = "lblLabMessage";
+            this.lblLabMessage.Size = new System.Drawing.Size(1694, 33);
+            this.lblLabMessage.TabIndex = 89;
+            this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Lab19Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.lblLabMessage);
+            this.Controls.Add(this.lblLabStatus);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
@@ -517,5 +541,7 @@
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Button BtnLab19Start;
         private System.Windows.Forms.Button BtnLab19Stop;
+        private System.Windows.Forms.Label lblLabStatus;
+        private System.Windows.Forms.Label lblLabMessage;
     }
 }

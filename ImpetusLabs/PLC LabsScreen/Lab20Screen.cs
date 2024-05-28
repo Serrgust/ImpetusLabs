@@ -43,8 +43,6 @@ namespace ImpetusLabs.LabsScreen
             Lbl2Lab20[18] = Lbl2Lab20Test19;
             Lbl2Lab20[19] = Lbl2Lab20Test20;
 
-
-
             string currentlab = "Lab #20";
             LblCurrentLab.Text = currentlab;
 
@@ -78,12 +76,6 @@ namespace ImpetusLabs.LabsScreen
                     Lbl2Lab20[i].Text = "FAILED";
                 }
             }
-        }
-
-
-        private void TimerLab20_Tick(object sender, EventArgs e)
-        {
-            RefreshLabs();
         }
 
         private void BtnLab20Start_Click(object sender, EventArgs e)
