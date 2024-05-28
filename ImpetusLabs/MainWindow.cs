@@ -1,30 +1,26 @@
 ﻿using ImpetusLabs.Forms;
 using ImpetusLabs.LabsScreen;
-using MaterialSkin;
-using MaterialSkin.Controls;
+using MaterialSkin2Framework;
+using MaterialSkin2Framework.Controls;
 using System;
 using System.Windows.Forms;
-
 
 namespace ImpetusLabs
 {
     public partial class MainWindow : MaterialForm
     {
-        private OpcConnectionManager opcConnectionManager;
-
         public MainWindow()
         {
             InitializeComponent();
-            opcConnectionManager = new OpcConnectionManager();
             // Initialize MaterialSkinManager
-            var materialSkinManager = MaterialSkinManager.Instance;
+/*            var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Blue600, Primary.Blue700,
-                Primary.Blue200, Accent.LightBlue200,
+                Primary.Indigo900, Primary.Indigo900,
+                Primary.Yellow400, Accent.Yellow100,
                 TextShade.WHITE
-            );
+            );*/
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
@@ -52,19 +48,20 @@ namespace ImpetusLabs
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            using (LoginForm LoginForm = new LoginForm())
+            using (LoginForm loginForm = new LoginForm())
             {
-                LoginForm.ShowDialog();
+                loginForm.ShowDialog();
             }
         }
+
         private void BtnX_Click(object sender, EventArgs e)
         {
-
+            // Define behavior for BtnX click event
         }
 
         private void BtnSelectServer_Click(object sender, EventArgs e)
         {
-            using (SelectServerForm selectServerForm = new SelectServerForm(opcConnectionManager))
+            using (SelectServerForm selectServerForm = new SelectServerForm())
             {
                 selectServerForm.ShowDialog();
             }
@@ -77,11 +74,6 @@ namespace ImpetusLabs
             this.MainPanel.Controls.Add(userControl);
             this.MainPanel.Tag = userControl;
             userControl.Show();
-        }
-
-        public void LoadForm(Form form)
-        {
-            form.Show();
         }
 
         private void ClearMainPanel()

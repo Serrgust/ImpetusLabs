@@ -1,49 +1,52 @@
-﻿using Opc.UaFx;
-using Opc.UaFx.Client;
+﻿using Opc.UaFx.Client;
 using System;
-using System.Windows.Forms;
 
 namespace ImpetusLabs
 {
-    public class OpcConnectionManager
+    public static class OpcClientManager
     {
-        private OpcClient opcClient;
-        private bool isConnected;
+        private static OpcClient client;
+        private static string serverUrl;
+        private static bool isConnected = false;
 
-        public OpcConnectionManager()
-        {
-            isConnected = false;
-        }
+        public static bool IsConnected => isConnected;
 
-        public void Connect(string serverUrl)
+        public static void Connect(string url)
         {
-            try
+            if (client == null || !isConnected || serverUrl != url)
             {
-                opcClient = new OpcClient(serverUrl);
-                opcClient.Connect();
+                Disconnect(); // Ensure previous client is disconnected
+                client = new OpcClient(url);
+                client.Connect();
                 isConnected = true;
-                MessageBox.Show("Connected to OPC Server!");
-            }
-            catch (Exception ex)
-            {
-                isConnected = false;
-                MessageBox.Show("Failed to connect to OPC Server: " + ex.Message);
+                serverUrl = url;
             }
         }
 
-        public void Disconnect()
+        public static void Disconnect()
         {
-            if (opcClient != null && isConnected)
+            if (client != null && isConnected)
             {
-                opcClient.Disconnect();
+                client.Disconnect();
                 isConnected = false;
-                MessageBox.Show("Disconnected from OPC Server.");
+                client = null;
             }
         }
 
-        public bool IsConnected()
+        public static object ReadNode(string nodeId)
         {
-            return isConnected;
+            if (client == null || !isConnected)
+                throw new InvalidOperationException("Client is not connected.");
+
+            return client.ReadNode(nodeId).Value;
+        }
+
+        public static void WriteNode(string nodeId, object value)
+        {
+            if (client == null || !isConnected)
+                throw new InvalidOperationException("Client is not connected.");
+
+            client.WriteNode(nodeId, value);
         }
     }
 }

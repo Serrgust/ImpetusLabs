@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UsernameText = new MaterialSkin.Controls.MaterialLabel();
-            this.PasswordText = new MaterialSkin.Controls.MaterialLabel();
+            this.UsernameText = new MaterialSkin2Framework.Controls.MaterialLabel();
+            this.PasswordText = new MaterialSkin2Framework.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnLogin = new System.Windows.Forms.Button();
-            this.UsernameField = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.PasswordField = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.UsernameField = new MaterialSkin2Framework.Controls.MaterialMultiLineTextBox2();
+            this.PasswordField = new MaterialSkin2Framework.Controls.MaterialMultiLineTextBox2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +44,7 @@
             this.UsernameText.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.UsernameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.UsernameText.Location = new System.Drawing.Point(75, 179);
-            this.UsernameText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UsernameText.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.UsernameText.Name = "UsernameText";
             this.UsernameText.Size = new System.Drawing.Size(72, 19);
             this.UsernameText.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.PasswordText.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.PasswordText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.PasswordText.Location = new System.Drawing.Point(75, 234);
-            this.PasswordText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.PasswordText.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.PasswordText.Name = "PasswordText";
             this.PasswordText.Size = new System.Drawing.Size(71, 19);
             this.PasswordText.TabIndex = 1;
@@ -98,7 +98,7 @@
             this.UsernameField.HideSelection = true;
             this.UsernameField.Location = new System.Drawing.Point(164, 171);
             this.UsernameField.MaxLength = 32767;
-            this.UsernameField.MouseState = MaterialSkin.MouseState.OUT;
+            this.UsernameField.MouseState = MaterialSkin2Framework.MouseState.OUT;
             this.UsernameField.Name = "UsernameField";
             this.UsernameField.PasswordChar = '\0';
             this.UsernameField.ReadOnly = false;
@@ -125,7 +125,7 @@
             this.PasswordField.HideSelection = true;
             this.PasswordField.Location = new System.Drawing.Point(164, 226);
             this.PasswordField.MaxLength = 32767;
-            this.PasswordField.MouseState = MaterialSkin.MouseState.OUT;
+            this.PasswordField.MouseState = MaterialSkin2Framework.MouseState.OUT;
             this.PasswordField.Name = "PasswordField";
             this.PasswordField.PasswordChar = '\0';
             this.PasswordField.ReadOnly = false;
@@ -164,14 +164,14 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialLabel UsernameText;
-        private MaterialSkin.Controls.MaterialLabel PasswordText;
-   //     private MaterialSkin.Controls.MaterialSingleLineTextField UsernameField;
-   //     private MaterialSkin.Controls.MaterialSingleLineTextField PasswordField;
-  //      private MaterialSkin.Controls.MaterialRaisedButton materialLoginEnter;
+        private MaterialSkin2Framework.Controls.MaterialLabel UsernameText;
+        private MaterialSkin2Framework.Controls.MaterialLabel PasswordText;
+   //     private MaterialSkin2Framework.Controls.MaterialSingleLineTextField UsernameField;
+   //     private MaterialSkin2Framework.Controls.MaterialSingleLineTextField PasswordField;
+  //      private MaterialSkin2Framework.Controls.MaterialRaisedButton materialLoginEnter;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 UsernameField;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 PasswordField;
+        private MaterialSkin2Framework.Controls.MaterialMultiLineTextBox2 UsernameField;
+        private MaterialSkin2Framework.Controls.MaterialMultiLineTextBox2 PasswordField;
         private System.Windows.Forms.Button BtnLogin;
     }
 }

@@ -1,53 +1,34 @@
 ﻿using System;
 using System.Windows.Forms;
+using MaterialSkin2Framework;
+using MaterialSkin2Framework.Controls;
 using Opc.UaFx;
 using Opc.UaFx.Client;
-using MaterialSkin;
-using MaterialSkin.Controls;
 
 namespace ImpetusLabs.Forms
 {
     public partial class SelectServerForm : MaterialForm
     {
-        private OpcConnectionManager opcConnectionManager;
 
-        public SelectServerForm(OpcConnectionManager opcConnectionManager)
+        public SelectServerForm()
         {
             InitializeComponent();
-            this.opcConnectionManager = opcConnectionManager;
-            // Initialize MaterialSkinManager
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Blue600, Primary.Blue700,
-                Primary.Blue200, Accent.LightBlue200,
-                TextShade.WHITE
-            );
-        }
-
-        public static class SelectServer
-        {
-            public static string SERVERID = "";
-        }
-
-        private void ServerTxtBox_TextChanged(object sender, EventArgs e)
-        {
-            SelectServer.SERVERID = ServerTxtBox.Text.ToString();
         }
 
         private void ServerBtn_Click(object sender, EventArgs e)
         {
             try
             {
-                if (ServerTxtBox.Text.ToString().Length == 0 || !Uri.IsWellFormedUriString(ServerTxtBox.Text.ToString(), UriKind.Absolute))
+                string serverUrl = ServerTxtBox.Text.ToString();
+
+                if (string.IsNullOrWhiteSpace(serverUrl) || !Uri.IsWellFormedUriString(serverUrl, UriKind.Absolute))
                 {
                     MessageBox.Show("Enter a valid URI", "ERROR");
                 }
                 else
                 {
-                    opcConnectionManager.Connect(SelectServer.SERVERID);
-                    if (opcConnectionManager.IsConnected())
+                    OpcClientManager.Connect(serverUrl);
+                    if (OpcClientManager.IsConnected)
                     {
                         MessageBox.Show("Successful Connection", "Success");
                         ServerTxtBox.Text = "";
@@ -63,7 +44,7 @@ namespace ImpetusLabs.Forms
 
         private void SelectServerForm_Load(object sender, EventArgs e)
         {
-
+            // Any initialization code if needed
         }
     }
 }

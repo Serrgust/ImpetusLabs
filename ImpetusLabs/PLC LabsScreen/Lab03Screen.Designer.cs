@@ -385,8 +385,8 @@ namespace ImpetusLabs.LabsScreen
             // 
             // Lab03Screen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.lblLabStatus);
             this.Controls.Add(this.lblLabMessage);
@@ -396,7 +396,7 @@ namespace ImpetusLabs.LabsScreen
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Lab03Screen";
-            this.Size = new System.Drawing.Size(1700, 857);
+            this.Size = new System.Drawing.Size(1739, 857);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicACK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSW1)).EndInit();
