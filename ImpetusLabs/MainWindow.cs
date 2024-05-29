@@ -12,28 +12,20 @@ namespace ImpetusLabs
         public MainWindow()
         {
             InitializeComponent();
-            // Initialize MaterialSkinManager
-/*            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Indigo900, Primary.Indigo900,
-                Primary.Yellow400, Accent.Yellow100,
-                TextShade.WHITE
-            );*/
+            OpcClientManager.ConnectionStatusChanged += UpdateConnectionStatus;
+            UpdateConnectionStatus();
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            // Initialize the timer to update time and date
             timer1.Interval = 1000; // Set the interval to 1 second
             timer1.Start(); // Start the timer
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            TopTime.Text = DateTime.Now.ToLongTimeString();
-            TopDate.Text = DateTime.Now.ToLongDateString();
+            TopDate.Text = $"{DateTime.Now.ToLongDateString()}";
+            TopTime.Text = $"{DateTime.Now.ToLongTimeString()}";
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
@@ -74,6 +66,11 @@ namespace ImpetusLabs
             this.MainPanel.Controls.Add(userControl);
             this.MainPanel.Tag = userControl;
             userControl.Show();
+        }
+
+        private void UpdateConnectionStatus()
+        {
+            lblConnectionStatus.Text = $"Connected: {(OpcClientManager.IsConnected ? "Yes" : "No")}";
         }
 
         private void ClearMainPanel()

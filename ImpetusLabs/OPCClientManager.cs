@@ -11,6 +11,8 @@ namespace ImpetusLabs
 
         public static bool IsConnected => isConnected;
 
+        public static event Action ConnectionStatusChanged;
+
         public static void Connect(string url)
         {
             if (client == null || !isConnected || serverUrl != url)
@@ -20,6 +22,7 @@ namespace ImpetusLabs
                 client.Connect();
                 isConnected = true;
                 serverUrl = url;
+                ConnectionStatusChanged?.Invoke();
             }
         }
 
@@ -30,6 +33,7 @@ namespace ImpetusLabs
                 client.Disconnect();
                 isConnected = false;
                 client = null;
+                ConnectionStatusChanged?.Invoke();
             }
         }
 

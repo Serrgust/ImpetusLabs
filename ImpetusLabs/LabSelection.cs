@@ -15,15 +15,15 @@ namespace ImpetusLabs.LabsScreen
         {
             try
             {
-                LabFlowLayoutPanel.Enabled = false;
                 LabFlowLayoutPanel.Visible = false;
+                LabPanel.Visible = true;
 
                 // Check if the control of the same type is already loaded
-                if (LabFlowLayoutPanel.Controls.Count > 0 && LabFlowLayoutPanel.Controls[0] is T)
+                if (LabPanel.Controls.Count > 0 && LabPanel.Controls[0] is T)
                     return;
 
                 // Clear the existing control
-                LabFlowLayoutPanel.Controls.Clear();
+                LabPanel.Controls.Clear();
 
                 // Create the new control and add it to the panel
                 T labScreen = new T
@@ -31,18 +31,16 @@ namespace ImpetusLabs.LabsScreen
                     Dock = DockStyle.Fill
                 };
 
-                LabFlowLayoutPanel.Controls.Add(labScreen);
+                LabPanel.Controls.Add(labScreen);
                 labScreen.Show();
-                LabFlowLayoutPanel.Enabled = true;
-                LabFlowLayoutPanel.Visible = true;
             }
             catch (Exception ex)
             {
                 // Handle any exceptions that occur during the control loading
                 MessageBox.Show($"An error occurred while loading the lab screen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 // Re-enable the flowLayoutPanel if an error occurs
-                LabFlowLayoutPanel.Enabled = true;
                 LabFlowLayoutPanel.Visible = true;
+                LabPanel.Visible = false;
             }
         }
 

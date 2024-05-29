@@ -49,6 +49,7 @@
             this.BtnLab18Screen = new MaterialSkin2Framework.Controls.MaterialButton();
             this.BtnLab19Screen = new MaterialSkin2Framework.Controls.MaterialButton();
             this.BtnLab20Screen = new MaterialSkin2Framework.Controls.MaterialButton();
+            this.LabPanel = new System.Windows.Forms.Panel();
             this.LabFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -502,11 +503,21 @@
             this.BtnLab20Screen.UseVisualStyleBackColor = true;
             this.BtnLab20Screen.Click += new System.EventHandler(this.BtnLab20Screen_Click);
             // 
+            // LabPanel
+            // 
+            this.LabPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LabPanel.Location = new System.Drawing.Point(0, 0);
+            this.LabPanel.Name = "LabPanel";
+            this.LabPanel.Size = new System.Drawing.Size(800, 450);
+            this.LabPanel.TabIndex = 1;
+            this.LabPanel.Visible = false;
+            // 
             // LabSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.LabFlowLayoutPanel);
+            this.Controls.Add(this.LabPanel);
             this.Name = "LabSelection";
             this.Size = new System.Drawing.Size(800, 450);
             this.LabFlowLayoutPanel.ResumeLayout(false);
@@ -537,5 +548,6 @@
         private MaterialSkin2Framework.Controls.MaterialButton BtnLab18Screen;
         private MaterialSkin2Framework.Controls.MaterialButton BtnLab19Screen;
         private MaterialSkin2Framework.Controls.MaterialButton BtnLab20Screen;
+        private System.Windows.Forms.Panel LabPanel;
     }
 }

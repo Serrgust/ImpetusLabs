@@ -40,6 +40,9 @@ namespace ImpetusLabs.Forms
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.pictureBox1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.pictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBox1.Image = global::ImpetusLabs.Properties.Resources.JCA_n_logo_new_ns_js_copy_3;
             this.pictureBox1.Location = new System.Drawing.Point(167, 67);
             this.pictureBox1.Name = "pictureBox1";
@@ -83,8 +86,10 @@ namespace ImpetusLabs.Forms
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(99, 207);
             this.materialLabel1.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -99,6 +104,7 @@ namespace ImpetusLabs.Forms
             this.BtnConnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.BtnConnect.Density = MaterialSkin2Framework.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.BtnConnect.Depth = 0;
+            this.BtnConnect.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnConnect.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.BtnConnect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BtnConnect.HighEmphasis = true;
@@ -118,8 +124,8 @@ namespace ImpetusLabs.Forms
             // 
             // SelectServerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AcceptButton = this.BtnConnect;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(534, 411);
             this.Controls.Add(this.BtnConnect);
             this.Controls.Add(this.materialLabel1);
