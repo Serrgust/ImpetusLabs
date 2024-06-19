@@ -160,5 +160,10 @@ namespace ImpetusLabs.LabsScreen
             Parent.Controls.Remove(this);
             secondUserControl.Dock = DockStyle.Fill;
         }
+
+        private void Lab19Screen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

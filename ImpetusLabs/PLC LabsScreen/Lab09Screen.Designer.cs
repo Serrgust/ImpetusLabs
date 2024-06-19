@@ -324,7 +324,7 @@
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabMessage.Location = new System.Drawing.Point(0, 0);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1420, 41);
+            this.lblLabMessage.Size = new System.Drawing.Size(1403, 41);
             this.lblLabMessage.TabIndex = 79;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -498,6 +498,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.lblLabMessage);
             this.Controls.Add(this.panel2);
@@ -507,7 +509,7 @@
             this.Controls.Add(this.LblCurrentLab);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab09Screen";
-            this.Size = new System.Drawing.Size(1420, 900);
+            this.Size = new System.Drawing.Size(1403, 900);
             this.Load += new System.EventHandler(this.Lab09Screen_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

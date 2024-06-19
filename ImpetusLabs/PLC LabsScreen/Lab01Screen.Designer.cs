@@ -524,6 +524,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
@@ -535,7 +536,7 @@
             this.Controls.Add(this.panelInputOuput);
             this.Controls.Add(this.LblCurrentLab);
             this.Name = "Lab01Screen";
-            this.Size = new System.Drawing.Size(1400, 700);
+            this.Size = new System.Drawing.Size(1403, 697);
             this.panelInputOuput.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicStart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).EndInit();

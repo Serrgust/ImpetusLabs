@@ -105,7 +105,7 @@
             // LblLab20Test1
             // 
             this.LblLab20Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test1.Location = new System.Drawing.Point(51, 104);
+            this.LblLab20Test1.Location = new System.Drawing.Point(27, 101);
             this.LblLab20Test1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test1.Name = "LblLab20Test1";
             this.LblLab20Test1.Size = new System.Drawing.Size(68, 45);
@@ -118,7 +118,7 @@
             this.Lbl2Lab20Test1.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test1.Location = new System.Drawing.Point(123, 101);
+            this.Lbl2Lab20Test1.Location = new System.Drawing.Point(99, 98);
             this.Lbl2Lab20Test1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test1.Name = "Lbl2Lab20Test1";
             this.Lbl2Lab20Test1.Size = new System.Drawing.Size(146, 45);
@@ -131,7 +131,7 @@
             this.Lbl2Lab20Test5.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test5.Location = new System.Drawing.Point(123, 371);
+            this.Lbl2Lab20Test5.Location = new System.Drawing.Point(99, 368);
             this.Lbl2Lab20Test5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test5.Name = "Lbl2Lab20Test5";
             this.Lbl2Lab20Test5.Size = new System.Drawing.Size(146, 45);
@@ -142,7 +142,7 @@
             // LblLab20Test5
             // 
             this.LblLab20Test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test5.Location = new System.Drawing.Point(51, 371);
+            this.LblLab20Test5.Location = new System.Drawing.Point(27, 365);
             this.LblLab20Test5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test5.Name = "LblLab20Test5";
             this.LblLab20Test5.Size = new System.Drawing.Size(68, 45);
@@ -155,7 +155,7 @@
             this.Lbl2Lab20Test4.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test4.Location = new System.Drawing.Point(123, 303);
+            this.Lbl2Lab20Test4.Location = new System.Drawing.Point(99, 300);
             this.Lbl2Lab20Test4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test4.Name = "Lbl2Lab20Test4";
             this.Lbl2Lab20Test4.Size = new System.Drawing.Size(146, 45);
@@ -166,7 +166,7 @@
             // LblLab20Test4
             // 
             this.LblLab20Test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test4.Location = new System.Drawing.Point(51, 304);
+            this.LblLab20Test4.Location = new System.Drawing.Point(27, 299);
             this.LblLab20Test4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test4.Name = "LblLab20Test4";
             this.LblLab20Test4.Size = new System.Drawing.Size(68, 45);
@@ -179,7 +179,7 @@
             this.Lbl2Lab20Test3.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test3.Location = new System.Drawing.Point(123, 236);
+            this.Lbl2Lab20Test3.Location = new System.Drawing.Point(99, 233);
             this.Lbl2Lab20Test3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test3.Name = "Lbl2Lab20Test3";
             this.Lbl2Lab20Test3.Size = new System.Drawing.Size(146, 45);
@@ -190,7 +190,7 @@
             // LblLab20Test3
             // 
             this.LblLab20Test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test3.Location = new System.Drawing.Point(51, 238);
+            this.LblLab20Test3.Location = new System.Drawing.Point(27, 233);
             this.LblLab20Test3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test3.Name = "LblLab20Test3";
             this.LblLab20Test3.Size = new System.Drawing.Size(68, 45);
@@ -203,7 +203,7 @@
             this.Lbl2Lab20Test2.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test2.Location = new System.Drawing.Point(123, 168);
+            this.Lbl2Lab20Test2.Location = new System.Drawing.Point(99, 165);
             this.Lbl2Lab20Test2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test2.Name = "Lbl2Lab20Test2";
             this.Lbl2Lab20Test2.Size = new System.Drawing.Size(146, 45);
@@ -214,7 +214,7 @@
             // LblLab20Test2
             // 
             this.LblLab20Test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test2.Location = new System.Drawing.Point(51, 171);
+            this.LblLab20Test2.Location = new System.Drawing.Point(27, 167);
             this.LblLab20Test2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test2.Name = "LblLab20Test2";
             this.LblLab20Test2.Size = new System.Drawing.Size(68, 45);
@@ -227,7 +227,7 @@
             this.Lbl2Lab20Test7.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test7.Location = new System.Drawing.Point(398, 168);
+            this.Lbl2Lab20Test7.Location = new System.Drawing.Point(332, 165);
             this.Lbl2Lab20Test7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test7.Name = "Lbl2Lab20Test7";
             this.Lbl2Lab20Test7.Size = new System.Drawing.Size(146, 45);
@@ -238,7 +238,7 @@
             // LblLab20Test7
             // 
             this.LblLab20Test7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test7.Location = new System.Drawing.Point(315, 171);
+            this.LblLab20Test7.Location = new System.Drawing.Point(260, 167);
             this.LblLab20Test7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test7.Name = "LblLab20Test7";
             this.LblLab20Test7.Size = new System.Drawing.Size(68, 45);
@@ -251,7 +251,7 @@
             this.Lbl2Lab20Test8.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test8.Location = new System.Drawing.Point(398, 236);
+            this.Lbl2Lab20Test8.Location = new System.Drawing.Point(332, 233);
             this.Lbl2Lab20Test8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test8.Name = "Lbl2Lab20Test8";
             this.Lbl2Lab20Test8.Size = new System.Drawing.Size(146, 45);
@@ -262,7 +262,7 @@
             // LblLab20Test8
             // 
             this.LblLab20Test8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test8.Location = new System.Drawing.Point(315, 238);
+            this.LblLab20Test8.Location = new System.Drawing.Point(260, 233);
             this.LblLab20Test8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test8.Name = "LblLab20Test8";
             this.LblLab20Test8.Size = new System.Drawing.Size(68, 45);
@@ -275,7 +275,7 @@
             this.Lbl2Lab20Test9.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test9.Location = new System.Drawing.Point(398, 303);
+            this.Lbl2Lab20Test9.Location = new System.Drawing.Point(332, 300);
             this.Lbl2Lab20Test9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test9.Name = "Lbl2Lab20Test9";
             this.Lbl2Lab20Test9.Size = new System.Drawing.Size(146, 45);
@@ -286,7 +286,7 @@
             // LblLab20Test9
             // 
             this.LblLab20Test9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test9.Location = new System.Drawing.Point(315, 304);
+            this.LblLab20Test9.Location = new System.Drawing.Point(260, 299);
             this.LblLab20Test9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test9.Name = "LblLab20Test9";
             this.LblLab20Test9.Size = new System.Drawing.Size(68, 45);
@@ -299,7 +299,7 @@
             this.Lbl2Lab20Test10.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test10.Location = new System.Drawing.Point(398, 371);
+            this.Lbl2Lab20Test10.Location = new System.Drawing.Point(332, 371);
             this.Lbl2Lab20Test10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test10.Name = "Lbl2Lab20Test10";
             this.Lbl2Lab20Test10.Size = new System.Drawing.Size(146, 45);
@@ -310,10 +310,10 @@
             // LblLab20Test10
             // 
             this.LblLab20Test10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test10.Location = new System.Drawing.Point(306, 371);
+            this.LblLab20Test10.Location = new System.Drawing.Point(251, 365);
             this.LblLab20Test10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test10.Name = "LblLab20Test10";
-            this.LblLab20Test10.Size = new System.Drawing.Size(87, 45);
+            this.LblLab20Test10.Size = new System.Drawing.Size(77, 45);
             this.LblLab20Test10.TabIndex = 12;
             this.LblLab20Test10.Text = "Test 10";
             this.LblLab20Test10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -323,7 +323,7 @@
             this.Lbl2Lab20Test6.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test6.Location = new System.Drawing.Point(398, 101);
+            this.Lbl2Lab20Test6.Location = new System.Drawing.Point(332, 98);
             this.Lbl2Lab20Test6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test6.Name = "Lbl2Lab20Test6";
             this.Lbl2Lab20Test6.Size = new System.Drawing.Size(146, 45);
@@ -334,7 +334,7 @@
             // LblLab20Test6
             // 
             this.LblLab20Test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test6.Location = new System.Drawing.Point(315, 104);
+            this.LblLab20Test6.Location = new System.Drawing.Point(260, 101);
             this.LblLab20Test6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test6.Name = "LblLab20Test6";
             this.LblLab20Test6.Size = new System.Drawing.Size(68, 45);
@@ -347,7 +347,7 @@
             this.Lbl2Lab20Test12.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test12.Location = new System.Drawing.Point(629, 168);
+            this.Lbl2Lab20Test12.Location = new System.Drawing.Point(563, 165);
             this.Lbl2Lab20Test12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test12.Name = "Lbl2Lab20Test12";
             this.Lbl2Lab20Test12.Size = new System.Drawing.Size(146, 45);
@@ -358,7 +358,7 @@
             // LblLab20Test12
             // 
             this.LblLab20Test12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test12.Location = new System.Drawing.Point(548, 168);
+            this.LblLab20Test12.Location = new System.Drawing.Point(482, 168);
             this.LblLab20Test12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test12.Name = "LblLab20Test12";
             this.LblLab20Test12.Size = new System.Drawing.Size(80, 45);
@@ -371,7 +371,7 @@
             this.Lbl2Lab20Test13.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test13.Location = new System.Drawing.Point(629, 238);
+            this.Lbl2Lab20Test13.Location = new System.Drawing.Point(563, 233);
             this.Lbl2Lab20Test13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test13.Name = "Lbl2Lab20Test13";
             this.Lbl2Lab20Test13.Size = new System.Drawing.Size(146, 45);
@@ -382,10 +382,10 @@
             // LblLab20Test13
             // 
             this.LblLab20Test13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test13.Location = new System.Drawing.Point(543, 236);
+            this.LblLab20Test13.Location = new System.Drawing.Point(477, 235);
             this.LblLab20Test13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test13.Name = "LblLab20Test13";
-            this.LblLab20Test13.Size = new System.Drawing.Size(94, 45);
+            this.LblLab20Test13.Size = new System.Drawing.Size(80, 45);
             this.LblLab20Test13.TabIndex = 26;
             this.LblLab20Test13.Text = "Test 13";
             this.LblLab20Test13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -395,7 +395,7 @@
             this.Lbl2Lab20Test14.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test14.Location = new System.Drawing.Point(629, 302);
+            this.Lbl2Lab20Test14.Location = new System.Drawing.Point(563, 300);
             this.Lbl2Lab20Test14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test14.Name = "Lbl2Lab20Test14";
             this.Lbl2Lab20Test14.Size = new System.Drawing.Size(146, 45);
@@ -406,10 +406,10 @@
             // LblLab20Test14
             // 
             this.LblLab20Test14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test14.Location = new System.Drawing.Point(546, 303);
+            this.LblLab20Test14.Location = new System.Drawing.Point(480, 302);
             this.LblLab20Test14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test14.Name = "LblLab20Test14";
-            this.LblLab20Test14.Size = new System.Drawing.Size(91, 45);
+            this.LblLab20Test14.Size = new System.Drawing.Size(80, 45);
             this.LblLab20Test14.TabIndex = 24;
             this.LblLab20Test14.Text = "Test 14";
             this.LblLab20Test14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -419,7 +419,7 @@
             this.Lbl2Lab20Test15.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test15.Location = new System.Drawing.Point(629, 368);
+            this.Lbl2Lab20Test15.Location = new System.Drawing.Point(563, 368);
             this.Lbl2Lab20Test15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test15.Name = "Lbl2Lab20Test15";
             this.Lbl2Lab20Test15.Size = new System.Drawing.Size(146, 45);
@@ -430,10 +430,10 @@
             // LblLab20Test15
             // 
             this.LblLab20Test15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test15.Location = new System.Drawing.Point(548, 371);
+            this.LblLab20Test15.Location = new System.Drawing.Point(482, 369);
             this.LblLab20Test15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test15.Name = "LblLab20Test15";
-            this.LblLab20Test15.Size = new System.Drawing.Size(96, 45);
+            this.LblLab20Test15.Size = new System.Drawing.Size(80, 45);
             this.LblLab20Test15.TabIndex = 22;
             this.LblLab20Test15.Text = "Test 15";
             this.LblLab20Test15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -443,7 +443,7 @@
             this.Lbl2Lab20Test11.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test11.Location = new System.Drawing.Point(629, 101);
+            this.Lbl2Lab20Test11.Location = new System.Drawing.Point(563, 98);
             this.Lbl2Lab20Test11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test11.Name = "Lbl2Lab20Test11";
             this.Lbl2Lab20Test11.Size = new System.Drawing.Size(146, 45);
@@ -454,7 +454,7 @@
             // LblLab20Test11
             // 
             this.LblLab20Test11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test11.Location = new System.Drawing.Point(548, 101);
+            this.LblLab20Test11.Location = new System.Drawing.Point(482, 101);
             this.LblLab20Test11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test11.Name = "LblLab20Test11";
             this.LblLab20Test11.Size = new System.Drawing.Size(80, 45);
@@ -467,7 +467,7 @@
             this.Lbl2Lab20Test17.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test17.Location = new System.Drawing.Point(851, 168);
+            this.Lbl2Lab20Test17.Location = new System.Drawing.Point(785, 165);
             this.Lbl2Lab20Test17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test17.Name = "Lbl2Lab20Test17";
             this.Lbl2Lab20Test17.Size = new System.Drawing.Size(146, 45);
@@ -478,10 +478,10 @@
             // LblLab20Test17
             // 
             this.LblLab20Test17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test17.Location = new System.Drawing.Point(778, 168);
+            this.LblLab20Test17.Location = new System.Drawing.Point(713, 179);
             this.LblLab20Test17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test17.Name = "LblLab20Test17";
-            this.LblLab20Test17.Size = new System.Drawing.Size(82, 45);
+            this.LblLab20Test17.Size = new System.Drawing.Size(78, 45);
             this.LblLab20Test17.TabIndex = 38;
             this.LblLab20Test17.Text = "Test 17";
             this.LblLab20Test17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -491,7 +491,7 @@
             this.Lbl2Lab20Test18.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test18.Location = new System.Drawing.Point(851, 238);
+            this.Lbl2Lab20Test18.Location = new System.Drawing.Point(785, 233);
             this.Lbl2Lab20Test18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test18.Name = "Lbl2Lab20Test18";
             this.Lbl2Lab20Test18.Size = new System.Drawing.Size(146, 45);
@@ -502,10 +502,10 @@
             // LblLab20Test18
             // 
             this.LblLab20Test18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test18.Location = new System.Drawing.Point(779, 236);
+            this.LblLab20Test18.Location = new System.Drawing.Point(713, 233);
             this.LblLab20Test18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test18.Name = "LblLab20Test18";
-            this.LblLab20Test18.Size = new System.Drawing.Size(82, 45);
+            this.LblLab20Test18.Size = new System.Drawing.Size(78, 45);
             this.LblLab20Test18.TabIndex = 36;
             this.LblLab20Test18.Text = "Test 18";
             this.LblLab20Test18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -515,7 +515,7 @@
             this.Lbl2Lab20Test19.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test19.Location = new System.Drawing.Point(851, 302);
+            this.Lbl2Lab20Test19.Location = new System.Drawing.Point(785, 300);
             this.Lbl2Lab20Test19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test19.Name = "Lbl2Lab20Test19";
             this.Lbl2Lab20Test19.Size = new System.Drawing.Size(146, 45);
@@ -526,7 +526,7 @@
             // LblLab20Test19
             // 
             this.LblLab20Test19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test19.Location = new System.Drawing.Point(774, 303);
+            this.LblLab20Test19.Location = new System.Drawing.Point(708, 299);
             this.LblLab20Test19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test19.Name = "LblLab20Test19";
             this.LblLab20Test19.Size = new System.Drawing.Size(78, 45);
@@ -539,7 +539,7 @@
             this.Lbl2Lab20Test20.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test20.Location = new System.Drawing.Point(851, 368);
+            this.Lbl2Lab20Test20.Location = new System.Drawing.Point(785, 368);
             this.Lbl2Lab20Test20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test20.Name = "Lbl2Lab20Test20";
             this.Lbl2Lab20Test20.Size = new System.Drawing.Size(146, 45);
@@ -550,7 +550,7 @@
             // LblLab20Test20
             // 
             this.LblLab20Test20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test20.Location = new System.Drawing.Point(779, 368);
+            this.LblLab20Test20.Location = new System.Drawing.Point(713, 365);
             this.LblLab20Test20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test20.Name = "LblLab20Test20";
             this.LblLab20Test20.Size = new System.Drawing.Size(78, 45);
@@ -563,7 +563,7 @@
             this.Lbl2Lab20Test16.BackColor = System.Drawing.Color.Silver;
             this.Lbl2Lab20Test16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Lbl2Lab20Test16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl2Lab20Test16.Location = new System.Drawing.Point(851, 101);
+            this.Lbl2Lab20Test16.Location = new System.Drawing.Point(785, 98);
             this.Lbl2Lab20Test16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2Lab20Test16.Name = "Lbl2Lab20Test16";
             this.Lbl2Lab20Test16.Size = new System.Drawing.Size(146, 45);
@@ -574,7 +574,7 @@
             // LblLab20Test16
             // 
             this.LblLab20Test16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLab20Test16.Location = new System.Drawing.Point(774, 101);
+            this.LblLab20Test16.Location = new System.Drawing.Point(708, 101);
             this.LblLab20Test16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLab20Test16.Name = "LblLab20Test16";
             this.LblLab20Test16.Size = new System.Drawing.Size(78, 45);
@@ -589,7 +589,7 @@
             // LblCurrentLab
             // 
             this.LblCurrentLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
-            this.LblCurrentLab.Location = new System.Drawing.Point(546, 36);
+            this.LblCurrentLab.Location = new System.Drawing.Point(480, 36);
             this.LblCurrentLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCurrentLab.Name = "LblCurrentLab";
             this.LblCurrentLab.Size = new System.Drawing.Size(188, 45);
@@ -606,13 +606,14 @@
             this.panelInputOuput.Controls.Add(this.PicStart1);
             this.panelInputOuput.Controls.Add(this.PicStop1);
             this.panelInputOuput.Controls.Add(this.label1);
-            this.panelInputOuput.Location = new System.Drawing.Point(1046, 101);
+            this.panelInputOuput.Location = new System.Drawing.Point(950, 58);
             this.panelInputOuput.Name = "panelInputOuput";
             this.panelInputOuput.Size = new System.Drawing.Size(446, 204);
             this.panelInputOuput.TabIndex = 84;
             // 
             // lblStartBatch
             // 
+            this.lblStartBatch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblStartBatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblStartBatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStartBatch.Location = new System.Drawing.Point(329, 116);
@@ -624,6 +625,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Location = new System.Drawing.Point(329, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(81, 65);
@@ -632,6 +634,7 @@
             // 
             // lblLoad
             // 
+            this.lblLoad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLoad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoad.Location = new System.Drawing.Point(178, 116);
@@ -643,6 +646,7 @@
             // 
             // lblStart1
             // 
+            this.lblStart1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblStart1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblStart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStart1.Location = new System.Drawing.Point(32, 109);
@@ -654,6 +658,7 @@
             // 
             // PicStart1
             // 
+            this.PicStart1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PicStart1.Location = new System.Drawing.Point(32, 41);
             this.PicStart1.Name = "PicStart1";
             this.PicStart1.Size = new System.Drawing.Size(81, 65);
@@ -662,6 +667,7 @@
             // 
             // PicStop1
             // 
+            this.PicStop1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PicStop1.Location = new System.Drawing.Point(178, 41);
             this.PicStop1.Name = "PicStop1";
             this.PicStop1.Size = new System.Drawing.Size(81, 65);
@@ -670,6 +676,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(148, -5);
             this.label1.Name = "label1";
@@ -685,13 +692,14 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Location = new System.Drawing.Point(1047, 321);
+            this.panel1.Location = new System.Drawing.Point(951, 278);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(445, 258);
+            this.panel1.Size = new System.Drawing.Size(445, 265);
             this.panel1.TabIndex = 85;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(147, 0);
             this.label2.Name = "label2";
@@ -702,6 +710,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox5.Location = new System.Drawing.Point(313, 48);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(113, 149);
@@ -710,6 +719,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Location = new System.Drawing.Point(164, 48);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(113, 149);
@@ -718,6 +728,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox4.Location = new System.Drawing.Point(14, 48);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(113, 149);
@@ -731,7 +742,7 @@
             this.panel4.Controls.Add(this.BtnBack);
             this.panel4.Controls.Add(this.BtnLab20Start);
             this.panel4.Controls.Add(this.BtnLab20Stop);
-            this.panel4.Location = new System.Drawing.Point(382, 524);
+            this.panel4.Location = new System.Drawing.Point(280, 466);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(531, 86);
             this.panel4.TabIndex = 83;
@@ -782,9 +793,9 @@
             // 
             this.lblLabMessage.BackColor = System.Drawing.Color.Transparent;
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabMessage.Location = new System.Drawing.Point(-118, -21);
+            this.lblLabMessage.Location = new System.Drawing.Point(3, 3);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1565, 33);
+            this.lblLabMessage.Size = new System.Drawing.Size(1518, 33);
             this.lblLabMessage.TabIndex = 90;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -793,9 +804,9 @@
             this.lblLabStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblLabStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabStatus.Location = new System.Drawing.Point(0, 686);
+            this.lblLabStatus.Location = new System.Drawing.Point(0, 570);
             this.lblLabStatus.Name = "lblLabStatus";
-            this.lblLabStatus.Size = new System.Drawing.Size(1568, 41);
+            this.lblLabStatus.Size = new System.Drawing.Size(1521, 41);
             this.lblLabStatus.TabIndex = 91;
             this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -803,6 +814,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.lblLabStatus);
             this.Controls.Add(this.lblLabMessage);
@@ -852,7 +865,7 @@
             this.Controls.Add(this.LblLab20Test1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab20Screen";
-            this.Size = new System.Drawing.Size(1568, 727);
+            this.Size = new System.Drawing.Size(1421, 611);
             this.panelInputOuput.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicStart1)).EndInit();

@@ -38,6 +38,7 @@
             this.LblLab12Test3 = new System.Windows.Forms.Label();
             this.TimerLab12 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnNextLab = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
@@ -59,7 +60,9 @@
             this.PicIntvalve = new System.Windows.Forms.PictureBox();
             this.lblTankFill2 = new System.Windows.Forms.Label();
             this.PicLLT2 = new System.Windows.Forms.PictureBox();
+            this.verticalProgressBar2 = new VerticalProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.verticalProgressBar1 = new VerticalProgressBar();
             this.lblTankFill = new System.Windows.Forms.Label();
             this.PicLSwitch = new System.Windows.Forms.PictureBox();
             this.PicHSwitch = new System.Windows.Forms.PictureBox();
@@ -69,10 +72,7 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.lblLabStatus = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.verticalProgressBar2 = new VerticalProgressBar();
-            this.verticalProgressBar1 = new VerticalProgressBar();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -181,6 +181,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(533, 382);
             this.panel1.TabIndex = 8;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(134, 60);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(260, 45);
+            this.label10.TabIndex = 83;
+            this.label10.Text = "SIMULATION";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -409,6 +419,13 @@
             this.PicLLT2.TabIndex = 83;
             this.PicLLT2.TabStop = false;
             // 
+            // verticalProgressBar2
+            // 
+            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 88);
+            this.verticalProgressBar2.Name = "verticalProgressBar2";
+            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar2.TabIndex = 82;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -420,6 +437,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
+            // 
+            // verticalProgressBar1
+            // 
+            this.verticalProgressBar1.Location = new System.Drawing.Point(542, 88);
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.Size = new System.Drawing.Size(29, 190);
+            this.verticalProgressBar1.TabIndex = 80;
             // 
             // lblTankFill
             // 
@@ -501,16 +525,6 @@
             this.lblLabStatus.TabIndex = 83;
             this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(134, 60);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(260, 45);
-            this.label10.TabIndex = 83;
-            this.label10.Text = "SIMULATION";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -521,24 +535,12 @@
             this.label1.Text = "LAB #12";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // verticalProgressBar2
-            // 
-            this.verticalProgressBar2.Location = new System.Drawing.Point(246, 88);
-            this.verticalProgressBar2.Name = "verticalProgressBar2";
-            this.verticalProgressBar2.Size = new System.Drawing.Size(29, 190);
-            this.verticalProgressBar2.TabIndex = 82;
-            // 
-            // verticalProgressBar1
-            // 
-            this.verticalProgressBar1.Location = new System.Drawing.Point(542, 88);
-            this.verticalProgressBar1.Name = "verticalProgressBar1";
-            this.verticalProgressBar1.Size = new System.Drawing.Size(29, 190);
-            this.verticalProgressBar1.TabIndex = 80;
-            // 
             // Lab12Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
@@ -548,7 +550,7 @@
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab12Screen";
-            this.Size = new System.Drawing.Size(1442, 836);
+            this.Size = new System.Drawing.Size(1425, 819);
             this.Load += new System.EventHandler(this.Lab12Screen_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

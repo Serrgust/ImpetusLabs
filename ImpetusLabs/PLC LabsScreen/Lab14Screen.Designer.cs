@@ -791,6 +791,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label4);
@@ -801,7 +803,7 @@
             this.Controls.Add(this.panel4);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab14Screen";
-            this.Size = new System.Drawing.Size(1553, 890);
+            this.Size = new System.Drawing.Size(1553, 873);
             this.Load += new System.EventHandler(this.Lab14Screen_Load);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

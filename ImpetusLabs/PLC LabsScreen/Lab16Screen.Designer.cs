@@ -68,9 +68,9 @@
             this.PicDrill = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.BtnLab16Start = new System.Windows.Forms.Button();
             this.BtnNextLab = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
-            this.BtnLab16Start = new System.Windows.Forms.Button();
             this.BtnLab16Stop = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
@@ -507,6 +507,17 @@
             this.panel4.Size = new System.Drawing.Size(591, 76);
             this.panel4.TabIndex = 80;
             // 
+            // BtnLab16Start
+            // 
+            this.BtnLab16Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLab16Start.Location = new System.Drawing.Point(224, 3);
+            this.BtnLab16Start.Name = "BtnLab16Start";
+            this.BtnLab16Start.Size = new System.Drawing.Size(138, 62);
+            this.BtnLab16Start.TabIndex = 8;
+            this.BtnLab16Start.Text = "START SIM";
+            this.BtnLab16Start.UseVisualStyleBackColor = true;
+            this.BtnLab16Start.Click += new System.EventHandler(this.BtnLab16Start_Click_1);
+            // 
             // BtnNextLab
             // 
             this.BtnNextLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -528,17 +539,6 @@
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = true;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
-            // 
-            // BtnLab16Start
-            // 
-            this.BtnLab16Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLab16Start.Location = new System.Drawing.Point(224, 3);
-            this.BtnLab16Start.Name = "BtnLab16Start";
-            this.BtnLab16Start.Size = new System.Drawing.Size(138, 62);
-            this.BtnLab16Start.TabIndex = 8;
-            this.BtnLab16Start.Text = "START SIM";
-            this.BtnLab16Start.UseVisualStyleBackColor = true;
-            this.BtnLab16Start.Click += new System.EventHandler(this.BtnLab16Start_Click_1);
             // 
             // BtnLab16Stop
             // 
@@ -585,7 +585,7 @@
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabMessage.Location = new System.Drawing.Point(0, 0);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1268, 41);
+            this.lblLabMessage.Size = new System.Drawing.Size(1692, 41);
             this.lblLabMessage.TabIndex = 82;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -612,6 +612,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblLabStatus);
@@ -623,7 +625,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab16Screen";
-            this.Size = new System.Drawing.Size(1268, 756);
+            this.Size = new System.Drawing.Size(1251, 739);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicClampSensor)).EndInit();

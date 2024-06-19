@@ -168,5 +168,9 @@ namespace ImpetusLabs.LabsScreen
             secondUserControl.Dock = DockStyle.Fill;
         }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

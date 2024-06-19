@@ -193,7 +193,7 @@
             this.panel3.Controls.Add(this.PicBoxSensor);
             this.panel3.Controls.Add(this.PicObjectSensor);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(931, 345);
+            this.panel3.Location = new System.Drawing.Point(608, 244);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(295, 395);
             this.panel3.TabIndex = 68;
@@ -311,7 +311,7 @@
             this.panelInputOuput.Controls.Add(this.PicStop);
             this.panelInputOuput.Controls.Add(this.PicStart1);
             this.panelInputOuput.Controls.Add(this.label1);
-            this.panelInputOuput.Location = new System.Drawing.Point(931, 149);
+            this.panelInputOuput.Location = new System.Drawing.Point(608, 47);
             this.panelInputOuput.Name = "panelInputOuput";
             this.panelInputOuput.Size = new System.Drawing.Size(295, 175);
             this.panelInputOuput.TabIndex = 69;
@@ -376,7 +376,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.Lbl2Lab19Test1);
             this.panel1.Controls.Add(this.LblLab18Test1);
-            this.panel1.Location = new System.Drawing.Point(440, 149);
+            this.panel1.Location = new System.Drawing.Point(80, 99);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(465, 369);
             this.panel1.TabIndex = 70;
@@ -394,7 +394,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(546, 74);
+            this.label6.Location = new System.Drawing.Point(212, 33);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(260, 45);
             this.label6.TabIndex = 58;
@@ -408,7 +408,7 @@
             this.panel4.Controls.Add(this.BtnBack);
             this.panel4.Controls.Add(this.BtnLab19Start);
             this.panel4.Controls.Add(this.BtnLab19Stop);
-            this.panel4.Location = new System.Drawing.Point(374, 654);
+            this.panel4.Location = new System.Drawing.Point(51, 492);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(531, 86);
             this.panel4.TabIndex = 82;
@@ -459,9 +459,9 @@
             // 
             this.lblLabStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblLabStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLabStatus.Location = new System.Drawing.Point(3, 807);
+            this.lblLabStatus.Location = new System.Drawing.Point(3, 652);
             this.lblLabStatus.Name = "lblLabStatus";
-            this.lblLabStatus.Size = new System.Drawing.Size(1694, 41);
+            this.lblLabStatus.Size = new System.Drawing.Size(996, 41);
             this.lblLabStatus.TabIndex = 87;
             this.lblLabStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -471,7 +471,7 @@
             this.lblLabMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLabMessage.Location = new System.Drawing.Point(3, 0);
             this.lblLabMessage.Name = "lblLabMessage";
-            this.lblLabMessage.Size = new System.Drawing.Size(1694, 33);
+            this.lblLabMessage.Size = new System.Drawing.Size(983, 33);
             this.lblLabMessage.TabIndex = 89;
             this.lblLabMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -479,6 +479,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.lblLabMessage);
             this.Controls.Add(this.lblLabStatus);
@@ -489,7 +491,8 @@
             this.Controls.Add(this.panel3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lab19Screen";
-            this.Size = new System.Drawing.Size(1700, 857);
+            this.Size = new System.Drawing.Size(1002, 700);
+            this.Load += new System.EventHandler(this.Lab19Screen_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicMotor2)).EndInit();
